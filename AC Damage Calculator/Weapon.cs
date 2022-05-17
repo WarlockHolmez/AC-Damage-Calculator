@@ -29,25 +29,25 @@ namespace AC_Damage_Calculator
         public bool MeleeArmorRend { get; set; }
         public bool MeleeArmorCleave { get; set; }
         public bool MeleeResistanceRend { get; set; }
-        public bool MeleeResistanceCleave { get; set; }
+        public float MeleeResistanceCleave { get; set; }
         public bool MeleeCriticalStrike { get; set; }
-        public float MeleeBitingStrike { get; set; }
-        public float MeleeCripplingBlow { get; set; }
-        public float MeleeCrushingBlow { get; set; }
+        public decimal MeleeBitingStrike { get; set; }
+        public bool MeleeCripplingBlow { get; set; }
+        public decimal MeleeCrushingBlow { get; set; }
         public bool MissileArmorRend { get; set; }
         public bool MissileArmorCleave { get; set; }
         public bool MissileResistanceRend { get; set; }
-        public bool MissileResistanceCleave { get; set; }
+        public float MissileResistanceCleave { get; set; }
         public bool MissileCriticalStrike { get; set; }
-        public float MissileBitingStrike { get; set; }
-        public float MissileCripplingBlow { get; set; }
-        public float MissileCrushingBlow { get; set; }
+        public decimal MissileBitingStrike { get; set; }
+        public bool MissileCripplingBlow { get; set; }
+        public decimal MissileCrushingBlow { get; set; }
         public bool MagicResistanceRend { get; set; }
-        public bool MagicResistanceCleave { get; set; }
+        public float MagicResistanceCleave { get; set; }
         public bool MagicCriticalStrike { get; set; }
-        public float MagicBitingStrike { get; set; }
-        public float MagicCripplingBlow { get; set; }
-        public float MagicCrushingBlow { get; set; }
+        public decimal MagicBitingStrike { get; set; }
+        public bool MagicCripplingBlow { get; set; }
+        public decimal MagicCrushingBlow { get; set; }
 
         // Spells/Slayer
         public string MeleeBloodDrinker { get; set; }
@@ -55,17 +55,17 @@ namespace AC_Damage_Calculator
         public string MeleeHeartSeeker { get; set; }
         public string MeleeHeartThirst { get; set; }
         public string MeleeHighestSpell { get; set; }
-        public float MeleeSlayer { get; set; }
+        public decimal MeleeSlayer { get; set; }
         public string MissileBloodDrinker { get; set; }
         public string MissileBloodThirst { get; set; }
         public string MissileHighestSpell { get; set; }
-        public float MissileSlayer { get; set; }
+        public decimal MissileSlayer { get; set; }
         public string MagicSpiritDrinker { get; set; }
         public string MagicSpiritThirst { get; set; }
-        public float MagicSlayer { get; set; }
+        public decimal MagicSlayer { get; set; }
 
         // Power Bar
         public int MeleePowerBar { get; set; }
-        public int MissilePowerBar { get; set; }
+        public int MissileAccuracyBar { get; set; }
     }
 }

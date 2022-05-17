@@ -352,11 +352,13 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel45 = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
+            this.textBoxEnemyName = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel44 = new System.Windows.Forms.TableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
+            this.textBoxWeaponName = new System.Windows.Forms.TextBox();
             this.tabControl_MAIN = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
@@ -410,20 +412,18 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.characterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.resetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemSaveCharacter = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemSaveWeapon = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemSaveEnemy = new System.Windows.Forms.ToolStripMenuItem();
             this.weaponToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.resetToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemLoadCharacter = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemLoadWeapon = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemLoadEnemy = new System.Windows.Forms.ToolStripMenuItem();
             this.enemyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.resetToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBoxWeaponName = new System.Windows.Forms.TextBox();
-            this.textBoxEnemyName = new System.Windows.Forms.TextBox();
+            this.menuItemResetCharacter = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemResetWeapon = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemResetEnemy = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemQuit = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlWeaponType.SuspendLayout();
             this.Melee.SuspendLayout();
             this.tableLayoutPanel17.SuspendLayout();
@@ -4416,6 +4416,7 @@
             this.textBoxCharacterName.Name = "textBoxCharacterName";
             this.textBoxCharacterName.Size = new System.Drawing.Size(136, 22);
             this.textBoxCharacterName.TabIndex = 4;
+            this.textBoxCharacterName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tableLayoutPanel4
             // 
@@ -5847,6 +5848,15 @@
             this.label4.Text = "Enemy";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // textBoxEnemyName
+            // 
+            this.textBoxEnemyName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxEnemyName.Location = new System.Drawing.Point(145, 26);
+            this.textBoxEnemyName.Name = "textBoxEnemyName";
+            this.textBoxEnemyName.Size = new System.Drawing.Size(136, 22);
+            this.textBoxEnemyName.TabIndex = 5;
+            this.textBoxEnemyName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.AutoSize = true;
@@ -5914,6 +5924,15 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Weapon";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBoxWeaponName
+            // 
+            this.textBoxWeaponName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxWeaponName.Location = new System.Drawing.Point(143, 26);
+            this.textBoxWeaponName.Name = "textBoxWeaponName";
+            this.textBoxWeaponName.Size = new System.Drawing.Size(134, 22);
+            this.textBoxWeaponName.TabIndex = 5;
+            this.textBoxWeaponName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tabControl_MAIN
             // 
@@ -6564,7 +6583,7 @@
             // 
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(1322, 786);
+            this.tabPage1.Size = new System.Drawing.Size(1322, 752);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "About";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -6586,7 +6605,7 @@
             this.characterToolStripMenuItem,
             this.weaponToolStripMenuItem,
             this.enemyToolStripMenuItem,
-            this.quitToolStripMenuItem});
+            this.menuItemQuit});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
@@ -6594,115 +6613,101 @@
             // characterToolStripMenuItem
             // 
             this.characterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.saveToolStripMenuItem,
-            this.loadToolStripMenuItem,
-            this.resetToolStripMenuItem});
+            this.menuItemSaveCharacter,
+            this.menuItemSaveWeapon,
+            this.menuItemSaveEnemy});
             this.characterToolStripMenuItem.Name = "characterToolStripMenuItem";
             this.characterToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.characterToolStripMenuItem.Text = "Save";
             // 
-            // saveToolStripMenuItem
+            // menuItemSaveCharacter
             // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.saveToolStripMenuItem.Text = "Character";
-            this.saveToolStripMenuItem.Click += new System.EventHandler(this.buttonSaveCharacter_Click);
+            this.menuItemSaveCharacter.Name = "menuItemSaveCharacter";
+            this.menuItemSaveCharacter.Size = new System.Drawing.Size(155, 26);
+            this.menuItemSaveCharacter.Text = "Character";
+            this.menuItemSaveCharacter.Click += new System.EventHandler(this.menuItemSaveCharacter_Click);
             // 
-            // loadToolStripMenuItem
+            // menuItemSaveWeapon
             // 
-            this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.loadToolStripMenuItem.Text = "Weapon";
-            this.loadToolStripMenuItem.Click += new System.EventHandler(this.buttonLoadCharacter_Click);
+            this.menuItemSaveWeapon.Name = "menuItemSaveWeapon";
+            this.menuItemSaveWeapon.Size = new System.Drawing.Size(155, 26);
+            this.menuItemSaveWeapon.Text = "Weapon";
+            this.menuItemSaveWeapon.Click += new System.EventHandler(this.menuItemSaveWeapon_Click);
             // 
-            // resetToolStripMenuItem
+            // menuItemSaveEnemy
             // 
-            this.resetToolStripMenuItem.Name = "resetToolStripMenuItem";
-            this.resetToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.resetToolStripMenuItem.Text = "Enemy";
-            this.resetToolStripMenuItem.Click += new System.EventHandler(this.buttonResetCharacter_Click);
+            this.menuItemSaveEnemy.Name = "menuItemSaveEnemy";
+            this.menuItemSaveEnemy.Size = new System.Drawing.Size(224, 26);
+            this.menuItemSaveEnemy.Text = "Enemy";
+            this.menuItemSaveEnemy.Click += new System.EventHandler(this.menuItemSaveEnemy_Click);
             // 
             // weaponToolStripMenuItem
             // 
             this.weaponToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.saveToolStripMenuItem1,
-            this.loadToolStripMenuItem1,
-            this.resetToolStripMenuItem1});
+            this.menuItemLoadCharacter,
+            this.menuItemLoadWeapon,
+            this.menuItemLoadEnemy});
             this.weaponToolStripMenuItem.Name = "weaponToolStripMenuItem";
             this.weaponToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.weaponToolStripMenuItem.Text = "Load";
             // 
-            // saveToolStripMenuItem1
+            // menuItemLoadCharacter
             // 
-            this.saveToolStripMenuItem1.Name = "saveToolStripMenuItem1";
-            this.saveToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.saveToolStripMenuItem1.Text = "Character";
-            this.saveToolStripMenuItem1.Click += new System.EventHandler(this.buttonLoadCharacter_Click);
+            this.menuItemLoadCharacter.Name = "menuItemLoadCharacter";
+            this.menuItemLoadCharacter.Size = new System.Drawing.Size(155, 26);
+            this.menuItemLoadCharacter.Text = "Character";
+            this.menuItemLoadCharacter.Click += new System.EventHandler(this.menuItemLoadCharacter_Click);
             // 
-            // loadToolStripMenuItem1
+            // menuItemLoadWeapon
             // 
-            this.loadToolStripMenuItem1.Name = "loadToolStripMenuItem1";
-            this.loadToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.loadToolStripMenuItem1.Text = "Weapon";
-            this.loadToolStripMenuItem1.Click += new System.EventHandler(this.loadToolStripMenuItem1_Click);
+            this.menuItemLoadWeapon.Name = "menuItemLoadWeapon";
+            this.menuItemLoadWeapon.Size = new System.Drawing.Size(155, 26);
+            this.menuItemLoadWeapon.Text = "Weapon";
+            this.menuItemLoadWeapon.Click += new System.EventHandler(this.menuItemLoadWeapon_Click);
             // 
-            // resetToolStripMenuItem1
+            // menuItemLoadEnemy
             // 
-            this.resetToolStripMenuItem1.Name = "resetToolStripMenuItem1";
-            this.resetToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.resetToolStripMenuItem1.Text = "Enemy";
-            this.resetToolStripMenuItem1.Click += new System.EventHandler(this.resetToolStripMenuItem1_Click);
+            this.menuItemLoadEnemy.Name = "menuItemLoadEnemy";
+            this.menuItemLoadEnemy.Size = new System.Drawing.Size(224, 26);
+            this.menuItemLoadEnemy.Text = "Enemy";
+            this.menuItemLoadEnemy.Click += new System.EventHandler(this.menuItemLoadEnemy_Click);
             // 
             // enemyToolStripMenuItem
             // 
             this.enemyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.saveToolStripMenuItem2,
-            this.loadToolStripMenuItem2,
-            this.resetToolStripMenuItem2});
+            this.menuItemResetCharacter,
+            this.menuItemResetWeapon,
+            this.menuItemResetEnemy});
             this.enemyToolStripMenuItem.Name = "enemyToolStripMenuItem";
             this.enemyToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.enemyToolStripMenuItem.Text = "Reset";
             // 
-            // saveToolStripMenuItem2
+            // menuItemResetCharacter
             // 
-            this.saveToolStripMenuItem2.Name = "saveToolStripMenuItem2";
-            this.saveToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
-            this.saveToolStripMenuItem2.Text = "Character";
-            this.saveToolStripMenuItem2.Click += new System.EventHandler(this.buttonResetCharacter_Click);
+            this.menuItemResetCharacter.Name = "menuItemResetCharacter";
+            this.menuItemResetCharacter.Size = new System.Drawing.Size(155, 26);
+            this.menuItemResetCharacter.Text = "Character";
+            this.menuItemResetCharacter.Click += new System.EventHandler(this.menuItemResetCharacter_Click);
             // 
-            // loadToolStripMenuItem2
+            // menuItemResetWeapon
             // 
-            this.loadToolStripMenuItem2.Name = "loadToolStripMenuItem2";
-            this.loadToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
-            this.loadToolStripMenuItem2.Text = "Weapon";
+            this.menuItemResetWeapon.Name = "menuItemResetWeapon";
+            this.menuItemResetWeapon.Size = new System.Drawing.Size(155, 26);
+            this.menuItemResetWeapon.Text = "Weapon";
+            this.menuItemResetWeapon.Click += new System.EventHandler(this.menuItemResetWeapon_Click);
             // 
-            // resetToolStripMenuItem2
+            // menuItemResetEnemy
             // 
-            this.resetToolStripMenuItem2.Name = "resetToolStripMenuItem2";
-            this.resetToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
-            this.resetToolStripMenuItem2.Text = "Enemy";
+            this.menuItemResetEnemy.Name = "menuItemResetEnemy";
+            this.menuItemResetEnemy.Size = new System.Drawing.Size(224, 26);
+            this.menuItemResetEnemy.Text = "Enemy";
+            this.menuItemResetEnemy.Click += new System.EventHandler(this.menuItemResetEnemy_Click);
             // 
-            // quitToolStripMenuItem
+            // menuItemQuit
             // 
-            this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-            this.quitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.quitToolStripMenuItem.Text = "Quit";
-            // 
-            // textBoxWeaponName
-            // 
-            this.textBoxWeaponName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxWeaponName.Location = new System.Drawing.Point(143, 26);
-            this.textBoxWeaponName.Name = "textBoxWeaponName";
-            this.textBoxWeaponName.Size = new System.Drawing.Size(134, 22);
-            this.textBoxWeaponName.TabIndex = 5;
-            // 
-            // textBoxEnemyName
-            // 
-            this.textBoxEnemyName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxEnemyName.Location = new System.Drawing.Point(145, 26);
-            this.textBoxEnemyName.Name = "textBoxEnemyName";
-            this.textBoxEnemyName.Size = new System.Drawing.Size(136, 22);
-            this.textBoxEnemyName.TabIndex = 5;
+            this.menuItemQuit.Name = "menuItemQuit";
+            this.menuItemQuit.Size = new System.Drawing.Size(128, 26);
+            this.menuItemQuit.Text = "Quit";
             // 
             // Form1
             // 
@@ -7277,18 +7282,18 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem characterToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem loadToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem resetToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuItemSaveCharacter;
+        private System.Windows.Forms.ToolStripMenuItem menuItemSaveWeapon;
+        private System.Windows.Forms.ToolStripMenuItem menuItemSaveEnemy;
         private System.Windows.Forms.ToolStripMenuItem weaponToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem loadToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem resetToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem menuItemLoadCharacter;
+        private System.Windows.Forms.ToolStripMenuItem menuItemLoadWeapon;
+        private System.Windows.Forms.ToolStripMenuItem menuItemLoadEnemy;
         private System.Windows.Forms.ToolStripMenuItem enemyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem loadToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem resetToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem quitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuItemResetCharacter;
+        private System.Windows.Forms.ToolStripMenuItem menuItemResetWeapon;
+        private System.Windows.Forms.ToolStripMenuItem menuItemResetEnemy;
+        private System.Windows.Forms.ToolStripMenuItem menuItemQuit;
         private System.Windows.Forms.TextBox textBoxEnemyName;
         private System.Windows.Forms.TextBox textBoxWeaponName;
     }
