@@ -6706,8 +6706,9 @@
             // menuItemQuit
             // 
             this.menuItemQuit.Name = "menuItemQuit";
-            this.menuItemQuit.Size = new System.Drawing.Size(128, 26);
+            this.menuItemQuit.Size = new System.Drawing.Size(224, 26);
             this.menuItemQuit.Text = "Quit";
+            this.menuItemQuit.Click += new System.EventHandler(this.menuItemQuit_Click);
             // 
             // Form1
             // 

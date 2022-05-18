@@ -1884,8 +1884,8 @@ namespace AC_Damage_Calculator
             // Displays a SaveFileDialog so the user can save the Image
             // assigned to Button2.
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.InitialDirectory = Directory.GetCurrentDirectory();
-            saveFileDialog1.RestoreDirectory = true;
+            saveFileDialog1.InitialDirectory = Directory.GetCurrentDirectory() + @"\Character";
+            saveFileDialog1.RestoreDirectory = false;
             saveFileDialog1.Filter = "JSON|*.json";
             saveFileDialog1.Title = "Save Character Template";
             saveFileDialog1.ShowDialog();
@@ -1941,6 +1941,7 @@ namespace AC_Damage_Calculator
         // Displays a OpenFileDialog so the user can save the Image
         // assigned to Button2.
         OpenFileDialog openFileDialog1 = new OpenFileDialog();
+        openFileDialog1.InitialDirectory = Directory.GetCurrentDirectory() + @"\Character";
         openFileDialog1.Filter = "JSON|*.json";
         openFileDialog1.Title = "Open Character Template";
         openFileDialog1.ShowDialog();
@@ -2037,15 +2038,15 @@ namespace AC_Damage_Calculator
 
             // Displays a SaveFileDialog so the user can save the Image
             // assigned to Button2.
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.InitialDirectory = Directory.GetCurrentDirectory();
-            saveFileDialog.RestoreDirectory = true;
-            saveFileDialog.Filter = "JSON|*.json";
-            saveFileDialog.Title = "Save Weapon Template";
-            saveFileDialog.ShowDialog();
+            SaveFileDialog saveFileDialog2 = new SaveFileDialog();
+            saveFileDialog2.InitialDirectory = Directory.GetCurrentDirectory() + @"\Weapon";
+            saveFileDialog2.RestoreDirectory = false;
+            saveFileDialog2.Filter = "JSON|*.json";
+            saveFileDialog2.Title = "Save Weapon Template";
+            saveFileDialog2.ShowDialog();
 
             // If the file name is not an empty string open it for saving.
-            if (saveFileDialog.FileName != "")
+            if (saveFileDialog2.FileName != "")
             {
                 Weapon weapon = new Weapon
                 {
@@ -2103,7 +2104,7 @@ namespace AC_Damage_Calculator
                 };
 
                 // serialize JSON directly to a file
-                using (StreamWriter file = File.CreateText(saveFileDialog.FileName))
+                using (StreamWriter file = File.CreateText(saveFileDialog2.FileName))
                 {
                     JsonSerializer serializer = new JsonSerializer();
                     serializer.Serialize(file, weapon);
@@ -2114,16 +2115,17 @@ namespace AC_Damage_Calculator
         {
             // Displays a OpenFileDialog so the user can save the Image
             // assigned to Button2.
-            OpenFileDialog openFileDialog1 = new OpenFileDialog();
-            openFileDialog1.Filter = "JSON|*.json";
-            openFileDialog1.Title = "Open Character Template";
-            openFileDialog1.ShowDialog();
+            OpenFileDialog openFileDialog2 = new OpenFileDialog();
+            openFileDialog2.InitialDirectory = Directory.GetCurrentDirectory() + @"\Weapon";
+            openFileDialog2.Filter = "JSON|*.json";
+            openFileDialog2.Title = "Open Character Template";
+            openFileDialog2.ShowDialog();
 
             // If the file name is not an empty string open it for saving.
-            if (openFileDialog1.FileName != "")
+            if (openFileDialog2.FileName != "")
             {
                 // deserialize JSON directly from a file
-                using (StreamReader file = File.OpenText(openFileDialog1.FileName))
+                using (StreamReader file = File.OpenText(openFileDialog2.FileName))
                 {
                     JsonSerializer serializer = new JsonSerializer();
                     Weapon weapon = (Weapon)serializer.Deserialize(file, typeof(Weapon));
@@ -2256,15 +2258,15 @@ namespace AC_Damage_Calculator
 
             // Displays a SaveFileDialog so the user can save the Image
             // assigned to Button2.
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.InitialDirectory = Directory.GetCurrentDirectory();
-            saveFileDialog.RestoreDirectory = true;
-            saveFileDialog.Filter = "JSON|*.json";
-            saveFileDialog.Title = "Save Enemy Template";
-            saveFileDialog.ShowDialog();
+            SaveFileDialog saveFileDialog3 = new SaveFileDialog();
+            saveFileDialog3.InitialDirectory = Directory.GetCurrentDirectory() + @"\Enemy";
+            saveFileDialog3.RestoreDirectory = false;
+            saveFileDialog3.Filter = "JSON|*.json";
+            saveFileDialog3.Title = "Save Enemy Template";
+            saveFileDialog3.ShowDialog();
 
             // If the file name is not an empty string open it for saving.
-            if (saveFileDialog.FileName != "")
+            if (saveFileDialog3.FileName != "")
             {
                 Enemy enemy = new Enemy
                 {
@@ -2295,7 +2297,7 @@ namespace AC_Damage_Calculator
                 };
 
                 // serialize JSON directly to a file
-                using (StreamWriter file = File.CreateText(saveFileDialog.FileName))
+                using (StreamWriter file = File.CreateText(saveFileDialog3.FileName))
                 {
                     JsonSerializer serializer = new JsonSerializer();
                     serializer.Serialize(file, enemy);
@@ -2307,16 +2309,17 @@ namespace AC_Damage_Calculator
         {
             // Displays a OpenFileDialog so the user can save the Image
             // assigned to Button2.
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "JSON|*.json";
-            openFileDialog.Title = "Open Enemy Template";
-            openFileDialog.ShowDialog();
+            OpenFileDialog openFileDialog3 = new OpenFileDialog();
+            openFileDialog3.InitialDirectory = Directory.GetCurrentDirectory() + @"\Enemy";
+            openFileDialog3.Filter = "JSON|*.json";
+            openFileDialog3.Title = "Open Enemy Template";
+            openFileDialog3.ShowDialog();
 
             // If the file name is not an empty string open it for saving.
-            if (openFileDialog.FileName != "")
+            if (openFileDialog3.FileName != "")
             {
                 // deserialize JSON directly from a file
-                using (StreamReader file = File.OpenText(openFileDialog.FileName))
+                using (StreamReader file = File.OpenText(openFileDialog3.FileName))
                 {
                     JsonSerializer serializer = new JsonSerializer();
                     Enemy enemy = (Enemy)serializer.Deserialize(file, typeof(Enemy));
@@ -2383,6 +2386,20 @@ namespace AC_Damage_Calculator
             comboBoxEnemyFeeblemind.Text = "None";
             comboBoxEnemyBrittlemail.Text = "None";
             comboBoxEnemyResistanceLure.Text = "None";
+        }
+
+        private void menuItemQuit_Click(object sender, EventArgs e)
+        {
+            if (Application.MessageLoop)
+            {
+                // WinForms app
+                Application.Exit();
+            }
+            else
+            {
+                // Console app
+                Environment.Exit(1);
+            }
         }
     }
 }
