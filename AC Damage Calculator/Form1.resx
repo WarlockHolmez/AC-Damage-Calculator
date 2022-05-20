@@ -117,14 +117,56 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>214, 17</value>
+  </metadata>
+  <data name="numericUpDownMeleeResistanceCleaving.ToolTip" xml:space="preserve">
+    <value>Resistance Cleaving. Most quest weapons are set
+to a value of 2.0. Equivalent vuln levels below:
+-Level 1 = 1.1
+-Level 2 = 1.25
+-Level 3 = 1.5
+-Level 4 = 1.75
+-Level 5 = 2.0
+-Level 6 = 2.5
+-Level 7 = 2.85
+-Level 8 = 3.1</value>
+  </data>
+  <data name="numericUpDownMissileResistanceCleaving.ToolTip" xml:space="preserve">
+    <value>Resistance Cleaving. Most quest weapons are set
+to a value of 2.0. Equivalent vuln levels below:
+-Level 1 = 1.1
+-Level 2 = 1.25
+-Level 3 = 1.5
+-Level 4 = 1.75
+-Level 5 = 2.0
+-Level 6 = 2.5
+-Level 7 = 2.85
+-Level 8 = 3.1
+</value>
+  </data>
+  <data name="comboBoxMagicAnimation.ToolTip" xml:space="preserve">
+    <value>Normal: Spell casted normally.
+Overhead: Casting a spell that comes with a wand
+that uses the "overhead swing" animation.
+Tilt: Casting a spell that comes with a wand that
+uses the "tilt" animation.</value>
+  </data>
+  <data name="numericUpDownMagicResistanceCleaving.ToolTip" xml:space="preserve">
+    <value>Resistance Cleaving. Most quest weapons are set
+to a value of 2.0. Equivalent vuln levels below:
+-Level 1 = 1.1
+-Level 2 = 1.25
+-Level 3 = 1.5
+-Level 4 = 1.75
+-Level 5 = 2.0
+-Level 6 = 2.5
+-Level 7 = 2.85
+-Level 8 = 3.1
+</value>
+  </data>
   <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
-  </metadata>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>214, 17</value>
-  </metadata>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>214, 17</value>
   </metadata>
   <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>327, 17</value>

@@ -63,7 +63,9 @@ namespace AC_Damage_Calculator
                 weaponSpeed = numericUpDownMissileWeaponSpeed.Value;
             }
 
-            var divisor = 1 - (numericUpDownBuffedQuickness.Value / 300) + (weaponSpeed / 150);
+            var quickness = numericUpDownBuffedQuickness.Value > 300 ? 300 : numericUpDownBuffedQuickness.Value;
+            var divisor = 1 - (quickness / 300) + (weaponSpeed / 150);
+
             float animSpeedMod;
 
             if(divisor <= 0)
@@ -203,9 +205,9 @@ namespace AC_Damage_Calculator
 
             if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Magic"])
             {
-                finalNonCritDamageFront = Math.Abs(avgDamage * FinalEnemyResitanceVulnMod());
-                finalNonCritMinDamageFront = Math.Abs(finalNonCritMinDamageFront * FinalEnemyResitanceVulnMod());
-                finalNonCritMaxDamageFront = Math.Abs(finalNonCritMaxDamageFront * FinalEnemyResitanceVulnMod());
+                finalNonCritDamageFront = Math.Abs(avgDamage * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
+                finalNonCritMinDamageFront = Math.Abs(finalNonCritMinDamageFront * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
+                finalNonCritMaxDamageFront = Math.Abs(finalNonCritMaxDamageFront * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
 
                 labelFinalNonCritFront.Text = Math.Round(finalNonCritMinDamageFront, 0).ToString() + " - " + Math.Round((float)finalNonCritMaxDamageFront, 0).ToString();
                 labelNonCritFront.Text = Math.Round((float)NonCritMinDamageFront(), 0).ToString() + " - " + Math.Round((float)NonCritMaxDamageFront(), 0).ToString();
@@ -214,9 +216,9 @@ namespace AC_Damage_Calculator
             else
             {
                 //finalNonCritDamageFront = Math.Abs(NonCritDamageFront() * FinalEnemyArmorMod());
-                finalNonCritDamageFront = Math.Abs(avgDamage * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod());
-                finalNonCritMinDamageFront = Math.Abs(finalNonCritMinDamageFront * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod());
-                finalNonCritMaxDamageFront = Math.Abs(finalNonCritMaxDamageFront * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod());
+                finalNonCritDamageFront = Math.Abs(avgDamage * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
+                finalNonCritMinDamageFront = Math.Abs(finalNonCritMinDamageFront * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
+                finalNonCritMaxDamageFront = Math.Abs(finalNonCritMaxDamageFront * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod()) * FinalDamageRatingVoidMod();
 
                 labelFinalNonCritFront.Text = Math.Round(finalNonCritMinDamageFront, 0).ToString() + " - " + Math.Round(finalNonCritMaxDamageFront, 0).ToString();// + "  (" + Math.Round(finalNonCritDamageFront, 0).ToString() + ")";
                 labelNonCritFront.Text = Math.Round((float)NonCritMinDamageFront(), 0).ToString() + " - " + Math.Round((float)NonCritMaxDamageFront(), 0).ToString();
@@ -236,18 +238,18 @@ namespace AC_Damage_Calculator
 
             if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Magic"])
             {
-                finalNonCritDamageRear = avgDamage * FinalEnemyResitanceVulnMod();
-                finalNonCritMinDamageRear = Math.Abs(finalNonCritMinDamageRear * FinalEnemyResitanceVulnMod());
-                finalNonCritMaxDamageRear = Math.Abs(finalNonCritMaxDamageRear * FinalEnemyResitanceVulnMod());
+                finalNonCritDamageRear = avgDamage * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod();
+                finalNonCritMinDamageRear = Math.Abs(finalNonCritMinDamageRear * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
+                finalNonCritMaxDamageRear = Math.Abs(finalNonCritMaxDamageRear * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
 
                 labelFinalNonCritRear.Text = Math.Round(finalNonCritMinDamageRear, 0).ToString() + " - " + Math.Round((float)finalNonCritMaxDamageRear, 0).ToString();
                 labelNonCritRear.Text = Math.Round((float)NonCritMinDamageRear(), 0).ToString() + " - " + Math.Round((float)NonCritMaxDamageRear(), 0).ToString();
             }
             else
             {
-                finalNonCritDamageRear = Math.Abs(avgDamage * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod());
-                finalNonCritMinDamageRear = Math.Abs(finalNonCritMinDamageRear * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod());
-                finalNonCritMaxDamageRear = Math.Abs(finalNonCritMaxDamageRear * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod());
+                finalNonCritDamageRear = Math.Abs(avgDamage * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
+                finalNonCritMinDamageRear = Math.Abs(finalNonCritMinDamageRear * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
+                finalNonCritMaxDamageRear = Math.Abs(finalNonCritMaxDamageRear * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
 
                 labelFinalNonCritRear.Text = Math.Round(finalNonCritMinDamageRear, 0).ToString() + " - " + Math.Round(finalNonCritMaxDamageRear, 0).ToString();// + "  (" + Math.Round(finalNonCritDamageFront, 0).ToString() + ")";
                 labelNonCritRear.Text = Math.Round((float)NonCritMinDamageRear(), 0).ToString() + " - " + Math.Round((float)NonCritMaxDamageRear(), 0).ToString();
@@ -273,15 +275,15 @@ namespace AC_Damage_Calculator
                 finalCritDamageFront = (AvgDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod())  * (1 + (float)BuffedElementalDamageBonus() / 100) *
                                        (float)numericUpDownMagicSlayer.Value * (FinalCritDamageRatingMod() + DeceptionMod() - 1) * FinalEnemyResitanceVulnMod();
 
-                var finalCritMinDamageFront = Math.Abs(critMinDamageFront * FinalEnemyResitanceVulnMod());
-                finalCritMaxDamageFront = Math.Abs(critMaxDamageFront * FinalEnemyResitanceVulnMod());
+                var finalCritMinDamageFront = Math.Abs(critMinDamageFront * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
+                finalCritMaxDamageFront = Math.Abs(critMaxDamageFront * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
 
                 labelFinalCritFront.Text = Math.Round(finalCritMinDamageFront, 0).ToString() + " - " + Math.Round(finalCritMaxDamageFront, 0).ToString();
                 labelCritFront.Text = Math.Round(critMinDamageFront, 0).ToString() + " - " + Math.Round(critMaxDamageFront, 0).ToString();
             }
             else
             {
-                finalCritDamageFront = Math.Abs(finalCritMaxDamageFront * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod());
+                finalCritDamageFront = Math.Abs(finalCritMaxDamageFront * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
 
                 labelFinalCritFront.Text = Math.Round(finalCritDamageFront, 0).ToString();
                 labelCritFront.Text = Math.Round((float)CritMaxDamageFront(), 0).ToString();
@@ -310,15 +312,15 @@ namespace AC_Damage_Calculator
                 finalCritDamageRear = (AvgDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod())  * (1 + (float)BuffedElementalDamageBonus() / 100) *
                                        (float)numericUpDownMagicSlayer.Value * (FinalCritDamageRatingMod() + SneakAttackMod() - 1) * FinalEnemyResitanceVulnMod();
 
-                var finalCritMinDamageRear = Math.Abs(critMinDamageRear * FinalEnemyResitanceVulnMod());
-                finalCritMaxDamageRear = Math.Abs(critMaxDamageRear * FinalEnemyResitanceVulnMod());
+                var finalCritMinDamageRear = Math.Abs(critMinDamageRear * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
+                finalCritMaxDamageRear = Math.Abs(critMaxDamageRear * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
 
                 labelFinalCritRear.Text = Math.Round(finalCritMinDamageRear, 0).ToString() + " - " + Math.Round(finalCritMaxDamageRear, 0).ToString();
                 labelCritRear.Text = Math.Round(critMinDamageRear, 0).ToString() + " - " + Math.Round(critMaxDamageRear, 0).ToString();
             }
             else
             {
-                finalCritDamageRear = Math.Abs(finalCritMaxDamageRear * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod());
+                finalCritDamageRear = Math.Abs(finalCritMaxDamageRear * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
 
                 labelFinalCritRear.Text = Math.Round(finalCritDamageRear, 0).ToString();
                 labelCritRear.Text = Math.Round((float)CritMaxDamageRear(), 0).ToString();
@@ -1531,13 +1533,18 @@ namespace AC_Damage_Calculator
             return (float)critMultiplier;
         }
 
+        private float FinalDamageRatingVoidMod()
+        {
+            return (1 / FinalDamageRatingMod()) * (FinalDamageRatingMod() + (VoidDotDamageRating() / 100));
+        }
+
         private int FinalDamageRating()
         {
             var rating = (int)numericUpDownDamageRating.Value;
 
             rating += checkBoxSurgeOfDestruction.Checked ? 20 : 0;
 
-            rating += (int)VoidDotDamageRating();
+            //rating += (int)VoidDotDamageRating();
 
             return rating;
         }
@@ -1609,7 +1616,7 @@ namespace AC_Damage_Calculator
                     mod = 1 + ((int)numericUpDownBuffedStrength.Value + (checkBoxRareStrength.Checked ? 250 : 0) - 55) * 0.011f;
             }
 
-            labelCharacterMeleeMod.Text = Math.Round(mod, 2).ToString();
+            labelCharacterMeleeMod.Text = Math.Round(mod, 1).ToString();
 
             return mod;
         }
@@ -1627,7 +1634,7 @@ namespace AC_Damage_Calculator
                 mod = 1 + ((int)numericUpDownBuffedCoordination.Value + (checkBoxRareCoord.Checked ? 250 : 0) - 55) * 0.008f;
             }
 
-            labelCharacterMissileMod.Text = Math.Round(mod, 2).ToString();
+            labelCharacterMissileMod.Text = Math.Round(mod, 1).ToString();
 
             return mod;
         }
@@ -1635,7 +1642,7 @@ namespace AC_Damage_Calculator
         private float MagicMod()
         {
             float mod = 1 + ((float)(EffectiveMagicSkill() - 350) / 1000) * SpellMinDamage();
-            labelCharacterSpellMod.Text = Math.Round(mod, 2).ToString();
+            labelCharacterSpellMod.Text = Math.Round(mod, 1).ToString();
 
             return mod;
         }
@@ -1719,6 +1726,65 @@ namespace AC_Damage_Calculator
         }
 
         #region Tool Interactions
+        private void OnAdjustBaseWeaponSkills(object sender, EventArgs e)
+        {
+            if(numericUpDownBaseMeleeSkill.Value > numericUpDownBuffedMeleeSkill.Value)
+            {
+                numericUpDownBuffedMeleeSkill.Value = numericUpDownBaseMeleeSkill.Value;
+            }
+
+            if (numericUpDownBaseMissileSkill.Value > numericUpDownBuffedMissileSkill.Value)
+            {
+                numericUpDownBuffedMissileSkill.Value = numericUpDownBaseMissileSkill.Value;
+            }
+
+            if (numericUpDownBaseMagicSkill.Value > numericUpDownBuffedMagicSkill.Value)
+            {
+                numericUpDownBuffedMagicSkill.Value = numericUpDownBaseMagicSkill.Value;
+            }
+
+            CalculateFinalDps(sender, e);
+        }
+
+        private void OnAdjustBuffedWeaponSkills(object sender, EventArgs e)
+        {
+            if (numericUpDownBaseMeleeSkill.Value > numericUpDownBuffedMeleeSkill.Value)
+            {
+                numericUpDownBaseMeleeSkill.Value = numericUpDownBuffedMeleeSkill.Value;
+            }
+
+            if (numericUpDownBaseMissileSkill.Value > numericUpDownBuffedMissileSkill.Value)
+            {
+                numericUpDownBaseMissileSkill.Value = numericUpDownBuffedMissileSkill.Value;
+            }
+
+            if (numericUpDownBaseMagicSkill.Value > numericUpDownBuffedMagicSkill.Value)
+            {
+                numericUpDownBaseMagicSkill.Value = numericUpDownBuffedMagicSkill.Value;
+            }
+
+            CalculateFinalDps(sender, e);
+        }
+
+        private void OnAdjustMinWeaponDamage(object sender, EventArgs e)
+        {
+            if(numericUpDownWeaponMinDamage.Value > numericUpDownWeaponMaxDamage.Value)
+            {
+                numericUpDownWeaponMaxDamage.Value = numericUpDownWeaponMinDamage.Value;
+
+                CalculateFinalDps(sender, e);
+            }
+        }
+
+        private void OnAdjustMaxWeaponDamage(object sender, EventArgs e)
+        {
+            if (numericUpDownWeaponMinDamage.Value > numericUpDownWeaponMaxDamage.Value)
+            {
+                numericUpDownWeaponMinDamage.Value = numericUpDownWeaponMaxDamage.Value;
+
+                CalculateFinalDps(sender, e);
+            }
+        }
 
         private void tabPage1_Click(object sender, EventArgs e)
         {
@@ -1789,7 +1855,6 @@ namespace AC_Damage_Calculator
         {
 
         }
-        #endregion
 
         private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
         {
@@ -1870,6 +1935,9 @@ namespace AC_Damage_Calculator
         {
 
         }
+        #endregion
+
+
 
         private void menuItemSaveCharacter_Click(object sender, EventArgs e)
         {
@@ -2287,7 +2355,6 @@ namespace AC_Damage_Calculator
                     Defenselessness = comboBoxEnemyDefenselessness.Text,
                     MagicYield = comboBoxEnemyMagicYield.Text,
                     UnbalancedAssault = comboBoxEnemyUnbalancingAssault.Text,
-                    Weakness = comboBoxEnemyWeakness.Text,
                     Clumsiness = comboBoxEnemyClumsiness.Text,
                     Slowness = comboBoxEnemySlowness.Text,
                     Bafflement = comboBoxEnemyBafflement.Text,
@@ -2341,7 +2408,6 @@ namespace AC_Damage_Calculator
                     comboBoxEnemyDefenselessness.Text = enemy.Defenselessness;
                     comboBoxEnemyMagicYield.Text = enemy.MagicYield;
                     comboBoxEnemyUnbalancingAssault.Text = enemy.UnbalancedAssault;
-                    comboBoxEnemyWeakness.Text = enemy.Weakness;
                     comboBoxEnemyClumsiness.Text = enemy.Clumsiness;
                     comboBoxEnemySlowness.Text = enemy.Slowness;
                     comboBoxEnemyBafflement.Text = enemy.Bafflement;
@@ -2379,7 +2445,6 @@ namespace AC_Damage_Calculator
             comboBoxEnemyDefenselessness.Text = "None";
             comboBoxEnemyMagicYield.Text = "None";
             comboBoxEnemyUnbalancingAssault.Text = "None";
-            comboBoxEnemyWeakness.Text = "None";
             comboBoxEnemyClumsiness.Text = "None";
             comboBoxEnemySlowness.Text = "None";
             comboBoxEnemyBafflement.Text = "None";

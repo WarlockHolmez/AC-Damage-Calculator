@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControlWeaponType = new System.Windows.Forms.TabControl();
             this.Melee = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
@@ -316,8 +317,6 @@
             this.label136 = new System.Windows.Forms.Label();
             this.label135 = new System.Windows.Forms.Label();
             this.label134 = new System.Windows.Forms.Label();
-            this.label133 = new System.Windows.Forms.Label();
-            this.comboBoxEnemyWeakness = new System.Windows.Forms.ComboBox();
             this.comboBoxEnemyVulnerability = new System.Windows.Forms.ComboBox();
             this.comboBoxEnemyDefenselessness = new System.Windows.Forms.ComboBox();
             this.comboBoxEnemyFeeblemind = new System.Windows.Forms.ComboBox();
@@ -424,6 +423,10 @@
             this.menuItemResetWeapon = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemResetEnemy = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemQuit = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label37 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label57 = new System.Windows.Forms.Label();
             this.tabControlWeaponType.SuspendLayout();
             this.Melee.SuspendLayout();
             this.tableLayoutPanel17.SuspendLayout();
@@ -556,7 +559,11 @@
             this.panel7.SuspendLayout();
             this.tableLayoutPanel31.SuspendLayout();
             this.tableLayoutPanel32.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlWeaponType
@@ -646,6 +653,7 @@
             this.trackBarMeleePowerBar.Size = new System.Drawing.Size(389, 49);
             this.trackBarMeleePowerBar.SmallChange = 10;
             this.trackBarMeleePowerBar.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.trackBarMeleePowerBar, "Contributes to Attack Speed and Power Mod.");
             this.trackBarMeleePowerBar.Value = 50;
             this.trackBarMeleePowerBar.ValueChanged += new System.EventHandler(this.SetPowerBarValue);
             this.trackBarMeleePowerBar.CursorChanged += new System.EventHandler(this.tabPage1_Click);
@@ -676,9 +684,9 @@
             // 
             this.tableLayoutPanel20.ColumnCount = 4;
             this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel20.Controls.Add(this.lblArmorRend, 0, 0);
             this.tableLayoutPanel20.Controls.Add(this.checkBoxMeleeArmorRend, 1, 0);
             this.tableLayoutPanel20.Controls.Add(this.numericUpDownMeleeCrushingBlow, 3, 3);
@@ -722,26 +730,28 @@
             // 
             this.checkBoxMeleeArmorRend.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxMeleeArmorRend.AutoSize = true;
-            this.checkBoxMeleeArmorRend.Location = new System.Drawing.Point(57, 5);
+            this.checkBoxMeleeArmorRend.Location = new System.Drawing.Point(53, 5);
             this.checkBoxMeleeArmorRend.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxMeleeArmorRend.Name = "checkBoxMeleeArmorRend";
             this.checkBoxMeleeArmorRend.Size = new System.Drawing.Size(18, 17);
             this.checkBoxMeleeArmorRend.TabIndex = 79;
+            this.toolTip1.SetToolTip(this.checkBoxMeleeArmorRend, "Armor Rending. Effectiveness determined by\r\nBase Weapon Skill. Max armor ignored " +
+        "= 60%.");
             this.checkBoxMeleeArmorRend.UseVisualStyleBackColor = true;
             this.checkBoxMeleeArmorRend.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
             // numericUpDownMeleeCrushingBlow
             // 
-            this.numericUpDownMeleeCrushingBlow.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDownMeleeCrushingBlow.AutoSize = true;
             this.numericUpDownMeleeCrushingBlow.DecimalPlaces = 2;
+            this.numericUpDownMeleeCrushingBlow.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numericUpDownMeleeCrushingBlow.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDownMeleeCrushingBlow.Increment = new decimal(new int[] {
             1,
             0,
             0,
             131072});
-            this.numericUpDownMeleeCrushingBlow.Location = new System.Drawing.Point(136, 88);
+            this.numericUpDownMeleeCrushingBlow.Location = new System.Drawing.Point(127, 87);
             this.numericUpDownMeleeCrushingBlow.Maximum = new decimal(new int[] {
             99,
             0,
@@ -753,8 +763,9 @@
             0,
             0});
             this.numericUpDownMeleeCrushingBlow.Name = "numericUpDownMeleeCrushingBlow";
-            this.numericUpDownMeleeCrushingBlow.Size = new System.Drawing.Size(54, 21);
+            this.numericUpDownMeleeCrushingBlow.Size = new System.Drawing.Size(63, 21);
             this.numericUpDownMeleeCrushingBlow.TabIndex = 226;
+            this.toolTip1.SetToolTip(this.numericUpDownMeleeCrushingBlow, "Crushing Blow. Multiplies ciritcal damage by the set value.\r\nNo max value.\r\n");
             this.numericUpDownMeleeCrushingBlow.Value = new decimal(new int[] {
             1,
             0,
@@ -768,7 +779,7 @@
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(98, 6);
+            this.label12.Location = new System.Drawing.Point(89, 6);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(25, 16);
             this.label12.TabIndex = 78;
@@ -780,7 +791,7 @@
             this.label22.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(98, 90);
+            this.label22.Location = new System.Drawing.Point(89, 90);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(27, 16);
             this.label22.TabIndex = 90;
@@ -791,11 +802,13 @@
             // 
             this.checkBoxMeleeArmorCleaving.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxMeleeArmorCleaving.AutoSize = true;
-            this.checkBoxMeleeArmorCleaving.Location = new System.Drawing.Point(154, 5);
+            this.checkBoxMeleeArmorCleaving.Location = new System.Drawing.Point(149, 5);
             this.checkBoxMeleeArmorCleaving.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxMeleeArmorCleaving.Name = "checkBoxMeleeArmorCleaving";
             this.checkBoxMeleeArmorCleaving.Size = new System.Drawing.Size(18, 17);
             this.checkBoxMeleeArmorCleaving.TabIndex = 77;
+            this.toolTip1.SetToolTip(this.checkBoxMeleeArmorCleaving, "Armor Cleaving. Effectiveness determined by\r\nHighest Level Spell on the weapon. M" +
+        "ax\r\narmor ignored = 50%.");
             this.checkBoxMeleeArmorCleaving.UseVisualStyleBackColor = true;
             this.checkBoxMeleeArmorCleaving.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -803,26 +816,28 @@
             // 
             this.checkBoxMeleeCripplingBlow.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxMeleeCripplingBlow.AutoSize = true;
-            this.checkBoxMeleeCripplingBlow.Location = new System.Drawing.Point(57, 90);
+            this.checkBoxMeleeCripplingBlow.Location = new System.Drawing.Point(53, 90);
             this.checkBoxMeleeCripplingBlow.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxMeleeCripplingBlow.Name = "checkBoxMeleeCripplingBlow";
             this.checkBoxMeleeCripplingBlow.Size = new System.Drawing.Size(18, 17);
             this.checkBoxMeleeCripplingBlow.TabIndex = 89;
+            this.toolTip1.SetToolTip(this.checkBoxMeleeCripplingBlow, "Crippling Blow. Effectiveness determined by\r\nBase Weapon Skill. Multiplies ciritc" +
+        "al damage by a\r\nmaximum of x6. (max base-damage x7)\r\n");
             this.checkBoxMeleeCripplingBlow.UseVisualStyleBackColor = true;
             this.checkBoxMeleeCripplingBlow.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
             // numericUpDownMeleeResistanceCleaving
             // 
-            this.numericUpDownMeleeResistanceCleaving.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDownMeleeResistanceCleaving.AutoSize = true;
             this.numericUpDownMeleeResistanceCleaving.DecimalPlaces = 2;
+            this.numericUpDownMeleeResistanceCleaving.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numericUpDownMeleeResistanceCleaving.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDownMeleeResistanceCleaving.Increment = new decimal(new int[] {
             1,
             0,
             0,
             131072});
-            this.numericUpDownMeleeResistanceCleaving.Location = new System.Drawing.Point(136, 31);
+            this.numericUpDownMeleeResistanceCleaving.Location = new System.Drawing.Point(127, 31);
             this.numericUpDownMeleeResistanceCleaving.Maximum = new decimal(new int[] {
             99,
             0,
@@ -834,8 +849,9 @@
             0,
             0});
             this.numericUpDownMeleeResistanceCleaving.Name = "numericUpDownMeleeResistanceCleaving";
-            this.numericUpDownMeleeResistanceCleaving.Size = new System.Drawing.Size(54, 21);
+            this.numericUpDownMeleeResistanceCleaving.Size = new System.Drawing.Size(63, 21);
             this.numericUpDownMeleeResistanceCleaving.TabIndex = 224;
+            this.toolTip1.SetToolTip(this.numericUpDownMeleeResistanceCleaving, resources.GetString("numericUpDownMeleeResistanceCleaving.ToolTip"));
             this.numericUpDownMeleeResistanceCleaving.Value = new decimal(new int[] {
             1,
             0,
@@ -858,16 +874,16 @@
             // 
             // numericUpDownMeleeBitingStrike
             // 
-            this.numericUpDownMeleeBitingStrike.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDownMeleeBitingStrike.AutoSize = true;
             this.numericUpDownMeleeBitingStrike.DecimalPlaces = 2;
+            this.numericUpDownMeleeBitingStrike.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numericUpDownMeleeBitingStrike.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDownMeleeBitingStrike.Increment = new decimal(new int[] {
             1,
             0,
             0,
             131072});
-            this.numericUpDownMeleeBitingStrike.Location = new System.Drawing.Point(137, 59);
+            this.numericUpDownMeleeBitingStrike.Location = new System.Drawing.Point(127, 59);
             this.numericUpDownMeleeBitingStrike.Maximum = new decimal(new int[] {
             1,
             0,
@@ -879,8 +895,10 @@
             0,
             65536});
             this.numericUpDownMeleeBitingStrike.Name = "numericUpDownMeleeBitingStrike";
-            this.numericUpDownMeleeBitingStrike.Size = new System.Drawing.Size(51, 21);
+            this.numericUpDownMeleeBitingStrike.Size = new System.Drawing.Size(63, 21);
             this.numericUpDownMeleeBitingStrike.TabIndex = 225;
+            this.toolTip1.SetToolTip(this.numericUpDownMeleeBitingStrike, "Biting Strike. Determines critical strike chance with\r\nthis weapon. Values below " +
+        "0.1 have no effect.");
             this.numericUpDownMeleeBitingStrike.Value = new decimal(new int[] {
             1,
             0,
@@ -894,7 +912,7 @@
             this.label20.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(98, 62);
+            this.label20.Location = new System.Drawing.Point(89, 62);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(25, 16);
             this.label20.TabIndex = 86;
@@ -917,11 +935,12 @@
             // 
             this.checkBoxMeleeCriticalStrike.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxMeleeCriticalStrike.AutoSize = true;
-            this.checkBoxMeleeCriticalStrike.Location = new System.Drawing.Point(57, 61);
+            this.checkBoxMeleeCriticalStrike.Location = new System.Drawing.Point(53, 61);
             this.checkBoxMeleeCriticalStrike.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxMeleeCriticalStrike.Name = "checkBoxMeleeCriticalStrike";
             this.checkBoxMeleeCriticalStrike.Size = new System.Drawing.Size(18, 17);
             this.checkBoxMeleeCriticalStrike.TabIndex = 85;
+            this.toolTip1.SetToolTip(this.checkBoxMeleeCriticalStrike, "Critical Strike. Effectiveness determined by\r\nBase Weapon Skill.\r\n");
             this.checkBoxMeleeCriticalStrike.UseVisualStyleBackColor = true;
             this.checkBoxMeleeCriticalStrike.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -930,7 +949,7 @@
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(98, 34);
+            this.label18.Location = new System.Drawing.Point(89, 34);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(26, 16);
             this.label18.TabIndex = 82;
@@ -953,11 +972,12 @@
             // 
             this.checkBoxMeleeResistanceRend.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxMeleeResistanceRend.AutoSize = true;
-            this.checkBoxMeleeResistanceRend.Location = new System.Drawing.Point(57, 33);
+            this.checkBoxMeleeResistanceRend.Location = new System.Drawing.Point(53, 33);
             this.checkBoxMeleeResistanceRend.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxMeleeResistanceRend.Name = "checkBoxMeleeResistanceRend";
             this.checkBoxMeleeResistanceRend.Size = new System.Drawing.Size(18, 17);
             this.checkBoxMeleeResistanceRend.TabIndex = 81;
+            this.toolTip1.SetToolTip(this.checkBoxMeleeResistanceRend, "Resistance Rending. Effectiveness determined by\r\nBase Weapon Skill.");
             this.checkBoxMeleeResistanceRend.UseVisualStyleBackColor = true;
             this.checkBoxMeleeResistanceRend.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -971,7 +991,7 @@
             this.groupBox14.Size = new System.Drawing.Size(199, 134);
             this.groupBox14.TabIndex = 0;
             this.groupBox14.TabStop = false;
-            this.groupBox14.Text = "Base Stats";
+            this.groupBox14.Text = "Weapon Stats";
             // 
             // tableLayoutPanel19
             // 
@@ -1008,9 +1028,9 @@
             this.label51.Location = new System.Drawing.Point(0, 94);
             this.label51.Margin = new System.Windows.Forms.Padding(0);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(48, 16);
+            this.label51.Size = new System.Drawing.Size(89, 16);
             this.label51.TabIndex = 224;
-            this.label51.Text = "Speed";
+            this.label51.Text = "Buffed Speed";
             this.label51.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label8
@@ -1079,6 +1099,7 @@
             this.numericUpDownWeaponAttackMod.Name = "numericUpDownWeaponAttackMod";
             this.numericUpDownWeaponAttackMod.Size = new System.Drawing.Size(72, 21);
             this.numericUpDownWeaponAttackMod.TabIndex = 223;
+            this.toolTip1.SetToolTip(this.numericUpDownWeaponAttackMod, "Unbuffed attack modifier value.");
             this.numericUpDownWeaponAttackMod.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
             this.numericUpDownWeaponAttackMod.VisibleChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -1112,16 +1133,21 @@
             0,
             0,
             0});
+            this.numericUpDownWeaponMaxDamage.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDownWeaponMaxDamage.Name = "numericUpDownWeaponMaxDamage";
             this.numericUpDownWeaponMaxDamage.Size = new System.Drawing.Size(72, 21);
             this.numericUpDownWeaponMaxDamage.TabIndex = 222;
+            this.toolTip1.SetToolTip(this.numericUpDownWeaponMaxDamage, "Unbuffed maximum damage value.");
             this.numericUpDownWeaponMaxDamage.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDownWeaponMaxDamage.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
-            this.numericUpDownWeaponMaxDamage.VisibleChanged += new System.EventHandler(this.CalculateFinalDps);
+            this.numericUpDownWeaponMaxDamage.ValueChanged += new System.EventHandler(this.OnAdjustMaxWeaponDamage);
             // 
             // numericUpDownWeaponMinDamage
             // 
@@ -1143,13 +1169,13 @@
             this.numericUpDownWeaponMinDamage.Name = "numericUpDownWeaponMinDamage";
             this.numericUpDownWeaponMinDamage.Size = new System.Drawing.Size(72, 21);
             this.numericUpDownWeaponMinDamage.TabIndex = 221;
+            this.toolTip1.SetToolTip(this.numericUpDownWeaponMinDamage, "Unbuffed minimum damage value.");
             this.numericUpDownWeaponMinDamage.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDownWeaponMinDamage.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
-            this.numericUpDownWeaponMinDamage.VisibleChanged += new System.EventHandler(this.CalculateFinalDps);
+            this.numericUpDownWeaponMinDamage.ValueChanged += new System.EventHandler(this.OnAdjustMinWeaponDamage);
             // 
             // numericUpDownMeleeWeaponSpeed
             // 
@@ -1164,6 +1190,7 @@
             this.numericUpDownMeleeWeaponSpeed.Name = "numericUpDownMeleeWeaponSpeed";
             this.numericUpDownMeleeWeaponSpeed.Size = new System.Drawing.Size(72, 21);
             this.numericUpDownMeleeWeaponSpeed.TabIndex = 225;
+            this.toolTip1.SetToolTip(this.numericUpDownMeleeWeaponSpeed, "Buffed weapon speed value.");
             this.numericUpDownMeleeWeaponSpeed.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
             // panelMelee2
@@ -1422,6 +1449,7 @@
             this.comboBoxMeleeHighestSpell.Size = new System.Drawing.Size(72, 23);
             this.comboBoxMeleeHighestSpell.TabIndex = 74;
             this.comboBoxMeleeHighestSpell.Text = "None";
+            this.toolTip1.SetToolTip(this.comboBoxMeleeHighestSpell, "Highest level spell on weapon. Determines \r\neffectiveness of Armor Cleaving.");
             this.comboBoxMeleeHighestSpell.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxMeleeHighestSpell.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -1509,6 +1537,7 @@
             this.trackBarMissileAccuracyBar.Size = new System.Drawing.Size(389, 49);
             this.trackBarMissileAccuracyBar.SmallChange = 10;
             this.trackBarMissileAccuracyBar.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.trackBarMissileAccuracyBar, "Contribues to Attack Speed and Attack Mod.");
             this.trackBarMissileAccuracyBar.Value = 50;
             this.trackBarMissileAccuracyBar.ValueChanged += new System.EventHandler(this.SetAccuracyBarValue);
             // 
@@ -1589,6 +1618,8 @@
             this.checkBoxMissileArmorRend.Name = "checkBoxMissileArmorRend";
             this.checkBoxMissileArmorRend.Size = new System.Drawing.Size(18, 17);
             this.checkBoxMissileArmorRend.TabIndex = 79;
+            this.toolTip1.SetToolTip(this.checkBoxMissileArmorRend, "Armor Rending. Effectiveness determined by\r\nBase Weapon Skill. Max armor ignored " +
+        "= 60%.\r\n");
             this.checkBoxMissileArmorRend.UseVisualStyleBackColor = true;
             this.checkBoxMissileArmorRend.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -1617,6 +1648,7 @@
             this.numericUpDownMissileCrushingBlow.Name = "numericUpDownMissileCrushingBlow";
             this.numericUpDownMissileCrushingBlow.Size = new System.Drawing.Size(54, 21);
             this.numericUpDownMissileCrushingBlow.TabIndex = 226;
+            this.toolTip1.SetToolTip(this.numericUpDownMissileCrushingBlow, "Crushing Blow. Multiplies ciritcal damage by the set value.\r\nNo max value.\r\n\r\n");
             this.numericUpDownMissileCrushingBlow.Value = new decimal(new int[] {
             1,
             0,
@@ -1657,6 +1689,8 @@
             this.checkBoxMissileArmorCleaving.Name = "checkBoxMissileArmorCleaving";
             this.checkBoxMissileArmorCleaving.Size = new System.Drawing.Size(18, 17);
             this.checkBoxMissileArmorCleaving.TabIndex = 77;
+            this.toolTip1.SetToolTip(this.checkBoxMissileArmorCleaving, "Armor Cleaving. Effectiveness determined by\r\nHighest Level Spell on the weapon. M" +
+        "ax\r\narmor ignored = 50%.\r\n");
             this.checkBoxMissileArmorCleaving.UseVisualStyleBackColor = true;
             this.checkBoxMissileArmorCleaving.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -1669,6 +1703,8 @@
             this.checkBoxMissileCripplingBlow.Name = "checkBoxMissileCripplingBlow";
             this.checkBoxMissileCripplingBlow.Size = new System.Drawing.Size(18, 17);
             this.checkBoxMissileCripplingBlow.TabIndex = 89;
+            this.toolTip1.SetToolTip(this.checkBoxMissileCripplingBlow, "Crippling Blow. Effectiveness determined by\r\nBase Weapon Skill. Multiplies ciritc" +
+        "al damage by a\r\nmaximum of x6. (max base-damage x7)\r\n\r\n");
             this.checkBoxMissileCripplingBlow.UseVisualStyleBackColor = true;
             this.checkBoxMissileCripplingBlow.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -1697,6 +1733,7 @@
             this.numericUpDownMissileResistanceCleaving.Name = "numericUpDownMissileResistanceCleaving";
             this.numericUpDownMissileResistanceCleaving.Size = new System.Drawing.Size(54, 21);
             this.numericUpDownMissileResistanceCleaving.TabIndex = 224;
+            this.toolTip1.SetToolTip(this.numericUpDownMissileResistanceCleaving, resources.GetString("numericUpDownMissileResistanceCleaving.ToolTip"));
             this.numericUpDownMissileResistanceCleaving.Value = new decimal(new int[] {
             1,
             0,
@@ -1741,6 +1778,8 @@
             this.numericUpDownMissileBitingStrike.Name = "numericUpDownMissileBitingStrike";
             this.numericUpDownMissileBitingStrike.Size = new System.Drawing.Size(51, 21);
             this.numericUpDownMissileBitingStrike.TabIndex = 225;
+            this.toolTip1.SetToolTip(this.numericUpDownMissileBitingStrike, "Biting Strike. Determines critical strike chance with\r\nthis weapon. Values below " +
+        "0.1 have no effect.\r\n");
             this.numericUpDownMissileBitingStrike.Value = new decimal(new int[] {
             1,
             0,
@@ -1781,6 +1820,7 @@
             this.checkBoxMissileCriticalStrike.Name = "checkBoxMissileCriticalStrike";
             this.checkBoxMissileCriticalStrike.Size = new System.Drawing.Size(18, 17);
             this.checkBoxMissileCriticalStrike.TabIndex = 85;
+            this.toolTip1.SetToolTip(this.checkBoxMissileCriticalStrike, "Critical Strike. Effectiveness determined by\r\nBase Weapon Skill.\r\n\r\n");
             this.checkBoxMissileCriticalStrike.UseVisualStyleBackColor = true;
             this.checkBoxMissileCriticalStrike.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -1817,6 +1857,7 @@
             this.checkBoxMissileResistanceRend.Name = "checkBoxMissileResistanceRend";
             this.checkBoxMissileResistanceRend.Size = new System.Drawing.Size(18, 17);
             this.checkBoxMissileResistanceRend.TabIndex = 81;
+            this.toolTip1.SetToolTip(this.checkBoxMissileResistanceRend, "Resistance Rending. Effectiveness determined by\r\nBase Weapon Skill.\r\n");
             this.checkBoxMissileResistanceRend.UseVisualStyleBackColor = true;
             this.checkBoxMissileResistanceRend.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -1830,7 +1871,7 @@
             this.groupBox20.Size = new System.Drawing.Size(199, 134);
             this.groupBox20.TabIndex = 0;
             this.groupBox20.TabStop = false;
-            this.groupBox20.Text = "Base Stats";
+            this.groupBox20.Text = "Weapon Stats";
             // 
             // tableLayoutPanel36
             // 
@@ -1866,9 +1907,9 @@
             this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label52.Location = new System.Drawing.Point(3, 94);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(48, 16);
+            this.label52.Size = new System.Drawing.Size(89, 16);
             this.label52.TabIndex = 224;
-            this.label52.Text = "Speed";
+            this.label52.Text = "Buffed Speed";
             this.label52.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label46
@@ -2141,6 +2182,7 @@
             this.comboBoxMissileHighestSpell.Size = new System.Drawing.Size(72, 23);
             this.comboBoxMissileHighestSpell.TabIndex = 74;
             this.comboBoxMissileHighestSpell.Text = "None";
+            this.toolTip1.SetToolTip(this.comboBoxMissileHighestSpell, "Highest level spell on weapon. Determines \r\neffectiveness of Armor Cleaving.\r\n");
             this.comboBoxMissileHighestSpell.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
             // label55
@@ -2237,7 +2279,7 @@
             this.groupBox22.Size = new System.Drawing.Size(193, 122);
             this.groupBox22.TabIndex = 2;
             this.groupBox22.TabStop = false;
-            this.groupBox22.Text = "Base Stats";
+            this.groupBox22.Text = "Weapon Stats";
             // 
             // tableLayoutPanel40
             // 
@@ -2300,6 +2342,7 @@
             this.comboBoxMagicAnimation.Size = new System.Drawing.Size(73, 24);
             this.comboBoxMagicAnimation.TabIndex = 155;
             this.comboBoxMagicAnimation.Text = "Normal";
+            this.toolTip1.SetToolTip(this.comboBoxMagicAnimation, resources.GetString("comboBoxMagicAnimation.ToolTip"));
             this.comboBoxMagicAnimation.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
             // label65
@@ -2399,6 +2442,7 @@
             this.checkBoxMagicResistanceRend.Name = "checkBoxMagicResistanceRend";
             this.checkBoxMagicResistanceRend.Size = new System.Drawing.Size(18, 17);
             this.checkBoxMagicResistanceRend.TabIndex = 169;
+            this.toolTip1.SetToolTip(this.checkBoxMagicResistanceRend, "Resistance Rending. Effectiveness determined by\r\nBase Weapon Skill.\r\n");
             this.checkBoxMagicResistanceRend.UseVisualStyleBackColor = true;
             this.checkBoxMagicResistanceRend.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -2425,6 +2469,7 @@
             this.numericUpDownMagicCrushingBlow.Name = "numericUpDownMagicCrushingBlow";
             this.numericUpDownMagicCrushingBlow.Size = new System.Drawing.Size(52, 22);
             this.numericUpDownMagicCrushingBlow.TabIndex = 248;
+            this.toolTip1.SetToolTip(this.numericUpDownMagicCrushingBlow, "Crushing Blow. Multiplies ciritcal damage by the set value.\r\nNo max value.\r\n\r\n");
             this.numericUpDownMagicCrushingBlow.Value = new decimal(new int[] {
             1,
             0,
@@ -2466,6 +2511,8 @@
             this.numericUpDownMagicBitingStrike.Name = "numericUpDownMagicBitingStrike";
             this.numericUpDownMagicBitingStrike.Size = new System.Drawing.Size(52, 22);
             this.numericUpDownMagicBitingStrike.TabIndex = 247;
+            this.toolTip1.SetToolTip(this.numericUpDownMagicBitingStrike, "Biting Strike. Determines critical strike chance with\r\nthis weapon. Values below " +
+        "0.05 have no effect.\r\n");
             this.numericUpDownMagicBitingStrike.Value = new decimal(new int[] {
             5,
             0,
@@ -2507,6 +2554,7 @@
             this.numericUpDownMagicResistanceCleaving.Name = "numericUpDownMagicResistanceCleaving";
             this.numericUpDownMagicResistanceCleaving.Size = new System.Drawing.Size(52, 22);
             this.numericUpDownMagicResistanceCleaving.TabIndex = 246;
+            this.toolTip1.SetToolTip(this.numericUpDownMagicResistanceCleaving, resources.GetString("numericUpDownMagicResistanceCleaving.ToolTip"));
             this.numericUpDownMagicResistanceCleaving.Value = new decimal(new int[] {
             1,
             0,
@@ -2523,6 +2571,8 @@
             this.checkBoxMagicCripplingBlow.Name = "checkBoxMagicCripplingBlow";
             this.checkBoxMagicCripplingBlow.Size = new System.Drawing.Size(18, 17);
             this.checkBoxMagicCripplingBlow.TabIndex = 175;
+            this.toolTip1.SetToolTip(this.checkBoxMagicCripplingBlow, "Crippling Blow. Effectiveness determined by\r\nBase Weapon Skill. Multiplies ciritc" +
+        "al damage by a\r\nmaximum of x6. (max base-damage x7)\r\n\r\n");
             this.checkBoxMagicCripplingBlow.UseVisualStyleBackColor = true;
             this.checkBoxMagicCripplingBlow.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -2557,6 +2607,7 @@
             this.checkBoxMagicCriticalStrike.Name = "checkBoxMagicCriticalStrike";
             this.checkBoxMagicCriticalStrike.Size = new System.Drawing.Size(18, 17);
             this.checkBoxMagicCriticalStrike.TabIndex = 172;
+            this.toolTip1.SetToolTip(this.checkBoxMagicCriticalStrike, "Critical Strike. Effectiveness determined by\r\nBase Weapon Skill.\r\n\r\n");
             this.checkBoxMagicCriticalStrike.UseVisualStyleBackColor = true;
             this.checkBoxMagicCriticalStrike.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -2785,6 +2836,7 @@
             this.label124.TabIndex = 245;
             this.label124.Text = "Attack Mod";
             this.label124.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.toolTip1.SetToolTip(this.label124, "Determined by Attack Mod and Spells.");
             // 
             // labelEffectiveCritMultiplier
             // 
@@ -2805,10 +2857,11 @@
             this.label100.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label100.Location = new System.Drawing.Point(3, 4);
             this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(88, 16);
+            this.label100.Size = new System.Drawing.Size(124, 16);
             this.label100.TabIndex = 217;
-            this.label100.Text = "Attack Speed";
+            this.label100.Text = "Attacks per Second";
             this.label100.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.toolTip1.SetToolTip(this.label100, "Determined by Attack Animation, Quickness, \r\nand Buffed Weapon Speed");
             // 
             // label106
             // 
@@ -2821,6 +2874,8 @@
             this.label106.TabIndex = 225;
             this.label106.Text = "Crit Multiplier";
             this.label106.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.toolTip1.SetToolTip(this.label106, "If weapon has Crippling Blow, determined by Base Weapon Skill.\r\nIf weapon has Cru" +
+        "shing Blow, determined by Crushing Blow amount.");
             // 
             // labelEffectiveCritChance
             // 
@@ -2869,6 +2924,9 @@
             this.label103.TabIndex = 224;
             this.label103.Text = "Crit Chance";
             this.label103.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.toolTip1.SetToolTip(this.label103, "If weapon has Critical Strike, determined by Base Weapon Skill + Crit Chance Rati" +
+        "ng.\r\nIf weapon has Biting Strike, determined by Biting Strike amount + Crit Chan" +
+        "ce Rating.");
             // 
             // label102
             // 
@@ -2881,6 +2939,7 @@
             this.label102.TabIndex = 218;
             this.label102.Text = "Power Mod";
             this.label102.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.toolTip1.SetToolTip(this.label102, "Determined by Power Bar.");
             // 
             // labelEffectiveArmorMod
             // 
@@ -2913,10 +2972,12 @@
             this.label104.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label104.Location = new System.Drawing.Point(209, 79);
             this.label104.Name = "label104";
-            this.label104.Size = new System.Drawing.Size(81, 16);
+            this.label104.Size = new System.Drawing.Size(111, 16);
             this.label104.TabIndex = 223;
-            this.label104.Text = "Resist Rend";
+            this.label104.Text = "Resist Rend Mod";
             this.label104.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.toolTip1.SetToolTip(this.label104, "If weapon has Resistance Rending, determined by Base Weapon Skill.\r\nIf weapon has" +
+        " Resistance Cleaving, determined by Resistance Cleaving amount.");
             // 
             // labelEffectiveMaxDamage
             // 
@@ -2941,6 +3002,7 @@
             this.label.TabIndex = 219;
             this.label.Text = "Attack Skill";
             this.label.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.toolTip1.SetToolTip(this.label, "Determined by Buffed Weapon Skill, Rares,\r\nand Attack Mod.");
             // 
             // labelEffectiveAvgDamage
             // 
@@ -2961,10 +3023,12 @@
             this.label105.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label105.Location = new System.Drawing.Point(3, 79);
             this.label105.Name = "label105";
-            this.label105.Size = new System.Drawing.Size(79, 16);
+            this.label105.Size = new System.Drawing.Size(109, 16);
             this.label105.TabIndex = 222;
-            this.label105.Text = "Armor Rend";
+            this.label105.Text = "Armor Rend Mod";
             this.label105.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.toolTip1.SetToolTip(this.label105, "If weapon has Armor Rending, determined by Base Weapon Skill.\r\nIf weapon has Armo" +
+        "r Cleaving, determined by Highest Level Spell.");
             // 
             // labelEffectiveAttackSkill
             // 
@@ -2989,6 +3053,7 @@
             this.label99.TabIndex = 220;
             this.label99.Text = "Avg Damage";
             this.label99.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.toolTip1.SetToolTip(this.label99, "Determined by Min Damage, Max Damage, and\r\nSpells.");
             // 
             // label87
             // 
@@ -3001,6 +3066,7 @@
             this.label87.TabIndex = 221;
             this.label87.Text = "Max Damage";
             this.label87.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.toolTip1.SetToolTip(this.label87, "Determined by Max Damage and Spells.");
             // 
             // lblBuffedQuickness
             // 
@@ -3178,6 +3244,8 @@
             this.numericUpDownBuffedDeception.Name = "numericUpDownBuffedDeception";
             this.numericUpDownBuffedDeception.Size = new System.Drawing.Size(55, 22);
             this.numericUpDownBuffedDeception.TabIndex = 14;
+            this.toolTip1.SetToolTip(this.numericUpDownBuffedDeception, "Determines chance to perform a Sneak Attack from\r\nin front of an ememy. Highest c" +
+        "hance at 306 skill.");
             this.numericUpDownBuffedDeception.Value = new decimal(new int[] {
             10,
             0,
@@ -3210,6 +3278,7 @@
             this.numericUpDownBuffedRecklessness.Name = "numericUpDownBuffedRecklessness";
             this.numericUpDownBuffedRecklessness.Size = new System.Drawing.Size(55, 22);
             this.numericUpDownBuffedRecklessness.TabIndex = 10;
+            this.toolTip1.SetToolTip(this.numericUpDownBuffedRecklessness, "Determines Recklessness Rating, when compared\r\nto buffed weapon skill.");
             this.numericUpDownBuffedRecklessness.Value = new decimal(new int[] {
             10,
             0,
@@ -3247,6 +3316,8 @@
             this.comboBoxDeception.Size = new System.Drawing.Size(63, 24);
             this.comboBoxDeception.TabIndex = 15;
             this.comboBoxDeception.Text = "None";
+            this.toolTip1.SetToolTip(this.comboBoxDeception, "Trained: Provides of max proc chance of 10.\r\nSpec: Provides a max proc chance of " +
+        "15.");
             this.comboBoxDeception.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxDeception.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -3288,6 +3359,7 @@
             this.numericUpDownBuffedSneakAttack.Name = "numericUpDownBuffedSneakAttack";
             this.numericUpDownBuffedSneakAttack.Size = new System.Drawing.Size(55, 22);
             this.numericUpDownBuffedSneakAttack.TabIndex = 12;
+            this.toolTip1.SetToolTip(this.numericUpDownBuffedSneakAttack, "Determines Sneak Attack Rating, when compared\r\nto buffed weapon skill.");
             this.numericUpDownBuffedSneakAttack.Value = new decimal(new int[] {
             10,
             0,
@@ -3311,6 +3383,8 @@
             this.comboBoxRecklessness.Size = new System.Drawing.Size(63, 24);
             this.comboBoxRecklessness.TabIndex = 11;
             this.comboBoxRecklessness.Text = "None";
+            this.toolTip1.SetToolTip(this.comboBoxRecklessness, "Trained: Provides a max Damage Rating of 10.\r\nSpec: Provides a max Damage Rating " +
+        "of 20.");
             this.comboBoxRecklessness.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxRecklessness.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -3329,6 +3403,8 @@
             this.comboBoxSneakAttack.Size = new System.Drawing.Size(63, 24);
             this.comboBoxSneakAttack.TabIndex = 13;
             this.comboBoxSneakAttack.Text = "None";
+            this.toolTip1.SetToolTip(this.comboBoxSneakAttack, "Trained: Provides a max Damage Rating of 10.\r\nSpec: Provides a max Damage Rating " +
+        "of 20.");
             this.comboBoxSneakAttack.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxSneakAttack.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -3381,6 +3457,7 @@
             this.numericUpDownCritChanceRating.Name = "numericUpDownCritChanceRating";
             this.numericUpDownCritChanceRating.Size = new System.Drawing.Size(47, 22);
             this.numericUpDownCritChanceRating.TabIndex = 18;
+            this.toolTip1.SetToolTip(this.numericUpDownCritChanceRating, "Set to 1 if obtained the Eye of Remorselessness aug gem.");
             this.numericUpDownCritChanceRating.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
             this.numericUpDownCritChanceRating.VisibleChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -3412,6 +3489,8 @@
             this.numericUpDownCritDamageRating.Name = "numericUpDownCritDamageRating";
             this.numericUpDownCritDamageRating.Size = new System.Drawing.Size(47, 22);
             this.numericUpDownCritDamageRating.TabIndex = 17;
+            this.toolTip1.SetToolTip(this.numericUpDownCritDamageRating, "Enter your total Critical Damage Rating, minus \r\nany rating obtained from an equi" +
+        "ped weapon.\r\n");
             this.numericUpDownCritDamageRating.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
             this.numericUpDownCritDamageRating.VisibleChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -3456,6 +3535,8 @@
             this.numericUpDownDamageRating.Name = "numericUpDownDamageRating";
             this.numericUpDownDamageRating.Size = new System.Drawing.Size(47, 22);
             this.numericUpDownDamageRating.TabIndex = 16;
+            this.toolTip1.SetToolTip(this.numericUpDownDamageRating, "Enter your total Damage Rating, minus any rating \r\nobtained from an equiped weapo" +
+        "n.");
             this.numericUpDownDamageRating.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
             this.numericUpDownDamageRating.VisibleChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -3525,6 +3606,7 @@
             this.checkBoxSurgeOfDestruction.Size = new System.Drawing.Size(57, 20);
             this.checkBoxSurgeOfDestruction.TabIndex = 155;
             this.checkBoxSurgeOfDestruction.Text = "Dest";
+            this.toolTip1.SetToolTip(this.checkBoxSurgeOfDestruction, "Surge of Destruction");
             this.checkBoxSurgeOfDestruction.UseVisualStyleBackColor = true;
             this.checkBoxSurgeOfDestruction.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -3553,6 +3635,7 @@
             this.checkBoxSurgeOfCloakedInSkill.Size = new System.Drawing.Size(50, 20);
             this.checkBoxSurgeOfCloakedInSkill.TabIndex = 156;
             this.checkBoxSurgeOfCloakedInSkill.Text = "CiS";
+            this.toolTip1.SetToolTip(this.checkBoxSurgeOfCloakedInSkill, "Cloaked in Skill");
             this.checkBoxSurgeOfCloakedInSkill.UseVisualStyleBackColor = true;
             this.checkBoxSurgeOfCloakedInSkill.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -3658,12 +3741,12 @@
             // tableLayoutPanel10
             // 
             this.tableLayoutPanel10.ColumnCount = 6;
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.33F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.34F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.33F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.33F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.34F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.33F));
             this.tableLayoutPanel10.Controls.Add(this.labelCharacterSneakMod, 3, 2);
             this.tableLayoutPanel10.Controls.Add(this.label93, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.labelCharacterEffectiveMeleeSkill, 1, 0);
@@ -3689,7 +3772,6 @@
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel10.Size = new System.Drawing.Size(411, 121);
             this.tableLayoutPanel10.TabIndex = 1;
             // 
@@ -3698,7 +3780,7 @@
             this.labelCharacterSneakMod.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelCharacterSneakMod.AutoSize = true;
             this.labelCharacterSneakMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCharacterSneakMod.Location = new System.Drawing.Point(242, 92);
+            this.labelCharacterSneakMod.Location = new System.Drawing.Point(240, 92);
             this.labelCharacterSneakMod.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCharacterSneakMod.Name = "labelCharacterSneakMod";
             this.labelCharacterSneakMod.Size = new System.Drawing.Size(14, 16);
@@ -3722,7 +3804,7 @@
             this.labelCharacterEffectiveMeleeSkill.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelCharacterEffectiveMeleeSkill.AutoSize = true;
             this.labelCharacterEffectiveMeleeSkill.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCharacterEffectiveMeleeSkill.Location = new System.Drawing.Point(106, 12);
+            this.labelCharacterEffectiveMeleeSkill.Location = new System.Drawing.Point(104, 12);
             this.labelCharacterEffectiveMeleeSkill.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCharacterEffectiveMeleeSkill.Name = "labelCharacterEffectiveMeleeSkill";
             this.labelCharacterEffectiveMeleeSkill.Size = new System.Drawing.Size(14, 16);
@@ -3746,7 +3828,7 @@
             this.labelCharacterEffectiveMissileSkill.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelCharacterEffectiveMissileSkill.AutoSize = true;
             this.labelCharacterEffectiveMissileSkill.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCharacterEffectiveMissileSkill.Location = new System.Drawing.Point(242, 12);
+            this.labelCharacterEffectiveMissileSkill.Location = new System.Drawing.Point(240, 12);
             this.labelCharacterEffectiveMissileSkill.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCharacterEffectiveMissileSkill.Name = "labelCharacterEffectiveMissileSkill";
             this.labelCharacterEffectiveMissileSkill.Size = new System.Drawing.Size(14, 16);
@@ -3758,7 +3840,7 @@
             this.labelCharacterMeleeMod.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelCharacterMeleeMod.AutoSize = true;
             this.labelCharacterMeleeMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCharacterMeleeMod.Location = new System.Drawing.Point(106, 52);
+            this.labelCharacterMeleeMod.Location = new System.Drawing.Point(104, 52);
             this.labelCharacterMeleeMod.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCharacterMeleeMod.Name = "labelCharacterMeleeMod";
             this.labelCharacterMeleeMod.Size = new System.Drawing.Size(14, 16);
@@ -3782,7 +3864,7 @@
             this.labelCharacterEffectiveMagicSkill.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelCharacterEffectiveMagicSkill.AutoSize = true;
             this.labelCharacterEffectiveMagicSkill.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCharacterEffectiveMagicSkill.Location = new System.Drawing.Point(379, 12);
+            this.labelCharacterEffectiveMagicSkill.Location = new System.Drawing.Point(377, 12);
             this.labelCharacterEffectiveMagicSkill.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCharacterEffectiveMagicSkill.Name = "labelCharacterEffectiveMagicSkill";
             this.labelCharacterEffectiveMagicSkill.Size = new System.Drawing.Size(14, 16);
@@ -3799,7 +3881,7 @@
             this.label98.Size = new System.Drawing.Size(70, 16);
             this.label98.TabIndex = 229;
             this.label98.Text = "Sneak Rat";
-            this.label98.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.label98.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label94
             // 
@@ -3807,7 +3889,7 @@
             this.label94.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label94.Location = new System.Drawing.Point(3, 44);
             this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(84, 32);
+            this.label94.Size = new System.Drawing.Size(80, 32);
             this.label94.TabIndex = 222;
             this.label94.Text = "Melee Mod";
             this.label94.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3829,7 +3911,7 @@
             this.labelCharacterRecklessnessMod.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelCharacterRecklessnessMod.AutoSize = true;
             this.labelCharacterRecklessnessMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCharacterRecklessnessMod.Location = new System.Drawing.Point(106, 92);
+            this.labelCharacterRecklessnessMod.Location = new System.Drawing.Point(104, 92);
             this.labelCharacterRecklessnessMod.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCharacterRecklessnessMod.Name = "labelCharacterRecklessnessMod";
             this.labelCharacterRecklessnessMod.Size = new System.Drawing.Size(14, 16);
@@ -3853,7 +3935,7 @@
             this.labelCharacterDeceptionMod.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelCharacterDeceptionMod.AutoSize = true;
             this.labelCharacterDeceptionMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCharacterDeceptionMod.Location = new System.Drawing.Point(379, 92);
+            this.labelCharacterDeceptionMod.Location = new System.Drawing.Point(377, 92);
             this.labelCharacterDeceptionMod.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCharacterDeceptionMod.Name = "labelCharacterDeceptionMod";
             this.labelCharacterDeceptionMod.Size = new System.Drawing.Size(14, 16);
@@ -3877,7 +3959,7 @@
             this.labelCharacterSpellMod.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelCharacterSpellMod.AutoSize = true;
             this.labelCharacterSpellMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCharacterSpellMod.Location = new System.Drawing.Point(379, 52);
+            this.labelCharacterSpellMod.Location = new System.Drawing.Point(377, 52);
             this.labelCharacterSpellMod.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCharacterSpellMod.Name = "labelCharacterSpellMod";
             this.labelCharacterSpellMod.Size = new System.Drawing.Size(14, 16);
@@ -3900,7 +3982,7 @@
             this.labelCharacterMissileMod.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelCharacterMissileMod.AutoSize = true;
             this.labelCharacterMissileMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCharacterMissileMod.Location = new System.Drawing.Point(242, 52);
+            this.labelCharacterMissileMod.Location = new System.Drawing.Point(240, 52);
             this.labelCharacterMissileMod.Name = "labelCharacterMissileMod";
             this.labelCharacterMissileMod.Size = new System.Drawing.Size(14, 16);
             this.labelCharacterMissileMod.TabIndex = 241;
@@ -3991,6 +4073,7 @@
             this.numericUpDownBuffedQuickness.Name = "numericUpDownBuffedQuickness";
             this.numericUpDownBuffedQuickness.Size = new System.Drawing.Size(49, 22);
             this.numericUpDownBuffedQuickness.TabIndex = 9;
+            this.toolTip1.SetToolTip(this.numericUpDownBuffedQuickness, "Determines weapon Attack Speed, alongside\r\nbuffed weapon speed and power bar.");
             this.numericUpDownBuffedQuickness.Value = new decimal(new int[] {
             10,
             0,
@@ -4037,6 +4120,8 @@
             this.numericUpDownBuffedStrength.Name = "numericUpDownBuffedStrength";
             this.numericUpDownBuffedStrength.Size = new System.Drawing.Size(49, 22);
             this.numericUpDownBuffedStrength.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.numericUpDownBuffedStrength, "Determines non-finesse Melee Damage Modifier and \r\nthrown weapon Missile Damage M" +
+        "odifier.");
             this.numericUpDownBuffedStrength.Value = new decimal(new int[] {
             10,
             0,
@@ -4069,6 +4154,8 @@
             this.numericUpDownBuffedCoordination.Name = "numericUpDownBuffedCoordination";
             this.numericUpDownBuffedCoordination.Size = new System.Drawing.Size(49, 22);
             this.numericUpDownBuffedCoordination.TabIndex = 8;
+            this.toolTip1.SetToolTip(this.numericUpDownBuffedCoordination, "Determines non-thrown weapon Missile Damage Modifier and\r\nfinesse weapon Melee Da" +
+        "mage Modifier.\r\n");
             this.numericUpDownBuffedCoordination.Value = new decimal(new int[] {
             10,
             0,
@@ -4090,7 +4177,7 @@
             this.groupBox4.Size = new System.Drawing.Size(265, 116);
             this.groupBox4.TabIndex = 216;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Weapon Skills (base/buffed)";
+            this.groupBox4.Text = "Base/Buffed Weapon Skills";
             // 
             // tableLayoutPanel24
             // 
@@ -4187,12 +4274,13 @@
             this.numericUpDownBuffedMeleeSkill.Name = "numericUpDownBuffedMeleeSkill";
             this.numericUpDownBuffedMeleeSkill.Size = new System.Drawing.Size(49, 22);
             this.numericUpDownBuffedMeleeSkill.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.numericUpDownBuffedMeleeSkill, "Determines hit chance on enemies. Also effects\r\nRecklessness and Sneak Attack.");
             this.numericUpDownBuffedMeleeSkill.Value = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDownBuffedMeleeSkill.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
+            this.numericUpDownBuffedMeleeSkill.ValueChanged += new System.EventHandler(this.OnAdjustBuffedWeaponSkills);
             // 
             // numericUpDownBuffedMissileSkill
             // 
@@ -4218,13 +4306,13 @@
             this.numericUpDownBuffedMissileSkill.Name = "numericUpDownBuffedMissileSkill";
             this.numericUpDownBuffedMissileSkill.Size = new System.Drawing.Size(49, 22);
             this.numericUpDownBuffedMissileSkill.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.numericUpDownBuffedMissileSkill, "Determines hit chance on enemies. Also effects\r\nRecklessness and Sneak Attack.\r\n");
             this.numericUpDownBuffedMissileSkill.Value = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDownBuffedMissileSkill.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
-            this.numericUpDownBuffedMissileSkill.VisibleChanged += new System.EventHandler(this.CalculateFinalDps);
+            this.numericUpDownBuffedMissileSkill.ValueChanged += new System.EventHandler(this.OnAdjustBuffedWeaponSkills);
             // 
             // numericUpDownBuffedMagicSkill
             // 
@@ -4250,13 +4338,14 @@
             this.numericUpDownBuffedMagicSkill.Name = "numericUpDownBuffedMagicSkill";
             this.numericUpDownBuffedMagicSkill.Size = new System.Drawing.Size(49, 22);
             this.numericUpDownBuffedMagicSkill.TabIndex = 6;
+            this.toolTip1.SetToolTip(this.numericUpDownBuffedMagicSkill, "Determines hit chance on enemies. Also effects\r\nSneak Attack and Magic Damage Mod" +
+        "ifier.\r\n");
             this.numericUpDownBuffedMagicSkill.Value = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDownBuffedMagicSkill.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
-            this.numericUpDownBuffedMagicSkill.VisibleChanged += new System.EventHandler(this.CalculateFinalDps);
+            this.numericUpDownBuffedMagicSkill.ValueChanged += new System.EventHandler(this.OnAdjustBuffedWeaponSkills);
             // 
             // numericUpDownBaseMeleeSkill
             // 
@@ -4282,12 +4371,13 @@
             this.numericUpDownBaseMeleeSkill.Name = "numericUpDownBaseMeleeSkill";
             this.numericUpDownBaseMeleeSkill.Size = new System.Drawing.Size(53, 22);
             this.numericUpDownBaseMeleeSkill.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.numericUpDownBaseMeleeSkill, "Determines the effectiveness of AR/RR/CS/CB.");
             this.numericUpDownBaseMeleeSkill.Value = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDownBaseMeleeSkill.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
+            this.numericUpDownBaseMeleeSkill.ValueChanged += new System.EventHandler(this.OnAdjustBaseWeaponSkills);
             // 
             // numericUpDownBaseMissileSkill
             // 
@@ -4313,12 +4403,13 @@
             this.numericUpDownBaseMissileSkill.Name = "numericUpDownBaseMissileSkill";
             this.numericUpDownBaseMissileSkill.Size = new System.Drawing.Size(53, 22);
             this.numericUpDownBaseMissileSkill.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.numericUpDownBaseMissileSkill, "Determines the effectiveness of AR/RR/CS/CB.");
             this.numericUpDownBaseMissileSkill.Value = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDownBaseMissileSkill.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
+            this.numericUpDownBaseMissileSkill.ValueChanged += new System.EventHandler(this.OnAdjustBaseWeaponSkills);
             // 
             // numericUpDownBaseMagicSkill
             // 
@@ -4344,13 +4435,13 @@
             this.numericUpDownBaseMagicSkill.Name = "numericUpDownBaseMagicSkill";
             this.numericUpDownBaseMagicSkill.Size = new System.Drawing.Size(53, 22);
             this.numericUpDownBaseMagicSkill.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.numericUpDownBaseMagicSkill, "Determines the effectiveness of RR/CS/CB.\r\n");
             this.numericUpDownBaseMagicSkill.Value = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDownBaseMagicSkill.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
-            this.numericUpDownBaseMagicSkill.VisibleChanged += new System.EventHandler(this.CalculateFinalDps);
+            this.numericUpDownBaseMagicSkill.ValueChanged += new System.EventHandler(this.OnAdjustBaseWeaponSkills);
             // 
             // checkBoxFinesse
             // 
@@ -4507,8 +4598,8 @@
             this.numericUpDownDestructive.Name = "numericUpDownDestructive";
             this.numericUpDownDestructive.Size = new System.Drawing.Size(48, 21);
             this.numericUpDownDestructive.TabIndex = 190;
-            this.toolTip1.SetToolTip(this.numericUpDownDestructive, "Base amount is 60.\r\nWith a tinked 18% wand, is 80.\r\nWith Damage Rating:\r\n-20 is 9" +
-        "6.\r\n-40 is 112. \r\n-60 is 128.");
+            this.toolTip1.SetToolTip(this.numericUpDownDestructive, "Damage per tick. Base amount is 60.\r\n\r\nWith a 27% wand = 80.\r\nWith a 27% wand + d" +
+        "amage rating of:\r\n-20 = 96.\r\n-40 = 112. \r\n-60 = 128.\r\n");
             this.numericUpDownDestructive.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
             // label28
@@ -4561,8 +4652,8 @@
             this.numericUpDownCorrosion.Name = "numericUpDownCorrosion";
             this.numericUpDownCorrosion.Size = new System.Drawing.Size(48, 21);
             this.numericUpDownCorrosion.TabIndex = 190;
-            this.toolTip1.SetToolTip(this.numericUpDownCorrosion, "Base amount is 149.\r\nWith a tinked 18% wand is 201.\r\nWith Damage Rating:\r\n-20 is " +
-        "241.\r\n-40 is 281.\r\n-60 is 321.\r\n\r\n\r\n");
+            this.toolTip1.SetToolTip(this.numericUpDownCorrosion, "Damage per tick. Base amount is 149.\r\n\r\nWith a 27% wand = 201.\r\nWith a 27% wand +" +
+        " damage rating of:\r\n-20 = 241\r\n-40 = 281. \r\n-60 = 321");
             this.numericUpDownCorrosion.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
             // numericUpDownCorruption
@@ -4579,8 +4670,8 @@
             this.numericUpDownCorruption.Name = "numericUpDownCorruption";
             this.numericUpDownCorruption.Size = new System.Drawing.Size(48, 21);
             this.numericUpDownCorruption.TabIndex = 189;
-            this.toolTip1.SetToolTip(this.numericUpDownCorruption, "Base amount is 60.\r\nWith a tinked 18% wand, is 80.\r\nWith Damage Rating:\r\n-20 is 9" +
-        "6.\r\n-40 is 112. \r\n-60 is 128.");
+            this.toolTip1.SetToolTip(this.numericUpDownCorruption, "Damage per tick. Base amount is 60.\r\n\r\nWith a 27% wand = 80.\r\nWith a 27% wand + d" +
+        "amage rating of:\r\n-20 = 96.\r\n-40 = 112. \r\n-60 = 128.");
             this.numericUpDownCorruption.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
             // groupBox1
@@ -4667,6 +4758,7 @@
             this.numericUpDownEnemyMeleeDefense.Name = "numericUpDownEnemyMeleeDefense";
             this.numericUpDownEnemyMeleeDefense.Size = new System.Drawing.Size(54, 22);
             this.numericUpDownEnemyMeleeDefense.TabIndex = 224;
+            this.toolTip1.SetToolTip(this.numericUpDownEnemyMeleeDefense, "Melee Defense amount of the enemy.");
             this.numericUpDownEnemyMeleeDefense.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
             this.numericUpDownEnemyMeleeDefense.VisibleChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -4703,6 +4795,7 @@
             this.numericUpDownEnemyMissileDefense.Name = "numericUpDownEnemyMissileDefense";
             this.numericUpDownEnemyMissileDefense.Size = new System.Drawing.Size(54, 22);
             this.numericUpDownEnemyMissileDefense.TabIndex = 225;
+            this.toolTip1.SetToolTip(this.numericUpDownEnemyMissileDefense, "Missile Defense amount of the enemy.");
             this.numericUpDownEnemyMissileDefense.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
             this.numericUpDownEnemyMissileDefense.VisibleChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -4739,6 +4832,7 @@
             this.numericUpDownEnemyMagicDefense.Name = "numericUpDownEnemyMagicDefense";
             this.numericUpDownEnemyMagicDefense.Size = new System.Drawing.Size(55, 22);
             this.numericUpDownEnemyMagicDefense.TabIndex = 226;
+            this.toolTip1.SetToolTip(this.numericUpDownEnemyMagicDefense, "Magic Defense amount of the enemy,");
             this.numericUpDownEnemyMagicDefense.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
             this.numericUpDownEnemyMagicDefense.VisibleChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -4791,6 +4885,9 @@
             this.numericUpDownEnemyShieldResist.Name = "numericUpDownEnemyShieldResist";
             this.numericUpDownEnemyShieldResist.Size = new System.Drawing.Size(75, 22);
             this.numericUpDownEnemyShieldResist.TabIndex = 230;
+            this.toolTip1.SetToolTip(this.numericUpDownEnemyShieldResist, "Buffed Resistance Level of the enemy\'s shield.\r\n(-2.0 to 2.0)\r\n\r\nFind this value " +
+        "by dividing a shield\'s effective resistance\r\nlevel towards a damage type by its " +
+        "armor level.");
             this.numericUpDownEnemyShieldResist.Value = new decimal(new int[] {
             100,
             0,
@@ -4831,6 +4928,7 @@
             this.numericUpDownEnemyShieldAL.Name = "numericUpDownEnemyShieldAL";
             this.numericUpDownEnemyShieldAL.Size = new System.Drawing.Size(73, 22);
             this.numericUpDownEnemyShieldAL.TabIndex = 227;
+            this.toolTip1.SetToolTip(this.numericUpDownEnemyShieldAL, "Buffed Shield Level of the enemy\'s shield.");
             this.numericUpDownEnemyShieldAL.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
             // label111
@@ -4880,6 +4978,7 @@
             this.numericUpDownEnemyArmor.Name = "numericUpDownEnemyArmor";
             this.numericUpDownEnemyArmor.Size = new System.Drawing.Size(73, 22);
             this.numericUpDownEnemyArmor.TabIndex = 222;
+            this.toolTip1.SetToolTip(this.numericUpDownEnemyArmor, "Armor Level of the enemy, matching the\r\ndamage type of the weapon used.");
             this.numericUpDownEnemyArmor.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
             this.numericUpDownEnemyArmor.VisibleChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -4903,6 +5002,7 @@
             this.numericUpDownEnemyResistance.Name = "numericUpDownEnemyResistance";
             this.numericUpDownEnemyResistance.Size = new System.Drawing.Size(75, 22);
             this.numericUpDownEnemyResistance.TabIndex = 223;
+            this.toolTip1.SetToolTip(this.numericUpDownEnemyResistance, "Resistance level of the enemy, matching\r\nthe damage type of the weapon used.");
             this.numericUpDownEnemyResistance.Value = new decimal(new int[] {
             1,
             0,
@@ -4977,6 +5077,7 @@
             this.comboBoxEnemyResistanceLure.Size = new System.Drawing.Size(56, 23);
             this.comboBoxEnemyResistanceLure.TabIndex = 185;
             this.comboBoxEnemyResistanceLure.Text = "0";
+            this.toolTip1.SetToolTip(this.comboBoxEnemyResistanceLure, "Level of Resistance Lure spell used on the enemy.");
             this.comboBoxEnemyResistanceLure.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
             // label143
@@ -5013,6 +5114,7 @@
             this.comboBoxEnemyBrittlemail.Size = new System.Drawing.Size(54, 23);
             this.comboBoxEnemyBrittlemail.TabIndex = 183;
             this.comboBoxEnemyBrittlemail.Text = "0";
+            this.toolTip1.SetToolTip(this.comboBoxEnemyBrittlemail, "Level of Brittlemail spell used on the enemy.");
             this.comboBoxEnemyBrittlemail.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
             // label144
@@ -5109,6 +5211,7 @@
             this.comboBoxEnemyImperil.Size = new System.Drawing.Size(54, 23);
             this.comboBoxEnemyImperil.TabIndex = 183;
             this.comboBoxEnemyImperil.Text = "0";
+            this.toolTip1.SetToolTip(this.comboBoxEnemyImperil, "Level of Imperil spell used on the enemy.");
             this.comboBoxEnemyImperil.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxEnemyImperil.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -5145,6 +5248,7 @@
             this.comboBoxEnemyVuln.Size = new System.Drawing.Size(56, 23);
             this.comboBoxEnemyVuln.TabIndex = 185;
             this.comboBoxEnemyVuln.Text = "0";
+            this.toolTip1.SetToolTip(this.comboBoxEnemyVuln, "Level of Resistance Vuln spell used on the enemy.");
             this.comboBoxEnemyVuln.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxEnemyVuln.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -5180,28 +5284,25 @@
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel11.Controls.Add(this.label139, 2, 3);
             this.tableLayoutPanel11.Controls.Add(this.label138, 0, 3);
-            this.tableLayoutPanel11.Controls.Add(this.label137, 2, 2);
             this.tableLayoutPanel11.Controls.Add(this.label136, 0, 2);
-            this.tableLayoutPanel11.Controls.Add(this.label135, 2, 1);
             this.tableLayoutPanel11.Controls.Add(this.label134, 0, 1);
-            this.tableLayoutPanel11.Controls.Add(this.label133, 2, 0);
-            this.tableLayoutPanel11.Controls.Add(this.comboBoxEnemyWeakness, 3, 0);
             this.tableLayoutPanel11.Controls.Add(this.comboBoxEnemyVulnerability, 1, 0);
             this.tableLayoutPanel11.Controls.Add(this.comboBoxEnemyDefenselessness, 1, 1);
-            this.tableLayoutPanel11.Controls.Add(this.comboBoxEnemyFeeblemind, 3, 4);
             this.tableLayoutPanel11.Controls.Add(this.comboBoxEnemyMagicYield, 1, 2);
             this.tableLayoutPanel11.Controls.Add(this.comboBoxEnemyUnbalancingAssault, 1, 3);
-            this.tableLayoutPanel11.Controls.Add(this.comboBoxEnemyClumsiness, 3, 1);
-            this.tableLayoutPanel11.Controls.Add(this.comboBoxEnemyBafflement, 3, 3);
-            this.tableLayoutPanel11.Controls.Add(this.comboBoxEnemySlowness, 3, 2);
             this.tableLayoutPanel11.Controls.Add(this.label127, 0, 0);
-            this.tableLayoutPanel11.Controls.Add(this.label140, 2, 4);
+            this.tableLayoutPanel11.Controls.Add(this.label135, 2, 0);
+            this.tableLayoutPanel11.Controls.Add(this.comboBoxEnemyClumsiness, 3, 0);
+            this.tableLayoutPanel11.Controls.Add(this.label137, 2, 1);
+            this.tableLayoutPanel11.Controls.Add(this.comboBoxEnemySlowness, 3, 1);
+            this.tableLayoutPanel11.Controls.Add(this.label139, 2, 2);
+            this.tableLayoutPanel11.Controls.Add(this.comboBoxEnemyBafflement, 3, 2);
+            this.tableLayoutPanel11.Controls.Add(this.label140, 2, 3);
+            this.tableLayoutPanel11.Controls.Add(this.comboBoxEnemyFeeblemind, 3, 3);
             this.tableLayoutPanel11.Location = new System.Drawing.Point(4, 16);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
-            this.tableLayoutPanel11.RowCount = 5;
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel11.RowCount = 4;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -5214,7 +5315,7 @@
             this.label139.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label139.AutoSize = true;
             this.label139.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label139.Location = new System.Drawing.Point(201, 79);
+            this.label139.Location = new System.Drawing.Point(201, 69);
             this.label139.Margin = new System.Windows.Forms.Padding(0);
             this.label139.Name = "label139";
             this.label139.Size = new System.Drawing.Size(70, 16);
@@ -5226,7 +5327,7 @@
             this.label138.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label138.AutoSize = true;
             this.label138.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label138.Location = new System.Drawing.Point(0, 79);
+            this.label138.Location = new System.Drawing.Point(0, 101);
             this.label138.Margin = new System.Windows.Forms.Padding(0);
             this.label138.Name = "label138";
             this.label138.Size = new System.Drawing.Size(128, 16);
@@ -5238,7 +5339,7 @@
             this.label137.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label137.AutoSize = true;
             this.label137.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label137.Location = new System.Drawing.Point(201, 54);
+            this.label137.Location = new System.Drawing.Point(201, 38);
             this.label137.Margin = new System.Windows.Forms.Padding(0);
             this.label137.Name = "label137";
             this.label137.Size = new System.Drawing.Size(65, 16);
@@ -5250,7 +5351,7 @@
             this.label136.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label136.AutoSize = true;
             this.label136.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label136.Location = new System.Drawing.Point(0, 54);
+            this.label136.Location = new System.Drawing.Point(0, 69);
             this.label136.Margin = new System.Windows.Forms.Padding(0);
             this.label136.Name = "label136";
             this.label136.Size = new System.Drawing.Size(78, 16);
@@ -5262,7 +5363,7 @@
             this.label135.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label135.AutoSize = true;
             this.label135.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label135.Location = new System.Drawing.Point(201, 29);
+            this.label135.Location = new System.Drawing.Point(201, 7);
             this.label135.Margin = new System.Windows.Forms.Padding(0);
             this.label135.Name = "label135";
             this.label135.Size = new System.Drawing.Size(76, 16);
@@ -5274,48 +5375,12 @@
             this.label134.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label134.AutoSize = true;
             this.label134.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label134.Location = new System.Drawing.Point(0, 29);
+            this.label134.Location = new System.Drawing.Point(0, 38);
             this.label134.Margin = new System.Windows.Forms.Padding(0);
             this.label134.Name = "label134";
             this.label134.Size = new System.Drawing.Size(112, 16);
             this.label134.TabIndex = 217;
             this.label134.Text = "Defenselessness";
-            // 
-            // label133
-            // 
-            this.label133.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label133.AutoSize = true;
-            this.label133.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label133.Location = new System.Drawing.Point(201, 4);
-            this.label133.Margin = new System.Windows.Forms.Padding(0);
-            this.label133.Name = "label133";
-            this.label133.Size = new System.Drawing.Size(72, 16);
-            this.label133.TabIndex = 216;
-            this.label133.Text = "Weakness";
-            // 
-            // comboBoxEnemyWeakness
-            // 
-            this.comboBoxEnemyWeakness.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBoxEnemyWeakness.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxEnemyWeakness.FormattingEnabled = true;
-            this.comboBoxEnemyWeakness.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8"});
-            this.comboBoxEnemyWeakness.Location = new System.Drawing.Point(345, 2);
-            this.comboBoxEnemyWeakness.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBoxEnemyWeakness.Name = "comboBoxEnemyWeakness";
-            this.comboBoxEnemyWeakness.Size = new System.Drawing.Size(56, 23);
-            this.comboBoxEnemyWeakness.TabIndex = 193;
-            this.comboBoxEnemyWeakness.Text = "0";
-            this.comboBoxEnemyWeakness.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
-            this.comboBoxEnemyWeakness.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
             // comboBoxEnemyVulnerability
             // 
@@ -5332,12 +5397,13 @@
             "6",
             "7",
             "8"});
-            this.comboBoxEnemyVulnerability.Location = new System.Drawing.Point(144, 2);
+            this.comboBoxEnemyVulnerability.Location = new System.Drawing.Point(144, 4);
             this.comboBoxEnemyVulnerability.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxEnemyVulnerability.Name = "comboBoxEnemyVulnerability";
             this.comboBoxEnemyVulnerability.Size = new System.Drawing.Size(54, 23);
             this.comboBoxEnemyVulnerability.TabIndex = 190;
             this.comboBoxEnemyVulnerability.Text = "0";
+            this.toolTip1.SetToolTip(this.comboBoxEnemyVulnerability, "Level of Vulnerability spell used on the enemy.");
             this.comboBoxEnemyVulnerability.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxEnemyVulnerability.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -5356,12 +5422,13 @@
             "6",
             "7",
             "8"});
-            this.comboBoxEnemyDefenselessness.Location = new System.Drawing.Point(144, 27);
+            this.comboBoxEnemyDefenselessness.Location = new System.Drawing.Point(144, 35);
             this.comboBoxEnemyDefenselessness.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxEnemyDefenselessness.Name = "comboBoxEnemyDefenselessness";
             this.comboBoxEnemyDefenselessness.Size = new System.Drawing.Size(54, 23);
             this.comboBoxEnemyDefenselessness.TabIndex = 196;
             this.comboBoxEnemyDefenselessness.Text = "0";
+            this.toolTip1.SetToolTip(this.comboBoxEnemyDefenselessness, "Level of Defenselessness spell used on the enemy.");
             this.comboBoxEnemyDefenselessness.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxEnemyDefenselessness.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -5380,12 +5447,13 @@
             "6",
             "7",
             "8"});
-            this.comboBoxEnemyFeeblemind.Location = new System.Drawing.Point(345, 102);
+            this.comboBoxEnemyFeeblemind.Location = new System.Drawing.Point(345, 97);
             this.comboBoxEnemyFeeblemind.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxEnemyFeeblemind.Name = "comboBoxEnemyFeeblemind";
             this.comboBoxEnemyFeeblemind.Size = new System.Drawing.Size(56, 23);
             this.comboBoxEnemyFeeblemind.TabIndex = 214;
             this.comboBoxEnemyFeeblemind.Text = "0";
+            this.toolTip1.SetToolTip(this.comboBoxEnemyFeeblemind, "Level of Feeblemind spell used on the enemy.");
             this.comboBoxEnemyFeeblemind.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxEnemyFeeblemind.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -5404,12 +5472,13 @@
             "6",
             "7",
             "8"});
-            this.comboBoxEnemyMagicYield.Location = new System.Drawing.Point(144, 52);
+            this.comboBoxEnemyMagicYield.Location = new System.Drawing.Point(144, 66);
             this.comboBoxEnemyMagicYield.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxEnemyMagicYield.Name = "comboBoxEnemyMagicYield";
             this.comboBoxEnemyMagicYield.Size = new System.Drawing.Size(54, 23);
             this.comboBoxEnemyMagicYield.TabIndex = 202;
             this.comboBoxEnemyMagicYield.Text = "0";
+            this.toolTip1.SetToolTip(this.comboBoxEnemyMagicYield, "Level of Magic Yield spell used on the enemy.");
             this.comboBoxEnemyMagicYield.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxEnemyMagicYield.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -5422,12 +5491,13 @@
             "0",
             "-10",
             "-20"});
-            this.comboBoxEnemyUnbalancingAssault.Location = new System.Drawing.Point(144, 77);
+            this.comboBoxEnemyUnbalancingAssault.Location = new System.Drawing.Point(144, 97);
             this.comboBoxEnemyUnbalancingAssault.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxEnemyUnbalancingAssault.Name = "comboBoxEnemyUnbalancingAssault";
             this.comboBoxEnemyUnbalancingAssault.Size = new System.Drawing.Size(54, 23);
             this.comboBoxEnemyUnbalancingAssault.TabIndex = 208;
             this.comboBoxEnemyUnbalancingAssault.Text = "0";
+            this.toolTip1.SetToolTip(this.comboBoxEnemyUnbalancingAssault, "Applied from Dirty Fighting:\r\n-10 if trained.\r\n-20 if spec.");
             this.comboBoxEnemyUnbalancingAssault.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxEnemyUnbalancingAssault.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -5446,12 +5516,13 @@
             "6",
             "7",
             "8"});
-            this.comboBoxEnemyClumsiness.Location = new System.Drawing.Point(345, 27);
+            this.comboBoxEnemyClumsiness.Location = new System.Drawing.Point(345, 4);
             this.comboBoxEnemyClumsiness.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxEnemyClumsiness.Name = "comboBoxEnemyClumsiness";
             this.comboBoxEnemyClumsiness.Size = new System.Drawing.Size(56, 23);
             this.comboBoxEnemyClumsiness.TabIndex = 199;
             this.comboBoxEnemyClumsiness.Text = "0";
+            this.toolTip1.SetToolTip(this.comboBoxEnemyClumsiness, "Level of Clumsiness spell used on the enemy.");
             this.comboBoxEnemyClumsiness.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxEnemyClumsiness.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -5470,12 +5541,13 @@
             "6",
             "7",
             "8"});
-            this.comboBoxEnemyBafflement.Location = new System.Drawing.Point(345, 77);
+            this.comboBoxEnemyBafflement.Location = new System.Drawing.Point(345, 66);
             this.comboBoxEnemyBafflement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxEnemyBafflement.Name = "comboBoxEnemyBafflement";
             this.comboBoxEnemyBafflement.Size = new System.Drawing.Size(56, 23);
             this.comboBoxEnemyBafflement.TabIndex = 211;
             this.comboBoxEnemyBafflement.Text = "0";
+            this.toolTip1.SetToolTip(this.comboBoxEnemyBafflement, "Level of Bafflement spell used on the enemy.");
             this.comboBoxEnemyBafflement.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxEnemyBafflement.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -5494,12 +5566,13 @@
             "6",
             "7",
             "8"});
-            this.comboBoxEnemySlowness.Location = new System.Drawing.Point(345, 52);
+            this.comboBoxEnemySlowness.Location = new System.Drawing.Point(345, 35);
             this.comboBoxEnemySlowness.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxEnemySlowness.Name = "comboBoxEnemySlowness";
             this.comboBoxEnemySlowness.Size = new System.Drawing.Size(56, 23);
             this.comboBoxEnemySlowness.TabIndex = 205;
             this.comboBoxEnemySlowness.Text = "0";
+            this.toolTip1.SetToolTip(this.comboBoxEnemySlowness, "Level of Slowness spell used on the enemy.");
             this.comboBoxEnemySlowness.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxEnemySlowness.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -5508,7 +5581,7 @@
             this.label127.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label127.AutoSize = true;
             this.label127.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label127.Location = new System.Drawing.Point(0, 4);
+            this.label127.Location = new System.Drawing.Point(0, 7);
             this.label127.Margin = new System.Windows.Forms.Padding(0);
             this.label127.Name = "label127";
             this.label127.Size = new System.Drawing.Size(80, 16);
@@ -5520,7 +5593,7 @@
             this.label140.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label140.AutoSize = true;
             this.label140.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label140.Location = new System.Drawing.Point(201, 104);
+            this.label140.Location = new System.Drawing.Point(201, 101);
             this.label140.Margin = new System.Windows.Forms.Padding(0);
             this.label140.Name = "label140";
             this.label140.Size = new System.Drawing.Size(79, 16);
@@ -5589,6 +5662,7 @@
             this.label84.TabIndex = 217;
             this.label84.Text = "Armor";
             this.label84.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.toolTip1.SetToolTip(this.label84, "(BaseArmor - Imperil) x ArmorRendMod");
             // 
             // labelEnemyEffectiveArmor
             // 
@@ -5602,6 +5676,7 @@
             this.labelEnemyEffectiveArmor.TabIndex = 236;
             this.labelEnemyEffectiveArmor.Text = "0";
             this.labelEnemyEffectiveArmor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.labelEnemyEffectiveArmor, "(BaseArmor - Imperil) x ArmorRendMod");
             // 
             // label129
             // 
@@ -5614,6 +5689,8 @@
             this.label129.TabIndex = 246;
             this.label129.Text = "Armor Mod";
             this.label129.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.toolTip1.SetToolTip(this.label129, "If Armor is positive:  200 / 3 / (Armor + 200 / 3)\r\nIf Armor is negative: 1 - Arm" +
+        "or / (200 / 3)");
             // 
             // labelEnemyArmorMod
             // 
@@ -5627,6 +5704,8 @@
             this.labelEnemyArmorMod.TabIndex = 243;
             this.labelEnemyArmorMod.Text = "0";
             this.labelEnemyArmorMod.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.labelEnemyArmorMod, "If Armor is positive:  200 / 3 / (Armor + 200 / 3)\r\nIf Armor is negative: 1 - Arm" +
+        "or / (200 / 3)");
             // 
             // label123
             // 
@@ -5639,6 +5718,7 @@
             this.label123.TabIndex = 241;
             this.label123.Text = "Shield";
             this.label123.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.toolTip1.SetToolTip(this.label123, "(BaseShield - Brittlemail) x ShieldResist");
             // 
             // labelEnemyEffectiveShield
             // 
@@ -5652,6 +5732,7 @@
             this.labelEnemyEffectiveShield.TabIndex = 242;
             this.labelEnemyEffectiveShield.Text = "0";
             this.labelEnemyEffectiveShield.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.labelEnemyEffectiveShield, "(BaseShield - Brittlemail) x ShieldResist");
             // 
             // label82
             // 
@@ -5664,6 +5745,7 @@
             this.label82.TabIndex = 218;
             this.label82.Text = "Resist";
             this.label82.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.toolTip1.SetToolTip(this.label82, "Resist x ResistanceVuln");
             // 
             // labelEnemyEffectiveResistance
             // 
@@ -5677,6 +5759,7 @@
             this.labelEnemyEffectiveResistance.TabIndex = 237;
             this.labelEnemyEffectiveResistance.Text = "0";
             this.labelEnemyEffectiveResistance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.labelEnemyEffectiveResistance, "Resist x ResistanceVuln");
             // 
             // label131
             // 
@@ -5689,6 +5772,8 @@
             this.label131.TabIndex = 247;
             this.label131.Text = "Shield Mod";
             this.label131.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.toolTip1.SetToolTip(this.label131, "If Shield is positive:  200 / 3 / (Shield + 200 / 3)\r\nIf Shield is negative: 1 - " +
+        "Shield / (200 / 3)");
             // 
             // labelEnemyShieldMod
             // 
@@ -5702,6 +5787,8 @@
             this.labelEnemyShieldMod.TabIndex = 244;
             this.labelEnemyShieldMod.Text = "0";
             this.labelEnemyShieldMod.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.labelEnemyShieldMod, "If Shield is positive:  200 / 3 / (Shield + 200 / 3)\r\nIf Shield is negative: 1 - " +
+        "Shield / (200 / 3)");
             // 
             // label73
             // 
@@ -5714,6 +5801,7 @@
             this.label73.TabIndex = 221;
             this.label73.Text = "Magic D";
             this.label73.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.toolTip1.SetToolTip(this.label73, "BaseMagicD - (MagicYield+ Bafflement/7 + Feeblemind/7 + UnbalancedAssault)");
             // 
             // labelEnemyEffectiveMagicDefense
             // 
@@ -5727,6 +5815,7 @@
             this.labelEnemyEffectiveMagicDefense.TabIndex = 240;
             this.labelEnemyEffectiveMagicDefense.Text = "0";
             this.labelEnemyEffectiveMagicDefense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.labelEnemyEffectiveMagicDefense, "BaseMagicD - (MagicYield+ Bafflement/7 + Feeblemind/7 + UnbalancedAssault)");
             // 
             // label33
             // 
@@ -5738,6 +5827,7 @@
             this.label33.Size = new System.Drawing.Size(77, 16);
             this.label33.TabIndex = 249;
             this.label33.Text = "Void Rating";
+            this.toolTip1.SetToolTip(this.label33, "TotalVoidDotAmount / 8");
             // 
             // labelEnemyEffectiveVoidRating
             // 
@@ -5749,6 +5839,7 @@
             this.labelEnemyEffectiveVoidRating.Size = new System.Drawing.Size(14, 16);
             this.labelEnemyEffectiveVoidRating.TabIndex = 250;
             this.labelEnemyEffectiveVoidRating.Text = "0";
+            this.toolTip1.SetToolTip(this.labelEnemyEffectiveVoidRating, "TotalVoidDotAmount / 8");
             // 
             // label80
             // 
@@ -5761,6 +5852,7 @@
             this.label80.TabIndex = 219;
             this.label80.Text = "Melee D";
             this.label80.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.toolTip1.SetToolTip(this.label80, "BaseMeleeD - (Vulnerability + Slowness/3 + Clumsiness/3 + UnbalancedAssault)");
             // 
             // labelEnemyEffectiveMeleeDefense
             // 
@@ -5774,6 +5866,7 @@
             this.labelEnemyEffectiveMeleeDefense.TabIndex = 238;
             this.labelEnemyEffectiveMeleeDefense.Text = "0";
             this.labelEnemyEffectiveMeleeDefense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.labelEnemyEffectiveMeleeDefense, "BaseMeleeD - (Vulnerability + Slowness/3 + Clumsiness/3 + UnbalancedAssault)");
             // 
             // label74
             // 
@@ -5786,6 +5879,7 @@
             this.label74.TabIndex = 220;
             this.label74.Text = "Missile D";
             this.label74.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.toolTip1.SetToolTip(this.label74, "BaseMissileD - (Defenselessness+ Slowness/5 + Clumsiness/5 + UnbalancedAssault)");
             // 
             // labelEnemyEffectiveMissileDefense
             // 
@@ -5799,6 +5893,7 @@
             this.labelEnemyEffectiveMissileDefense.TabIndex = 239;
             this.labelEnemyEffectiveMissileDefense.Text = "0";
             this.labelEnemyEffectiveMissileDefense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.labelEnemyEffectiveMissileDefense, "BaseMissileD - (Defenselessness+ Slowness/3 + Clumsiness/3 + UnbalancedAssault)");
             // 
             // label75
             // 
@@ -6171,6 +6266,7 @@
             this.label63.TabIndex = 273;
             this.label63.Text = "Final DPS";
             this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip1.SetToolTip(this.label63, "AverageHit x AttacksPerSecond");
             // 
             // label29
             // 
@@ -6215,6 +6311,7 @@
             this.label32.TabIndex = 268;
             this.label32.Text = "Final Avg Hit";
             this.label32.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.toolTip1.SetToolTip(this.label32, "(Crit Chance x Crit Hit Damage) + (non-Crit Chance x non-Crit Hit Damage)");
             // 
             // labelFinalAvgHitFront
             // 
@@ -6228,6 +6325,7 @@
             this.labelFinalAvgHitFront.TabIndex = 269;
             this.labelFinalAvgHitFront.Text = "0";
             this.labelFinalAvgHitFront.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.labelFinalAvgHitFront, "(CritChance x CritHitDamage) + (nonCritChance x nonCritHitDamage)");
             // 
             // labelFinalAvgHitRear
             // 
@@ -6241,6 +6339,7 @@
             this.labelFinalAvgHitRear.TabIndex = 270;
             this.labelFinalAvgHitRear.Text = "0";
             this.labelFinalAvgHitRear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.labelFinalAvgHitRear, "(CritChance x CritHitDamage) + (nonCritChance x nonCritHitDamage)");
             // 
             // labelFinalDpsRear
             // 
@@ -6255,6 +6354,7 @@
             this.labelFinalDpsRear.TabIndex = 271;
             this.labelFinalDpsRear.Text = "0";
             this.labelFinalDpsRear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.labelFinalDpsRear, "AverageHit x AttacksPerSecond");
             // 
             // labelFinalDpsFront
             // 
@@ -6269,6 +6369,7 @@
             this.labelFinalDpsFront.TabIndex = 272;
             this.labelFinalDpsFront.Text = "0";
             this.labelFinalDpsFront.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.labelFinalDpsFront, "AverageHit x AttacksPerSecond");
             // 
             // tableLayoutPanel6
             // 
@@ -6422,6 +6523,7 @@
             this.label122.TabIndex = 244;
             this.label122.Text = "Crit Damage (on enemy)";
             this.label122.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.toolTip1.SetToolTip(this.label122, "Determined by Effective Character, Weapon, and Enemy stats");
             // 
             // label119
             // 
@@ -6444,6 +6546,7 @@
             this.label118.TabIndex = 248;
             this.label118.Text = "Hit Damage (on enemy)";
             this.label118.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.toolTip1.SetToolTip(this.label118, "Determined by Effective Character, Weapon, and Enemy stats");
             // 
             // labelFinalNonCritRear
             // 
@@ -6493,6 +6596,7 @@
             this.label130.TabIndex = 252;
             this.label130.Text = "Crit Damage";
             this.label130.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.toolTip1.SetToolTip(this.label130, "Determined by Effective Character and Weapon stats");
             // 
             // label58
             // 
@@ -6528,6 +6632,7 @@
             this.label126.TabIndex = 256;
             this.label126.Text = "Hit Damage";
             this.label126.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.toolTip1.SetToolTip(this.label126, "Determined by Effective Character and Weapon stats");
             // 
             // labelCritRear
             // 
@@ -6554,6 +6659,8 @@
             this.labelNonCritFront.TabIndex = 257;
             this.labelNonCritFront.Text = "0";
             this.labelNonCritFront.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.labelNonCritFront, "AvgDamage x PowerMod x Slayer x AttributeMod x (RatingMod + DeceptionMod + Reckle" +
+        "ssnessMod)");
             // 
             // labelNonCritRear
             // 
@@ -6570,6 +6677,7 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.panel10);
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage5.Name = "tabPage5";
@@ -6581,6 +6689,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.panel2);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Size = new System.Drawing.Size(1322, 752);
@@ -6595,7 +6704,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1348, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1348, 30);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -6607,7 +6716,7 @@
             this.enemyToolStripMenuItem,
             this.menuItemQuit});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 26);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // characterToolStripMenuItem
@@ -6617,7 +6726,7 @@
             this.menuItemSaveWeapon,
             this.menuItemSaveEnemy});
             this.characterToolStripMenuItem.Name = "characterToolStripMenuItem";
-            this.characterToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.characterToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.characterToolStripMenuItem.Text = "Save";
             // 
             // menuItemSaveCharacter
@@ -6637,7 +6746,7 @@
             // menuItemSaveEnemy
             // 
             this.menuItemSaveEnemy.Name = "menuItemSaveEnemy";
-            this.menuItemSaveEnemy.Size = new System.Drawing.Size(224, 26);
+            this.menuItemSaveEnemy.Size = new System.Drawing.Size(155, 26);
             this.menuItemSaveEnemy.Text = "Enemy";
             this.menuItemSaveEnemy.Click += new System.EventHandler(this.menuItemSaveEnemy_Click);
             // 
@@ -6648,7 +6757,7 @@
             this.menuItemLoadWeapon,
             this.menuItemLoadEnemy});
             this.weaponToolStripMenuItem.Name = "weaponToolStripMenuItem";
-            this.weaponToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.weaponToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.weaponToolStripMenuItem.Text = "Load";
             // 
             // menuItemLoadCharacter
@@ -6668,7 +6777,7 @@
             // menuItemLoadEnemy
             // 
             this.menuItemLoadEnemy.Name = "menuItemLoadEnemy";
-            this.menuItemLoadEnemy.Size = new System.Drawing.Size(224, 26);
+            this.menuItemLoadEnemy.Size = new System.Drawing.Size(155, 26);
             this.menuItemLoadEnemy.Text = "Enemy";
             this.menuItemLoadEnemy.Click += new System.EventHandler(this.menuItemLoadEnemy_Click);
             // 
@@ -6679,7 +6788,7 @@
             this.menuItemResetWeapon,
             this.menuItemResetEnemy});
             this.enemyToolStripMenuItem.Name = "enemyToolStripMenuItem";
-            this.enemyToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.enemyToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.enemyToolStripMenuItem.Text = "Reset";
             // 
             // menuItemResetCharacter
@@ -6699,16 +6808,54 @@
             // menuItemResetEnemy
             // 
             this.menuItemResetEnemy.Name = "menuItemResetEnemy";
-            this.menuItemResetEnemy.Size = new System.Drawing.Size(224, 26);
+            this.menuItemResetEnemy.Size = new System.Drawing.Size(155, 26);
             this.menuItemResetEnemy.Text = "Enemy";
             this.menuItemResetEnemy.Click += new System.EventHandler(this.menuItemResetEnemy_Click);
             // 
             // menuItemQuit
             // 
             this.menuItemQuit.Name = "menuItemQuit";
-            this.menuItemQuit.Size = new System.Drawing.Size(224, 26);
+            this.menuItemQuit.Size = new System.Drawing.Size(128, 26);
             this.menuItemQuit.Text = "Quit";
             this.menuItemQuit.Click += new System.EventHandler(this.menuItemQuit_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label37);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1322, 752);
+            this.panel2.TabIndex = 0;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label37.Location = new System.Drawing.Point(0, 0);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(202, 48);
+            this.label37.TabIndex = 0;
+            this.label37.Text = "WIP\r\n\r\nCreated by Rhaegal, of Levistras";
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.label57);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel10.Location = new System.Drawing.Point(3, 2);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(1316, 748);
+            this.panel10.TabIndex = 0;
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label57.Location = new System.Drawing.Point(0, 0);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(32, 16);
+            this.label57.TabIndex = 0;
+            this.label57.Text = "WIP";
             // 
             // Form1
             // 
@@ -6893,8 +7040,14 @@
             this.tableLayoutPanel31.PerformLayout();
             this.tableLayoutPanel32.ResumeLayout(false);
             this.tableLayoutPanel32.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -6987,7 +7140,6 @@
         private System.Windows.Forms.Label label85;
         private System.Windows.Forms.ComboBox comboBoxEnemyClumsiness;
         private System.Windows.Forms.Label label83;
-        private System.Windows.Forms.ComboBox comboBoxEnemyWeakness;
         private System.Windows.Forms.Label label81;
         private System.Windows.Forms.ComboBox comboBoxEnemyVuln;
         private System.Windows.Forms.Label label79;
@@ -7144,7 +7296,6 @@
         private System.Windows.Forms.Label label136;
         private System.Windows.Forms.Label label135;
         private System.Windows.Forms.Label label134;
-        private System.Windows.Forms.Label label133;
         private System.Windows.Forms.Label label127;
         private System.Windows.Forms.Label label140;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
@@ -7297,6 +7448,10 @@
         private System.Windows.Forms.ToolStripMenuItem menuItemQuit;
         private System.Windows.Forms.TextBox textBoxEnemyName;
         private System.Windows.Forms.TextBox textBoxWeaponName;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label37;
     }
 }
 
