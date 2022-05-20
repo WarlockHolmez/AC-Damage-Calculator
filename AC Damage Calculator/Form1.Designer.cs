@@ -311,22 +311,22 @@
             this.label141 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.label139 = new System.Windows.Forms.Label();
             this.label138 = new System.Windows.Forms.Label();
-            this.label137 = new System.Windows.Forms.Label();
             this.label136 = new System.Windows.Forms.Label();
-            this.label135 = new System.Windows.Forms.Label();
             this.label134 = new System.Windows.Forms.Label();
             this.comboBoxEnemyVulnerability = new System.Windows.Forms.ComboBox();
             this.comboBoxEnemyDefenselessness = new System.Windows.Forms.ComboBox();
-            this.comboBoxEnemyFeeblemind = new System.Windows.Forms.ComboBox();
             this.comboBoxEnemyMagicYield = new System.Windows.Forms.ComboBox();
             this.comboBoxEnemyUnbalancingAssault = new System.Windows.Forms.ComboBox();
-            this.comboBoxEnemyClumsiness = new System.Windows.Forms.ComboBox();
-            this.comboBoxEnemyBafflement = new System.Windows.Forms.ComboBox();
-            this.comboBoxEnemySlowness = new System.Windows.Forms.ComboBox();
             this.label127 = new System.Windows.Forms.Label();
+            this.label135 = new System.Windows.Forms.Label();
+            this.comboBoxEnemyClumsiness = new System.Windows.Forms.ComboBox();
+            this.label137 = new System.Windows.Forms.Label();
+            this.comboBoxEnemySlowness = new System.Windows.Forms.ComboBox();
+            this.label139 = new System.Windows.Forms.Label();
+            this.comboBoxEnemyBafflement = new System.Windows.Forms.ComboBox();
             this.label140 = new System.Windows.Forms.Label();
+            this.comboBoxEnemyFeeblemind = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.label84 = new System.Windows.Forms.Label();
@@ -405,7 +405,11 @@
             this.labelNonCritFront = new System.Windows.Forms.Label();
             this.labelNonCritRear = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label57 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label37 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -423,10 +427,6 @@
             this.menuItemResetWeapon = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemResetEnemy = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemQuit = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label37 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label57 = new System.Windows.Forms.Label();
             this.tabControlWeaponType.SuspendLayout();
             this.Melee.SuspendLayout();
             this.tableLayoutPanel17.SuspendLayout();
@@ -560,10 +560,10 @@
             this.tableLayoutPanel31.SuspendLayout();
             this.tableLayoutPanel32.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel10.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlWeaponType
@@ -5310,18 +5310,6 @@
             this.tableLayoutPanel11.Size = new System.Drawing.Size(404, 125);
             this.tableLayoutPanel11.TabIndex = 0;
             // 
-            // label139
-            // 
-            this.label139.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label139.AutoSize = true;
-            this.label139.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label139.Location = new System.Drawing.Point(201, 69);
-            this.label139.Margin = new System.Windows.Forms.Padding(0);
-            this.label139.Name = "label139";
-            this.label139.Size = new System.Drawing.Size(70, 16);
-            this.label139.TabIndex = 222;
-            this.label139.Text = "Bafflement";
-            // 
             // label138
             // 
             this.label138.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -5334,18 +5322,6 @@
             this.label138.TabIndex = 221;
             this.label138.Text = "Unbalanced Assault";
             // 
-            // label137
-            // 
-            this.label137.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label137.AutoSize = true;
-            this.label137.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label137.Location = new System.Drawing.Point(201, 38);
-            this.label137.Margin = new System.Windows.Forms.Padding(0);
-            this.label137.Name = "label137";
-            this.label137.Size = new System.Drawing.Size(65, 16);
-            this.label137.TabIndex = 220;
-            this.label137.Text = "Slowness";
-            // 
             // label136
             // 
             this.label136.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -5357,18 +5333,6 @@
             this.label136.Size = new System.Drawing.Size(78, 16);
             this.label136.TabIndex = 219;
             this.label136.Text = "Magic Yield";
-            // 
-            // label135
-            // 
-            this.label135.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label135.AutoSize = true;
-            this.label135.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label135.Location = new System.Drawing.Point(201, 7);
-            this.label135.Margin = new System.Windows.Forms.Padding(0);
-            this.label135.Name = "label135";
-            this.label135.Size = new System.Drawing.Size(76, 16);
-            this.label135.TabIndex = 218;
-            this.label135.Text = "Clumsiness";
             // 
             // label134
             // 
@@ -5432,31 +5396,6 @@
             this.comboBoxEnemyDefenselessness.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxEnemyDefenselessness.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
-            // comboBoxEnemyFeeblemind
-            // 
-            this.comboBoxEnemyFeeblemind.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBoxEnemyFeeblemind.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxEnemyFeeblemind.FormattingEnabled = true;
-            this.comboBoxEnemyFeeblemind.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8"});
-            this.comboBoxEnemyFeeblemind.Location = new System.Drawing.Point(345, 97);
-            this.comboBoxEnemyFeeblemind.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBoxEnemyFeeblemind.Name = "comboBoxEnemyFeeblemind";
-            this.comboBoxEnemyFeeblemind.Size = new System.Drawing.Size(56, 23);
-            this.comboBoxEnemyFeeblemind.TabIndex = 214;
-            this.comboBoxEnemyFeeblemind.Text = "0";
-            this.toolTip1.SetToolTip(this.comboBoxEnemyFeeblemind, "Level of Feeblemind spell used on the enemy.");
-            this.comboBoxEnemyFeeblemind.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
-            this.comboBoxEnemyFeeblemind.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
-            // 
             // comboBoxEnemyMagicYield
             // 
             this.comboBoxEnemyMagicYield.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -5501,6 +5440,30 @@
             this.comboBoxEnemyUnbalancingAssault.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxEnemyUnbalancingAssault.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
+            // label127
+            // 
+            this.label127.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label127.AutoSize = true;
+            this.label127.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label127.Location = new System.Drawing.Point(0, 7);
+            this.label127.Margin = new System.Windows.Forms.Padding(0);
+            this.label127.Name = "label127";
+            this.label127.Size = new System.Drawing.Size(80, 16);
+            this.label127.TabIndex = 215;
+            this.label127.Text = "Vulnerability";
+            // 
+            // label135
+            // 
+            this.label135.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label135.AutoSize = true;
+            this.label135.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label135.Location = new System.Drawing.Point(201, 7);
+            this.label135.Margin = new System.Windows.Forms.Padding(0);
+            this.label135.Name = "label135";
+            this.label135.Size = new System.Drawing.Size(76, 16);
+            this.label135.TabIndex = 218;
+            this.label135.Text = "Clumsiness";
+            // 
             // comboBoxEnemyClumsiness
             // 
             this.comboBoxEnemyClumsiness.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -5526,30 +5489,17 @@
             this.comboBoxEnemyClumsiness.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxEnemyClumsiness.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
-            // comboBoxEnemyBafflement
+            // label137
             // 
-            this.comboBoxEnemyBafflement.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBoxEnemyBafflement.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxEnemyBafflement.FormattingEnabled = true;
-            this.comboBoxEnemyBafflement.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8"});
-            this.comboBoxEnemyBafflement.Location = new System.Drawing.Point(345, 66);
-            this.comboBoxEnemyBafflement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBoxEnemyBafflement.Name = "comboBoxEnemyBafflement";
-            this.comboBoxEnemyBafflement.Size = new System.Drawing.Size(56, 23);
-            this.comboBoxEnemyBafflement.TabIndex = 211;
-            this.comboBoxEnemyBafflement.Text = "0";
-            this.toolTip1.SetToolTip(this.comboBoxEnemyBafflement, "Level of Bafflement spell used on the enemy.");
-            this.comboBoxEnemyBafflement.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
-            this.comboBoxEnemyBafflement.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
+            this.label137.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label137.AutoSize = true;
+            this.label137.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label137.Location = new System.Drawing.Point(201, 38);
+            this.label137.Margin = new System.Windows.Forms.Padding(0);
+            this.label137.Name = "label137";
+            this.label137.Size = new System.Drawing.Size(65, 16);
+            this.label137.TabIndex = 220;
+            this.label137.Text = "Slowness";
             // 
             // comboBoxEnemySlowness
             // 
@@ -5576,17 +5526,42 @@
             this.comboBoxEnemySlowness.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxEnemySlowness.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
-            // label127
+            // label139
             // 
-            this.label127.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label127.AutoSize = true;
-            this.label127.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label127.Location = new System.Drawing.Point(0, 7);
-            this.label127.Margin = new System.Windows.Forms.Padding(0);
-            this.label127.Name = "label127";
-            this.label127.Size = new System.Drawing.Size(80, 16);
-            this.label127.TabIndex = 215;
-            this.label127.Text = "Vulnerability";
+            this.label139.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label139.AutoSize = true;
+            this.label139.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label139.Location = new System.Drawing.Point(201, 69);
+            this.label139.Margin = new System.Windows.Forms.Padding(0);
+            this.label139.Name = "label139";
+            this.label139.Size = new System.Drawing.Size(70, 16);
+            this.label139.TabIndex = 222;
+            this.label139.Text = "Bafflement";
+            // 
+            // comboBoxEnemyBafflement
+            // 
+            this.comboBoxEnemyBafflement.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBoxEnemyBafflement.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxEnemyBafflement.FormattingEnabled = true;
+            this.comboBoxEnemyBafflement.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"});
+            this.comboBoxEnemyBafflement.Location = new System.Drawing.Point(345, 66);
+            this.comboBoxEnemyBafflement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxEnemyBafflement.Name = "comboBoxEnemyBafflement";
+            this.comboBoxEnemyBafflement.Size = new System.Drawing.Size(56, 23);
+            this.comboBoxEnemyBafflement.TabIndex = 211;
+            this.comboBoxEnemyBafflement.Text = "0";
+            this.toolTip1.SetToolTip(this.comboBoxEnemyBafflement, "Level of Bafflement spell used on the enemy.");
+            this.comboBoxEnemyBafflement.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
+            this.comboBoxEnemyBafflement.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
             // label140
             // 
@@ -5599,6 +5574,31 @@
             this.label140.Size = new System.Drawing.Size(79, 16);
             this.label140.TabIndex = 223;
             this.label140.Text = "Feeblemind";
+            // 
+            // comboBoxEnemyFeeblemind
+            // 
+            this.comboBoxEnemyFeeblemind.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBoxEnemyFeeblemind.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxEnemyFeeblemind.FormattingEnabled = true;
+            this.comboBoxEnemyFeeblemind.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"});
+            this.comboBoxEnemyFeeblemind.Location = new System.Drawing.Point(345, 97);
+            this.comboBoxEnemyFeeblemind.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxEnemyFeeblemind.Name = "comboBoxEnemyFeeblemind";
+            this.comboBoxEnemyFeeblemind.Size = new System.Drawing.Size(56, 23);
+            this.comboBoxEnemyFeeblemind.TabIndex = 214;
+            this.comboBoxEnemyFeeblemind.Text = "0";
+            this.toolTip1.SetToolTip(this.comboBoxEnemyFeeblemind, "Level of Feeblemind spell used on the enemy.");
+            this.comboBoxEnemyFeeblemind.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
+            this.comboBoxEnemyFeeblemind.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
             // groupBox3
             // 
@@ -6034,11 +6034,11 @@
             this.tabControl_MAIN.Controls.Add(this.tabPage4);
             this.tabControl_MAIN.Controls.Add(this.tabPage5);
             this.tabControl_MAIN.Controls.Add(this.tabPage1);
-            this.tabControl_MAIN.Location = new System.Drawing.Point(0, 28);
+            this.tabControl_MAIN.Location = new System.Drawing.Point(0, 23);
             this.tabControl_MAIN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl_MAIN.Name = "tabControl_MAIN";
             this.tabControl_MAIN.SelectedIndex = 0;
-            this.tabControl_MAIN.Size = new System.Drawing.Size(1330, 781);
+            this.tabControl_MAIN.Size = new System.Drawing.Size(1064, 625);
             this.tabControl_MAIN.TabIndex = 2;
             // 
             // tabPage4
@@ -6048,7 +6048,7 @@
             this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage4.Size = new System.Drawing.Size(1322, 752);
+            this.tabPage4.Size = new System.Drawing.Size(1320, 745);
             this.tabPage4.TabIndex = 0;
             this.tabPage4.Text = "DPS Calculator";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -6067,7 +6067,7 @@
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(1316, 747);
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(1314, 747);
             this.tableLayoutPanel15.TabIndex = 6;
             // 
             // tableLayoutPanel16
@@ -6687,6 +6687,25 @@
             this.tabPage5.Text = "Compare";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.label57);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel10.Location = new System.Drawing.Point(3, 2);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(1316, 748);
+            this.panel10.TabIndex = 0;
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label57.Location = new System.Drawing.Point(0, 0);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(32, 16);
+            this.label57.TabIndex = 0;
+            this.label57.Text = "WIP";
+            // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.panel2);
@@ -6696,6 +6715,25 @@
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "About";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label37);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1322, 752);
+            this.panel2.TabIndex = 0;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label37.Location = new System.Drawing.Point(0, 0);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(202, 48);
+            this.label37.TabIndex = 0;
+            this.label37.Text = "WIP\r\n\r\nCreated by Rhaegal, of Levistras";
             // 
             // menuStrip1
             // 
@@ -6716,7 +6754,7 @@
             this.enemyToolStripMenuItem,
             this.menuItemQuit});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 26);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // characterToolStripMenuItem
@@ -6818,44 +6856,6 @@
             this.menuItemQuit.Size = new System.Drawing.Size(128, 26);
             this.menuItemQuit.Text = "Quit";
             this.menuItemQuit.Click += new System.EventHandler(this.menuItemQuit_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label37);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1322, 752);
-            this.panel2.TabIndex = 0;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label37.Location = new System.Drawing.Point(0, 0);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(202, 48);
-            this.label37.TabIndex = 0;
-            this.label37.Text = "WIP\r\n\r\nCreated by Rhaegal, of Levistras";
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.label57);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel10.Location = new System.Drawing.Point(3, 2);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1316, 748);
-            this.panel10.TabIndex = 0;
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label57.Location = new System.Drawing.Point(0, 0);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(32, 16);
-            this.label57.TabIndex = 0;
-            this.label57.Text = "WIP";
             // 
             // Form1
             // 
@@ -7041,13 +7041,13 @@
             this.tableLayoutPanel32.ResumeLayout(false);
             this.tableLayoutPanel32.PerformLayout();
             this.tabPage5.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
