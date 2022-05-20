@@ -735,7 +735,7 @@ namespace AC_Damage_Calculator
                 amount = 20 * scale;
             }
 
-            labelCharacterSneakMod.Text = Math.Round(amount, 2).ToString();
+            labelCharacterSneakMod.Text = Math.Round(amount, 1).ToString();
 
             return amount / 100 + 1;
         }
@@ -769,7 +769,7 @@ namespace AC_Damage_Calculator
                 amount = 20 * scale;
             }
 
-            labelCharacterRecklessnessMod.Text = Math.Round(amount, 2).ToString();
+            labelCharacterRecklessnessMod.Text = Math.Round(amount, 1).ToString();
 
             return amount / 100 + 1;
         }

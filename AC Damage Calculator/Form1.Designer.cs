@@ -572,10 +572,10 @@
             this.tabControlWeaponType.Controls.Add(this.Missile);
             this.tabControlWeaponType.Controls.Add(this.Magic);
             this.tabControlWeaponType.Location = new System.Drawing.Point(0, 0);
-            this.tabControlWeaponType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabControlWeaponType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabControlWeaponType.Name = "tabControlWeaponType";
             this.tabControlWeaponType.SelectedIndex = 0;
-            this.tabControlWeaponType.Size = new System.Drawing.Size(419, 365);
+            this.tabControlWeaponType.Size = new System.Drawing.Size(314, 297);
             this.tabControlWeaponType.TabIndex = 0;
             this.tabControlWeaponType.SelectedIndexChanged += new System.EventHandler(this.CalculateFinalDps);
             this.tabControlWeaponType.TabIndexChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -583,11 +583,11 @@
             // Melee
             // 
             this.Melee.Controls.Add(this.tableLayoutPanel17);
-            this.Melee.Location = new System.Drawing.Point(4, 25);
+            this.Melee.Location = new System.Drawing.Point(4, 22);
             this.Melee.Margin = new System.Windows.Forms.Padding(0);
             this.Melee.Name = "Melee";
-            this.Melee.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Melee.Size = new System.Drawing.Size(411, 336);
+            this.Melee.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Melee.Size = new System.Drawing.Size(306, 271);
             this.Melee.TabIndex = 0;
             this.Melee.Text = "Melee";
             this.Melee.UseVisualStyleBackColor = true;
@@ -601,13 +601,14 @@
             this.tableLayoutPanel17.Controls.Add(this.panelMelee1, 0, 0);
             this.tableLayoutPanel17.Controls.Add(this.panelMelee2, 0, 1);
             this.tableLayoutPanel17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel17.Location = new System.Drawing.Point(3, 2);
+            this.tableLayoutPanel17.Location = new System.Drawing.Point(2, 2);
+            this.tableLayoutPanel17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel17.Name = "tableLayoutPanel17";
             this.tableLayoutPanel17.RowCount = 3;
-            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 140F));
-            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 112F));
-            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel17.Size = new System.Drawing.Size(405, 330);
+            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 120F));
+            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 85F));
+            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65F));
+            this.tableLayoutPanel17.Size = new System.Drawing.Size(302, 268);
             this.tableLayoutPanel17.TabIndex = 232;
             // 
             // groupBox11
@@ -616,11 +617,9 @@
             this.groupBox11.Controls.Add(this.trackBarMeleePowerBar);
             this.groupBox11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox11.Location = new System.Drawing.Point(4, 256);
-            this.groupBox11.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox11.Location = new System.Drawing.Point(3, 208);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox11.Size = new System.Drawing.Size(397, 72);
+            this.groupBox11.Size = new System.Drawing.Size(296, 59);
             this.groupBox11.TabIndex = 226;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Power Bar";
@@ -632,9 +631,10 @@
             this.labelPowerBarValue.AutoSize = true;
             this.labelPowerBarValue.BackColor = System.Drawing.Color.Transparent;
             this.labelPowerBarValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPowerBarValue.Location = new System.Drawing.Point(180, 46);
+            this.labelPowerBarValue.Location = new System.Drawing.Point(134, 37);
+            this.labelPowerBarValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPowerBarValue.Name = "labelPowerBarValue";
-            this.labelPowerBarValue.Size = new System.Drawing.Size(36, 25);
+            this.labelPowerBarValue.Size = new System.Drawing.Size(29, 20);
             this.labelPowerBarValue.TabIndex = 108;
             this.labelPowerBarValue.Text = "50";
             this.labelPowerBarValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -646,11 +646,11 @@
             this.trackBarMeleePowerBar.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.trackBarMeleePowerBar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.trackBarMeleePowerBar.LargeChange = 20;
-            this.trackBarMeleePowerBar.Location = new System.Drawing.Point(4, 19);
-            this.trackBarMeleePowerBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.trackBarMeleePowerBar.Location = new System.Drawing.Point(3, 15);
+            this.trackBarMeleePowerBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.trackBarMeleePowerBar.Maximum = 100;
             this.trackBarMeleePowerBar.Name = "trackBarMeleePowerBar";
-            this.trackBarMeleePowerBar.Size = new System.Drawing.Size(389, 49);
+            this.trackBarMeleePowerBar.Size = new System.Drawing.Size(290, 41);
             this.trackBarMeleePowerBar.SmallChange = 10;
             this.trackBarMeleePowerBar.TabIndex = 0;
             this.toolTip1.SetToolTip(this.trackBarMeleePowerBar, "Contributes to Attack Speed and Power Mod.");
@@ -663,9 +663,10 @@
             this.panelMelee1.Controls.Add(this.groupBox17);
             this.panelMelee1.Controls.Add(this.groupBox14);
             this.panelMelee1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMelee1.Location = new System.Drawing.Point(3, 3);
+            this.panelMelee1.Location = new System.Drawing.Point(2, 2);
+            this.panelMelee1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelMelee1.Name = "panelMelee1";
-            this.panelMelee1.Size = new System.Drawing.Size(399, 134);
+            this.panelMelee1.Size = new System.Drawing.Size(298, 116);
             this.panelMelee1.TabIndex = 227;
             // 
             // groupBox17
@@ -673,9 +674,11 @@
             this.groupBox17.Controls.Add(this.tableLayoutPanel20);
             this.groupBox17.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox17.Location = new System.Drawing.Point(200, 0);
+            this.groupBox17.Location = new System.Drawing.Point(149, 0);
+            this.groupBox17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox17.Name = "groupBox17";
-            this.groupBox17.Size = new System.Drawing.Size(199, 134);
+            this.groupBox17.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox17.Size = new System.Drawing.Size(149, 116);
             this.groupBox17.TabIndex = 1;
             this.groupBox17.TabStop = false;
             this.groupBox17.Text = "Imbues";
@@ -684,9 +687,9 @@
             // 
             this.tableLayoutPanel20.ColumnCount = 4;
             this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel20.Controls.Add(this.lblArmorRend, 0, 0);
             this.tableLayoutPanel20.Controls.Add(this.checkBoxMeleeArmorRend, 1, 0);
             this.tableLayoutPanel20.Controls.Add(this.numericUpDownMeleeCrushingBlow, 3, 3);
@@ -704,14 +707,15 @@
             this.tableLayoutPanel20.Controls.Add(this.label19, 0, 2);
             this.tableLayoutPanel20.Controls.Add(this.checkBoxMeleeResistanceRend, 1, 1);
             this.tableLayoutPanel20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel20.Location = new System.Drawing.Point(3, 18);
+            this.tableLayoutPanel20.Location = new System.Drawing.Point(2, 14);
+            this.tableLayoutPanel20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel20.Name = "tableLayoutPanel20";
             this.tableLayoutPanel20.RowCount = 4;
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel20.Size = new System.Drawing.Size(193, 113);
+            this.tableLayoutPanel20.Size = new System.Drawing.Size(145, 100);
             this.tableLayoutPanel20.TabIndex = 0;
             // 
             // lblArmorRend
@@ -719,9 +723,10 @@
             this.lblArmorRend.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblArmorRend.AutoSize = true;
             this.lblArmorRend.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArmorRend.Location = new System.Drawing.Point(3, 6);
+            this.lblArmorRend.Location = new System.Drawing.Point(2, 6);
+            this.lblArmorRend.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblArmorRend.Name = "lblArmorRend";
-            this.lblArmorRend.Size = new System.Drawing.Size(26, 16);
+            this.lblArmorRend.Size = new System.Drawing.Size(22, 13);
             this.lblArmorRend.TabIndex = 76;
             this.lblArmorRend.Text = "AR";
             this.lblArmorRend.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -730,10 +735,9 @@
             // 
             this.checkBoxMeleeArmorRend.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxMeleeArmorRend.AutoSize = true;
-            this.checkBoxMeleeArmorRend.Location = new System.Drawing.Point(53, 5);
-            this.checkBoxMeleeArmorRend.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxMeleeArmorRend.Location = new System.Drawing.Point(39, 5);
             this.checkBoxMeleeArmorRend.Name = "checkBoxMeleeArmorRend";
-            this.checkBoxMeleeArmorRend.Size = new System.Drawing.Size(18, 17);
+            this.checkBoxMeleeArmorRend.Size = new System.Drawing.Size(15, 14);
             this.checkBoxMeleeArmorRend.TabIndex = 79;
             this.toolTip1.SetToolTip(this.checkBoxMeleeArmorRend, "Armor Rending. Effectiveness determined by\r\nBase Weapon Skill. Max armor ignored " +
         "= 60%.");
@@ -751,7 +755,8 @@
             0,
             0,
             131072});
-            this.numericUpDownMeleeCrushingBlow.Location = new System.Drawing.Point(127, 87);
+            this.numericUpDownMeleeCrushingBlow.Location = new System.Drawing.Point(96, 77);
+            this.numericUpDownMeleeCrushingBlow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownMeleeCrushingBlow.Maximum = new decimal(new int[] {
             99,
             0,
@@ -763,7 +768,7 @@
             0,
             0});
             this.numericUpDownMeleeCrushingBlow.Name = "numericUpDownMeleeCrushingBlow";
-            this.numericUpDownMeleeCrushingBlow.Size = new System.Drawing.Size(63, 21);
+            this.numericUpDownMeleeCrushingBlow.Size = new System.Drawing.Size(47, 18);
             this.numericUpDownMeleeCrushingBlow.TabIndex = 226;
             this.toolTip1.SetToolTip(this.numericUpDownMeleeCrushingBlow, "Crushing Blow. Multiplies ciritcal damage by the set value.\r\nNo max value.\r\n");
             this.numericUpDownMeleeCrushingBlow.Value = new decimal(new int[] {
@@ -779,9 +784,10 @@
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(89, 6);
+            this.label12.Location = new System.Drawing.Point(67, 6);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(25, 16);
+            this.label12.Size = new System.Drawing.Size(21, 13);
             this.label12.TabIndex = 78;
             this.label12.Text = "AC";
             this.label12.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -791,9 +797,10 @@
             this.label22.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(89, 90);
+            this.label22.Location = new System.Drawing.Point(67, 81);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(27, 16);
+            this.label22.Size = new System.Drawing.Size(23, 13);
             this.label22.TabIndex = 90;
             this.label22.Text = "Cru";
             this.label22.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -802,10 +809,9 @@
             // 
             this.checkBoxMeleeArmorCleaving.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxMeleeArmorCleaving.AutoSize = true;
-            this.checkBoxMeleeArmorCleaving.Location = new System.Drawing.Point(149, 5);
-            this.checkBoxMeleeArmorCleaving.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxMeleeArmorCleaving.Location = new System.Drawing.Point(112, 5);
             this.checkBoxMeleeArmorCleaving.Name = "checkBoxMeleeArmorCleaving";
-            this.checkBoxMeleeArmorCleaving.Size = new System.Drawing.Size(18, 17);
+            this.checkBoxMeleeArmorCleaving.Size = new System.Drawing.Size(15, 14);
             this.checkBoxMeleeArmorCleaving.TabIndex = 77;
             this.toolTip1.SetToolTip(this.checkBoxMeleeArmorCleaving, "Armor Cleaving. Effectiveness determined by\r\nHighest Level Spell on the weapon. M" +
         "ax\r\narmor ignored = 50%.");
@@ -816,10 +822,9 @@
             // 
             this.checkBoxMeleeCripplingBlow.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxMeleeCripplingBlow.AutoSize = true;
-            this.checkBoxMeleeCripplingBlow.Location = new System.Drawing.Point(53, 90);
-            this.checkBoxMeleeCripplingBlow.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxMeleeCripplingBlow.Location = new System.Drawing.Point(39, 80);
             this.checkBoxMeleeCripplingBlow.Name = "checkBoxMeleeCripplingBlow";
-            this.checkBoxMeleeCripplingBlow.Size = new System.Drawing.Size(18, 17);
+            this.checkBoxMeleeCripplingBlow.Size = new System.Drawing.Size(15, 14);
             this.checkBoxMeleeCripplingBlow.TabIndex = 89;
             this.toolTip1.SetToolTip(this.checkBoxMeleeCripplingBlow, "Crippling Blow. Effectiveness determined by\r\nBase Weapon Skill. Multiplies ciritc" +
         "al damage by a\r\nmaximum of x6. (max base-damage x7)\r\n");
@@ -837,7 +842,8 @@
             0,
             0,
             131072});
-            this.numericUpDownMeleeResistanceCleaving.Location = new System.Drawing.Point(127, 31);
+            this.numericUpDownMeleeResistanceCleaving.Location = new System.Drawing.Point(96, 27);
+            this.numericUpDownMeleeResistanceCleaving.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownMeleeResistanceCleaving.Maximum = new decimal(new int[] {
             99,
             0,
@@ -849,7 +855,7 @@
             0,
             0});
             this.numericUpDownMeleeResistanceCleaving.Name = "numericUpDownMeleeResistanceCleaving";
-            this.numericUpDownMeleeResistanceCleaving.Size = new System.Drawing.Size(63, 21);
+            this.numericUpDownMeleeResistanceCleaving.Size = new System.Drawing.Size(47, 18);
             this.numericUpDownMeleeResistanceCleaving.TabIndex = 224;
             this.toolTip1.SetToolTip(this.numericUpDownMeleeResistanceCleaving, resources.GetString("numericUpDownMeleeResistanceCleaving.ToolTip"));
             this.numericUpDownMeleeResistanceCleaving.Value = new decimal(new int[] {
@@ -865,9 +871,10 @@
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(3, 90);
+            this.label21.Location = new System.Drawing.Point(2, 81);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(25, 16);
+            this.label21.Size = new System.Drawing.Size(21, 13);
             this.label21.TabIndex = 88;
             this.label21.Text = "CB";
             this.label21.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -883,7 +890,8 @@
             0,
             0,
             131072});
-            this.numericUpDownMeleeBitingStrike.Location = new System.Drawing.Point(127, 59);
+            this.numericUpDownMeleeBitingStrike.Location = new System.Drawing.Point(96, 52);
+            this.numericUpDownMeleeBitingStrike.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownMeleeBitingStrike.Maximum = new decimal(new int[] {
             1,
             0,
@@ -895,7 +903,7 @@
             0,
             65536});
             this.numericUpDownMeleeBitingStrike.Name = "numericUpDownMeleeBitingStrike";
-            this.numericUpDownMeleeBitingStrike.Size = new System.Drawing.Size(63, 21);
+            this.numericUpDownMeleeBitingStrike.Size = new System.Drawing.Size(47, 18);
             this.numericUpDownMeleeBitingStrike.TabIndex = 225;
             this.toolTip1.SetToolTip(this.numericUpDownMeleeBitingStrike, "Biting Strike. Determines critical strike chance with\r\nthis weapon. Values below " +
         "0.1 have no effect.");
@@ -912,9 +920,10 @@
             this.label20.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(89, 62);
+            this.label20.Location = new System.Drawing.Point(67, 56);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(25, 16);
+            this.label20.Size = new System.Drawing.Size(21, 13);
             this.label20.TabIndex = 86;
             this.label20.Text = "BS";
             this.label20.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -924,9 +933,10 @@
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(3, 34);
+            this.label16.Location = new System.Drawing.Point(2, 31);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(27, 16);
+            this.label16.Size = new System.Drawing.Size(23, 13);
             this.label16.TabIndex = 80;
             this.label16.Text = "RR";
             this.label16.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -935,10 +945,9 @@
             // 
             this.checkBoxMeleeCriticalStrike.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxMeleeCriticalStrike.AutoSize = true;
-            this.checkBoxMeleeCriticalStrike.Location = new System.Drawing.Point(53, 61);
-            this.checkBoxMeleeCriticalStrike.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxMeleeCriticalStrike.Location = new System.Drawing.Point(39, 55);
             this.checkBoxMeleeCriticalStrike.Name = "checkBoxMeleeCriticalStrike";
-            this.checkBoxMeleeCriticalStrike.Size = new System.Drawing.Size(18, 17);
+            this.checkBoxMeleeCriticalStrike.Size = new System.Drawing.Size(15, 14);
             this.checkBoxMeleeCriticalStrike.TabIndex = 85;
             this.toolTip1.SetToolTip(this.checkBoxMeleeCriticalStrike, "Critical Strike. Effectiveness determined by\r\nBase Weapon Skill.\r\n");
             this.checkBoxMeleeCriticalStrike.UseVisualStyleBackColor = true;
@@ -949,9 +958,10 @@
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(89, 34);
+            this.label18.Location = new System.Drawing.Point(67, 31);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(26, 16);
+            this.label18.Size = new System.Drawing.Size(22, 13);
             this.label18.TabIndex = 82;
             this.label18.Text = "RC";
             this.label18.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -961,9 +971,10 @@
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(3, 62);
+            this.label19.Location = new System.Drawing.Point(2, 56);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(25, 16);
+            this.label19.Size = new System.Drawing.Size(21, 13);
             this.label19.TabIndex = 84;
             this.label19.Text = "CS";
             this.label19.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -972,10 +983,9 @@
             // 
             this.checkBoxMeleeResistanceRend.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxMeleeResistanceRend.AutoSize = true;
-            this.checkBoxMeleeResistanceRend.Location = new System.Drawing.Point(53, 33);
-            this.checkBoxMeleeResistanceRend.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxMeleeResistanceRend.Location = new System.Drawing.Point(39, 30);
             this.checkBoxMeleeResistanceRend.Name = "checkBoxMeleeResistanceRend";
-            this.checkBoxMeleeResistanceRend.Size = new System.Drawing.Size(18, 17);
+            this.checkBoxMeleeResistanceRend.Size = new System.Drawing.Size(15, 14);
             this.checkBoxMeleeResistanceRend.TabIndex = 81;
             this.toolTip1.SetToolTip(this.checkBoxMeleeResistanceRend, "Resistance Rending. Effectiveness determined by\r\nBase Weapon Skill.");
             this.checkBoxMeleeResistanceRend.UseVisualStyleBackColor = true;
@@ -987,8 +997,10 @@
             this.groupBox14.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox14.Location = new System.Drawing.Point(0, 0);
+            this.groupBox14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(199, 134);
+            this.groupBox14.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox14.Size = new System.Drawing.Size(149, 116);
             this.groupBox14.TabIndex = 0;
             this.groupBox14.TabStop = false;
             this.groupBox14.Text = "Weapon Stats";
@@ -1009,15 +1021,16 @@
             this.tableLayoutPanel19.Controls.Add(this.numericUpDownWeaponMinDamage, 1, 1);
             this.tableLayoutPanel19.Controls.Add(this.numericUpDownMeleeWeaponSpeed, 1, 4);
             this.tableLayoutPanel19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel19.Location = new System.Drawing.Point(3, 18);
+            this.tableLayoutPanel19.Location = new System.Drawing.Point(2, 14);
+            this.tableLayoutPanel19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel19.Name = "tableLayoutPanel19";
             this.tableLayoutPanel19.RowCount = 5;
-            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel19.Size = new System.Drawing.Size(193, 113);
+            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel19.Size = new System.Drawing.Size(145, 100);
             this.tableLayoutPanel19.TabIndex = 228;
             // 
             // label51
@@ -1025,36 +1038,36 @@
             this.label51.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label51.AutoSize = true;
             this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(0, 94);
+            this.label51.Location = new System.Drawing.Point(0, 83);
             this.label51.Margin = new System.Windows.Forms.Padding(0);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(89, 16);
+            this.label51.Size = new System.Drawing.Size(72, 13);
             this.label51.TabIndex = 224;
             this.label51.Text = "Buffed Speed";
             this.label51.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label8
             // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label8.AutoSize = true;
+            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(0, 4);
+            this.label8.Location = new System.Drawing.Point(0, 0);
             this.label8.Margin = new System.Windows.Forms.Padding(0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(97, 15);
+            this.label8.Size = new System.Drawing.Size(87, 20);
             this.label8.TabIndex = 69;
             this.label8.Text = "Attack Animation";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelMinDamage
             // 
             this.labelMinDamage.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.labelMinDamage.AutoSize = true;
             this.labelMinDamage.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMinDamage.Location = new System.Drawing.Point(0, 26);
+            this.labelMinDamage.Location = new System.Drawing.Point(0, 23);
             this.labelMinDamage.Margin = new System.Windows.Forms.Padding(0);
             this.labelMinDamage.Name = "labelMinDamage";
-            this.labelMinDamage.Size = new System.Drawing.Size(84, 16);
+            this.labelMinDamage.Size = new System.Drawing.Size(67, 13);
             this.labelMinDamage.TabIndex = 3;
             this.labelMinDamage.Text = "Min Damage";
             this.labelMinDamage.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1065,10 +1078,10 @@
             this.labelMaxDamage.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.labelMaxDamage.AutoSize = true;
             this.labelMaxDamage.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMaxDamage.Location = new System.Drawing.Point(0, 49);
+            this.labelMaxDamage.Location = new System.Drawing.Point(0, 43);
             this.labelMaxDamage.Margin = new System.Windows.Forms.Padding(0);
             this.labelMaxDamage.Name = "labelMaxDamage";
-            this.labelMaxDamage.Size = new System.Drawing.Size(88, 16);
+            this.labelMaxDamage.Size = new System.Drawing.Size(70, 13);
             this.labelMaxDamage.TabIndex = 5;
             this.labelMaxDamage.Text = "Max Damage";
             this.labelMaxDamage.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1078,10 +1091,10 @@
             this.label24.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(0, 72);
+            this.label24.Location = new System.Drawing.Point(0, 63);
             this.label24.Margin = new System.Windows.Forms.Padding(0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(74, 16);
+            this.label24.Size = new System.Drawing.Size(62, 13);
             this.label24.TabIndex = 96;
             this.label24.Text = "Attack Mod";
             this.label24.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1090,14 +1103,15 @@
             // 
             this.numericUpDownWeaponAttackMod.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numericUpDownWeaponAttackMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownWeaponAttackMod.Location = new System.Drawing.Point(118, 72);
+            this.numericUpDownWeaponAttackMod.Location = new System.Drawing.Point(89, 62);
+            this.numericUpDownWeaponAttackMod.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownWeaponAttackMod.Maximum = new decimal(new int[] {
             99,
             0,
             0,
             0});
             this.numericUpDownWeaponAttackMod.Name = "numericUpDownWeaponAttackMod";
-            this.numericUpDownWeaponAttackMod.Size = new System.Drawing.Size(72, 21);
+            this.numericUpDownWeaponAttackMod.Size = new System.Drawing.Size(54, 18);
             this.numericUpDownWeaponAttackMod.TabIndex = 223;
             this.toolTip1.SetToolTip(this.numericUpDownWeaponAttackMod, "Unbuffed attack modifier value.");
             this.numericUpDownWeaponAttackMod.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -1114,10 +1128,10 @@
             "Multi-Slash",
             "Multi-Stab",
             "Two-hand"});
-            this.comboBoxMeleeAnimation.Location = new System.Drawing.Point(118, 2);
-            this.comboBoxMeleeAnimation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxMeleeAnimation.Location = new System.Drawing.Point(89, 2);
+            this.comboBoxMeleeAnimation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxMeleeAnimation.Name = "comboBoxMeleeAnimation";
-            this.comboBoxMeleeAnimation.Size = new System.Drawing.Size(72, 23);
+            this.comboBoxMeleeAnimation.Size = new System.Drawing.Size(54, 21);
             this.comboBoxMeleeAnimation.TabIndex = 1;
             this.comboBoxMeleeAnimation.Text = "Slash";
             this.comboBoxMeleeAnimation.SelectedValueChanged += new System.EventHandler(this.SetPowerBarValue);
@@ -1127,7 +1141,8 @@
             this.numericUpDownWeaponMaxDamage.AutoSize = true;
             this.numericUpDownWeaponMaxDamage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numericUpDownWeaponMaxDamage.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownWeaponMaxDamage.Location = new System.Drawing.Point(118, 49);
+            this.numericUpDownWeaponMaxDamage.Location = new System.Drawing.Point(89, 42);
+            this.numericUpDownWeaponMaxDamage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownWeaponMaxDamage.Maximum = new decimal(new int[] {
             999,
             0,
@@ -1139,7 +1154,7 @@
             0,
             0});
             this.numericUpDownWeaponMaxDamage.Name = "numericUpDownWeaponMaxDamage";
-            this.numericUpDownWeaponMaxDamage.Size = new System.Drawing.Size(72, 21);
+            this.numericUpDownWeaponMaxDamage.Size = new System.Drawing.Size(54, 18);
             this.numericUpDownWeaponMaxDamage.TabIndex = 222;
             this.toolTip1.SetToolTip(this.numericUpDownWeaponMaxDamage, "Unbuffed maximum damage value.");
             this.numericUpDownWeaponMaxDamage.Value = new decimal(new int[] {
@@ -1155,7 +1170,8 @@
             this.numericUpDownWeaponMinDamage.DecimalPlaces = 1;
             this.numericUpDownWeaponMinDamage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numericUpDownWeaponMinDamage.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownWeaponMinDamage.Location = new System.Drawing.Point(118, 26);
+            this.numericUpDownWeaponMinDamage.Location = new System.Drawing.Point(89, 22);
+            this.numericUpDownWeaponMinDamage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownWeaponMinDamage.Maximum = new decimal(new int[] {
             999,
             0,
@@ -1167,7 +1183,7 @@
             0,
             0});
             this.numericUpDownWeaponMinDamage.Name = "numericUpDownWeaponMinDamage";
-            this.numericUpDownWeaponMinDamage.Size = new System.Drawing.Size(72, 21);
+            this.numericUpDownWeaponMinDamage.Size = new System.Drawing.Size(54, 18);
             this.numericUpDownWeaponMinDamage.TabIndex = 221;
             this.toolTip1.SetToolTip(this.numericUpDownWeaponMinDamage, "Unbuffed minimum damage value.");
             this.numericUpDownWeaponMinDamage.Value = new decimal(new int[] {
@@ -1181,14 +1197,15 @@
             // 
             this.numericUpDownMeleeWeaponSpeed.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numericUpDownMeleeWeaponSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownMeleeWeaponSpeed.Location = new System.Drawing.Point(118, 95);
+            this.numericUpDownMeleeWeaponSpeed.Location = new System.Drawing.Point(89, 82);
+            this.numericUpDownMeleeWeaponSpeed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownMeleeWeaponSpeed.Maximum = new decimal(new int[] {
             150,
             0,
             0,
             0});
             this.numericUpDownMeleeWeaponSpeed.Name = "numericUpDownMeleeWeaponSpeed";
-            this.numericUpDownMeleeWeaponSpeed.Size = new System.Drawing.Size(72, 21);
+            this.numericUpDownMeleeWeaponSpeed.Size = new System.Drawing.Size(54, 18);
             this.numericUpDownMeleeWeaponSpeed.TabIndex = 225;
             this.toolTip1.SetToolTip(this.numericUpDownMeleeWeaponSpeed, "Buffed weapon speed value.");
             this.numericUpDownMeleeWeaponSpeed.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -1197,9 +1214,10 @@
             // 
             this.panelMelee2.Controls.Add(this.groupBox18);
             this.panelMelee2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMelee2.Location = new System.Drawing.Point(3, 143);
+            this.panelMelee2.Location = new System.Drawing.Point(2, 122);
+            this.panelMelee2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelMelee2.Name = "panelMelee2";
-            this.panelMelee2.Size = new System.Drawing.Size(399, 106);
+            this.panelMelee2.Size = new System.Drawing.Size(298, 81);
             this.panelMelee2.TabIndex = 228;
             // 
             // groupBox18
@@ -1208,8 +1226,10 @@
             this.groupBox18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox18.Location = new System.Drawing.Point(0, 0);
+            this.groupBox18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox18.Name = "groupBox18";
-            this.groupBox18.Size = new System.Drawing.Size(399, 106);
+            this.groupBox18.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox18.Size = new System.Drawing.Size(298, 81);
             this.groupBox18.TabIndex = 0;
             this.groupBox18.TabStop = false;
             this.groupBox18.Text = "Spells/Slayer";
@@ -1234,13 +1254,14 @@
             this.tableLayoutPanel18.Controls.Add(this.comboBoxMeleeHighestSpell, 1, 2);
             this.tableLayoutPanel18.Controls.Add(this.label23, 2, 2);
             this.tableLayoutPanel18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel18.Location = new System.Drawing.Point(3, 18);
+            this.tableLayoutPanel18.Location = new System.Drawing.Point(2, 14);
+            this.tableLayoutPanel18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel18.Name = "tableLayoutPanel18";
             this.tableLayoutPanel18.RowCount = 3;
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel18.Size = new System.Drawing.Size(393, 85);
+            this.tableLayoutPanel18.Size = new System.Drawing.Size(294, 65);
             this.tableLayoutPanel18.TabIndex = 227;
             // 
             // label9
@@ -1248,10 +1269,10 @@
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(0, 6);
+            this.label9.Location = new System.Drawing.Point(0, 4);
             this.label9.Margin = new System.Windows.Forms.Padding(0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(89, 16);
+            this.label9.Size = new System.Drawing.Size(71, 13);
             this.label9.TabIndex = 71;
             this.label9.Text = "Blood Drinker";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1267,10 +1288,10 @@
             "Major",
             "Epic",
             "Legendary"});
-            this.comboBoxMeleeHeartThirst.Location = new System.Drawing.Point(315, 30);
-            this.comboBoxMeleeHeartThirst.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxMeleeHeartThirst.Location = new System.Drawing.Point(236, 23);
+            this.comboBoxMeleeHeartThirst.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxMeleeHeartThirst.Name = "comboBoxMeleeHeartThirst";
-            this.comboBoxMeleeHeartThirst.Size = new System.Drawing.Size(75, 23);
+            this.comboBoxMeleeHeartThirst.Size = new System.Drawing.Size(56, 21);
             this.comboBoxMeleeHeartThirst.TabIndex = 230;
             this.comboBoxMeleeHeartThirst.Text = "None";
             this.comboBoxMeleeHeartThirst.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
@@ -1281,10 +1302,10 @@
             this.label107.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label107.AutoSize = true;
             this.label107.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label107.Location = new System.Drawing.Point(195, 34);
+            this.label107.Location = new System.Drawing.Point(146, 25);
             this.label107.Margin = new System.Windows.Forms.Padding(0);
             this.label107.Name = "label107";
-            this.label107.Size = new System.Drawing.Size(76, 16);
+            this.label107.Size = new System.Drawing.Size(62, 13);
             this.label107.TabIndex = 231;
             this.label107.Text = "Heart Thirst";
             this.label107.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1304,10 +1325,10 @@
             "6",
             "7",
             "8"});
-            this.comboBoxMeleeBloodDrinker.Location = new System.Drawing.Point(120, 2);
-            this.comboBoxMeleeBloodDrinker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxMeleeBloodDrinker.Location = new System.Drawing.Point(90, 2);
+            this.comboBoxMeleeBloodDrinker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxMeleeBloodDrinker.Name = "comboBoxMeleeBloodDrinker";
-            this.comboBoxMeleeBloodDrinker.Size = new System.Drawing.Size(72, 23);
+            this.comboBoxMeleeBloodDrinker.Size = new System.Drawing.Size(54, 21);
             this.comboBoxMeleeBloodDrinker.TabIndex = 70;
             this.comboBoxMeleeBloodDrinker.Text = "None";
             this.comboBoxMeleeBloodDrinker.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
@@ -1318,10 +1339,10 @@
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(0, 34);
+            this.label10.Location = new System.Drawing.Point(0, 25);
             this.label10.Margin = new System.Windows.Forms.Padding(0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(87, 16);
+            this.label10.Size = new System.Drawing.Size(70, 13);
             this.label10.TabIndex = 73;
             this.label10.Text = "Heart Seeker";
             this.label10.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1337,10 +1358,10 @@
             "Major",
             "Epic",
             "Legendary"});
-            this.comboBoxMeleeBloodThirst.Location = new System.Drawing.Point(315, 2);
-            this.comboBoxMeleeBloodThirst.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxMeleeBloodThirst.Location = new System.Drawing.Point(236, 2);
+            this.comboBoxMeleeBloodThirst.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxMeleeBloodThirst.Name = "comboBoxMeleeBloodThirst";
-            this.comboBoxMeleeBloodThirst.Size = new System.Drawing.Size(75, 23);
+            this.comboBoxMeleeBloodThirst.Size = new System.Drawing.Size(56, 21);
             this.comboBoxMeleeBloodThirst.TabIndex = 228;
             this.comboBoxMeleeBloodThirst.Text = "None";
             this.comboBoxMeleeBloodThirst.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
@@ -1351,10 +1372,10 @@
             this.label108.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label108.AutoSize = true;
             this.label108.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label108.Location = new System.Drawing.Point(195, 6);
+            this.label108.Location = new System.Drawing.Point(146, 4);
             this.label108.Margin = new System.Windows.Forms.Padding(0);
             this.label108.Name = "label108";
-            this.label108.Size = new System.Drawing.Size(79, 16);
+            this.label108.Size = new System.Drawing.Size(63, 13);
             this.label108.TabIndex = 229;
             this.label108.Text = "Blood Thirst";
             this.label108.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1374,10 +1395,10 @@
             "6",
             "7",
             "8"});
-            this.comboBoxMeleeHeartSeeker.Location = new System.Drawing.Point(120, 30);
-            this.comboBoxMeleeHeartSeeker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxMeleeHeartSeeker.Location = new System.Drawing.Point(90, 23);
+            this.comboBoxMeleeHeartSeeker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxMeleeHeartSeeker.Name = "comboBoxMeleeHeartSeeker";
-            this.comboBoxMeleeHeartSeeker.Size = new System.Drawing.Size(72, 23);
+            this.comboBoxMeleeHeartSeeker.Size = new System.Drawing.Size(54, 21);
             this.comboBoxMeleeHeartSeeker.TabIndex = 72;
             this.comboBoxMeleeHeartSeeker.Text = "None";
             this.comboBoxMeleeHeartSeeker.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
@@ -1388,10 +1409,10 @@
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(0, 62);
+            this.label11.Location = new System.Drawing.Point(0, 47);
             this.label11.Margin = new System.Windows.Forms.Padding(0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(87, 16);
+            this.label11.Size = new System.Drawing.Size(69, 13);
             this.label11.TabIndex = 75;
             this.label11.Text = "Highest Spell";
             this.label11.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1406,7 +1427,8 @@
             0,
             0,
             131072});
-            this.numericUpDownMeleeSlayer.Location = new System.Drawing.Point(315, 60);
+            this.numericUpDownMeleeSlayer.Location = new System.Drawing.Point(236, 44);
+            this.numericUpDownMeleeSlayer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownMeleeSlayer.Maximum = new decimal(new int[] {
             999,
             0,
@@ -1418,7 +1440,7 @@
             0,
             0});
             this.numericUpDownMeleeSlayer.Name = "numericUpDownMeleeSlayer";
-            this.numericUpDownMeleeSlayer.Size = new System.Drawing.Size(75, 21);
+            this.numericUpDownMeleeSlayer.Size = new System.Drawing.Size(56, 18);
             this.numericUpDownMeleeSlayer.TabIndex = 227;
             this.numericUpDownMeleeSlayer.Value = new decimal(new int[] {
             1,
@@ -1443,10 +1465,10 @@
             "Level 3",
             "Level 2",
             "Level 1"});
-            this.comboBoxMeleeHighestSpell.Location = new System.Drawing.Point(120, 59);
-            this.comboBoxMeleeHighestSpell.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxMeleeHighestSpell.Location = new System.Drawing.Point(90, 44);
+            this.comboBoxMeleeHighestSpell.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxMeleeHighestSpell.Name = "comboBoxMeleeHighestSpell";
-            this.comboBoxMeleeHighestSpell.Size = new System.Drawing.Size(72, 23);
+            this.comboBoxMeleeHighestSpell.Size = new System.Drawing.Size(54, 21);
             this.comboBoxMeleeHighestSpell.TabIndex = 74;
             this.comboBoxMeleeHighestSpell.Text = "None";
             this.toolTip1.SetToolTip(this.comboBoxMeleeHighestSpell, "Highest level spell on weapon. Determines \r\neffectiveness of Armor Cleaving.");
@@ -1458,10 +1480,10 @@
             this.label23.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(195, 62);
+            this.label23.Location = new System.Drawing.Point(146, 47);
             this.label23.Margin = new System.Windows.Forms.Padding(0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(46, 16);
+            this.label23.Size = new System.Drawing.Size(36, 13);
             this.label23.TabIndex = 93;
             this.label23.Text = "Slayer";
             this.label23.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1469,11 +1491,11 @@
             // Missile
             // 
             this.Missile.Controls.Add(this.tableLayoutPanel34);
-            this.Missile.Location = new System.Drawing.Point(4, 25);
-            this.Missile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Missile.Location = new System.Drawing.Point(4, 22);
+            this.Missile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Missile.Name = "Missile";
-            this.Missile.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Missile.Size = new System.Drawing.Size(411, 336);
+            this.Missile.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Missile.Size = new System.Drawing.Size(306, 271);
             this.Missile.TabIndex = 1;
             this.Missile.Text = "Missile";
             this.Missile.UseVisualStyleBackColor = true;
@@ -1486,13 +1508,14 @@
             this.tableLayoutPanel34.Controls.Add(this.panel8, 0, 0);
             this.tableLayoutPanel34.Controls.Add(this.panel9, 0, 1);
             this.tableLayoutPanel34.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel34.Location = new System.Drawing.Point(3, 2);
+            this.tableLayoutPanel34.Location = new System.Drawing.Point(2, 2);
+            this.tableLayoutPanel34.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel34.Name = "tableLayoutPanel34";
             this.tableLayoutPanel34.RowCount = 3;
-            this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 140F));
-            this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 112F));
-            this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel34.Size = new System.Drawing.Size(405, 330);
+            this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 114F));
+            this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 91F));
+            this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65F));
+            this.tableLayoutPanel34.Size = new System.Drawing.Size(302, 268);
             this.tableLayoutPanel34.TabIndex = 233;
             // 
             // groupBox13
@@ -1501,11 +1524,9 @@
             this.groupBox13.Controls.Add(this.trackBarMissileAccuracyBar);
             this.groupBox13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox13.Location = new System.Drawing.Point(4, 256);
-            this.groupBox13.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox13.Location = new System.Drawing.Point(3, 208);
             this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox13.Size = new System.Drawing.Size(397, 72);
+            this.groupBox13.Size = new System.Drawing.Size(296, 59);
             this.groupBox13.TabIndex = 226;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Accuracy Bar";
@@ -1516,9 +1537,10 @@
             this.labelAccuracyBarValue.AutoSize = true;
             this.labelAccuracyBarValue.BackColor = System.Drawing.Color.Transparent;
             this.labelAccuracyBarValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAccuracyBarValue.Location = new System.Drawing.Point(180, 46);
+            this.labelAccuracyBarValue.Location = new System.Drawing.Point(134, 37);
+            this.labelAccuracyBarValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelAccuracyBarValue.Name = "labelAccuracyBarValue";
-            this.labelAccuracyBarValue.Size = new System.Drawing.Size(36, 25);
+            this.labelAccuracyBarValue.Size = new System.Drawing.Size(29, 20);
             this.labelAccuracyBarValue.TabIndex = 108;
             this.labelAccuracyBarValue.Text = "50";
             this.labelAccuracyBarValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1530,11 +1552,11 @@
             this.trackBarMissileAccuracyBar.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.trackBarMissileAccuracyBar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.trackBarMissileAccuracyBar.LargeChange = 20;
-            this.trackBarMissileAccuracyBar.Location = new System.Drawing.Point(4, 19);
-            this.trackBarMissileAccuracyBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.trackBarMissileAccuracyBar.Location = new System.Drawing.Point(3, 15);
+            this.trackBarMissileAccuracyBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.trackBarMissileAccuracyBar.Maximum = 100;
             this.trackBarMissileAccuracyBar.Name = "trackBarMissileAccuracyBar";
-            this.trackBarMissileAccuracyBar.Size = new System.Drawing.Size(389, 49);
+            this.trackBarMissileAccuracyBar.Size = new System.Drawing.Size(290, 41);
             this.trackBarMissileAccuracyBar.SmallChange = 10;
             this.trackBarMissileAccuracyBar.TabIndex = 0;
             this.toolTip1.SetToolTip(this.trackBarMissileAccuracyBar, "Contribues to Attack Speed and Attack Mod.");
@@ -1546,9 +1568,10 @@
             this.panel8.Controls.Add(this.groupBox19);
             this.panel8.Controls.Add(this.groupBox20);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(3, 3);
+            this.panel8.Location = new System.Drawing.Point(2, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(399, 134);
+            this.panel8.Size = new System.Drawing.Size(298, 110);
             this.panel8.TabIndex = 227;
             // 
             // groupBox19
@@ -1556,9 +1579,11 @@
             this.groupBox19.Controls.Add(this.tableLayoutPanel35);
             this.groupBox19.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox19.Location = new System.Drawing.Point(200, 0);
+            this.groupBox19.Location = new System.Drawing.Point(149, 0);
+            this.groupBox19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox19.Name = "groupBox19";
-            this.groupBox19.Size = new System.Drawing.Size(199, 134);
+            this.groupBox19.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox19.Size = new System.Drawing.Size(149, 110);
             this.groupBox19.TabIndex = 1;
             this.groupBox19.TabStop = false;
             this.groupBox19.Text = "Imbues";
@@ -1587,14 +1612,15 @@
             this.tableLayoutPanel35.Controls.Add(this.label45, 0, 2);
             this.tableLayoutPanel35.Controls.Add(this.checkBoxMissileResistanceRend, 1, 1);
             this.tableLayoutPanel35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel35.Location = new System.Drawing.Point(3, 18);
+            this.tableLayoutPanel35.Location = new System.Drawing.Point(2, 14);
+            this.tableLayoutPanel35.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel35.Name = "tableLayoutPanel35";
             this.tableLayoutPanel35.RowCount = 4;
             this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel35.Size = new System.Drawing.Size(193, 113);
+            this.tableLayoutPanel35.Size = new System.Drawing.Size(145, 94);
             this.tableLayoutPanel35.TabIndex = 0;
             // 
             // label38
@@ -1602,9 +1628,10 @@
             this.label38.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(3, 6);
+            this.label38.Location = new System.Drawing.Point(2, 5);
+            this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(26, 16);
+            this.label38.Size = new System.Drawing.Size(22, 13);
             this.label38.TabIndex = 76;
             this.label38.Text = "AR";
             this.label38.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1613,10 +1640,9 @@
             // 
             this.checkBoxMissileArmorRend.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxMissileArmorRend.AutoSize = true;
-            this.checkBoxMissileArmorRend.Location = new System.Drawing.Point(57, 5);
-            this.checkBoxMissileArmorRend.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxMissileArmorRend.Location = new System.Drawing.Point(43, 4);
             this.checkBoxMissileArmorRend.Name = "checkBoxMissileArmorRend";
-            this.checkBoxMissileArmorRend.Size = new System.Drawing.Size(18, 17);
+            this.checkBoxMissileArmorRend.Size = new System.Drawing.Size(15, 14);
             this.checkBoxMissileArmorRend.TabIndex = 79;
             this.toolTip1.SetToolTip(this.checkBoxMissileArmorRend, "Armor Rending. Effectiveness determined by\r\nBase Weapon Skill. Max armor ignored " +
         "= 60%.\r\n");
@@ -1634,7 +1660,8 @@
             0,
             0,
             131072});
-            this.numericUpDownMissileCrushingBlow.Location = new System.Drawing.Point(136, 88);
+            this.numericUpDownMissileCrushingBlow.Location = new System.Drawing.Point(103, 72);
+            this.numericUpDownMissileCrushingBlow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownMissileCrushingBlow.Maximum = new decimal(new int[] {
             99,
             0,
@@ -1646,7 +1673,7 @@
             0,
             0});
             this.numericUpDownMissileCrushingBlow.Name = "numericUpDownMissileCrushingBlow";
-            this.numericUpDownMissileCrushingBlow.Size = new System.Drawing.Size(54, 21);
+            this.numericUpDownMissileCrushingBlow.Size = new System.Drawing.Size(40, 18);
             this.numericUpDownMissileCrushingBlow.TabIndex = 226;
             this.toolTip1.SetToolTip(this.numericUpDownMissileCrushingBlow, "Crushing Blow. Multiplies ciritcal damage by the set value.\r\nNo max value.\r\n\r\n");
             this.numericUpDownMissileCrushingBlow.Value = new decimal(new int[] {
@@ -1661,9 +1688,10 @@
             this.label39.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(98, 6);
+            this.label39.Location = new System.Drawing.Point(74, 5);
+            this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(25, 16);
+            this.label39.Size = new System.Drawing.Size(21, 13);
             this.label39.TabIndex = 78;
             this.label39.Text = "AC";
             this.label39.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1673,9 +1701,10 @@
             this.label40.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(98, 90);
+            this.label40.Location = new System.Drawing.Point(74, 75);
+            this.label40.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(27, 16);
+            this.label40.Size = new System.Drawing.Size(23, 13);
             this.label40.TabIndex = 90;
             this.label40.Text = "Cru";
             this.label40.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1684,10 +1713,9 @@
             // 
             this.checkBoxMissileArmorCleaving.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxMissileArmorCleaving.AutoSize = true;
-            this.checkBoxMissileArmorCleaving.Location = new System.Drawing.Point(154, 5);
-            this.checkBoxMissileArmorCleaving.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxMissileArmorCleaving.Location = new System.Drawing.Point(115, 4);
             this.checkBoxMissileArmorCleaving.Name = "checkBoxMissileArmorCleaving";
-            this.checkBoxMissileArmorCleaving.Size = new System.Drawing.Size(18, 17);
+            this.checkBoxMissileArmorCleaving.Size = new System.Drawing.Size(15, 14);
             this.checkBoxMissileArmorCleaving.TabIndex = 77;
             this.toolTip1.SetToolTip(this.checkBoxMissileArmorCleaving, "Armor Cleaving. Effectiveness determined by\r\nHighest Level Spell on the weapon. M" +
         "ax\r\narmor ignored = 50%.\r\n");
@@ -1698,10 +1726,9 @@
             // 
             this.checkBoxMissileCripplingBlow.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxMissileCripplingBlow.AutoSize = true;
-            this.checkBoxMissileCripplingBlow.Location = new System.Drawing.Point(57, 90);
-            this.checkBoxMissileCripplingBlow.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxMissileCripplingBlow.Location = new System.Drawing.Point(43, 74);
             this.checkBoxMissileCripplingBlow.Name = "checkBoxMissileCripplingBlow";
-            this.checkBoxMissileCripplingBlow.Size = new System.Drawing.Size(18, 17);
+            this.checkBoxMissileCripplingBlow.Size = new System.Drawing.Size(15, 14);
             this.checkBoxMissileCripplingBlow.TabIndex = 89;
             this.toolTip1.SetToolTip(this.checkBoxMissileCripplingBlow, "Crippling Blow. Effectiveness determined by\r\nBase Weapon Skill. Multiplies ciritc" +
         "al damage by a\r\nmaximum of x6. (max base-damage x7)\r\n\r\n");
@@ -1719,7 +1746,8 @@
             0,
             0,
             131072});
-            this.numericUpDownMissileResistanceCleaving.Location = new System.Drawing.Point(136, 31);
+            this.numericUpDownMissileResistanceCleaving.Location = new System.Drawing.Point(103, 25);
+            this.numericUpDownMissileResistanceCleaving.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownMissileResistanceCleaving.Maximum = new decimal(new int[] {
             99,
             0,
@@ -1731,7 +1759,7 @@
             0,
             0});
             this.numericUpDownMissileResistanceCleaving.Name = "numericUpDownMissileResistanceCleaving";
-            this.numericUpDownMissileResistanceCleaving.Size = new System.Drawing.Size(54, 21);
+            this.numericUpDownMissileResistanceCleaving.Size = new System.Drawing.Size(40, 18);
             this.numericUpDownMissileResistanceCleaving.TabIndex = 224;
             this.toolTip1.SetToolTip(this.numericUpDownMissileResistanceCleaving, resources.GetString("numericUpDownMissileResistanceCleaving.ToolTip"));
             this.numericUpDownMissileResistanceCleaving.Value = new decimal(new int[] {
@@ -1746,9 +1774,10 @@
             this.label41.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(3, 90);
+            this.label41.Location = new System.Drawing.Point(2, 75);
+            this.label41.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(25, 16);
+            this.label41.Size = new System.Drawing.Size(21, 13);
             this.label41.TabIndex = 88;
             this.label41.Text = "CB";
             this.label41.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1764,7 +1793,8 @@
             0,
             0,
             131072});
-            this.numericUpDownMissileBitingStrike.Location = new System.Drawing.Point(137, 59);
+            this.numericUpDownMissileBitingStrike.Location = new System.Drawing.Point(103, 48);
+            this.numericUpDownMissileBitingStrike.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownMissileBitingStrike.Maximum = new decimal(new int[] {
             1,
             0,
@@ -1776,7 +1806,7 @@
             0,
             65536});
             this.numericUpDownMissileBitingStrike.Name = "numericUpDownMissileBitingStrike";
-            this.numericUpDownMissileBitingStrike.Size = new System.Drawing.Size(51, 21);
+            this.numericUpDownMissileBitingStrike.Size = new System.Drawing.Size(40, 18);
             this.numericUpDownMissileBitingStrike.TabIndex = 225;
             this.toolTip1.SetToolTip(this.numericUpDownMissileBitingStrike, "Biting Strike. Determines critical strike chance with\r\nthis weapon. Values below " +
         "0.1 have no effect.\r\n");
@@ -1792,9 +1822,10 @@
             this.label42.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(98, 62);
+            this.label42.Location = new System.Drawing.Point(74, 51);
+            this.label42.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(25, 16);
+            this.label42.Size = new System.Drawing.Size(21, 13);
             this.label42.TabIndex = 86;
             this.label42.Text = "BS";
             this.label42.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1804,9 +1835,10 @@
             this.label43.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(3, 34);
+            this.label43.Location = new System.Drawing.Point(2, 28);
+            this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(27, 16);
+            this.label43.Size = new System.Drawing.Size(23, 13);
             this.label43.TabIndex = 80;
             this.label43.Text = "RR";
             this.label43.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1815,10 +1847,9 @@
             // 
             this.checkBoxMissileCriticalStrike.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxMissileCriticalStrike.AutoSize = true;
-            this.checkBoxMissileCriticalStrike.Location = new System.Drawing.Point(57, 61);
-            this.checkBoxMissileCriticalStrike.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxMissileCriticalStrike.Location = new System.Drawing.Point(43, 50);
             this.checkBoxMissileCriticalStrike.Name = "checkBoxMissileCriticalStrike";
-            this.checkBoxMissileCriticalStrike.Size = new System.Drawing.Size(18, 17);
+            this.checkBoxMissileCriticalStrike.Size = new System.Drawing.Size(15, 14);
             this.checkBoxMissileCriticalStrike.TabIndex = 85;
             this.toolTip1.SetToolTip(this.checkBoxMissileCriticalStrike, "Critical Strike. Effectiveness determined by\r\nBase Weapon Skill.\r\n\r\n");
             this.checkBoxMissileCriticalStrike.UseVisualStyleBackColor = true;
@@ -1829,9 +1860,10 @@
             this.label44.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(98, 34);
+            this.label44.Location = new System.Drawing.Point(74, 28);
+            this.label44.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(26, 16);
+            this.label44.Size = new System.Drawing.Size(22, 13);
             this.label44.TabIndex = 82;
             this.label44.Text = "RC";
             this.label44.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1841,9 +1873,10 @@
             this.label45.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label45.AutoSize = true;
             this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(3, 62);
+            this.label45.Location = new System.Drawing.Point(2, 51);
+            this.label45.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(25, 16);
+            this.label45.Size = new System.Drawing.Size(21, 13);
             this.label45.TabIndex = 84;
             this.label45.Text = "CS";
             this.label45.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1852,10 +1885,9 @@
             // 
             this.checkBoxMissileResistanceRend.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxMissileResistanceRend.AutoSize = true;
-            this.checkBoxMissileResistanceRend.Location = new System.Drawing.Point(57, 33);
-            this.checkBoxMissileResistanceRend.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxMissileResistanceRend.Location = new System.Drawing.Point(43, 27);
             this.checkBoxMissileResistanceRend.Name = "checkBoxMissileResistanceRend";
-            this.checkBoxMissileResistanceRend.Size = new System.Drawing.Size(18, 17);
+            this.checkBoxMissileResistanceRend.Size = new System.Drawing.Size(15, 14);
             this.checkBoxMissileResistanceRend.TabIndex = 81;
             this.toolTip1.SetToolTip(this.checkBoxMissileResistanceRend, "Resistance Rending. Effectiveness determined by\r\nBase Weapon Skill.\r\n");
             this.checkBoxMissileResistanceRend.UseVisualStyleBackColor = true;
@@ -1867,8 +1899,10 @@
             this.groupBox20.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox20.Location = new System.Drawing.Point(0, 0);
+            this.groupBox20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox20.Name = "groupBox20";
-            this.groupBox20.Size = new System.Drawing.Size(199, 134);
+            this.groupBox20.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox20.Size = new System.Drawing.Size(149, 110);
             this.groupBox20.TabIndex = 0;
             this.groupBox20.TabStop = false;
             this.groupBox20.Text = "Weapon Stats";
@@ -1889,15 +1923,16 @@
             this.tableLayoutPanel36.Controls.Add(this.numericUpDownMissileDamageBonus, 1, 3);
             this.tableLayoutPanel36.Controls.Add(this.comboBoxAmmoType, 1, 1);
             this.tableLayoutPanel36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel36.Location = new System.Drawing.Point(3, 18);
+            this.tableLayoutPanel36.Location = new System.Drawing.Point(2, 14);
+            this.tableLayoutPanel36.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel36.Name = "tableLayoutPanel36";
             this.tableLayoutPanel36.RowCount = 5;
             this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel36.Size = new System.Drawing.Size(193, 113);
+            this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel36.Size = new System.Drawing.Size(145, 94);
             this.tableLayoutPanel36.TabIndex = 228;
             // 
             // label52
@@ -1905,9 +1940,10 @@
             this.label52.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(3, 94);
+            this.label52.Location = new System.Drawing.Point(2, 78);
+            this.label52.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(89, 16);
+            this.label52.Size = new System.Drawing.Size(72, 13);
             this.label52.TabIndex = 224;
             this.label52.Text = "Buffed Speed";
             this.label52.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1917,9 +1953,10 @@
             this.label46.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(3, 4);
+            this.label46.Location = new System.Drawing.Point(2, 0);
+            this.label46.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(97, 15);
+            this.label46.Size = new System.Drawing.Size(53, 19);
             this.label46.TabIndex = 69;
             this.label46.Text = "Attack Animation";
             this.label46.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1932,10 +1969,10 @@
             "Bow",
             "Xbow",
             "Atlatl"});
-            this.comboBoxMissileAnimation.Location = new System.Drawing.Point(114, 2);
-            this.comboBoxMissileAnimation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxMissileAnimation.Location = new System.Drawing.Point(86, 2);
+            this.comboBoxMissileAnimation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxMissileAnimation.Name = "comboBoxMissileAnimation";
-            this.comboBoxMissileAnimation.Size = new System.Drawing.Size(76, 23);
+            this.comboBoxMissileAnimation.Size = new System.Drawing.Size(57, 21);
             this.comboBoxMissileAnimation.TabIndex = 1;
             this.comboBoxMissileAnimation.Text = "Bow";
             this.comboBoxMissileAnimation.SelectedValueChanged += new System.EventHandler(this.SetAmmoType);
@@ -1945,14 +1982,15 @@
             this.numericUpDownMissileDamageMod.AutoSize = true;
             this.numericUpDownMissileDamageMod.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numericUpDownMissileDamageMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownMissileDamageMod.Location = new System.Drawing.Point(114, 49);
+            this.numericUpDownMissileDamageMod.Location = new System.Drawing.Point(86, 40);
+            this.numericUpDownMissileDamageMod.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownMissileDamageMod.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
             this.numericUpDownMissileDamageMod.Name = "numericUpDownMissileDamageMod";
-            this.numericUpDownMissileDamageMod.Size = new System.Drawing.Size(76, 21);
+            this.numericUpDownMissileDamageMod.Size = new System.Drawing.Size(57, 18);
             this.numericUpDownMissileDamageMod.TabIndex = 222;
             this.numericUpDownMissileDamageMod.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -1961,9 +1999,10 @@
             this.label48.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label48.AutoSize = true;
             this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(3, 49);
+            this.label48.Location = new System.Drawing.Point(2, 41);
+            this.label48.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(90, 16);
+            this.label48.Size = new System.Drawing.Size(71, 13);
             this.label48.TabIndex = 5;
             this.label48.Text = "Damage Mod";
             this.label48.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1972,14 +2011,15 @@
             // 
             this.numericUpDownMissileWeaponSpeed.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numericUpDownMissileWeaponSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownMissileWeaponSpeed.Location = new System.Drawing.Point(114, 95);
+            this.numericUpDownMissileWeaponSpeed.Location = new System.Drawing.Point(86, 78);
+            this.numericUpDownMissileWeaponSpeed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownMissileWeaponSpeed.Maximum = new decimal(new int[] {
             150,
             0,
             0,
             0});
             this.numericUpDownMissileWeaponSpeed.Name = "numericUpDownMissileWeaponSpeed";
-            this.numericUpDownMissileWeaponSpeed.Size = new System.Drawing.Size(76, 21);
+            this.numericUpDownMissileWeaponSpeed.Size = new System.Drawing.Size(57, 18);
             this.numericUpDownMissileWeaponSpeed.TabIndex = 223;
             this.numericUpDownMissileWeaponSpeed.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -1988,9 +2028,10 @@
             this.label47.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label47.AutoSize = true;
             this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(3, 72);
+            this.label47.Location = new System.Drawing.Point(2, 60);
+            this.label47.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(101, 16);
+            this.label47.Size = new System.Drawing.Size(80, 13);
             this.label47.TabIndex = 3;
             this.label47.Text = "Damage Bonus";
             this.label47.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2000,9 +2041,10 @@
             this.label49.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label49.AutoSize = true;
             this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(3, 26);
+            this.label49.Location = new System.Drawing.Point(2, 22);
+            this.label49.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(81, 16);
+            this.label49.Size = new System.Drawing.Size(63, 13);
             this.label49.TabIndex = 96;
             this.label49.Text = "Ammo Type";
             this.label49.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2012,14 +2054,15 @@
             this.numericUpDownMissileDamageBonus.AutoSize = true;
             this.numericUpDownMissileDamageBonus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numericUpDownMissileDamageBonus.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownMissileDamageBonus.Location = new System.Drawing.Point(114, 72);
+            this.numericUpDownMissileDamageBonus.Location = new System.Drawing.Point(86, 59);
+            this.numericUpDownMissileDamageBonus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownMissileDamageBonus.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
             this.numericUpDownMissileDamageBonus.Name = "numericUpDownMissileDamageBonus";
-            this.numericUpDownMissileDamageBonus.Size = new System.Drawing.Size(76, 21);
+            this.numericUpDownMissileDamageBonus.Size = new System.Drawing.Size(57, 18);
             this.numericUpDownMissileDamageBonus.TabIndex = 221;
             this.numericUpDownMissileDamageBonus.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -2030,10 +2073,10 @@
             this.comboBoxAmmoType.Items.AddRange(new object[] {
             "32-40",
             "28-40"});
-            this.comboBoxAmmoType.Location = new System.Drawing.Point(114, 25);
-            this.comboBoxAmmoType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxAmmoType.Location = new System.Drawing.Point(86, 21);
+            this.comboBoxAmmoType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxAmmoType.Name = "comboBoxAmmoType";
-            this.comboBoxAmmoType.Size = new System.Drawing.Size(76, 23);
+            this.comboBoxAmmoType.Size = new System.Drawing.Size(57, 21);
             this.comboBoxAmmoType.TabIndex = 225;
             this.comboBoxAmmoType.Text = "32-40";
             this.comboBoxAmmoType.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -2042,9 +2085,10 @@
             // 
             this.panel9.Controls.Add(this.groupBox21);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(3, 143);
+            this.panel9.Location = new System.Drawing.Point(2, 116);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(399, 106);
+            this.panel9.Size = new System.Drawing.Size(298, 87);
             this.panel9.TabIndex = 228;
             // 
             // groupBox21
@@ -2053,8 +2097,10 @@
             this.groupBox21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox21.Location = new System.Drawing.Point(0, 0);
+            this.groupBox21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox21.Name = "groupBox21";
-            this.groupBox21.Size = new System.Drawing.Size(399, 106);
+            this.groupBox21.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox21.Size = new System.Drawing.Size(298, 87);
             this.groupBox21.TabIndex = 0;
             this.groupBox21.TabStop = false;
             this.groupBox21.Text = "Spells/Slayer";
@@ -2075,12 +2121,13 @@
             this.tableLayoutPanel37.Controls.Add(this.label55, 2, 1);
             this.tableLayoutPanel37.Controls.Add(this.numericUpDownMissileSlayer, 3, 1);
             this.tableLayoutPanel37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel37.Location = new System.Drawing.Point(3, 18);
+            this.tableLayoutPanel37.Location = new System.Drawing.Point(2, 14);
+            this.tableLayoutPanel37.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel37.Name = "tableLayoutPanel37";
             this.tableLayoutPanel37.RowCount = 2;
             this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel37.Size = new System.Drawing.Size(393, 85);
+            this.tableLayoutPanel37.Size = new System.Drawing.Size(294, 71);
             this.tableLayoutPanel37.TabIndex = 227;
             // 
             // label50
@@ -2088,9 +2135,10 @@
             this.label50.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label50.AutoSize = true;
             this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(3, 13);
+            this.label50.Location = new System.Drawing.Point(2, 11);
+            this.label50.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(89, 16);
+            this.label50.Size = new System.Drawing.Size(71, 13);
             this.label50.TabIndex = 71;
             this.label50.Text = "Blood Drinker";
             this.label50.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2110,10 +2158,10 @@
             "6",
             "7",
             "8"});
-            this.comboBoxMissileBloodDrinker.Location = new System.Drawing.Point(120, 9);
-            this.comboBoxMissileBloodDrinker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxMissileBloodDrinker.Location = new System.Drawing.Point(90, 7);
+            this.comboBoxMissileBloodDrinker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxMissileBloodDrinker.Name = "comboBoxMissileBloodDrinker";
-            this.comboBoxMissileBloodDrinker.Size = new System.Drawing.Size(72, 23);
+            this.comboBoxMissileBloodDrinker.Size = new System.Drawing.Size(54, 21);
             this.comboBoxMissileBloodDrinker.TabIndex = 70;
             this.comboBoxMissileBloodDrinker.Text = "None";
             this.comboBoxMissileBloodDrinker.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -2129,10 +2177,10 @@
             "Major",
             "Epic",
             "Legendary"});
-            this.comboBoxMissileBloodThirst.Location = new System.Drawing.Point(315, 9);
-            this.comboBoxMissileBloodThirst.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxMissileBloodThirst.Location = new System.Drawing.Point(236, 7);
+            this.comboBoxMissileBloodThirst.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxMissileBloodThirst.Name = "comboBoxMissileBloodThirst";
-            this.comboBoxMissileBloodThirst.Size = new System.Drawing.Size(75, 23);
+            this.comboBoxMissileBloodThirst.Size = new System.Drawing.Size(56, 21);
             this.comboBoxMissileBloodThirst.TabIndex = 228;
             this.comboBoxMissileBloodThirst.Text = "None";
             this.comboBoxMissileBloodThirst.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -2142,9 +2190,10 @@
             this.label53.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label53.AutoSize = true;
             this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(198, 13);
+            this.label53.Location = new System.Drawing.Point(148, 11);
+            this.label53.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(79, 16);
+            this.label53.Size = new System.Drawing.Size(63, 13);
             this.label53.TabIndex = 229;
             this.label53.Text = "Blood Thirst";
             this.label53.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2154,9 +2203,10 @@
             this.label54.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label54.AutoSize = true;
             this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(3, 55);
+            this.label54.Location = new System.Drawing.Point(2, 46);
+            this.label54.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(87, 16);
+            this.label54.Size = new System.Drawing.Size(69, 13);
             this.label54.TabIndex = 75;
             this.label54.Text = "Highest Spell";
             this.label54.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2176,10 +2226,10 @@
             "Level 3",
             "Level 2",
             "Level 1"});
-            this.comboBoxMissileHighestSpell.Location = new System.Drawing.Point(120, 52);
-            this.comboBoxMissileHighestSpell.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxMissileHighestSpell.Location = new System.Drawing.Point(90, 42);
+            this.comboBoxMissileHighestSpell.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxMissileHighestSpell.Name = "comboBoxMissileHighestSpell";
-            this.comboBoxMissileHighestSpell.Size = new System.Drawing.Size(72, 23);
+            this.comboBoxMissileHighestSpell.Size = new System.Drawing.Size(54, 21);
             this.comboBoxMissileHighestSpell.TabIndex = 74;
             this.comboBoxMissileHighestSpell.Text = "None";
             this.toolTip1.SetToolTip(this.comboBoxMissileHighestSpell, "Highest level spell on weapon. Determines \r\neffectiveness of Armor Cleaving.\r\n");
@@ -2190,9 +2240,10 @@
             this.label55.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label55.AutoSize = true;
             this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(198, 55);
+            this.label55.Location = new System.Drawing.Point(148, 46);
+            this.label55.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(46, 16);
+            this.label55.Size = new System.Drawing.Size(36, 13);
             this.label55.TabIndex = 93;
             this.label55.Text = "Slayer";
             this.label55.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2207,7 +2258,8 @@
             0,
             0,
             131072});
-            this.numericUpDownMissileSlayer.Location = new System.Drawing.Point(315, 53);
+            this.numericUpDownMissileSlayer.Location = new System.Drawing.Point(236, 44);
+            this.numericUpDownMissileSlayer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownMissileSlayer.Maximum = new decimal(new int[] {
             999,
             0,
@@ -2219,7 +2271,7 @@
             0,
             0});
             this.numericUpDownMissileSlayer.Name = "numericUpDownMissileSlayer";
-            this.numericUpDownMissileSlayer.Size = new System.Drawing.Size(75, 21);
+            this.numericUpDownMissileSlayer.Size = new System.Drawing.Size(56, 18);
             this.numericUpDownMissileSlayer.TabIndex = 227;
             this.numericUpDownMissileSlayer.Value = new decimal(new int[] {
             1,
@@ -2231,11 +2283,11 @@
             // Magic
             // 
             this.Magic.Controls.Add(this.tableLayoutPanel38);
-            this.Magic.Location = new System.Drawing.Point(4, 25);
-            this.Magic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Magic.Location = new System.Drawing.Point(4, 22);
+            this.Magic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Magic.Name = "Magic";
-            this.Magic.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Magic.Size = new System.Drawing.Size(411, 336);
+            this.Magic.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Magic.Size = new System.Drawing.Size(306, 271);
             this.Magic.TabIndex = 2;
             this.Magic.Text = "Magic";
             this.Magic.UseVisualStyleBackColor = true;
@@ -2247,12 +2299,13 @@
             this.tableLayoutPanel38.Controls.Add(this.tableLayoutPanel39, 0, 0);
             this.tableLayoutPanel38.Controls.Add(this.groupBox24, 0, 1);
             this.tableLayoutPanel38.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel38.Location = new System.Drawing.Point(3, 2);
+            this.tableLayoutPanel38.Location = new System.Drawing.Point(2, 2);
+            this.tableLayoutPanel38.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel38.Name = "tableLayoutPanel38";
             this.tableLayoutPanel38.RowCount = 2;
             this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel38.Size = new System.Drawing.Size(405, 224);
+            this.tableLayoutPanel38.Size = new System.Drawing.Size(302, 182);
             this.tableLayoutPanel38.TabIndex = 250;
             // 
             // tableLayoutPanel39
@@ -2263,20 +2316,23 @@
             this.tableLayoutPanel39.Controls.Add(this.groupBox22, 0, 0);
             this.tableLayoutPanel39.Controls.Add(this.groupBox23, 1, 0);
             this.tableLayoutPanel39.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel39.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel39.Location = new System.Drawing.Point(2, 2);
+            this.tableLayoutPanel39.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel39.Name = "tableLayoutPanel39";
             this.tableLayoutPanel39.RowCount = 1;
             this.tableLayoutPanel39.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel39.Size = new System.Drawing.Size(399, 128);
+            this.tableLayoutPanel39.Size = new System.Drawing.Size(298, 105);
             this.tableLayoutPanel39.TabIndex = 0;
             // 
             // groupBox22
             // 
             this.groupBox22.Controls.Add(this.tableLayoutPanel40);
             this.groupBox22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox22.Location = new System.Drawing.Point(3, 3);
+            this.groupBox22.Location = new System.Drawing.Point(2, 2);
+            this.groupBox22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox22.Name = "groupBox22";
-            this.groupBox22.Size = new System.Drawing.Size(193, 122);
+            this.groupBox22.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox22.Size = new System.Drawing.Size(145, 101);
             this.groupBox22.TabIndex = 2;
             this.groupBox22.TabStop = false;
             this.groupBox22.Text = "Weapon Stats";
@@ -2293,13 +2349,14 @@
             this.tableLayoutPanel40.Controls.Add(this.comboBoxMagicSpell, 1, 1);
             this.tableLayoutPanel40.Controls.Add(this.label25, 0, 2);
             this.tableLayoutPanel40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel40.Location = new System.Drawing.Point(3, 18);
+            this.tableLayoutPanel40.Location = new System.Drawing.Point(2, 15);
+            this.tableLayoutPanel40.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel40.Name = "tableLayoutPanel40";
             this.tableLayoutPanel40.RowCount = 3;
             this.tableLayoutPanel40.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel40.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel40.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel40.Size = new System.Drawing.Size(187, 101);
+            this.tableLayoutPanel40.Size = new System.Drawing.Size(141, 84);
             this.tableLayoutPanel40.TabIndex = 0;
             // 
             // label78
@@ -2307,9 +2364,10 @@
             this.label78.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label78.AutoSize = true;
             this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F);
-            this.label78.Location = new System.Drawing.Point(3, 9);
+            this.label78.Location = new System.Drawing.Point(2, 1);
+            this.label78.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(97, 15);
+            this.label78.Size = new System.Drawing.Size(53, 26);
             this.label78.TabIndex = 157;
             this.label78.Text = "Attack Animation";
             this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2317,14 +2375,15 @@
             // numericUpDownMagicElementalDamageBonus
             // 
             this.numericUpDownMagicElementalDamageBonus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numericUpDownMagicElementalDamageBonus.Location = new System.Drawing.Point(111, 69);
+            this.numericUpDownMagicElementalDamageBonus.Location = new System.Drawing.Point(83, 58);
+            this.numericUpDownMagicElementalDamageBonus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownMagicElementalDamageBonus.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
             this.numericUpDownMagicElementalDamageBonus.Name = "numericUpDownMagicElementalDamageBonus";
-            this.numericUpDownMagicElementalDamageBonus.Size = new System.Drawing.Size(73, 22);
+            this.numericUpDownMagicElementalDamageBonus.Size = new System.Drawing.Size(56, 20);
             this.numericUpDownMagicElementalDamageBonus.TabIndex = 224;
             this.numericUpDownMagicElementalDamageBonus.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -2336,10 +2395,10 @@
             "Normal",
             "Wand (overhead)",
             "Wand (tilt)"});
-            this.comboBoxMagicAnimation.Location = new System.Drawing.Point(111, 2);
-            this.comboBoxMagicAnimation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxMagicAnimation.Location = new System.Drawing.Point(83, 2);
+            this.comboBoxMagicAnimation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxMagicAnimation.Name = "comboBoxMagicAnimation";
-            this.comboBoxMagicAnimation.Size = new System.Drawing.Size(73, 24);
+            this.comboBoxMagicAnimation.Size = new System.Drawing.Size(56, 21);
             this.comboBoxMagicAnimation.TabIndex = 155;
             this.comboBoxMagicAnimation.Text = "Normal";
             this.toolTip1.SetToolTip(this.comboBoxMagicAnimation, resources.GetString("comboBoxMagicAnimation.ToolTip"));
@@ -2349,9 +2408,10 @@
             // 
             this.label65.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(3, 41);
+            this.label65.Location = new System.Drawing.Point(2, 35);
+            this.label65.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(38, 16);
+            this.label65.Size = new System.Drawing.Size(30, 13);
             this.label65.TabIndex = 182;
             this.label65.Text = "Spell";
             this.label65.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2363,10 +2423,10 @@
             this.comboBoxMagicSpell.Items.AddRange(new object[] {
             "War 8",
             "Void 8"});
-            this.comboBoxMagicSpell.Location = new System.Drawing.Point(111, 35);
-            this.comboBoxMagicSpell.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxMagicSpell.Location = new System.Drawing.Point(83, 30);
+            this.comboBoxMagicSpell.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxMagicSpell.Name = "comboBoxMagicSpell";
-            this.comboBoxMagicSpell.Size = new System.Drawing.Size(73, 24);
+            this.comboBoxMagicSpell.Size = new System.Drawing.Size(56, 21);
             this.comboBoxMagicSpell.TabIndex = 181;
             this.comboBoxMagicSpell.Text = "War 8";
             this.comboBoxMagicSpell.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -2375,9 +2435,10 @@
             // 
             this.label25.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(3, 75);
+            this.label25.Location = new System.Drawing.Point(2, 57);
+            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(100, 16);
+            this.label25.Size = new System.Drawing.Size(47, 26);
             this.label25.TabIndex = 223;
             this.label25.Text = "Ele Dmg Bonus";
             this.label25.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2386,9 +2447,11 @@
             // 
             this.groupBox23.Controls.Add(this.tableLayoutPanel41);
             this.groupBox23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox23.Location = new System.Drawing.Point(202, 3);
+            this.groupBox23.Location = new System.Drawing.Point(151, 2);
+            this.groupBox23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox23.Name = "groupBox23";
-            this.groupBox23.Size = new System.Drawing.Size(194, 122);
+            this.groupBox23.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox23.Size = new System.Drawing.Size(145, 101);
             this.groupBox23.TabIndex = 3;
             this.groupBox23.TabStop = false;
             this.groupBox23.Text = "Imbues";
@@ -2413,22 +2476,24 @@
             this.tableLayoutPanel41.Controls.Add(this.checkBoxMagicCriticalStrike, 1, 1);
             this.tableLayoutPanel41.Controls.Add(this.label69, 2, 1);
             this.tableLayoutPanel41.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel41.Location = new System.Drawing.Point(3, 18);
+            this.tableLayoutPanel41.Location = new System.Drawing.Point(2, 15);
+            this.tableLayoutPanel41.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel41.Name = "tableLayoutPanel41";
             this.tableLayoutPanel41.RowCount = 3;
             this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel41.Size = new System.Drawing.Size(188, 101);
+            this.tableLayoutPanel41.Size = new System.Drawing.Size(141, 84);
             this.tableLayoutPanel41.TabIndex = 1;
             // 
             // label72
             // 
             this.label72.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(3, 8);
+            this.label72.Location = new System.Drawing.Point(2, 7);
+            this.label72.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(27, 16);
+            this.label72.Size = new System.Drawing.Size(23, 13);
             this.label72.TabIndex = 168;
             this.label72.Text = "RR";
             this.label72.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2437,10 +2502,9 @@
             // 
             this.checkBoxMagicResistanceRend.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxMagicResistanceRend.AutoSize = true;
-            this.checkBoxMagicResistanceRend.Location = new System.Drawing.Point(56, 8);
-            this.checkBoxMagicResistanceRend.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxMagicResistanceRend.Location = new System.Drawing.Point(41, 7);
             this.checkBoxMagicResistanceRend.Name = "checkBoxMagicResistanceRend";
-            this.checkBoxMagicResistanceRend.Size = new System.Drawing.Size(18, 17);
+            this.checkBoxMagicResistanceRend.Size = new System.Drawing.Size(15, 14);
             this.checkBoxMagicResistanceRend.TabIndex = 169;
             this.toolTip1.SetToolTip(this.checkBoxMagicResistanceRend, "Resistance Rending. Effectiveness determined by\r\nBase Weapon Skill.\r\n");
             this.checkBoxMagicResistanceRend.UseVisualStyleBackColor = true;
@@ -2455,7 +2519,8 @@
             0,
             0,
             131072});
-            this.numericUpDownMagicCrushingBlow.Location = new System.Drawing.Point(133, 72);
+            this.numericUpDownMagicCrushingBlow.Location = new System.Drawing.Point(100, 60);
+            this.numericUpDownMagicCrushingBlow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownMagicCrushingBlow.Maximum = new decimal(new int[] {
             99,
             0,
@@ -2467,7 +2532,7 @@
             0,
             0});
             this.numericUpDownMagicCrushingBlow.Name = "numericUpDownMagicCrushingBlow";
-            this.numericUpDownMagicCrushingBlow.Size = new System.Drawing.Size(52, 22);
+            this.numericUpDownMagicCrushingBlow.Size = new System.Drawing.Size(39, 20);
             this.numericUpDownMagicCrushingBlow.TabIndex = 248;
             this.toolTip1.SetToolTip(this.numericUpDownMagicCrushingBlow, "Crushing Blow. Multiplies ciritcal damage by the set value.\r\nNo max value.\r\n\r\n");
             this.numericUpDownMagicCrushingBlow.Value = new decimal(new int[] {
@@ -2481,9 +2546,10 @@
             // 
             this.label71.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(96, 8);
+            this.label71.Location = new System.Drawing.Point(72, 7);
+            this.label71.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(26, 16);
+            this.label71.Size = new System.Drawing.Size(22, 13);
             this.label71.TabIndex = 170;
             this.label71.Text = "RC";
             this.label71.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2497,7 +2563,8 @@
             0,
             0,
             131072});
-            this.numericUpDownMagicBitingStrike.Location = new System.Drawing.Point(133, 38);
+            this.numericUpDownMagicBitingStrike.Location = new System.Drawing.Point(100, 32);
+            this.numericUpDownMagicBitingStrike.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownMagicBitingStrike.Maximum = new decimal(new int[] {
             1,
             0,
@@ -2509,7 +2576,7 @@
             0,
             131072});
             this.numericUpDownMagicBitingStrike.Name = "numericUpDownMagicBitingStrike";
-            this.numericUpDownMagicBitingStrike.Size = new System.Drawing.Size(52, 22);
+            this.numericUpDownMagicBitingStrike.Size = new System.Drawing.Size(39, 20);
             this.numericUpDownMagicBitingStrike.TabIndex = 247;
             this.toolTip1.SetToolTip(this.numericUpDownMagicBitingStrike, "Biting Strike. Determines critical strike chance with\r\nthis weapon. Values below " +
         "0.05 have no effect.\r\n");
@@ -2524,9 +2591,10 @@
             // 
             this.label67.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(96, 75);
+            this.label67.Location = new System.Drawing.Point(72, 63);
+            this.label67.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(27, 16);
+            this.label67.Size = new System.Drawing.Size(23, 13);
             this.label67.TabIndex = 176;
             this.label67.Text = "Cru";
             this.label67.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2540,7 +2608,8 @@
             0,
             0,
             131072});
-            this.numericUpDownMagicResistanceCleaving.Location = new System.Drawing.Point(133, 5);
+            this.numericUpDownMagicResistanceCleaving.Location = new System.Drawing.Point(100, 4);
+            this.numericUpDownMagicResistanceCleaving.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownMagicResistanceCleaving.Maximum = new decimal(new int[] {
             99,
             0,
@@ -2552,7 +2621,7 @@
             0,
             0});
             this.numericUpDownMagicResistanceCleaving.Name = "numericUpDownMagicResistanceCleaving";
-            this.numericUpDownMagicResistanceCleaving.Size = new System.Drawing.Size(52, 22);
+            this.numericUpDownMagicResistanceCleaving.Size = new System.Drawing.Size(39, 20);
             this.numericUpDownMagicResistanceCleaving.TabIndex = 246;
             this.toolTip1.SetToolTip(this.numericUpDownMagicResistanceCleaving, resources.GetString("numericUpDownMagicResistanceCleaving.ToolTip"));
             this.numericUpDownMagicResistanceCleaving.Value = new decimal(new int[] {
@@ -2566,10 +2635,9 @@
             // 
             this.checkBoxMagicCripplingBlow.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxMagicCripplingBlow.AutoSize = true;
-            this.checkBoxMagicCripplingBlow.Location = new System.Drawing.Point(56, 75);
-            this.checkBoxMagicCripplingBlow.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxMagicCripplingBlow.Location = new System.Drawing.Point(41, 63);
             this.checkBoxMagicCripplingBlow.Name = "checkBoxMagicCripplingBlow";
-            this.checkBoxMagicCripplingBlow.Size = new System.Drawing.Size(18, 17);
+            this.checkBoxMagicCripplingBlow.Size = new System.Drawing.Size(15, 14);
             this.checkBoxMagicCripplingBlow.TabIndex = 175;
             this.toolTip1.SetToolTip(this.checkBoxMagicCripplingBlow, "Crippling Blow. Effectiveness determined by\r\nBase Weapon Skill. Multiplies ciritc" +
         "al damage by a\r\nmaximum of x6. (max base-damage x7)\r\n\r\n");
@@ -2580,9 +2648,10 @@
             // 
             this.label70.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(3, 41);
+            this.label70.Location = new System.Drawing.Point(2, 35);
+            this.label70.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(25, 16);
+            this.label70.Size = new System.Drawing.Size(21, 13);
             this.label70.TabIndex = 171;
             this.label70.Text = "CS";
             this.label70.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2591,9 +2660,10 @@
             // 
             this.label68.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(3, 75);
+            this.label68.Location = new System.Drawing.Point(2, 63);
+            this.label68.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(25, 16);
+            this.label68.Size = new System.Drawing.Size(21, 13);
             this.label68.TabIndex = 174;
             this.label68.Text = "CB";
             this.label68.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2602,10 +2672,9 @@
             // 
             this.checkBoxMagicCriticalStrike.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxMagicCriticalStrike.AutoSize = true;
-            this.checkBoxMagicCriticalStrike.Location = new System.Drawing.Point(56, 41);
-            this.checkBoxMagicCriticalStrike.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxMagicCriticalStrike.Location = new System.Drawing.Point(41, 35);
             this.checkBoxMagicCriticalStrike.Name = "checkBoxMagicCriticalStrike";
-            this.checkBoxMagicCriticalStrike.Size = new System.Drawing.Size(18, 17);
+            this.checkBoxMagicCriticalStrike.Size = new System.Drawing.Size(15, 14);
             this.checkBoxMagicCriticalStrike.TabIndex = 172;
             this.toolTip1.SetToolTip(this.checkBoxMagicCriticalStrike, "Critical Strike. Effectiveness determined by\r\nBase Weapon Skill.\r\n\r\n");
             this.checkBoxMagicCriticalStrike.UseVisualStyleBackColor = true;
@@ -2615,9 +2684,10 @@
             // 
             this.label69.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(96, 41);
+            this.label69.Location = new System.Drawing.Point(72, 35);
+            this.label69.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(25, 16);
+            this.label69.Size = new System.Drawing.Size(21, 13);
             this.label69.TabIndex = 173;
             this.label69.Text = "BS";
             this.label69.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2626,9 +2696,11 @@
             // 
             this.groupBox24.Controls.Add(this.tableLayoutPanel42);
             this.groupBox24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox24.Location = new System.Drawing.Point(3, 137);
+            this.groupBox24.Location = new System.Drawing.Point(2, 111);
+            this.groupBox24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox24.Name = "groupBox24";
-            this.groupBox24.Size = new System.Drawing.Size(399, 84);
+            this.groupBox24.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox24.Size = new System.Drawing.Size(298, 69);
             this.groupBox24.TabIndex = 1;
             this.groupBox24.TabStop = false;
             this.groupBox24.Text = "Spells/Slayer";
@@ -2647,21 +2719,23 @@
             this.tableLayoutPanel42.Controls.Add(this.label66, 2, 0);
             this.tableLayoutPanel42.Controls.Add(this.numericUpDownMagicSlayer, 3, 0);
             this.tableLayoutPanel42.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel42.Location = new System.Drawing.Point(3, 18);
+            this.tableLayoutPanel42.Location = new System.Drawing.Point(2, 15);
+            this.tableLayoutPanel42.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel42.Name = "tableLayoutPanel42";
             this.tableLayoutPanel42.RowCount = 2;
             this.tableLayoutPanel42.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel42.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel42.Size = new System.Drawing.Size(393, 63);
+            this.tableLayoutPanel42.Size = new System.Drawing.Size(294, 52);
             this.tableLayoutPanel42.TabIndex = 0;
             // 
             // label77
             // 
             this.label77.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label77.AutoSize = true;
-            this.label77.Location = new System.Drawing.Point(3, 7);
+            this.label77.Location = new System.Drawing.Point(2, 6);
+            this.label77.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(83, 16);
+            this.label77.Size = new System.Drawing.Size(67, 13);
             this.label77.TabIndex = 159;
             this.label77.Text = "Spirit Drinker";
             this.label77.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2680,10 +2754,10 @@
             "6",
             "7",
             "8"});
-            this.comboBoxMagicSpiritDrinker.Location = new System.Drawing.Point(120, 2);
-            this.comboBoxMagicSpiritDrinker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxMagicSpiritDrinker.Location = new System.Drawing.Point(90, 2);
+            this.comboBoxMagicSpiritDrinker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxMagicSpiritDrinker.Name = "comboBoxMagicSpiritDrinker";
-            this.comboBoxMagicSpiritDrinker.Size = new System.Drawing.Size(72, 24);
+            this.comboBoxMagicSpiritDrinker.Size = new System.Drawing.Size(54, 21);
             this.comboBoxMagicSpiritDrinker.TabIndex = 158;
             this.comboBoxMagicSpiritDrinker.Text = "0";
             this.comboBoxMagicSpiritDrinker.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -2692,9 +2766,10 @@
             // 
             this.label76.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label76.AutoSize = true;
-            this.label76.Location = new System.Drawing.Point(3, 39);
+            this.label76.Location = new System.Drawing.Point(2, 32);
+            this.label76.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(73, 16);
+            this.label76.Size = new System.Drawing.Size(59, 13);
             this.label76.TabIndex = 161;
             this.label76.Text = "Spirit Thirst";
             this.label76.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2709,10 +2784,10 @@
             "Major",
             "Epic",
             "Legendary"});
-            this.comboBoxMagicSpiritThirst.Location = new System.Drawing.Point(120, 33);
-            this.comboBoxMagicSpiritThirst.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxMagicSpiritThirst.Location = new System.Drawing.Point(90, 28);
+            this.comboBoxMagicSpiritThirst.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxMagicSpiritThirst.Name = "comboBoxMagicSpiritThirst";
-            this.comboBoxMagicSpiritThirst.Size = new System.Drawing.Size(72, 24);
+            this.comboBoxMagicSpiritThirst.Size = new System.Drawing.Size(54, 21);
             this.comboBoxMagicSpiritThirst.TabIndex = 160;
             this.comboBoxMagicSpiritThirst.Text = "None";
             this.comboBoxMagicSpiritThirst.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -2721,9 +2796,10 @@
             // 
             this.label66.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(198, 7);
+            this.label66.Location = new System.Drawing.Point(148, 6);
+            this.label66.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(46, 16);
+            this.label66.Size = new System.Drawing.Size(36, 13);
             this.label66.TabIndex = 179;
             this.label66.Text = "Slayer";
             this.label66.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2736,7 +2812,8 @@
             0,
             0,
             131072});
-            this.numericUpDownMagicSlayer.Location = new System.Drawing.Point(315, 3);
+            this.numericUpDownMagicSlayer.Location = new System.Drawing.Point(236, 2);
+            this.numericUpDownMagicSlayer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownMagicSlayer.Maximum = new decimal(new int[] {
             999,
             0,
@@ -2748,7 +2825,7 @@
             0,
             0});
             this.numericUpDownMagicSlayer.Name = "numericUpDownMagicSlayer";
-            this.numericUpDownMagicSlayer.Size = new System.Drawing.Size(75, 22);
+            this.numericUpDownMagicSlayer.Size = new System.Drawing.Size(56, 20);
             this.numericUpDownMagicSlayer.TabIndex = 249;
             this.numericUpDownMagicSlayer.Value = new decimal(new int[] {
             1,
@@ -2764,12 +2841,10 @@
             this.groupBox10.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox10.ForeColor = System.Drawing.Color.Black;
-            this.groupBox10.Location = new System.Drawing.Point(0, 365);
-            this.groupBox10.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox10.Location = new System.Drawing.Point(0, 295);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox10.Size = new System.Drawing.Size(422, 154);
+            this.groupBox10.Size = new System.Drawing.Size(317, 125);
             this.groupBox10.TabIndex = 222;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Effective Weapon Stats";
@@ -2802,7 +2877,8 @@
             this.tableLayoutPanel9.Controls.Add(this.label99, 0, 1);
             this.tableLayoutPanel9.Controls.Add(this.label87, 2, 1);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(4, 24);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(3, 19);
+            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 5;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -2810,7 +2886,7 @@
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(414, 126);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(311, 103);
             this.tableLayoutPanel9.TabIndex = 1;
             // 
             // labelEffectiveAttackMod
@@ -2818,10 +2894,9 @@
             this.labelEffectiveAttackMod.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelEffectiveAttackMod.AutoSize = true;
             this.labelEffectiveAttackMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEffectiveAttackMod.Location = new System.Drawing.Point(168, 54);
-            this.labelEffectiveAttackMod.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelEffectiveAttackMod.Location = new System.Drawing.Point(124, 43);
             this.labelEffectiveAttackMod.Name = "labelEffectiveAttackMod";
-            this.labelEffectiveAttackMod.Size = new System.Drawing.Size(14, 16);
+            this.labelEffectiveAttackMod.Size = new System.Drawing.Size(13, 13);
             this.labelEffectiveAttackMod.TabIndex = 246;
             this.labelEffectiveAttackMod.Text = "0";
             // 
@@ -2830,9 +2905,10 @@
             this.label124.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label124.AutoSize = true;
             this.label124.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label124.Location = new System.Drawing.Point(3, 54);
+            this.label124.Location = new System.Drawing.Point(2, 43);
+            this.label124.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label124.Name = "label124";
-            this.label124.Size = new System.Drawing.Size(74, 16);
+            this.label124.Size = new System.Drawing.Size(62, 13);
             this.label124.TabIndex = 245;
             this.label124.Text = "Attack Mod";
             this.label124.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2843,10 +2919,9 @@
             this.labelEffectiveCritMultiplier.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelEffectiveCritMultiplier.AutoSize = true;
             this.labelEffectiveCritMultiplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEffectiveCritMultiplier.Location = new System.Drawing.Point(375, 105);
-            this.labelEffectiveCritMultiplier.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelEffectiveCritMultiplier.Location = new System.Drawing.Point(280, 85);
             this.labelEffectiveCritMultiplier.Name = "labelEffectiveCritMultiplier";
-            this.labelEffectiveCritMultiplier.Size = new System.Drawing.Size(14, 16);
+            this.labelEffectiveCritMultiplier.Size = new System.Drawing.Size(13, 13);
             this.labelEffectiveCritMultiplier.TabIndex = 244;
             this.labelEffectiveCritMultiplier.Text = "1";
             // 
@@ -2855,9 +2930,10 @@
             this.label100.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label100.AutoSize = true;
             this.label100.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label100.Location = new System.Drawing.Point(3, 4);
+            this.label100.Location = new System.Drawing.Point(2, 3);
+            this.label100.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(124, 16);
+            this.label100.Size = new System.Drawing.Size(101, 13);
             this.label100.TabIndex = 217;
             this.label100.Text = "Attacks per Second";
             this.label100.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2868,9 +2944,10 @@
             this.label106.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label106.AutoSize = true;
             this.label106.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label106.Location = new System.Drawing.Point(209, 105);
+            this.label106.Location = new System.Drawing.Point(156, 85);
+            this.label106.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label106.Name = "label106";
-            this.label106.Size = new System.Drawing.Size(82, 16);
+            this.label106.Size = new System.Drawing.Size(66, 13);
             this.label106.TabIndex = 225;
             this.label106.Text = "Crit Multiplier";
             this.label106.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2882,10 +2959,9 @@
             this.labelEffectiveCritChance.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelEffectiveCritChance.AutoSize = true;
             this.labelEffectiveCritChance.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEffectiveCritChance.Location = new System.Drawing.Point(164, 105);
-            this.labelEffectiveCritChance.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelEffectiveCritChance.Location = new System.Drawing.Point(121, 85);
             this.labelEffectiveCritChance.Name = "labelEffectiveCritChance";
-            this.labelEffectiveCritChance.Size = new System.Drawing.Size(21, 16);
+            this.labelEffectiveCritChance.Size = new System.Drawing.Size(19, 13);
             this.labelEffectiveCritChance.TabIndex = 243;
             this.labelEffectiveCritChance.Text = "10";
             // 
@@ -2894,10 +2970,9 @@
             this.labelEffectiveAttackSpeed.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelEffectiveAttackSpeed.AutoSize = true;
             this.labelEffectiveAttackSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEffectiveAttackSpeed.Location = new System.Drawing.Point(168, 4);
-            this.labelEffectiveAttackSpeed.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelEffectiveAttackSpeed.Location = new System.Drawing.Point(124, 3);
             this.labelEffectiveAttackSpeed.Name = "labelEffectiveAttackSpeed";
-            this.labelEffectiveAttackSpeed.Size = new System.Drawing.Size(14, 16);
+            this.labelEffectiveAttackSpeed.Size = new System.Drawing.Size(13, 13);
             this.labelEffectiveAttackSpeed.TabIndex = 236;
             this.labelEffectiveAttackSpeed.Text = "0";
             // 
@@ -2906,10 +2981,9 @@
             this.labelEffectiveResistMod.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelEffectiveResistMod.AutoSize = true;
             this.labelEffectiveResistMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEffectiveResistMod.Location = new System.Drawing.Point(375, 79);
-            this.labelEffectiveResistMod.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelEffectiveResistMod.Location = new System.Drawing.Point(280, 63);
             this.labelEffectiveResistMod.Name = "labelEffectiveResistMod";
-            this.labelEffectiveResistMod.Size = new System.Drawing.Size(14, 16);
+            this.labelEffectiveResistMod.Size = new System.Drawing.Size(13, 13);
             this.labelEffectiveResistMod.TabIndex = 242;
             this.labelEffectiveResistMod.Text = "0";
             // 
@@ -2918,9 +2992,10 @@
             this.label103.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label103.AutoSize = true;
             this.label103.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label103.Location = new System.Drawing.Point(3, 105);
+            this.label103.Location = new System.Drawing.Point(2, 85);
+            this.label103.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(75, 16);
+            this.label103.Size = new System.Drawing.Size(62, 13);
             this.label103.TabIndex = 224;
             this.label103.Text = "Crit Chance";
             this.label103.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2933,9 +3008,10 @@
             this.label102.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label102.AutoSize = true;
             this.label102.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label102.Location = new System.Drawing.Point(209, 4);
+            this.label102.Location = new System.Drawing.Point(156, 3);
+            this.label102.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label102.Name = "label102";
-            this.label102.Size = new System.Drawing.Size(75, 16);
+            this.label102.Size = new System.Drawing.Size(61, 13);
             this.label102.TabIndex = 218;
             this.label102.Text = "Power Mod";
             this.label102.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2946,10 +3022,9 @@
             this.labelEffectiveArmorMod.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelEffectiveArmorMod.AutoSize = true;
             this.labelEffectiveArmorMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEffectiveArmorMod.Location = new System.Drawing.Point(168, 79);
-            this.labelEffectiveArmorMod.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelEffectiveArmorMod.Location = new System.Drawing.Point(124, 63);
             this.labelEffectiveArmorMod.Name = "labelEffectiveArmorMod";
-            this.labelEffectiveArmorMod.Size = new System.Drawing.Size(14, 16);
+            this.labelEffectiveArmorMod.Size = new System.Drawing.Size(13, 13);
             this.labelEffectiveArmorMod.TabIndex = 241;
             this.labelEffectiveArmorMod.Text = "0";
             // 
@@ -2958,10 +3033,9 @@
             this.labelPowerBarMod.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelPowerBarMod.AutoSize = true;
             this.labelPowerBarMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPowerBarMod.Location = new System.Drawing.Point(375, 4);
-            this.labelPowerBarMod.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelPowerBarMod.Location = new System.Drawing.Point(280, 3);
             this.labelPowerBarMod.Name = "labelPowerBarMod";
-            this.labelPowerBarMod.Size = new System.Drawing.Size(14, 16);
+            this.labelPowerBarMod.Size = new System.Drawing.Size(13, 13);
             this.labelPowerBarMod.TabIndex = 237;
             this.labelPowerBarMod.Text = "0";
             // 
@@ -2970,9 +3044,10 @@
             this.label104.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label104.AutoSize = true;
             this.label104.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label104.Location = new System.Drawing.Point(209, 79);
+            this.label104.Location = new System.Drawing.Point(156, 63);
+            this.label104.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label104.Name = "label104";
-            this.label104.Size = new System.Drawing.Size(111, 16);
+            this.label104.Size = new System.Drawing.Size(89, 13);
             this.label104.TabIndex = 223;
             this.label104.Text = "Resist Rend Mod";
             this.label104.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2984,10 +3059,9 @@
             this.labelEffectiveMaxDamage.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelEffectiveMaxDamage.AutoSize = true;
             this.labelEffectiveMaxDamage.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEffectiveMaxDamage.Location = new System.Drawing.Point(375, 29);
-            this.labelEffectiveMaxDamage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelEffectiveMaxDamage.Location = new System.Drawing.Point(280, 23);
             this.labelEffectiveMaxDamage.Name = "labelEffectiveMaxDamage";
-            this.labelEffectiveMaxDamage.Size = new System.Drawing.Size(14, 16);
+            this.labelEffectiveMaxDamage.Size = new System.Drawing.Size(13, 13);
             this.labelEffectiveMaxDamage.TabIndex = 240;
             this.labelEffectiveMaxDamage.Text = "0";
             // 
@@ -2996,9 +3070,10 @@
             this.label.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label.AutoSize = true;
             this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.Location = new System.Drawing.Point(209, 54);
+            this.label.Location = new System.Drawing.Point(156, 43);
+            this.label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(72, 16);
+            this.label.Size = new System.Drawing.Size(60, 13);
             this.label.TabIndex = 219;
             this.label.Text = "Attack Skill";
             this.label.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -3009,10 +3084,9 @@
             this.labelEffectiveAvgDamage.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelEffectiveAvgDamage.AutoSize = true;
             this.labelEffectiveAvgDamage.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEffectiveAvgDamage.Location = new System.Drawing.Point(168, 29);
-            this.labelEffectiveAvgDamage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelEffectiveAvgDamage.Location = new System.Drawing.Point(124, 23);
             this.labelEffectiveAvgDamage.Name = "labelEffectiveAvgDamage";
-            this.labelEffectiveAvgDamage.Size = new System.Drawing.Size(14, 16);
+            this.labelEffectiveAvgDamage.Size = new System.Drawing.Size(13, 13);
             this.labelEffectiveAvgDamage.TabIndex = 239;
             this.labelEffectiveAvgDamage.Text = "0";
             // 
@@ -3021,9 +3095,10 @@
             this.label105.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label105.AutoSize = true;
             this.label105.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label105.Location = new System.Drawing.Point(3, 79);
+            this.label105.Location = new System.Drawing.Point(2, 63);
+            this.label105.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label105.Name = "label105";
-            this.label105.Size = new System.Drawing.Size(109, 16);
+            this.label105.Size = new System.Drawing.Size(87, 13);
             this.label105.TabIndex = 222;
             this.label105.Text = "Armor Rend Mod";
             this.label105.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -3035,10 +3110,9 @@
             this.labelEffectiveAttackSkill.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelEffectiveAttackSkill.AutoSize = true;
             this.labelEffectiveAttackSkill.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEffectiveAttackSkill.Location = new System.Drawing.Point(375, 54);
-            this.labelEffectiveAttackSkill.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelEffectiveAttackSkill.Location = new System.Drawing.Point(280, 43);
             this.labelEffectiveAttackSkill.Name = "labelEffectiveAttackSkill";
-            this.labelEffectiveAttackSkill.Size = new System.Drawing.Size(14, 16);
+            this.labelEffectiveAttackSkill.Size = new System.Drawing.Size(13, 13);
             this.labelEffectiveAttackSkill.TabIndex = 238;
             this.labelEffectiveAttackSkill.Text = "0";
             // 
@@ -3047,9 +3121,10 @@
             this.label99.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label99.AutoSize = true;
             this.label99.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label99.Location = new System.Drawing.Point(3, 29);
+            this.label99.Location = new System.Drawing.Point(2, 23);
+            this.label99.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(87, 16);
+            this.label99.Size = new System.Drawing.Size(69, 13);
             this.label99.TabIndex = 220;
             this.label99.Text = "Avg Damage";
             this.label99.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -3060,9 +3135,10 @@
             this.label87.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label87.AutoSize = true;
             this.label87.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label87.Location = new System.Drawing.Point(209, 29);
+            this.label87.Location = new System.Drawing.Point(156, 23);
+            this.label87.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(88, 16);
+            this.label87.Size = new System.Drawing.Size(70, 13);
             this.label87.TabIndex = 221;
             this.label87.Text = "Max Damage";
             this.label87.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -3073,10 +3149,10 @@
             this.lblBuffedQuickness.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblBuffedQuickness.AutoSize = true;
             this.lblBuffedQuickness.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuffedQuickness.Location = new System.Drawing.Point(0, 75);
+            this.lblBuffedQuickness.Location = new System.Drawing.Point(0, 61);
             this.lblBuffedQuickness.Margin = new System.Windows.Forms.Padding(0);
             this.lblBuffedQuickness.Name = "lblBuffedQuickness";
-            this.lblBuffedQuickness.Size = new System.Drawing.Size(70, 16);
+            this.lblBuffedQuickness.Size = new System.Drawing.Size(57, 13);
             this.lblBuffedQuickness.TabIndex = 8;
             this.lblBuffedQuickness.Text = "Quickness";
             this.lblBuffedQuickness.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -3092,12 +3168,12 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 2);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1316, 593);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(987, 481);
             this.tableLayoutPanel1.TabIndex = 1;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -3106,17 +3182,17 @@
             this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
             this.tableLayoutPanel3.Controls.Add(this.panel1, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel43, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 2);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(2, 2);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(432, 589);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(324, 477);
             this.tableLayoutPanel3.TabIndex = 2;
             this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint);
             // 
@@ -3124,10 +3200,10 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Controls.Add(this.tableLayoutPanel21);
-            this.panel1.Location = new System.Drawing.Point(5, 64);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(4, 53);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(427, 521);
+            this.panel1.Size = new System.Drawing.Size(320, 420);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -3142,13 +3218,14 @@
             this.tableLayoutPanel21.Controls.Add(this.tableLayoutPanel22, 0, 0);
             this.tableLayoutPanel21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel21.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel21.Name = "tableLayoutPanel21";
             this.tableLayoutPanel21.RowCount = 4;
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel21.Size = new System.Drawing.Size(427, 521);
+            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29F));
+            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21F));
+            this.tableLayoutPanel21.Size = new System.Drawing.Size(320, 420);
             this.tableLayoutPanel21.TabIndex = 220;
             // 
             // tableLayoutPanel23
@@ -3159,11 +3236,12 @@
             this.tableLayoutPanel23.Controls.Add(this.groupBox5, 0, 0);
             this.tableLayoutPanel23.Controls.Add(this.groupBox6, 1, 0);
             this.tableLayoutPanel23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel23.Location = new System.Drawing.Point(3, 133);
+            this.tableLayoutPanel23.Location = new System.Drawing.Point(2, 107);
+            this.tableLayoutPanel23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel23.Name = "tableLayoutPanel23";
             this.tableLayoutPanel23.RowCount = 1;
             this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel23.Size = new System.Drawing.Size(421, 124);
+            this.tableLayoutPanel23.Size = new System.Drawing.Size(316, 101);
             this.tableLayoutPanel23.TabIndex = 1;
             // 
             // groupBox5
@@ -3172,11 +3250,9 @@
             this.groupBox5.Controls.Add(this.tableLayoutPanel26);
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(4, 4);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox5.Location = new System.Drawing.Point(3, 3);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox5.Size = new System.Drawing.Size(265, 116);
+            this.groupBox5.Size = new System.Drawing.Size(199, 95);
             this.groupBox5.TabIndex = 217;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Buffed Skills";
@@ -3197,27 +3273,28 @@
             this.tableLayoutPanel26.Controls.Add(this.comboBoxRecklessness, 2, 0);
             this.tableLayoutPanel26.Controls.Add(this.comboBoxSneakAttack, 2, 1);
             this.tableLayoutPanel26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel26.Location = new System.Drawing.Point(4, 19);
+            this.tableLayoutPanel26.Location = new System.Drawing.Point(3, 15);
+            this.tableLayoutPanel26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel26.Name = "tableLayoutPanel26";
             this.tableLayoutPanel26.RowCount = 3;
             this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel26.Size = new System.Drawing.Size(257, 93);
+            this.tableLayoutPanel26.Size = new System.Drawing.Size(193, 77);
             this.tableLayoutPanel26.TabIndex = 0;
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F);
-            this.label5.Location = new System.Drawing.Point(0, 7);
+            this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Margin = new System.Windows.Forms.Padding(0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 16);
+            this.label5.Size = new System.Drawing.Size(77, 25);
             this.label5.TabIndex = 62;
             this.label5.Text = "Recklessness";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label5.Click += new System.EventHandler(this.label5_Click_1);
             // 
             // numericUpDownBuffedDeception
@@ -3230,7 +3307,8 @@
             0,
             0,
             0});
-            this.numericUpDownBuffedDeception.Location = new System.Drawing.Point(113, 66);
+            this.numericUpDownBuffedDeception.Location = new System.Drawing.Point(82, 54);
+            this.numericUpDownBuffedDeception.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownBuffedDeception.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -3242,7 +3320,7 @@
             0,
             0});
             this.numericUpDownBuffedDeception.Name = "numericUpDownBuffedDeception";
-            this.numericUpDownBuffedDeception.Size = new System.Drawing.Size(55, 22);
+            this.numericUpDownBuffedDeception.Size = new System.Drawing.Size(47, 19);
             this.numericUpDownBuffedDeception.TabIndex = 14;
             this.toolTip1.SetToolTip(this.numericUpDownBuffedDeception, "Determines chance to perform a Sneak Attack from\r\nin front of an ememy. Highest c" +
         "hance at 306 skill.");
@@ -3264,7 +3342,8 @@
             0,
             0,
             0});
-            this.numericUpDownBuffedRecklessness.Location = new System.Drawing.Point(113, 4);
+            this.numericUpDownBuffedRecklessness.Location = new System.Drawing.Point(82, 3);
+            this.numericUpDownBuffedRecklessness.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownBuffedRecklessness.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -3276,7 +3355,7 @@
             0,
             0});
             this.numericUpDownBuffedRecklessness.Name = "numericUpDownBuffedRecklessness";
-            this.numericUpDownBuffedRecklessness.Size = new System.Drawing.Size(55, 22);
+            this.numericUpDownBuffedRecklessness.Size = new System.Drawing.Size(47, 19);
             this.numericUpDownBuffedRecklessness.TabIndex = 10;
             this.toolTip1.SetToolTip(this.numericUpDownBuffedRecklessness, "Determines Recklessness Rating, when compared\r\nto buffed weapon skill.");
             this.numericUpDownBuffedRecklessness.Value = new decimal(new int[] {
@@ -3289,17 +3368,17 @@
             // 
             // label6
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(0, 38);
+            this.label6.Location = new System.Drawing.Point(0, 25);
             this.label6.Margin = new System.Windows.Forms.Padding(0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 16);
+            this.label6.Size = new System.Drawing.Size(77, 25);
             this.label6.TabIndex = 65;
             this.label6.Text = "Sneak Attack";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // comboBoxDeception
             // 
@@ -3310,10 +3389,10 @@
             "None",
             "Train",
             "Spec"});
-            this.comboBoxDeception.Location = new System.Drawing.Point(186, 65);
-            this.comboBoxDeception.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxDeception.Location = new System.Drawing.Point(139, 53);
+            this.comboBoxDeception.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxDeception.Name = "comboBoxDeception";
-            this.comboBoxDeception.Size = new System.Drawing.Size(63, 24);
+            this.comboBoxDeception.Size = new System.Drawing.Size(48, 21);
             this.comboBoxDeception.TabIndex = 15;
             this.comboBoxDeception.Text = "None";
             this.toolTip1.SetToolTip(this.comboBoxDeception, "Trained: Provides of max proc chance of 10.\r\nSpec: Provides a max proc chance of " +
@@ -3323,17 +3402,17 @@
             // 
             // label7
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(0, 69);
+            this.label7.Location = new System.Drawing.Point(0, 50);
             this.label7.Margin = new System.Windows.Forms.Padding(0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 16);
+            this.label7.Size = new System.Drawing.Size(77, 27);
             this.label7.TabIndex = 68;
             this.label7.Text = "Deception";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // numericUpDownBuffedSneakAttack
             // 
@@ -3345,7 +3424,8 @@
             0,
             0,
             0});
-            this.numericUpDownBuffedSneakAttack.Location = new System.Drawing.Point(113, 35);
+            this.numericUpDownBuffedSneakAttack.Location = new System.Drawing.Point(82, 28);
+            this.numericUpDownBuffedSneakAttack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownBuffedSneakAttack.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -3357,7 +3437,7 @@
             0,
             0});
             this.numericUpDownBuffedSneakAttack.Name = "numericUpDownBuffedSneakAttack";
-            this.numericUpDownBuffedSneakAttack.Size = new System.Drawing.Size(55, 22);
+            this.numericUpDownBuffedSneakAttack.Size = new System.Drawing.Size(47, 19);
             this.numericUpDownBuffedSneakAttack.TabIndex = 12;
             this.toolTip1.SetToolTip(this.numericUpDownBuffedSneakAttack, "Determines Sneak Attack Rating, when compared\r\nto buffed weapon skill.");
             this.numericUpDownBuffedSneakAttack.Value = new decimal(new int[] {
@@ -3377,10 +3457,10 @@
             "None",
             "Train",
             "Spec"});
-            this.comboBoxRecklessness.Location = new System.Drawing.Point(186, 3);
-            this.comboBoxRecklessness.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxRecklessness.Location = new System.Drawing.Point(139, 2);
+            this.comboBoxRecklessness.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxRecklessness.Name = "comboBoxRecklessness";
-            this.comboBoxRecklessness.Size = new System.Drawing.Size(63, 24);
+            this.comboBoxRecklessness.Size = new System.Drawing.Size(48, 21);
             this.comboBoxRecklessness.TabIndex = 11;
             this.comboBoxRecklessness.Text = "None";
             this.toolTip1.SetToolTip(this.comboBoxRecklessness, "Trained: Provides a max Damage Rating of 10.\r\nSpec: Provides a max Damage Rating " +
@@ -3397,10 +3477,10 @@
             "None",
             "Train",
             "Spec"});
-            this.comboBoxSneakAttack.Location = new System.Drawing.Point(186, 34);
-            this.comboBoxSneakAttack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxSneakAttack.Location = new System.Drawing.Point(139, 27);
+            this.comboBoxSneakAttack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxSneakAttack.Name = "comboBoxSneakAttack";
-            this.comboBoxSneakAttack.Size = new System.Drawing.Size(63, 24);
+            this.comboBoxSneakAttack.Size = new System.Drawing.Size(48, 21);
             this.comboBoxSneakAttack.TabIndex = 13;
             this.comboBoxSneakAttack.Text = "None";
             this.toolTip1.SetToolTip(this.comboBoxSneakAttack, "Trained: Provides a max Damage Rating of 10.\r\nSpec: Provides a max Damage Rating " +
@@ -3413,11 +3493,9 @@
             this.groupBox6.Controls.Add(this.tableLayoutPanel27);
             this.groupBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(277, 4);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox6.Location = new System.Drawing.Point(208, 3);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox6.Size = new System.Drawing.Size(140, 116);
+            this.groupBox6.Size = new System.Drawing.Size(105, 95);
             this.groupBox6.TabIndex = 218;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Ratings";
@@ -3434,13 +3512,14 @@
             this.tableLayoutPanel27.Controls.Add(this.label15, 0, 2);
             this.tableLayoutPanel27.Controls.Add(this.numericUpDownDamageRating, 1, 0);
             this.tableLayoutPanel27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel27.Location = new System.Drawing.Point(4, 19);
+            this.tableLayoutPanel27.Location = new System.Drawing.Point(3, 15);
+            this.tableLayoutPanel27.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel27.Name = "tableLayoutPanel27";
             this.tableLayoutPanel27.RowCount = 3;
             this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel27.Size = new System.Drawing.Size(132, 93);
+            this.tableLayoutPanel27.Size = new System.Drawing.Size(99, 77);
             this.tableLayoutPanel27.TabIndex = 0;
             // 
             // numericUpDownCritChanceRating
@@ -3448,14 +3527,15 @@
             this.numericUpDownCritChanceRating.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDownCritChanceRating.AutoSize = true;
             this.numericUpDownCritChanceRating.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownCritChanceRating.Location = new System.Drawing.Point(82, 66);
+            this.numericUpDownCritChanceRating.Location = new System.Drawing.Point(61, 54);
+            this.numericUpDownCritChanceRating.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownCritChanceRating.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
             this.numericUpDownCritChanceRating.Name = "numericUpDownCritChanceRating";
-            this.numericUpDownCritChanceRating.Size = new System.Drawing.Size(47, 22);
+            this.numericUpDownCritChanceRating.Size = new System.Drawing.Size(36, 19);
             this.numericUpDownCritChanceRating.TabIndex = 18;
             this.toolTip1.SetToolTip(this.numericUpDownCritChanceRating, "Set to 1 if obtained the Eye of Remorselessness aug gem.");
             this.numericUpDownCritChanceRating.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -3463,16 +3543,16 @@
             // 
             // label17
             // 
-            this.label17.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label17.AutoSize = true;
+            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F);
-            this.label17.Location = new System.Drawing.Point(0, 8);
+            this.label17.Location = new System.Drawing.Point(0, 0);
             this.label17.Margin = new System.Windows.Forms.Padding(0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(55, 15);
+            this.label17.Size = new System.Drawing.Size(59, 25);
             this.label17.TabIndex = 55;
             this.label17.Text = "Damage";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // numericUpDownCritDamageRating
@@ -3480,14 +3560,15 @@
             this.numericUpDownCritDamageRating.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDownCritDamageRating.AutoSize = true;
             this.numericUpDownCritDamageRating.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownCritDamageRating.Location = new System.Drawing.Point(82, 35);
+            this.numericUpDownCritDamageRating.Location = new System.Drawing.Point(61, 28);
+            this.numericUpDownCritDamageRating.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownCritDamageRating.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
             this.numericUpDownCritDamageRating.Name = "numericUpDownCritDamageRating";
-            this.numericUpDownCritDamageRating.Size = new System.Drawing.Size(47, 22);
+            this.numericUpDownCritDamageRating.Size = new System.Drawing.Size(36, 19);
             this.numericUpDownCritDamageRating.TabIndex = 17;
             this.toolTip1.SetToolTip(this.numericUpDownCritDamageRating, "Enter your total Critical Damage Rating, minus \r\nany rating obtained from an equi" +
         "ped weapon.\r\n");
@@ -3496,29 +3577,29 @@
             // 
             // label14
             // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label14.AutoSize = true;
+            this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F);
-            this.label14.Location = new System.Drawing.Point(0, 39);
+            this.label14.Location = new System.Drawing.Point(0, 25);
             this.label14.Margin = new System.Windows.Forms.Padding(0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(55, 15);
+            this.label14.Size = new System.Drawing.Size(59, 25);
             this.label14.TabIndex = 57;
             this.label14.Text = "Crit Dam";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label15
             // 
-            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label15.AutoSize = true;
+            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F);
-            this.label15.Location = new System.Drawing.Point(0, 70);
+            this.label15.Location = new System.Drawing.Point(0, 50);
             this.label15.Margin = new System.Windows.Forms.Padding(0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(70, 15);
+            this.label15.Size = new System.Drawing.Size(59, 27);
             this.label15.TabIndex = 59;
             this.label15.Text = "Crit Chance";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // numericUpDownDamageRating
@@ -3526,14 +3607,15 @@
             this.numericUpDownDamageRating.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDownDamageRating.AutoSize = true;
             this.numericUpDownDamageRating.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDamageRating.Location = new System.Drawing.Point(82, 4);
+            this.numericUpDownDamageRating.Location = new System.Drawing.Point(61, 3);
+            this.numericUpDownDamageRating.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownDamageRating.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
             this.numericUpDownDamageRating.Name = "numericUpDownDamageRating";
-            this.numericUpDownDamageRating.Size = new System.Drawing.Size(47, 22);
+            this.numericUpDownDamageRating.Size = new System.Drawing.Size(36, 19);
             this.numericUpDownDamageRating.TabIndex = 16;
             this.toolTip1.SetToolTip(this.numericUpDownDamageRating, "Enter your total Damage Rating, minus any rating \r\nobtained from an equiped weapo" +
         "n.");
@@ -3545,11 +3627,9 @@
             this.groupBox7.Controls.Add(this.tableLayoutPanel28);
             this.groupBox7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox7.Location = new System.Drawing.Point(4, 264);
-            this.groupBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox7.Location = new System.Drawing.Point(3, 213);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox7.Size = new System.Drawing.Size(419, 96);
+            this.groupBox7.Size = new System.Drawing.Size(314, 115);
             this.groupBox7.TabIndex = 217;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Rares/Surges";
@@ -3573,12 +3653,13 @@
             this.tableLayoutPanel28.Controls.Add(this.checkBoxRareFocus, 3, 0);
             this.tableLayoutPanel28.Controls.Add(this.checkBoxRareMelee, 0, 1);
             this.tableLayoutPanel28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel28.Location = new System.Drawing.Point(4, 19);
+            this.tableLayoutPanel28.Location = new System.Drawing.Point(3, 15);
+            this.tableLayoutPanel28.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel28.Name = "tableLayoutPanel28";
             this.tableLayoutPanel28.RowCount = 2;
             this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel28.Size = new System.Drawing.Size(411, 73);
+            this.tableLayoutPanel28.Size = new System.Drawing.Size(308, 97);
             this.tableLayoutPanel28.TabIndex = 171;
             // 
             // checkBoxRareStrength
@@ -3586,12 +3667,12 @@
             this.checkBoxRareStrength.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.checkBoxRareStrength.AutoSize = true;
             this.checkBoxRareStrength.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxRareStrength.Location = new System.Drawing.Point(4, 8);
-            this.checkBoxRareStrength.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxRareStrength.Location = new System.Drawing.Point(3, 15);
             this.checkBoxRareStrength.Name = "checkBoxRareStrength";
-            this.checkBoxRareStrength.Size = new System.Drawing.Size(74, 20);
+            this.checkBoxRareStrength.Size = new System.Drawing.Size(48, 17);
             this.checkBoxRareStrength.TabIndex = 109;
-            this.checkBoxRareStrength.Text = "Strength";
+            this.checkBoxRareStrength.Text = "STR";
+            this.toolTip1.SetToolTip(this.checkBoxRareStrength, "Rare Strength");
             this.checkBoxRareStrength.UseVisualStyleBackColor = true;
             this.checkBoxRareStrength.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -3600,12 +3681,11 @@
             this.checkBoxSurgeOfDestruction.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.checkBoxSurgeOfDestruction.AutoSize = true;
             this.checkBoxSurgeOfDestruction.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxSurgeOfDestruction.Location = new System.Drawing.Point(332, 44);
-            this.checkBoxSurgeOfDestruction.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxSurgeOfDestruction.Location = new System.Drawing.Point(247, 64);
             this.checkBoxSurgeOfDestruction.Name = "checkBoxSurgeOfDestruction";
-            this.checkBoxSurgeOfDestruction.Size = new System.Drawing.Size(57, 20);
+            this.checkBoxSurgeOfDestruction.Size = new System.Drawing.Size(55, 17);
             this.checkBoxSurgeOfDestruction.TabIndex = 155;
-            this.checkBoxSurgeOfDestruction.Text = "Dest";
+            this.checkBoxSurgeOfDestruction.Text = "DEST";
             this.toolTip1.SetToolTip(this.checkBoxSurgeOfDestruction, "Surge of Destruction");
             this.checkBoxSurgeOfDestruction.UseVisualStyleBackColor = true;
             this.checkBoxSurgeOfDestruction.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -3615,12 +3695,12 @@
             this.checkBoxRareCoord.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.checkBoxRareCoord.AutoSize = true;
             this.checkBoxRareCoord.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxRareCoord.Location = new System.Drawing.Point(86, 8);
-            this.checkBoxRareCoord.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxRareCoord.Location = new System.Drawing.Point(64, 15);
             this.checkBoxRareCoord.Name = "checkBoxRareCoord";
-            this.checkBoxRareCoord.Size = new System.Drawing.Size(66, 20);
+            this.checkBoxRareCoord.Size = new System.Drawing.Size(49, 17);
             this.checkBoxRareCoord.TabIndex = 158;
-            this.checkBoxRareCoord.Text = "Coord";
+            this.checkBoxRareCoord.Text = "CRD";
+            this.toolTip1.SetToolTip(this.checkBoxRareCoord, "Rare Coordination");
             this.checkBoxRareCoord.UseVisualStyleBackColor = true;
             this.checkBoxRareCoord.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -3629,12 +3709,11 @@
             this.checkBoxSurgeOfCloakedInSkill.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.checkBoxSurgeOfCloakedInSkill.AutoSize = true;
             this.checkBoxSurgeOfCloakedInSkill.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxSurgeOfCloakedInSkill.Location = new System.Drawing.Point(250, 44);
-            this.checkBoxSurgeOfCloakedInSkill.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxSurgeOfCloakedInSkill.Location = new System.Drawing.Point(186, 64);
             this.checkBoxSurgeOfCloakedInSkill.Name = "checkBoxSurgeOfCloakedInSkill";
-            this.checkBoxSurgeOfCloakedInSkill.Size = new System.Drawing.Size(50, 20);
+            this.checkBoxSurgeOfCloakedInSkill.Size = new System.Drawing.Size(43, 17);
             this.checkBoxSurgeOfCloakedInSkill.TabIndex = 156;
-            this.checkBoxSurgeOfCloakedInSkill.Text = "CiS";
+            this.checkBoxSurgeOfCloakedInSkill.Text = "CIS";
             this.toolTip1.SetToolTip(this.checkBoxSurgeOfCloakedInSkill, "Cloaked in Skill");
             this.checkBoxSurgeOfCloakedInSkill.UseVisualStyleBackColor = true;
             this.checkBoxSurgeOfCloakedInSkill.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -3644,12 +3723,12 @@
             this.checkBoxRareQuick.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.checkBoxRareQuick.AutoSize = true;
             this.checkBoxRareQuick.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxRareQuick.Location = new System.Drawing.Point(168, 8);
-            this.checkBoxRareQuick.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxRareQuick.Location = new System.Drawing.Point(125, 15);
             this.checkBoxRareQuick.Name = "checkBoxRareQuick";
-            this.checkBoxRareQuick.Size = new System.Drawing.Size(63, 20);
+            this.checkBoxRareQuick.Size = new System.Drawing.Size(48, 17);
             this.checkBoxRareQuick.TabIndex = 160;
-            this.checkBoxRareQuick.Text = "Quick";
+            this.checkBoxRareQuick.Text = "QCK";
+            this.toolTip1.SetToolTip(this.checkBoxRareQuick, "Rare Quickness");
             this.checkBoxRareQuick.UseVisualStyleBackColor = true;
             this.checkBoxRareQuick.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -3658,12 +3737,12 @@
             this.checkBoxRareMagic.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.checkBoxRareMagic.AutoSize = true;
             this.checkBoxRareMagic.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxRareMagic.Location = new System.Drawing.Point(168, 44);
-            this.checkBoxRareMagic.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxRareMagic.Location = new System.Drawing.Point(125, 64);
             this.checkBoxRareMagic.Name = "checkBoxRareMagic";
-            this.checkBoxRareMagic.Size = new System.Drawing.Size(66, 20);
+            this.checkBoxRareMagic.Size = new System.Drawing.Size(50, 17);
             this.checkBoxRareMagic.TabIndex = 166;
-            this.checkBoxRareMagic.Text = "Magic";
+            this.checkBoxRareMagic.Text = "MAG";
+            this.toolTip1.SetToolTip(this.checkBoxRareMagic, "Rare Magic Skill");
             this.checkBoxRareMagic.UseVisualStyleBackColor = true;
             this.checkBoxRareMagic.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -3672,12 +3751,12 @@
             this.checkBoxRareSelf.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.checkBoxRareSelf.AutoSize = true;
             this.checkBoxRareSelf.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxRareSelf.Location = new System.Drawing.Point(332, 8);
-            this.checkBoxRareSelf.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxRareSelf.Location = new System.Drawing.Point(247, 15);
             this.checkBoxRareSelf.Name = "checkBoxRareSelf";
-            this.checkBoxRareSelf.Size = new System.Drawing.Size(52, 20);
+            this.checkBoxRareSelf.Size = new System.Drawing.Size(52, 17);
             this.checkBoxRareSelf.TabIndex = 170;
-            this.checkBoxRareSelf.Text = "Self";
+            this.checkBoxRareSelf.Text = "SELF";
+            this.toolTip1.SetToolTip(this.checkBoxRareSelf, "Rare Self");
             this.checkBoxRareSelf.UseVisualStyleBackColor = true;
             this.checkBoxRareSelf.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -3686,12 +3765,12 @@
             this.checkBoxRareMissile.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.checkBoxRareMissile.AutoSize = true;
             this.checkBoxRareMissile.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxRareMissile.Location = new System.Drawing.Point(86, 44);
-            this.checkBoxRareMissile.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxRareMissile.Location = new System.Drawing.Point(64, 64);
             this.checkBoxRareMissile.Name = "checkBoxRareMissile";
-            this.checkBoxRareMissile.Size = new System.Drawing.Size(71, 20);
+            this.checkBoxRareMissile.Size = new System.Drawing.Size(45, 17);
             this.checkBoxRareMissile.TabIndex = 164;
-            this.checkBoxRareMissile.Text = "Missile";
+            this.checkBoxRareMissile.Text = "MIS";
+            this.toolTip1.SetToolTip(this.checkBoxRareMissile, "Rare Missile Weapon Skill");
             this.checkBoxRareMissile.UseVisualStyleBackColor = true;
             this.checkBoxRareMissile.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -3700,12 +3779,12 @@
             this.checkBoxRareFocus.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.checkBoxRareFocus.AutoSize = true;
             this.checkBoxRareFocus.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxRareFocus.Location = new System.Drawing.Point(250, 8);
-            this.checkBoxRareFocus.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxRareFocus.Location = new System.Drawing.Point(186, 15);
             this.checkBoxRareFocus.Name = "checkBoxRareFocus";
-            this.checkBoxRareFocus.Size = new System.Drawing.Size(66, 20);
+            this.checkBoxRareFocus.Size = new System.Drawing.Size(47, 17);
             this.checkBoxRareFocus.TabIndex = 168;
-            this.checkBoxRareFocus.Text = "Focus";
+            this.checkBoxRareFocus.Text = "FOC";
+            this.toolTip1.SetToolTip(this.checkBoxRareFocus, "Rare Focus");
             this.checkBoxRareFocus.UseVisualStyleBackColor = true;
             this.checkBoxRareFocus.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -3714,12 +3793,12 @@
             this.checkBoxRareMelee.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.checkBoxRareMelee.AutoSize = true;
             this.checkBoxRareMelee.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxRareMelee.Location = new System.Drawing.Point(4, 44);
-            this.checkBoxRareMelee.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxRareMelee.Location = new System.Drawing.Point(3, 64);
             this.checkBoxRareMelee.Name = "checkBoxRareMelee";
-            this.checkBoxRareMelee.Size = new System.Drawing.Size(67, 20);
+            this.checkBoxRareMelee.Size = new System.Drawing.Size(48, 17);
             this.checkBoxRareMelee.TabIndex = 162;
-            this.checkBoxRareMelee.Text = "Melee";
+            this.checkBoxRareMelee.Text = "MEL";
+            this.toolTip1.SetToolTip(this.checkBoxRareMelee, "Rare Melee Weapon Skill");
             this.checkBoxRareMelee.UseVisualStyleBackColor = true;
             this.checkBoxRareMelee.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -3729,11 +3808,9 @@
             this.groupBox8.Controls.Add(this.tableLayoutPanel10);
             this.groupBox8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox8.Location = new System.Drawing.Point(4, 368);
-            this.groupBox8.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox8.Location = new System.Drawing.Point(3, 334);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox8.Size = new System.Drawing.Size(419, 149);
+            this.groupBox8.Size = new System.Drawing.Size(314, 83);
             this.groupBox8.TabIndex = 218;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Effective Stats";
@@ -3741,12 +3818,12 @@
             // tableLayoutPanel10
             // 
             this.tableLayoutPanel10.ColumnCount = 6;
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.33F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.34F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.33F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.33F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.33F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.01F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.33F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
             this.tableLayoutPanel10.Controls.Add(this.labelCharacterSneakMod, 3, 2);
             this.tableLayoutPanel10.Controls.Add(this.label93, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.labelCharacterEffectiveMeleeSkill, 1, 0);
@@ -3766,13 +3843,14 @@
             this.tableLayoutPanel10.Controls.Add(this.label56, 2, 1);
             this.tableLayoutPanel10.Controls.Add(this.labelCharacterMissileMod, 3, 1);
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(4, 24);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 19);
+            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 3;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(411, 121);
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(308, 61);
             this.tableLayoutPanel10.TabIndex = 1;
             // 
             // labelCharacterSneakMod
@@ -3780,10 +3858,9 @@
             this.labelCharacterSneakMod.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelCharacterSneakMod.AutoSize = true;
             this.labelCharacterSneakMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCharacterSneakMod.Location = new System.Drawing.Point(240, 92);
-            this.labelCharacterSneakMod.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCharacterSneakMod.Location = new System.Drawing.Point(177, 44);
             this.labelCharacterSneakMod.Name = "labelCharacterSneakMod";
-            this.labelCharacterSneakMod.Size = new System.Drawing.Size(14, 16);
+            this.labelCharacterSneakMod.Size = new System.Drawing.Size(13, 13);
             this.labelCharacterSneakMod.TabIndex = 235;
             this.labelCharacterSneakMod.Text = "0";
             // 
@@ -3792,9 +3869,10 @@
             this.label93.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label93.AutoSize = true;
             this.label93.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label93.Location = new System.Drawing.Point(3, 12);
+            this.label93.Location = new System.Drawing.Point(2, 3);
+            this.label93.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(73, 16);
+            this.label93.Size = new System.Drawing.Size(58, 13);
             this.label93.TabIndex = 220;
             this.label93.Text = "Melee Skill";
             this.label93.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -3804,10 +3882,9 @@
             this.labelCharacterEffectiveMeleeSkill.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelCharacterEffectiveMeleeSkill.AutoSize = true;
             this.labelCharacterEffectiveMeleeSkill.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCharacterEffectiveMeleeSkill.Location = new System.Drawing.Point(104, 12);
-            this.labelCharacterEffectiveMeleeSkill.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCharacterEffectiveMeleeSkill.Location = new System.Drawing.Point(76, 3);
             this.labelCharacterEffectiveMeleeSkill.Name = "labelCharacterEffectiveMeleeSkill";
-            this.labelCharacterEffectiveMeleeSkill.Size = new System.Drawing.Size(14, 16);
+            this.labelCharacterEffectiveMeleeSkill.Size = new System.Drawing.Size(13, 13);
             this.labelCharacterEffectiveMeleeSkill.TabIndex = 230;
             this.labelCharacterEffectiveMeleeSkill.Text = "0";
             // 
@@ -3816,22 +3893,22 @@
             this.label95.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label95.AutoSize = true;
             this.label95.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label95.Location = new System.Drawing.Point(139, 12);
+            this.label95.Location = new System.Drawing.Point(103, 3);
+            this.label95.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(77, 16);
+            this.label95.Size = new System.Drawing.Size(60, 13);
             this.label95.TabIndex = 224;
             this.label95.Text = "Missile Skill";
-            this.label95.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.label95.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelCharacterEffectiveMissileSkill
             // 
             this.labelCharacterEffectiveMissileSkill.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelCharacterEffectiveMissileSkill.AutoSize = true;
             this.labelCharacterEffectiveMissileSkill.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCharacterEffectiveMissileSkill.Location = new System.Drawing.Point(240, 12);
-            this.labelCharacterEffectiveMissileSkill.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCharacterEffectiveMissileSkill.Location = new System.Drawing.Point(177, 3);
             this.labelCharacterEffectiveMissileSkill.Name = "labelCharacterEffectiveMissileSkill";
-            this.labelCharacterEffectiveMissileSkill.Size = new System.Drawing.Size(14, 16);
+            this.labelCharacterEffectiveMissileSkill.Size = new System.Drawing.Size(13, 13);
             this.labelCharacterEffectiveMissileSkill.TabIndex = 231;
             this.labelCharacterEffectiveMissileSkill.Text = "0";
             // 
@@ -3840,10 +3917,9 @@
             this.labelCharacterMeleeMod.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelCharacterMeleeMod.AutoSize = true;
             this.labelCharacterMeleeMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCharacterMeleeMod.Location = new System.Drawing.Point(104, 52);
-            this.labelCharacterMeleeMod.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCharacterMeleeMod.Location = new System.Drawing.Point(76, 23);
             this.labelCharacterMeleeMod.Name = "labelCharacterMeleeMod";
-            this.labelCharacterMeleeMod.Size = new System.Drawing.Size(14, 16);
+            this.labelCharacterMeleeMod.Size = new System.Drawing.Size(13, 13);
             this.labelCharacterMeleeMod.TabIndex = 233;
             this.labelCharacterMeleeMod.Text = "0";
             // 
@@ -3852,9 +3928,10 @@
             this.label97.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label97.AutoSize = true;
             this.label97.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label97.Location = new System.Drawing.Point(275, 12);
+            this.label97.Location = new System.Drawing.Point(204, 3);
+            this.label97.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(72, 16);
+            this.label97.Size = new System.Drawing.Size(58, 13);
             this.label97.TabIndex = 228;
             this.label97.Text = "Magic Skill";
             this.label97.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -3864,10 +3941,9 @@
             this.labelCharacterEffectiveMagicSkill.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelCharacterEffectiveMagicSkill.AutoSize = true;
             this.labelCharacterEffectiveMagicSkill.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCharacterEffectiveMagicSkill.Location = new System.Drawing.Point(377, 12);
-            this.labelCharacterEffectiveMagicSkill.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCharacterEffectiveMagicSkill.Location = new System.Drawing.Point(281, 3);
             this.labelCharacterEffectiveMagicSkill.Name = "labelCharacterEffectiveMagicSkill";
-            this.labelCharacterEffectiveMagicSkill.Size = new System.Drawing.Size(14, 16);
+            this.labelCharacterEffectiveMagicSkill.Size = new System.Drawing.Size(13, 13);
             this.labelCharacterEffectiveMagicSkill.TabIndex = 232;
             this.labelCharacterEffectiveMagicSkill.Text = "0";
             // 
@@ -3876,9 +3952,10 @@
             this.label98.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label98.AutoSize = true;
             this.label98.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label98.Location = new System.Drawing.Point(139, 92);
+            this.label98.Location = new System.Drawing.Point(103, 44);
+            this.label98.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(70, 16);
+            this.label98.Size = new System.Drawing.Size(58, 13);
             this.label98.TabIndex = 229;
             this.label98.Text = "Sneak Rat";
             this.label98.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3887,9 +3964,10 @@
             // 
             this.label94.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label94.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label94.Location = new System.Drawing.Point(3, 44);
+            this.label94.Location = new System.Drawing.Point(2, 20);
+            this.label94.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(80, 32);
+            this.label94.Size = new System.Drawing.Size(60, 20);
             this.label94.TabIndex = 222;
             this.label94.Text = "Melee Mod";
             this.label94.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3899,9 +3977,10 @@
             this.label96.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label96.AutoSize = true;
             this.label96.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label96.Location = new System.Drawing.Point(3, 92);
+            this.label96.Location = new System.Drawing.Point(2, 44);
+            this.label96.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(63, 16);
+            this.label96.Size = new System.Drawing.Size(53, 13);
             this.label96.TabIndex = 226;
             this.label96.Text = "Reck Rat";
             this.label96.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -3911,10 +3990,9 @@
             this.labelCharacterRecklessnessMod.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelCharacterRecklessnessMod.AutoSize = true;
             this.labelCharacterRecklessnessMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCharacterRecklessnessMod.Location = new System.Drawing.Point(104, 92);
-            this.labelCharacterRecklessnessMod.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCharacterRecklessnessMod.Location = new System.Drawing.Point(76, 44);
             this.labelCharacterRecklessnessMod.Name = "labelCharacterRecklessnessMod";
-            this.labelCharacterRecklessnessMod.Size = new System.Drawing.Size(14, 16);
+            this.labelCharacterRecklessnessMod.Size = new System.Drawing.Size(13, 13);
             this.labelCharacterRecklessnessMod.TabIndex = 234;
             this.labelCharacterRecklessnessMod.Text = "0";
             // 
@@ -3923,9 +4001,10 @@
             this.label125.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label125.AutoSize = true;
             this.label125.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label125.Location = new System.Drawing.Point(275, 92);
+            this.label125.Location = new System.Drawing.Point(204, 44);
+            this.label125.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label125.Name = "label125";
-            this.label125.Size = new System.Drawing.Size(63, 16);
+            this.label125.Size = new System.Drawing.Size(50, 13);
             this.label125.TabIndex = 236;
             this.label125.Text = "Decep %";
             this.label125.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -3935,10 +4014,9 @@
             this.labelCharacterDeceptionMod.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelCharacterDeceptionMod.AutoSize = true;
             this.labelCharacterDeceptionMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCharacterDeceptionMod.Location = new System.Drawing.Point(377, 92);
-            this.labelCharacterDeceptionMod.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCharacterDeceptionMod.Location = new System.Drawing.Point(281, 44);
             this.labelCharacterDeceptionMod.Name = "labelCharacterDeceptionMod";
-            this.labelCharacterDeceptionMod.Size = new System.Drawing.Size(14, 16);
+            this.labelCharacterDeceptionMod.Size = new System.Drawing.Size(13, 13);
             this.labelCharacterDeceptionMod.TabIndex = 237;
             this.labelCharacterDeceptionMod.Text = "0";
             // 
@@ -3947,9 +4025,10 @@
             this.label128.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label128.AutoSize = true;
             this.label128.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label128.Location = new System.Drawing.Point(275, 52);
+            this.label128.Location = new System.Drawing.Point(204, 23);
+            this.label128.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label128.Name = "label128";
-            this.label128.Size = new System.Drawing.Size(74, 16);
+            this.label128.Size = new System.Drawing.Size(60, 13);
             this.label128.TabIndex = 238;
             this.label128.Text = "Magic Mod";
             this.label128.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -3959,10 +4038,9 @@
             this.labelCharacterSpellMod.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelCharacterSpellMod.AutoSize = true;
             this.labelCharacterSpellMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCharacterSpellMod.Location = new System.Drawing.Point(377, 52);
-            this.labelCharacterSpellMod.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCharacterSpellMod.Location = new System.Drawing.Point(281, 23);
             this.labelCharacterSpellMod.Name = "labelCharacterSpellMod";
-            this.labelCharacterSpellMod.Size = new System.Drawing.Size(14, 16);
+            this.labelCharacterSpellMod.Size = new System.Drawing.Size(13, 13);
             this.labelCharacterSpellMod.TabIndex = 239;
             this.labelCharacterSpellMod.Text = "0";
             // 
@@ -3971,20 +4049,23 @@
             this.label56.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label56.AutoSize = true;
             this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.Location = new System.Drawing.Point(139, 52);
+            this.label56.Location = new System.Drawing.Point(103, 23);
+            this.label56.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(79, 16);
+            this.label56.Size = new System.Drawing.Size(60, 13);
             this.label56.TabIndex = 240;
-            this.label56.Text = "Missile Mod";
+            this.label56.Text = "Missle Mod";
+            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelCharacterMissileMod
             // 
             this.labelCharacterMissileMod.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelCharacterMissileMod.AutoSize = true;
             this.labelCharacterMissileMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCharacterMissileMod.Location = new System.Drawing.Point(240, 52);
+            this.labelCharacterMissileMod.Location = new System.Drawing.Point(177, 23);
+            this.labelCharacterMissileMod.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCharacterMissileMod.Name = "labelCharacterMissileMod";
-            this.labelCharacterMissileMod.Size = new System.Drawing.Size(14, 16);
+            this.labelCharacterMissileMod.Size = new System.Drawing.Size(13, 13);
             this.labelCharacterMissileMod.TabIndex = 241;
             this.labelCharacterMissileMod.Text = "0";
             // 
@@ -3996,11 +4077,12 @@
             this.tableLayoutPanel22.Controls.Add(this.groupBox15, 1, 0);
             this.tableLayoutPanel22.Controls.Add(this.groupBox4, 0, 0);
             this.tableLayoutPanel22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel22.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel22.Location = new System.Drawing.Point(2, 2);
+            this.tableLayoutPanel22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel22.Name = "tableLayoutPanel22";
             this.tableLayoutPanel22.RowCount = 1;
             this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel22.Size = new System.Drawing.Size(421, 124);
+            this.tableLayoutPanel22.Size = new System.Drawing.Size(316, 101);
             this.tableLayoutPanel22.TabIndex = 219;
             // 
             // groupBox15
@@ -4008,9 +4090,11 @@
             this.groupBox15.Controls.Add(this.tableLayoutPanel25);
             this.groupBox15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox15.Location = new System.Drawing.Point(276, 3);
+            this.groupBox15.Location = new System.Drawing.Point(207, 2);
+            this.groupBox15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Size = new System.Drawing.Size(142, 118);
+            this.groupBox15.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox15.Size = new System.Drawing.Size(107, 97);
             this.groupBox15.TabIndex = 219;
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "Buffed Attributes";
@@ -4027,13 +4111,14 @@
             this.tableLayoutPanel25.Controls.Add(this.numericUpDownBuffedStrength, 1, 0);
             this.tableLayoutPanel25.Controls.Add(this.numericUpDownBuffedCoordination, 1, 1);
             this.tableLayoutPanel25.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel25.Location = new System.Drawing.Point(3, 18);
+            this.tableLayoutPanel25.Location = new System.Drawing.Point(2, 14);
+            this.tableLayoutPanel25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel25.Name = "tableLayoutPanel25";
             this.tableLayoutPanel25.RowCount = 3;
             this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel25.Size = new System.Drawing.Size(136, 100);
+            this.tableLayoutPanel25.Size = new System.Drawing.Size(103, 81);
             this.tableLayoutPanel25.TabIndex = 0;
             // 
             // lblBuffedCoordination
@@ -4041,10 +4126,10 @@
             this.lblBuffedCoordination.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblBuffedCoordination.AutoSize = true;
             this.lblBuffedCoordination.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuffedCoordination.Location = new System.Drawing.Point(0, 41);
+            this.lblBuffedCoordination.Location = new System.Drawing.Point(0, 34);
             this.lblBuffedCoordination.Margin = new System.Windows.Forms.Padding(0);
             this.lblBuffedCoordination.Name = "lblBuffedCoordination";
-            this.lblBuffedCoordination.Size = new System.Drawing.Size(44, 16);
+            this.lblBuffedCoordination.Size = new System.Drawing.Size(35, 13);
             this.lblBuffedCoordination.TabIndex = 12;
             this.lblBuffedCoordination.Text = "Coord";
             this.lblBuffedCoordination.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -4059,7 +4144,8 @@
             0,
             0,
             0});
-            this.numericUpDownBuffedQuickness.Location = new System.Drawing.Point(84, 72);
+            this.numericUpDownBuffedQuickness.Location = new System.Drawing.Point(63, 58);
+            this.numericUpDownBuffedQuickness.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownBuffedQuickness.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -4071,7 +4157,7 @@
             0,
             0});
             this.numericUpDownBuffedQuickness.Name = "numericUpDownBuffedQuickness";
-            this.numericUpDownBuffedQuickness.Size = new System.Drawing.Size(49, 22);
+            this.numericUpDownBuffedQuickness.Size = new System.Drawing.Size(38, 19);
             this.numericUpDownBuffedQuickness.TabIndex = 9;
             this.toolTip1.SetToolTip(this.numericUpDownBuffedQuickness, "Determines weapon Attack Speed, alongside\r\nbuffed weapon speed and power bar.");
             this.numericUpDownBuffedQuickness.Value = new decimal(new int[] {
@@ -4087,10 +4173,10 @@
             this.lblBuffedStrength.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblBuffedStrength.AutoSize = true;
             this.lblBuffedStrength.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuffedStrength.Location = new System.Drawing.Point(0, 8);
+            this.lblBuffedStrength.Location = new System.Drawing.Point(0, 7);
             this.lblBuffedStrength.Margin = new System.Windows.Forms.Padding(0);
             this.lblBuffedStrength.Name = "lblBuffedStrength";
-            this.lblBuffedStrength.Size = new System.Drawing.Size(56, 16);
+            this.lblBuffedStrength.Size = new System.Drawing.Size(47, 13);
             this.lblBuffedStrength.TabIndex = 11;
             this.lblBuffedStrength.Text = "Strength";
             this.lblBuffedStrength.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -4106,7 +4192,8 @@
             0,
             0,
             0});
-            this.numericUpDownBuffedStrength.Location = new System.Drawing.Point(84, 5);
+            this.numericUpDownBuffedStrength.Location = new System.Drawing.Point(63, 4);
+            this.numericUpDownBuffedStrength.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownBuffedStrength.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -4118,7 +4205,7 @@
             0,
             0});
             this.numericUpDownBuffedStrength.Name = "numericUpDownBuffedStrength";
-            this.numericUpDownBuffedStrength.Size = new System.Drawing.Size(49, 22);
+            this.numericUpDownBuffedStrength.Size = new System.Drawing.Size(38, 19);
             this.numericUpDownBuffedStrength.TabIndex = 7;
             this.toolTip1.SetToolTip(this.numericUpDownBuffedStrength, "Determines non-finesse Melee Damage Modifier and \r\nthrown weapon Missile Damage M" +
         "odifier.");
@@ -4140,7 +4227,8 @@
             0,
             0,
             0});
-            this.numericUpDownBuffedCoordination.Location = new System.Drawing.Point(84, 38);
+            this.numericUpDownBuffedCoordination.Location = new System.Drawing.Point(63, 31);
+            this.numericUpDownBuffedCoordination.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownBuffedCoordination.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -4152,7 +4240,7 @@
             0,
             0});
             this.numericUpDownBuffedCoordination.Name = "numericUpDownBuffedCoordination";
-            this.numericUpDownBuffedCoordination.Size = new System.Drawing.Size(49, 22);
+            this.numericUpDownBuffedCoordination.Size = new System.Drawing.Size(38, 19);
             this.numericUpDownBuffedCoordination.TabIndex = 8;
             this.toolTip1.SetToolTip(this.numericUpDownBuffedCoordination, "Determines non-thrown weapon Missile Damage Modifier and\r\nfinesse weapon Melee Da" +
         "mage Modifier.\r\n");
@@ -4170,11 +4258,9 @@
             this.groupBox4.Controls.Add(this.tableLayoutPanel24);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(4, 4);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox4.Location = new System.Drawing.Point(3, 3);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox4.Size = new System.Drawing.Size(265, 116);
+            this.groupBox4.Size = new System.Drawing.Size(199, 95);
             this.groupBox4.TabIndex = 216;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Base/Buffed Weapon Skills";
@@ -4198,13 +4284,14 @@
             this.tableLayoutPanel24.Controls.Add(this.checkBoxFinesse, 1, 0);
             this.tableLayoutPanel24.Controls.Add(this.checkBoxThrown, 1, 1);
             this.tableLayoutPanel24.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel24.Location = new System.Drawing.Point(4, 19);
+            this.tableLayoutPanel24.Location = new System.Drawing.Point(3, 15);
+            this.tableLayoutPanel24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel24.Name = "tableLayoutPanel24";
             this.tableLayoutPanel24.RowCount = 3;
             this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel24.Size = new System.Drawing.Size(257, 100);
+            this.tableLayoutPanel24.Size = new System.Drawing.Size(193, 81);
             this.tableLayoutPanel24.TabIndex = 0;
             this.tableLayoutPanel24.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel24_Paint);
             // 
@@ -4214,10 +4301,10 @@
             this.lblBuffedMeleeSkill.AutoSize = true;
             this.lblBuffedMeleeSkill.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblBuffedMeleeSkill.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuffedMeleeSkill.Location = new System.Drawing.Point(0, 8);
+            this.lblBuffedMeleeSkill.Location = new System.Drawing.Point(0, 7);
             this.lblBuffedMeleeSkill.Margin = new System.Windows.Forms.Padding(0);
             this.lblBuffedMeleeSkill.Name = "lblBuffedMeleeSkill";
-            this.lblBuffedMeleeSkill.Size = new System.Drawing.Size(73, 16);
+            this.lblBuffedMeleeSkill.Size = new System.Drawing.Size(58, 13);
             this.lblBuffedMeleeSkill.TabIndex = 15;
             this.lblBuffedMeleeSkill.Text = "Melee Skill";
             this.lblBuffedMeleeSkill.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -4228,10 +4315,10 @@
             this.lblBuffedMissileSkill.AutoSize = true;
             this.lblBuffedMissileSkill.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblBuffedMissileSkill.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuffedMissileSkill.Location = new System.Drawing.Point(0, 41);
+            this.lblBuffedMissileSkill.Location = new System.Drawing.Point(0, 34);
             this.lblBuffedMissileSkill.Margin = new System.Windows.Forms.Padding(0);
             this.lblBuffedMissileSkill.Name = "lblBuffedMissileSkill";
-            this.lblBuffedMissileSkill.Size = new System.Drawing.Size(77, 16);
+            this.lblBuffedMissileSkill.Size = new System.Drawing.Size(60, 13);
             this.lblBuffedMissileSkill.TabIndex = 17;
             this.lblBuffedMissileSkill.Text = "Missile Skill";
             this.lblBuffedMissileSkill.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -4242,10 +4329,10 @@
             this.lblBuffedMagicSkill.AutoSize = true;
             this.lblBuffedMagicSkill.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblBuffedMagicSkill.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuffedMagicSkill.Location = new System.Drawing.Point(0, 75);
+            this.lblBuffedMagicSkill.Location = new System.Drawing.Point(0, 61);
             this.lblBuffedMagicSkill.Margin = new System.Windows.Forms.Padding(0);
             this.lblBuffedMagicSkill.Name = "lblBuffedMagicSkill";
-            this.lblBuffedMagicSkill.Size = new System.Drawing.Size(72, 16);
+            this.lblBuffedMagicSkill.Size = new System.Drawing.Size(58, 13);
             this.lblBuffedMagicSkill.TabIndex = 18;
             this.lblBuffedMagicSkill.Text = "Magic Skill";
             this.lblBuffedMagicSkill.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -4260,7 +4347,8 @@
             0,
             0,
             0});
-            this.numericUpDownBuffedMeleeSkill.Location = new System.Drawing.Point(205, 5);
+            this.numericUpDownBuffedMeleeSkill.Location = new System.Drawing.Point(153, 4);
+            this.numericUpDownBuffedMeleeSkill.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownBuffedMeleeSkill.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -4272,7 +4360,7 @@
             0,
             0});
             this.numericUpDownBuffedMeleeSkill.Name = "numericUpDownBuffedMeleeSkill";
-            this.numericUpDownBuffedMeleeSkill.Size = new System.Drawing.Size(49, 22);
+            this.numericUpDownBuffedMeleeSkill.Size = new System.Drawing.Size(38, 19);
             this.numericUpDownBuffedMeleeSkill.TabIndex = 2;
             this.toolTip1.SetToolTip(this.numericUpDownBuffedMeleeSkill, "Determines hit chance on enemies. Also effects\r\nRecklessness and Sneak Attack.");
             this.numericUpDownBuffedMeleeSkill.Value = new decimal(new int[] {
@@ -4292,7 +4380,8 @@
             0,
             0,
             0});
-            this.numericUpDownBuffedMissileSkill.Location = new System.Drawing.Point(205, 38);
+            this.numericUpDownBuffedMissileSkill.Location = new System.Drawing.Point(153, 31);
+            this.numericUpDownBuffedMissileSkill.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownBuffedMissileSkill.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -4304,7 +4393,7 @@
             0,
             0});
             this.numericUpDownBuffedMissileSkill.Name = "numericUpDownBuffedMissileSkill";
-            this.numericUpDownBuffedMissileSkill.Size = new System.Drawing.Size(49, 22);
+            this.numericUpDownBuffedMissileSkill.Size = new System.Drawing.Size(38, 19);
             this.numericUpDownBuffedMissileSkill.TabIndex = 4;
             this.toolTip1.SetToolTip(this.numericUpDownBuffedMissileSkill, "Determines hit chance on enemies. Also effects\r\nRecklessness and Sneak Attack.\r\n");
             this.numericUpDownBuffedMissileSkill.Value = new decimal(new int[] {
@@ -4324,7 +4413,8 @@
             0,
             0,
             0});
-            this.numericUpDownBuffedMagicSkill.Location = new System.Drawing.Point(205, 72);
+            this.numericUpDownBuffedMagicSkill.Location = new System.Drawing.Point(153, 58);
+            this.numericUpDownBuffedMagicSkill.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownBuffedMagicSkill.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -4336,7 +4426,7 @@
             0,
             0});
             this.numericUpDownBuffedMagicSkill.Name = "numericUpDownBuffedMagicSkill";
-            this.numericUpDownBuffedMagicSkill.Size = new System.Drawing.Size(49, 22);
+            this.numericUpDownBuffedMagicSkill.Size = new System.Drawing.Size(38, 19);
             this.numericUpDownBuffedMagicSkill.TabIndex = 6;
             this.toolTip1.SetToolTip(this.numericUpDownBuffedMagicSkill, "Determines hit chance on enemies. Also effects\r\nSneak Attack and Magic Damage Mod" +
         "ifier.\r\n");
@@ -4357,7 +4447,8 @@
             0,
             0,
             0});
-            this.numericUpDownBaseMeleeSkill.Location = new System.Drawing.Point(146, 5);
+            this.numericUpDownBaseMeleeSkill.Location = new System.Drawing.Point(109, 4);
+            this.numericUpDownBaseMeleeSkill.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownBaseMeleeSkill.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -4369,7 +4460,7 @@
             0,
             0});
             this.numericUpDownBaseMeleeSkill.Name = "numericUpDownBaseMeleeSkill";
-            this.numericUpDownBaseMeleeSkill.Size = new System.Drawing.Size(53, 22);
+            this.numericUpDownBaseMeleeSkill.Size = new System.Drawing.Size(40, 19);
             this.numericUpDownBaseMeleeSkill.TabIndex = 1;
             this.toolTip1.SetToolTip(this.numericUpDownBaseMeleeSkill, "Determines the effectiveness of AR/RR/CS/CB.");
             this.numericUpDownBaseMeleeSkill.Value = new decimal(new int[] {
@@ -4389,7 +4480,8 @@
             0,
             0,
             0});
-            this.numericUpDownBaseMissileSkill.Location = new System.Drawing.Point(146, 38);
+            this.numericUpDownBaseMissileSkill.Location = new System.Drawing.Point(109, 31);
+            this.numericUpDownBaseMissileSkill.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownBaseMissileSkill.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -4401,7 +4493,7 @@
             0,
             0});
             this.numericUpDownBaseMissileSkill.Name = "numericUpDownBaseMissileSkill";
-            this.numericUpDownBaseMissileSkill.Size = new System.Drawing.Size(53, 22);
+            this.numericUpDownBaseMissileSkill.Size = new System.Drawing.Size(40, 19);
             this.numericUpDownBaseMissileSkill.TabIndex = 3;
             this.toolTip1.SetToolTip(this.numericUpDownBaseMissileSkill, "Determines the effectiveness of AR/RR/CS/CB.");
             this.numericUpDownBaseMissileSkill.Value = new decimal(new int[] {
@@ -4421,7 +4513,8 @@
             0,
             0,
             0});
-            this.numericUpDownBaseMagicSkill.Location = new System.Drawing.Point(146, 72);
+            this.numericUpDownBaseMagicSkill.Location = new System.Drawing.Point(109, 58);
+            this.numericUpDownBaseMagicSkill.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownBaseMagicSkill.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -4433,7 +4526,7 @@
             0,
             0});
             this.numericUpDownBaseMagicSkill.Name = "numericUpDownBaseMagicSkill";
-            this.numericUpDownBaseMagicSkill.Size = new System.Drawing.Size(53, 22);
+            this.numericUpDownBaseMagicSkill.Size = new System.Drawing.Size(40, 19);
             this.numericUpDownBaseMagicSkill.TabIndex = 5;
             this.toolTip1.SetToolTip(this.numericUpDownBaseMagicSkill, "Determines the effectiveness of RR/CS/CB.\r\n");
             this.numericUpDownBaseMagicSkill.Value = new decimal(new int[] {
@@ -4448,9 +4541,10 @@
             this.checkBoxFinesse.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxFinesse.AutoSize = true;
             this.checkBoxFinesse.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxFinesse.Location = new System.Drawing.Point(91, 6);
+            this.checkBoxFinesse.Location = new System.Drawing.Point(67, 5);
+            this.checkBoxFinesse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBoxFinesse.Name = "checkBoxFinesse";
-            this.checkBoxFinesse.Size = new System.Drawing.Size(48, 20);
+            this.checkBoxFinesse.Size = new System.Drawing.Size(38, 17);
             this.checkBoxFinesse.TabIndex = 228;
             this.checkBoxFinesse.Text = "fw?";
             this.toolTip1.SetToolTip(this.checkBoxFinesse, "Finesse weapon?");
@@ -4462,9 +4556,10 @@
             this.checkBoxThrown.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxThrown.AutoSize = true;
             this.checkBoxThrown.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxThrown.Location = new System.Drawing.Point(91, 39);
+            this.checkBoxThrown.Location = new System.Drawing.Point(67, 32);
+            this.checkBoxThrown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBoxThrown.Name = "checkBoxThrown";
-            this.checkBoxThrown.Size = new System.Drawing.Size(48, 20);
+            this.checkBoxThrown.Size = new System.Drawing.Size(38, 17);
             this.checkBoxThrown.TabIndex = 229;
             this.checkBoxThrown.Text = "tw?";
             this.toolTip1.SetToolTip(this.checkBoxThrown, "Thrown weapon?");
@@ -4480,21 +4575,23 @@
             this.tableLayoutPanel43.Controls.Add(this.label2, 1, 0);
             this.tableLayoutPanel43.Controls.Add(this.textBoxCharacterName, 1, 1);
             this.tableLayoutPanel43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel43.Location = new System.Drawing.Point(5, 5);
+            this.tableLayoutPanel43.Location = new System.Drawing.Point(4, 4);
+            this.tableLayoutPanel43.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel43.Name = "tableLayoutPanel43";
             this.tableLayoutPanel43.RowCount = 2;
             this.tableLayoutPanel43.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel43.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel43.Size = new System.Drawing.Size(427, 52);
+            this.tableLayoutPanel43.Size = new System.Drawing.Size(320, 43);
             this.tableLayoutPanel43.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(145, 0);
+            this.label2.Location = new System.Drawing.Point(108, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 20);
+            this.label2.Size = new System.Drawing.Size(102, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "Character";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4503,9 +4600,10 @@
             // textBoxCharacterName
             // 
             this.textBoxCharacterName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxCharacterName.Location = new System.Drawing.Point(145, 25);
+            this.textBoxCharacterName.Location = new System.Drawing.Point(108, 20);
+            this.textBoxCharacterName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxCharacterName.Name = "textBoxCharacterName";
-            this.textBoxCharacterName.Size = new System.Drawing.Size(136, 22);
+            this.textBoxCharacterName.Size = new System.Drawing.Size(102, 20);
             this.textBoxCharacterName.TabIndex = 4;
             this.textBoxCharacterName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -4514,17 +4612,17 @@
             this.tableLayoutPanel4.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
             this.tableLayoutPanel4.Controls.Add(this.panel4, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.panel5, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(879, 2);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(659, 2);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(434, 589);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(326, 477);
             this.tableLayoutPanel4.TabIndex = 3;
             // 
             // panel4
@@ -4541,10 +4639,10 @@
             this.panel4.Controls.Add(this.groupBox3);
             this.panel4.Controls.Add(this.label75);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(5, 64);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel4.Location = new System.Drawing.Point(4, 53);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(426, 521);
+            this.panel4.Size = new System.Drawing.Size(320, 420);
             this.panel4.TabIndex = 2;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
@@ -4552,11 +4650,9 @@
             // 
             this.groupBox12.Controls.Add(this.tableLayoutPanel14);
             this.groupBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox12.Location = new System.Drawing.Point(7, 165);
-            this.groupBox12.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox12.Location = new System.Drawing.Point(5, 140);
             this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox12.Size = new System.Drawing.Size(412, 45);
+            this.groupBox12.Size = new System.Drawing.Size(309, 41);
             this.groupBox12.TabIndex = 217;
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Void Debuffs";
@@ -4576,11 +4672,13 @@
             this.tableLayoutPanel14.Controls.Add(this.label146, 2, 0);
             this.tableLayoutPanel14.Controls.Add(this.numericUpDownCorrosion, 3, 0);
             this.tableLayoutPanel14.Controls.Add(this.numericUpDownCorruption, 1, 0);
-            this.tableLayoutPanel14.Location = new System.Drawing.Point(4, 16);
+            this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel14.Location = new System.Drawing.Point(3, 15);
+            this.tableLayoutPanel14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel14.Name = "tableLayoutPanel14";
             this.tableLayoutPanel14.RowCount = 1;
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(404, 25);
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(303, 23);
             this.tableLayoutPanel14.TabIndex = 0;
             this.tableLayoutPanel14.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel14_Paint);
             // 
@@ -4589,14 +4687,15 @@
             this.numericUpDownDestructive.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDownDestructive.AutoSize = true;
             this.numericUpDownDestructive.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDestructive.Location = new System.Drawing.Point(350, 3);
+            this.numericUpDownDestructive.Location = new System.Drawing.Point(259, 2);
+            this.numericUpDownDestructive.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownDestructive.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
             this.numericUpDownDestructive.Name = "numericUpDownDestructive";
-            this.numericUpDownDestructive.Size = new System.Drawing.Size(48, 21);
+            this.numericUpDownDestructive.Size = new System.Drawing.Size(41, 18);
             this.numericUpDownDestructive.TabIndex = 190;
             this.toolTip1.SetToolTip(this.numericUpDownDestructive, "Damage per tick. Base amount is 60.\r\n\r\nWith a 27% wand = 80.\r\nWith a 27% wand + d" +
         "amage rating of:\r\n-20 = 96.\r\n-40 = 112. \r\n-60 = 128.\r\n");
@@ -4607,10 +4706,10 @@
             this.label28.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(0, 4);
+            this.label28.Location = new System.Drawing.Point(0, 5);
             this.label28.Margin = new System.Windows.Forms.Padding(0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(68, 16);
+            this.label28.Size = new System.Drawing.Size(55, 13);
             this.label28.TabIndex = 191;
             this.label28.Text = "Corruption";
             // 
@@ -4619,10 +4718,10 @@
             this.label147.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label147.AutoSize = true;
             this.label147.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label147.Location = new System.Drawing.Point(268, 4);
+            this.label147.Location = new System.Drawing.Point(200, 5);
             this.label147.Margin = new System.Windows.Forms.Padding(0);
             this.label147.Name = "label147";
-            this.label147.Size = new System.Drawing.Size(56, 16);
+            this.label147.Size = new System.Drawing.Size(47, 13);
             this.label147.TabIndex = 188;
             this.label147.Text = "Destruct";
             // 
@@ -4631,10 +4730,10 @@
             this.label146.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label146.AutoSize = true;
             this.label146.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label146.Location = new System.Drawing.Point(134, 4);
+            this.label146.Location = new System.Drawing.Point(100, 5);
             this.label146.Margin = new System.Windows.Forms.Padding(0);
             this.label146.Name = "label146";
-            this.label146.Size = new System.Drawing.Size(65, 16);
+            this.label146.Size = new System.Drawing.Size(51, 13);
             this.label146.TabIndex = 186;
             this.label146.Text = "Corrosion";
             // 
@@ -4643,14 +4742,15 @@
             this.numericUpDownCorrosion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDownCorrosion.AutoSize = true;
             this.numericUpDownCorrosion.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownCorrosion.Location = new System.Drawing.Point(215, 3);
+            this.numericUpDownCorrosion.Location = new System.Drawing.Point(159, 2);
+            this.numericUpDownCorrosion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownCorrosion.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
             this.numericUpDownCorrosion.Name = "numericUpDownCorrosion";
-            this.numericUpDownCorrosion.Size = new System.Drawing.Size(48, 21);
+            this.numericUpDownCorrosion.Size = new System.Drawing.Size(39, 18);
             this.numericUpDownCorrosion.TabIndex = 190;
             this.toolTip1.SetToolTip(this.numericUpDownCorrosion, "Damage per tick. Base amount is 149.\r\n\r\nWith a 27% wand = 201.\r\nWith a 27% wand +" +
         " damage rating of:\r\n-20 = 241\r\n-40 = 281. \r\n-60 = 321");
@@ -4661,14 +4761,15 @@
             this.numericUpDownCorruption.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDownCorruption.AutoSize = true;
             this.numericUpDownCorruption.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownCorruption.Location = new System.Drawing.Point(81, 3);
+            this.numericUpDownCorruption.Location = new System.Drawing.Point(59, 2);
+            this.numericUpDownCorruption.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownCorruption.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
             this.numericUpDownCorruption.Name = "numericUpDownCorruption";
-            this.numericUpDownCorruption.Size = new System.Drawing.Size(48, 21);
+            this.numericUpDownCorruption.Size = new System.Drawing.Size(39, 18);
             this.numericUpDownCorruption.TabIndex = 189;
             this.toolTip1.SetToolTip(this.numericUpDownCorruption, "Damage per tick. Base amount is 60.\r\n\r\nWith a 27% wand = 80.\r\nWith a 27% wand + d" +
         "amage rating of:\r\n-20 = 96.\r\n-40 = 112. \r\n-60 = 128.");
@@ -4678,11 +4779,9 @@
             // 
             this.groupBox1.Controls.Add(this.tableLayoutPanel5);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(7, 4);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(5, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(412, 111);
+            this.groupBox1.Size = new System.Drawing.Size(309, 92);
             this.groupBox1.TabIndex = 215;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Base Defenses";
@@ -4694,12 +4793,13 @@
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel29, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel33, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(4, 19);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 15);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 66.66666F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(404, 88);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(303, 74);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // tableLayoutPanel29
@@ -4718,11 +4818,12 @@
             this.tableLayoutPanel29.Controls.Add(this.label27, 4, 0);
             this.tableLayoutPanel29.Controls.Add(this.numericUpDownEnemyMagicDefense, 5, 0);
             this.tableLayoutPanel29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel29.Location = new System.Drawing.Point(3, 61);
+            this.tableLayoutPanel29.Location = new System.Drawing.Point(2, 51);
+            this.tableLayoutPanel29.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel29.Name = "tableLayoutPanel29";
             this.tableLayoutPanel29.RowCount = 1;
             this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel29.Size = new System.Drawing.Size(398, 24);
+            this.tableLayoutPanel29.Size = new System.Drawing.Size(299, 21);
             this.tableLayoutPanel29.TabIndex = 228;
             // 
             // label13
@@ -4733,7 +4834,7 @@
             this.label13.Location = new System.Drawing.Point(0, 4);
             this.label13.Margin = new System.Windows.Forms.Padding(0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(58, 16);
+            this.label13.Size = new System.Drawing.Size(47, 13);
             this.label13.TabIndex = 229;
             this.label13.Text = "Melee D";
             this.label13.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -4749,14 +4850,15 @@
             0,
             0,
             0});
-            this.numericUpDownEnemyMeleeDefense.Location = new System.Drawing.Point(75, 3);
+            this.numericUpDownEnemyMeleeDefense.Location = new System.Drawing.Point(56, 2);
+            this.numericUpDownEnemyMeleeDefense.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownEnemyMeleeDefense.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
             this.numericUpDownEnemyMeleeDefense.Name = "numericUpDownEnemyMeleeDefense";
-            this.numericUpDownEnemyMeleeDefense.Size = new System.Drawing.Size(54, 22);
+            this.numericUpDownEnemyMeleeDefense.Size = new System.Drawing.Size(41, 19);
             this.numericUpDownEnemyMeleeDefense.TabIndex = 224;
             this.toolTip1.SetToolTip(this.numericUpDownEnemyMeleeDefense, "Melee Defense amount of the enemy.");
             this.numericUpDownEnemyMeleeDefense.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -4767,10 +4869,10 @@
             this.label26.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(132, 4);
+            this.label26.Location = new System.Drawing.Point(99, 4);
             this.label26.Margin = new System.Windows.Forms.Padding(0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(62, 16);
+            this.label26.Size = new System.Drawing.Size(49, 13);
             this.label26.TabIndex = 230;
             this.label26.Text = "Missile D";
             this.label26.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -4786,14 +4888,15 @@
             0,
             0,
             0});
-            this.numericUpDownEnemyMissileDefense.Location = new System.Drawing.Point(207, 3);
+            this.numericUpDownEnemyMissileDefense.Location = new System.Drawing.Point(155, 2);
+            this.numericUpDownEnemyMissileDefense.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownEnemyMissileDefense.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
             this.numericUpDownEnemyMissileDefense.Name = "numericUpDownEnemyMissileDefense";
-            this.numericUpDownEnemyMissileDefense.Size = new System.Drawing.Size(54, 22);
+            this.numericUpDownEnemyMissileDefense.Size = new System.Drawing.Size(41, 19);
             this.numericUpDownEnemyMissileDefense.TabIndex = 225;
             this.toolTip1.SetToolTip(this.numericUpDownEnemyMissileDefense, "Missile Defense amount of the enemy.");
             this.numericUpDownEnemyMissileDefense.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -4804,10 +4907,10 @@
             this.label27.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(264, 4);
+            this.label27.Location = new System.Drawing.Point(198, 4);
             this.label27.Margin = new System.Windows.Forms.Padding(0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(57, 16);
+            this.label27.Size = new System.Drawing.Size(47, 13);
             this.label27.TabIndex = 231;
             this.label27.Text = "Magic D";
             this.label27.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -4823,14 +4926,15 @@
             0,
             0,
             0});
-            this.numericUpDownEnemyMagicDefense.Location = new System.Drawing.Point(339, 3);
+            this.numericUpDownEnemyMagicDefense.Location = new System.Drawing.Point(254, 2);
+            this.numericUpDownEnemyMagicDefense.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownEnemyMagicDefense.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
             this.numericUpDownEnemyMagicDefense.Name = "numericUpDownEnemyMagicDefense";
-            this.numericUpDownEnemyMagicDefense.Size = new System.Drawing.Size(55, 22);
+            this.numericUpDownEnemyMagicDefense.Size = new System.Drawing.Size(43, 19);
             this.numericUpDownEnemyMagicDefense.TabIndex = 226;
             this.toolTip1.SetToolTip(this.numericUpDownEnemyMagicDefense, "Magic Defense amount of the enemy,");
             this.numericUpDownEnemyMagicDefense.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -4852,12 +4956,13 @@
             this.tableLayoutPanel33.Controls.Add(this.numericUpDownEnemyResistance, 3, 0);
             this.tableLayoutPanel33.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel33.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel33.Location = new System.Drawing.Point(2, 2);
+            this.tableLayoutPanel33.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel33.Name = "tableLayoutPanel33";
             this.tableLayoutPanel33.RowCount = 2;
             this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel33.Size = new System.Drawing.Size(398, 52);
+            this.tableLayoutPanel33.Size = new System.Drawing.Size(299, 45);
             this.tableLayoutPanel33.TabIndex = 0;
             // 
             // numericUpDownEnemyShieldResist
@@ -4871,7 +4976,8 @@
             0,
             0,
             65536});
-            this.numericUpDownEnemyShieldResist.Location = new System.Drawing.Point(320, 29);
+            this.numericUpDownEnemyShieldResist.Location = new System.Drawing.Point(239, 24);
+            this.numericUpDownEnemyShieldResist.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownEnemyShieldResist.Maximum = new decimal(new int[] {
             2,
             0,
@@ -4883,7 +4989,7 @@
             0,
             -2147483648});
             this.numericUpDownEnemyShieldResist.Name = "numericUpDownEnemyShieldResist";
-            this.numericUpDownEnemyShieldResist.Size = new System.Drawing.Size(75, 22);
+            this.numericUpDownEnemyShieldResist.Size = new System.Drawing.Size(58, 19);
             this.numericUpDownEnemyShieldResist.TabIndex = 230;
             this.toolTip1.SetToolTip(this.numericUpDownEnemyShieldResist, "Buffed Resistance Level of the enemy\'s shield.\r\n(-2.0 to 2.0)\r\n\r\nFind this value " +
         "by dividing a shield\'s effective resistance\r\nlevel towards a damage type by its " +
@@ -4900,10 +5006,10 @@
             this.label64.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label64.AutoSize = true;
             this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.Location = new System.Drawing.Point(198, 31);
+            this.label64.Location = new System.Drawing.Point(148, 27);
             this.label64.Margin = new System.Windows.Forms.Padding(0);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(86, 16);
+            this.label64.Size = new System.Drawing.Size(68, 13);
             this.label64.TabIndex = 229;
             this.label64.Text = "Shield Resist";
             this.label64.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -4919,14 +5025,15 @@
             0,
             0,
             0});
-            this.numericUpDownEnemyShieldAL.Location = new System.Drawing.Point(122, 29);
+            this.numericUpDownEnemyShieldAL.Location = new System.Drawing.Point(91, 24);
+            this.numericUpDownEnemyShieldAL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownEnemyShieldAL.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
             this.numericUpDownEnemyShieldAL.Name = "numericUpDownEnemyShieldAL";
-            this.numericUpDownEnemyShieldAL.Size = new System.Drawing.Size(73, 22);
+            this.numericUpDownEnemyShieldAL.Size = new System.Drawing.Size(55, 19);
             this.numericUpDownEnemyShieldAL.TabIndex = 227;
             this.toolTip1.SetToolTip(this.numericUpDownEnemyShieldAL, "Buffed Shield Level of the enemy\'s shield.");
             this.numericUpDownEnemyShieldAL.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -4936,10 +5043,10 @@
             this.label111.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label111.AutoSize = true;
             this.label111.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label111.Location = new System.Drawing.Point(0, 31);
+            this.label111.Location = new System.Drawing.Point(0, 27);
             this.label111.Margin = new System.Windows.Forms.Padding(0);
             this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(84, 16);
+            this.label111.Size = new System.Drawing.Size(66, 13);
             this.label111.TabIndex = 226;
             this.label111.Text = "Shield Armor";
             this.label111.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -4950,10 +5057,10 @@
             this.label79.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label79.AutoSize = true;
             this.label79.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label79.Location = new System.Drawing.Point(198, 5);
+            this.label79.Location = new System.Drawing.Point(148, 4);
             this.label79.Margin = new System.Windows.Forms.Padding(0);
             this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(45, 16);
+            this.label79.Size = new System.Drawing.Size(36, 13);
             this.label79.TabIndex = 187;
             this.label79.Text = "Resist";
             this.label79.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -4969,14 +5076,15 @@
             0,
             0,
             0});
-            this.numericUpDownEnemyArmor.Location = new System.Drawing.Point(122, 3);
+            this.numericUpDownEnemyArmor.Location = new System.Drawing.Point(91, 2);
+            this.numericUpDownEnemyArmor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownEnemyArmor.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
             this.numericUpDownEnemyArmor.Name = "numericUpDownEnemyArmor";
-            this.numericUpDownEnemyArmor.Size = new System.Drawing.Size(73, 22);
+            this.numericUpDownEnemyArmor.Size = new System.Drawing.Size(55, 19);
             this.numericUpDownEnemyArmor.TabIndex = 222;
             this.toolTip1.SetToolTip(this.numericUpDownEnemyArmor, "Armor Level of the enemy, matching the\r\ndamage type of the weapon used.");
             this.numericUpDownEnemyArmor.ValueChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -4993,14 +5101,15 @@
             0,
             0,
             131072});
-            this.numericUpDownEnemyResistance.Location = new System.Drawing.Point(320, 3);
+            this.numericUpDownEnemyResistance.Location = new System.Drawing.Point(239, 2);
+            this.numericUpDownEnemyResistance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDownEnemyResistance.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
             this.numericUpDownEnemyResistance.Name = "numericUpDownEnemyResistance";
-            this.numericUpDownEnemyResistance.Size = new System.Drawing.Size(75, 22);
+            this.numericUpDownEnemyResistance.Size = new System.Drawing.Size(58, 19);
             this.numericUpDownEnemyResistance.TabIndex = 223;
             this.toolTip1.SetToolTip(this.numericUpDownEnemyResistance, "Resistance level of the enemy, matching\r\nthe damage type of the weapon used.");
             this.numericUpDownEnemyResistance.Value = new decimal(new int[] {
@@ -5016,10 +5125,10 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 5);
+            this.label1.Location = new System.Drawing.Point(0, 4);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 16);
+            this.label1.Size = new System.Drawing.Size(34, 13);
             this.label1.TabIndex = 228;
             this.label1.Text = "Armor";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -5029,11 +5138,9 @@
             // 
             this.groupBox16.Controls.Add(this.tableLayoutPanel13);
             this.groupBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox16.Location = new System.Drawing.Point(7, 355);
-            this.groupBox16.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox16.Location = new System.Drawing.Point(5, 292);
             this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox16.Size = new System.Drawing.Size(412, 45);
+            this.groupBox16.Size = new System.Drawing.Size(309, 43);
             this.groupBox16.TabIndex = 217;
             this.groupBox16.TabStop = false;
             this.groupBox16.Text = "Item Debuffs";
@@ -5049,11 +5156,13 @@
             this.tableLayoutPanel13.Controls.Add(this.label143, 2, 0);
             this.tableLayoutPanel13.Controls.Add(this.comboBoxEnemyBrittlemail, 1, 0);
             this.tableLayoutPanel13.Controls.Add(this.label144, 0, 0);
-            this.tableLayoutPanel13.Location = new System.Drawing.Point(4, 16);
+            this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel13.Location = new System.Drawing.Point(3, 15);
+            this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
             this.tableLayoutPanel13.RowCount = 1;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(404, 25);
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(303, 25);
             this.tableLayoutPanel13.TabIndex = 1;
             // 
             // comboBoxEnemyResistanceLure
@@ -5071,12 +5180,12 @@
             "6",
             "7",
             "8"});
-            this.comboBoxEnemyResistanceLure.Location = new System.Drawing.Point(345, 2);
-            this.comboBoxEnemyResistanceLure.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxEnemyResistanceLure.Location = new System.Drawing.Point(259, 2);
+            this.comboBoxEnemyResistanceLure.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxEnemyResistanceLure.Name = "comboBoxEnemyResistanceLure";
-            this.comboBoxEnemyResistanceLure.Size = new System.Drawing.Size(56, 23);
+            this.comboBoxEnemyResistanceLure.Size = new System.Drawing.Size(42, 21);
             this.comboBoxEnemyResistanceLure.TabIndex = 185;
-            this.comboBoxEnemyResistanceLure.Text = "0";
+            this.comboBoxEnemyResistanceLure.Text = "None";
             this.toolTip1.SetToolTip(this.comboBoxEnemyResistanceLure, "Level of Resistance Lure spell used on the enemy.");
             this.comboBoxEnemyResistanceLure.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -5085,10 +5194,10 @@
             this.label143.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label143.AutoSize = true;
             this.label143.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label143.Location = new System.Drawing.Point(201, 4);
+            this.label143.Location = new System.Drawing.Point(151, 6);
             this.label143.Margin = new System.Windows.Forms.Padding(0);
             this.label143.Name = "label143";
-            this.label143.Size = new System.Drawing.Size(104, 16);
+            this.label143.Size = new System.Drawing.Size(84, 13);
             this.label143.TabIndex = 187;
             this.label143.Text = "Resistance Lure";
             this.label143.Click += new System.EventHandler(this.label143_Click);
@@ -5108,12 +5217,12 @@
             "6",
             "7",
             "8"});
-            this.comboBoxEnemyBrittlemail.Location = new System.Drawing.Point(144, 2);
-            this.comboBoxEnemyBrittlemail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxEnemyBrittlemail.Location = new System.Drawing.Point(108, 2);
+            this.comboBoxEnemyBrittlemail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxEnemyBrittlemail.Name = "comboBoxEnemyBrittlemail";
-            this.comboBoxEnemyBrittlemail.Size = new System.Drawing.Size(54, 23);
+            this.comboBoxEnemyBrittlemail.Size = new System.Drawing.Size(41, 21);
             this.comboBoxEnemyBrittlemail.TabIndex = 183;
-            this.comboBoxEnemyBrittlemail.Text = "0";
+            this.comboBoxEnemyBrittlemail.Text = "None";
             this.toolTip1.SetToolTip(this.comboBoxEnemyBrittlemail, "Level of Brittlemail spell used on the enemy.");
             this.comboBoxEnemyBrittlemail.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
             // 
@@ -5122,19 +5231,20 @@
             this.label144.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label144.AutoSize = true;
             this.label144.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label144.Location = new System.Drawing.Point(0, 4);
+            this.label144.Location = new System.Drawing.Point(0, 6);
             this.label144.Margin = new System.Windows.Forms.Padding(0);
             this.label144.Name = "label144";
-            this.label144.Size = new System.Drawing.Size(65, 16);
+            this.label144.Size = new System.Drawing.Size(51, 13);
             this.label144.TabIndex = 186;
             this.label144.Text = "Brittlemail";
             // 
             // label85
             // 
             this.label85.AutoSize = true;
-            this.label85.Location = new System.Drawing.Point(281, 58);
+            this.label85.Location = new System.Drawing.Point(211, 47);
+            this.label85.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(57, 16);
+            this.label85.Size = new System.Drawing.Size(47, 13);
             this.label85.TabIndex = 204;
             this.label85.Text = "Magic D";
             this.label85.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -5142,9 +5252,10 @@
             // label83
             // 
             this.label83.AutoSize = true;
-            this.label83.Location = new System.Drawing.Point(143, 57);
+            this.label83.Location = new System.Drawing.Point(107, 46);
+            this.label83.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(62, 16);
+            this.label83.Size = new System.Drawing.Size(49, 13);
             this.label83.TabIndex = 198;
             this.label83.Text = "Missile D";
             this.label83.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -5152,9 +5263,10 @@
             // label81
             // 
             this.label81.AutoSize = true;
-            this.label81.Location = new System.Drawing.Point(9, 57);
+            this.label81.Location = new System.Drawing.Point(7, 46);
+            this.label81.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(58, 16);
+            this.label81.Size = new System.Drawing.Size(47, 13);
             this.label81.TabIndex = 192;
             this.label81.Text = "Melee D";
             this.label81.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -5163,11 +5275,9 @@
             // 
             this.groupBox2.Controls.Add(this.tableLayoutPanel12);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(7, 118);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Location = new System.Drawing.Point(5, 95);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(412, 45);
+            this.groupBox2.Size = new System.Drawing.Size(309, 43);
             this.groupBox2.TabIndex = 216;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Life Debuffs";
@@ -5183,11 +5293,13 @@
             this.tableLayoutPanel12.Controls.Add(this.label142, 2, 0);
             this.tableLayoutPanel12.Controls.Add(this.comboBoxEnemyVuln, 3, 0);
             this.tableLayoutPanel12.Controls.Add(this.label141, 0, 0);
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(4, 15);
+            this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(3, 15);
+            this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 1;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(404, 25);
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(303, 25);
             this.tableLayoutPanel12.TabIndex = 0;
             this.tableLayoutPanel12.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel12_Paint);
             // 
@@ -5205,12 +5317,12 @@
             "5",
             "6",
             "7"});
-            this.comboBoxEnemyImperil.Location = new System.Drawing.Point(144, 2);
-            this.comboBoxEnemyImperil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxEnemyImperil.Location = new System.Drawing.Point(108, 2);
+            this.comboBoxEnemyImperil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxEnemyImperil.Name = "comboBoxEnemyImperil";
-            this.comboBoxEnemyImperil.Size = new System.Drawing.Size(54, 23);
+            this.comboBoxEnemyImperil.Size = new System.Drawing.Size(41, 21);
             this.comboBoxEnemyImperil.TabIndex = 183;
-            this.comboBoxEnemyImperil.Text = "0";
+            this.comboBoxEnemyImperil.Text = "None";
             this.toolTip1.SetToolTip(this.comboBoxEnemyImperil, "Level of Imperil spell used on the enemy.");
             this.comboBoxEnemyImperil.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxEnemyImperil.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -5220,10 +5332,10 @@
             this.label142.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label142.AutoSize = true;
             this.label142.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label142.Location = new System.Drawing.Point(201, 4);
+            this.label142.Location = new System.Drawing.Point(151, 6);
             this.label142.Margin = new System.Windows.Forms.Padding(0);
             this.label142.Name = "label142";
-            this.label142.Size = new System.Drawing.Size(104, 16);
+            this.label142.Size = new System.Drawing.Size(84, 13);
             this.label142.TabIndex = 187;
             this.label142.Text = "Resistance Vuln";
             // 
@@ -5242,12 +5354,12 @@
             "6",
             "7",
             "8"});
-            this.comboBoxEnemyVuln.Location = new System.Drawing.Point(345, 2);
-            this.comboBoxEnemyVuln.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxEnemyVuln.Location = new System.Drawing.Point(259, 2);
+            this.comboBoxEnemyVuln.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxEnemyVuln.Name = "comboBoxEnemyVuln";
-            this.comboBoxEnemyVuln.Size = new System.Drawing.Size(56, 23);
+            this.comboBoxEnemyVuln.Size = new System.Drawing.Size(42, 21);
             this.comboBoxEnemyVuln.TabIndex = 185;
-            this.comboBoxEnemyVuln.Text = "0";
+            this.comboBoxEnemyVuln.Text = "None";
             this.toolTip1.SetToolTip(this.comboBoxEnemyVuln, "Level of Resistance Vuln spell used on the enemy.");
             this.comboBoxEnemyVuln.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxEnemyVuln.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -5257,10 +5369,10 @@
             this.label141.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label141.AutoSize = true;
             this.label141.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label141.Location = new System.Drawing.Point(0, 4);
+            this.label141.Location = new System.Drawing.Point(0, 6);
             this.label141.Margin = new System.Windows.Forms.Padding(0);
             this.label141.Name = "label141";
-            this.label141.Size = new System.Drawing.Size(47, 16);
+            this.label141.Size = new System.Drawing.Size(37, 13);
             this.label141.TabIndex = 186;
             this.label141.Text = "Imperil";
             // 
@@ -5268,11 +5380,9 @@
             // 
             this.groupBox9.Controls.Add(this.tableLayoutPanel11);
             this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox9.Location = new System.Drawing.Point(7, 210);
-            this.groupBox9.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox9.Location = new System.Drawing.Point(5, 182);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox9.Size = new System.Drawing.Size(412, 145);
+            this.groupBox9.Size = new System.Drawing.Size(309, 110);
             this.groupBox9.TabIndex = 217;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Creature Debuffs";
@@ -5300,14 +5410,16 @@
             this.tableLayoutPanel11.Controls.Add(this.comboBoxEnemyBafflement, 3, 2);
             this.tableLayoutPanel11.Controls.Add(this.label140, 2, 3);
             this.tableLayoutPanel11.Controls.Add(this.comboBoxEnemyFeeblemind, 3, 3);
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(4, 16);
+            this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 15);
+            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 4;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(404, 125);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(303, 92);
             this.tableLayoutPanel11.TabIndex = 0;
             // 
             // label138
@@ -5315,10 +5427,10 @@
             this.label138.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label138.AutoSize = true;
             this.label138.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label138.Location = new System.Drawing.Point(0, 101);
+            this.label138.Location = new System.Drawing.Point(0, 74);
             this.label138.Margin = new System.Windows.Forms.Padding(0);
             this.label138.Name = "label138";
-            this.label138.Size = new System.Drawing.Size(128, 16);
+            this.label138.Size = new System.Drawing.Size(102, 13);
             this.label138.TabIndex = 221;
             this.label138.Text = "Unbalanced Assault";
             // 
@@ -5327,10 +5439,10 @@
             this.label136.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label136.AutoSize = true;
             this.label136.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label136.Location = new System.Drawing.Point(0, 69);
+            this.label136.Location = new System.Drawing.Point(0, 51);
             this.label136.Margin = new System.Windows.Forms.Padding(0);
             this.label136.Name = "label136";
-            this.label136.Size = new System.Drawing.Size(78, 16);
+            this.label136.Size = new System.Drawing.Size(62, 13);
             this.label136.TabIndex = 219;
             this.label136.Text = "Magic Yield";
             // 
@@ -5339,10 +5451,10 @@
             this.label134.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label134.AutoSize = true;
             this.label134.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label134.Location = new System.Drawing.Point(0, 38);
+            this.label134.Location = new System.Drawing.Point(0, 28);
             this.label134.Margin = new System.Windows.Forms.Padding(0);
             this.label134.Name = "label134";
-            this.label134.Size = new System.Drawing.Size(112, 16);
+            this.label134.Size = new System.Drawing.Size(87, 13);
             this.label134.TabIndex = 217;
             this.label134.Text = "Defenselessness";
             // 
@@ -5361,12 +5473,12 @@
             "6",
             "7",
             "8"});
-            this.comboBoxEnemyVulnerability.Location = new System.Drawing.Point(144, 4);
-            this.comboBoxEnemyVulnerability.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxEnemyVulnerability.Location = new System.Drawing.Point(108, 2);
+            this.comboBoxEnemyVulnerability.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxEnemyVulnerability.Name = "comboBoxEnemyVulnerability";
-            this.comboBoxEnemyVulnerability.Size = new System.Drawing.Size(54, 23);
+            this.comboBoxEnemyVulnerability.Size = new System.Drawing.Size(41, 21);
             this.comboBoxEnemyVulnerability.TabIndex = 190;
-            this.comboBoxEnemyVulnerability.Text = "0";
+            this.comboBoxEnemyVulnerability.Text = "None";
             this.toolTip1.SetToolTip(this.comboBoxEnemyVulnerability, "Level of Vulnerability spell used on the enemy.");
             this.comboBoxEnemyVulnerability.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxEnemyVulnerability.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -5386,12 +5498,12 @@
             "6",
             "7",
             "8"});
-            this.comboBoxEnemyDefenselessness.Location = new System.Drawing.Point(144, 35);
-            this.comboBoxEnemyDefenselessness.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxEnemyDefenselessness.Location = new System.Drawing.Point(108, 25);
+            this.comboBoxEnemyDefenselessness.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxEnemyDefenselessness.Name = "comboBoxEnemyDefenselessness";
-            this.comboBoxEnemyDefenselessness.Size = new System.Drawing.Size(54, 23);
+            this.comboBoxEnemyDefenselessness.Size = new System.Drawing.Size(41, 21);
             this.comboBoxEnemyDefenselessness.TabIndex = 196;
-            this.comboBoxEnemyDefenselessness.Text = "0";
+            this.comboBoxEnemyDefenselessness.Text = "None";
             this.toolTip1.SetToolTip(this.comboBoxEnemyDefenselessness, "Level of Defenselessness spell used on the enemy.");
             this.comboBoxEnemyDefenselessness.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxEnemyDefenselessness.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -5411,12 +5523,12 @@
             "6",
             "7",
             "8"});
-            this.comboBoxEnemyMagicYield.Location = new System.Drawing.Point(144, 66);
-            this.comboBoxEnemyMagicYield.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxEnemyMagicYield.Location = new System.Drawing.Point(108, 48);
+            this.comboBoxEnemyMagicYield.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxEnemyMagicYield.Name = "comboBoxEnemyMagicYield";
-            this.comboBoxEnemyMagicYield.Size = new System.Drawing.Size(54, 23);
+            this.comboBoxEnemyMagicYield.Size = new System.Drawing.Size(41, 21);
             this.comboBoxEnemyMagicYield.TabIndex = 202;
-            this.comboBoxEnemyMagicYield.Text = "0";
+            this.comboBoxEnemyMagicYield.Text = "None";
             this.toolTip1.SetToolTip(this.comboBoxEnemyMagicYield, "Level of Magic Yield spell used on the enemy.");
             this.comboBoxEnemyMagicYield.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxEnemyMagicYield.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -5430,12 +5542,12 @@
             "0",
             "-10",
             "-20"});
-            this.comboBoxEnemyUnbalancingAssault.Location = new System.Drawing.Point(144, 97);
-            this.comboBoxEnemyUnbalancingAssault.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxEnemyUnbalancingAssault.Location = new System.Drawing.Point(108, 71);
+            this.comboBoxEnemyUnbalancingAssault.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxEnemyUnbalancingAssault.Name = "comboBoxEnemyUnbalancingAssault";
-            this.comboBoxEnemyUnbalancingAssault.Size = new System.Drawing.Size(54, 23);
+            this.comboBoxEnemyUnbalancingAssault.Size = new System.Drawing.Size(41, 21);
             this.comboBoxEnemyUnbalancingAssault.TabIndex = 208;
-            this.comboBoxEnemyUnbalancingAssault.Text = "0";
+            this.comboBoxEnemyUnbalancingAssault.Text = "None";
             this.toolTip1.SetToolTip(this.comboBoxEnemyUnbalancingAssault, "Applied from Dirty Fighting:\r\n-10 if trained.\r\n-20 if spec.");
             this.comboBoxEnemyUnbalancingAssault.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxEnemyUnbalancingAssault.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -5445,10 +5557,10 @@
             this.label127.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label127.AutoSize = true;
             this.label127.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label127.Location = new System.Drawing.Point(0, 7);
+            this.label127.Location = new System.Drawing.Point(0, 5);
             this.label127.Margin = new System.Windows.Forms.Padding(0);
             this.label127.Name = "label127";
-            this.label127.Size = new System.Drawing.Size(80, 16);
+            this.label127.Size = new System.Drawing.Size(63, 13);
             this.label127.TabIndex = 215;
             this.label127.Text = "Vulnerability";
             // 
@@ -5457,10 +5569,10 @@
             this.label135.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label135.AutoSize = true;
             this.label135.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label135.Location = new System.Drawing.Point(201, 7);
+            this.label135.Location = new System.Drawing.Point(151, 5);
             this.label135.Margin = new System.Windows.Forms.Padding(0);
             this.label135.Name = "label135";
-            this.label135.Size = new System.Drawing.Size(76, 16);
+            this.label135.Size = new System.Drawing.Size(59, 13);
             this.label135.TabIndex = 218;
             this.label135.Text = "Clumsiness";
             // 
@@ -5479,12 +5591,12 @@
             "6",
             "7",
             "8"});
-            this.comboBoxEnemyClumsiness.Location = new System.Drawing.Point(345, 4);
-            this.comboBoxEnemyClumsiness.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxEnemyClumsiness.Location = new System.Drawing.Point(259, 2);
+            this.comboBoxEnemyClumsiness.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxEnemyClumsiness.Name = "comboBoxEnemyClumsiness";
-            this.comboBoxEnemyClumsiness.Size = new System.Drawing.Size(56, 23);
+            this.comboBoxEnemyClumsiness.Size = new System.Drawing.Size(42, 21);
             this.comboBoxEnemyClumsiness.TabIndex = 199;
-            this.comboBoxEnemyClumsiness.Text = "0";
+            this.comboBoxEnemyClumsiness.Text = "None";
             this.toolTip1.SetToolTip(this.comboBoxEnemyClumsiness, "Level of Clumsiness spell used on the enemy.");
             this.comboBoxEnemyClumsiness.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxEnemyClumsiness.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -5494,10 +5606,10 @@
             this.label137.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label137.AutoSize = true;
             this.label137.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label137.Location = new System.Drawing.Point(201, 38);
+            this.label137.Location = new System.Drawing.Point(151, 28);
             this.label137.Margin = new System.Windows.Forms.Padding(0);
             this.label137.Name = "label137";
-            this.label137.Size = new System.Drawing.Size(65, 16);
+            this.label137.Size = new System.Drawing.Size(52, 13);
             this.label137.TabIndex = 220;
             this.label137.Text = "Slowness";
             // 
@@ -5516,12 +5628,12 @@
             "6",
             "7",
             "8"});
-            this.comboBoxEnemySlowness.Location = new System.Drawing.Point(345, 35);
-            this.comboBoxEnemySlowness.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxEnemySlowness.Location = new System.Drawing.Point(259, 25);
+            this.comboBoxEnemySlowness.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxEnemySlowness.Name = "comboBoxEnemySlowness";
-            this.comboBoxEnemySlowness.Size = new System.Drawing.Size(56, 23);
+            this.comboBoxEnemySlowness.Size = new System.Drawing.Size(42, 21);
             this.comboBoxEnemySlowness.TabIndex = 205;
-            this.comboBoxEnemySlowness.Text = "0";
+            this.comboBoxEnemySlowness.Text = "None";
             this.toolTip1.SetToolTip(this.comboBoxEnemySlowness, "Level of Slowness spell used on the enemy.");
             this.comboBoxEnemySlowness.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxEnemySlowness.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -5531,10 +5643,10 @@
             this.label139.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label139.AutoSize = true;
             this.label139.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label139.Location = new System.Drawing.Point(201, 69);
+            this.label139.Location = new System.Drawing.Point(151, 51);
             this.label139.Margin = new System.Windows.Forms.Padding(0);
             this.label139.Name = "label139";
-            this.label139.Size = new System.Drawing.Size(70, 16);
+            this.label139.Size = new System.Drawing.Size(57, 13);
             this.label139.TabIndex = 222;
             this.label139.Text = "Bafflement";
             // 
@@ -5553,12 +5665,12 @@
             "6",
             "7",
             "8"});
-            this.comboBoxEnemyBafflement.Location = new System.Drawing.Point(345, 66);
-            this.comboBoxEnemyBafflement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxEnemyBafflement.Location = new System.Drawing.Point(259, 48);
+            this.comboBoxEnemyBafflement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxEnemyBafflement.Name = "comboBoxEnemyBafflement";
-            this.comboBoxEnemyBafflement.Size = new System.Drawing.Size(56, 23);
+            this.comboBoxEnemyBafflement.Size = new System.Drawing.Size(42, 21);
             this.comboBoxEnemyBafflement.TabIndex = 211;
-            this.comboBoxEnemyBafflement.Text = "0";
+            this.comboBoxEnemyBafflement.Text = "None";
             this.toolTip1.SetToolTip(this.comboBoxEnemyBafflement, "Level of Bafflement spell used on the enemy.");
             this.comboBoxEnemyBafflement.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxEnemyBafflement.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -5568,10 +5680,10 @@
             this.label140.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label140.AutoSize = true;
             this.label140.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label140.Location = new System.Drawing.Point(201, 101);
+            this.label140.Location = new System.Drawing.Point(151, 74);
             this.label140.Margin = new System.Windows.Forms.Padding(0);
             this.label140.Name = "label140";
-            this.label140.Size = new System.Drawing.Size(79, 16);
+            this.label140.Size = new System.Drawing.Size(61, 13);
             this.label140.TabIndex = 223;
             this.label140.Text = "Feeblemind";
             // 
@@ -5590,12 +5702,12 @@
             "6",
             "7",
             "8"});
-            this.comboBoxEnemyFeeblemind.Location = new System.Drawing.Point(345, 97);
-            this.comboBoxEnemyFeeblemind.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxEnemyFeeblemind.Location = new System.Drawing.Point(259, 71);
+            this.comboBoxEnemyFeeblemind.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxEnemyFeeblemind.Name = "comboBoxEnemyFeeblemind";
-            this.comboBoxEnemyFeeblemind.Size = new System.Drawing.Size(56, 23);
+            this.comboBoxEnemyFeeblemind.Size = new System.Drawing.Size(42, 21);
             this.comboBoxEnemyFeeblemind.TabIndex = 214;
-            this.comboBoxEnemyFeeblemind.Text = "0";
+            this.comboBoxEnemyFeeblemind.Text = "None";
             this.toolTip1.SetToolTip(this.comboBoxEnemyFeeblemind, "Level of Feeblemind spell used on the enemy.");
             this.comboBoxEnemyFeeblemind.SelectionChangeCommitted += new System.EventHandler(this.CalculateFinalDps);
             this.comboBoxEnemyFeeblemind.SelectedValueChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -5605,11 +5717,9 @@
             this.groupBox3.BackColor = System.Drawing.Color.Gainsboro;
             this.groupBox3.Controls.Add(this.tableLayoutPanel8);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(4, 404);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Location = new System.Drawing.Point(3, 337);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(415, 113);
+            this.groupBox3.Size = new System.Drawing.Size(311, 83);
             this.groupBox3.TabIndex = 216;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Effective Defenses";
@@ -5642,13 +5752,14 @@
             this.tableLayoutPanel8.Controls.Add(this.label74, 2, 2);
             this.tableLayoutPanel8.Controls.Add(this.labelEnemyEffectiveMissileDefense, 3, 2);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(4, 24);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 19);
+            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 3;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(407, 85);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(305, 61);
             this.tableLayoutPanel8.TabIndex = 0;
             // 
             // label84
@@ -5656,9 +5767,10 @@
             this.label84.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label84.AutoSize = true;
             this.label84.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label84.Location = new System.Drawing.Point(3, 6);
+            this.label84.Location = new System.Drawing.Point(2, 3);
+            this.label84.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(43, 16);
+            this.label84.Size = new System.Drawing.Size(34, 13);
             this.label84.TabIndex = 217;
             this.label84.Text = "Armor";
             this.label84.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -5669,10 +5781,10 @@
             this.labelEnemyEffectiveArmor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelEnemyEffectiveArmor.AutoSize = true;
             this.labelEnemyEffectiveArmor.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEnemyEffectiveArmor.Location = new System.Drawing.Point(89, 6);
+            this.labelEnemyEffectiveArmor.Location = new System.Drawing.Point(67, 3);
             this.labelEnemyEffectiveArmor.Margin = new System.Windows.Forms.Padding(0);
             this.labelEnemyEffectiveArmor.Name = "labelEnemyEffectiveArmor";
-            this.labelEnemyEffectiveArmor.Size = new System.Drawing.Size(46, 16);
+            this.labelEnemyEffectiveArmor.Size = new System.Drawing.Size(34, 13);
             this.labelEnemyEffectiveArmor.TabIndex = 236;
             this.labelEnemyEffectiveArmor.Text = "0";
             this.labelEnemyEffectiveArmor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5683,9 +5795,10 @@
             this.label129.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label129.AutoSize = true;
             this.label129.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label129.Location = new System.Drawing.Point(3, 34);
+            this.label129.Location = new System.Drawing.Point(2, 23);
+            this.label129.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label129.Name = "label129";
-            this.label129.Size = new System.Drawing.Size(73, 16);
+            this.label129.Size = new System.Drawing.Size(58, 13);
             this.label129.TabIndex = 246;
             this.label129.Text = "Armor Mod";
             this.label129.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -5697,10 +5810,10 @@
             this.labelEnemyArmorMod.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelEnemyArmorMod.AutoSize = true;
             this.labelEnemyArmorMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEnemyArmorMod.Location = new System.Drawing.Point(89, 34);
+            this.labelEnemyArmorMod.Location = new System.Drawing.Point(67, 23);
             this.labelEnemyArmorMod.Margin = new System.Windows.Forms.Padding(0);
             this.labelEnemyArmorMod.Name = "labelEnemyArmorMod";
-            this.labelEnemyArmorMod.Size = new System.Drawing.Size(46, 16);
+            this.labelEnemyArmorMod.Size = new System.Drawing.Size(34, 13);
             this.labelEnemyArmorMod.TabIndex = 243;
             this.labelEnemyArmorMod.Text = "0";
             this.labelEnemyArmorMod.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5712,9 +5825,10 @@
             this.label123.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label123.AutoSize = true;
             this.label123.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label123.Location = new System.Drawing.Point(138, 6);
+            this.label123.Location = new System.Drawing.Point(103, 3);
+            this.label123.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label123.Name = "label123";
-            this.label123.Size = new System.Drawing.Size(45, 16);
+            this.label123.Size = new System.Drawing.Size(36, 13);
             this.label123.TabIndex = 241;
             this.label123.Text = "Shield";
             this.label123.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -5725,10 +5839,10 @@
             this.labelEnemyEffectiveShield.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelEnemyEffectiveShield.AutoSize = true;
             this.labelEnemyEffectiveShield.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEnemyEffectiveShield.Location = new System.Drawing.Point(224, 6);
+            this.labelEnemyEffectiveShield.Location = new System.Drawing.Point(168, 3);
             this.labelEnemyEffectiveShield.Margin = new System.Windows.Forms.Padding(0);
             this.labelEnemyEffectiveShield.Name = "labelEnemyEffectiveShield";
-            this.labelEnemyEffectiveShield.Size = new System.Drawing.Size(46, 16);
+            this.labelEnemyEffectiveShield.Size = new System.Drawing.Size(34, 13);
             this.labelEnemyEffectiveShield.TabIndex = 242;
             this.labelEnemyEffectiveShield.Text = "0";
             this.labelEnemyEffectiveShield.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5739,9 +5853,10 @@
             this.label82.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label82.AutoSize = true;
             this.label82.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label82.Location = new System.Drawing.Point(273, 6);
+            this.label82.Location = new System.Drawing.Point(204, 3);
+            this.label82.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(45, 16);
+            this.label82.Size = new System.Drawing.Size(36, 13);
             this.label82.TabIndex = 218;
             this.label82.Text = "Resist";
             this.label82.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -5752,10 +5867,10 @@
             this.labelEnemyEffectiveResistance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelEnemyEffectiveResistance.AutoSize = true;
             this.labelEnemyEffectiveResistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEnemyEffectiveResistance.Location = new System.Drawing.Point(359, 6);
+            this.labelEnemyEffectiveResistance.Location = new System.Drawing.Point(269, 3);
             this.labelEnemyEffectiveResistance.Margin = new System.Windows.Forms.Padding(0);
             this.labelEnemyEffectiveResistance.Name = "labelEnemyEffectiveResistance";
-            this.labelEnemyEffectiveResistance.Size = new System.Drawing.Size(48, 16);
+            this.labelEnemyEffectiveResistance.Size = new System.Drawing.Size(36, 13);
             this.labelEnemyEffectiveResistance.TabIndex = 237;
             this.labelEnemyEffectiveResistance.Text = "0";
             this.labelEnemyEffectiveResistance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5766,9 +5881,10 @@
             this.label131.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label131.AutoSize = true;
             this.label131.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label131.Location = new System.Drawing.Point(138, 34);
+            this.label131.Location = new System.Drawing.Point(103, 23);
+            this.label131.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label131.Name = "label131";
-            this.label131.Size = new System.Drawing.Size(75, 16);
+            this.label131.Size = new System.Drawing.Size(60, 13);
             this.label131.TabIndex = 247;
             this.label131.Text = "Shield Mod";
             this.label131.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -5780,10 +5896,10 @@
             this.labelEnemyShieldMod.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelEnemyShieldMod.AutoSize = true;
             this.labelEnemyShieldMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEnemyShieldMod.Location = new System.Drawing.Point(224, 34);
+            this.labelEnemyShieldMod.Location = new System.Drawing.Point(168, 23);
             this.labelEnemyShieldMod.Margin = new System.Windows.Forms.Padding(0);
             this.labelEnemyShieldMod.Name = "labelEnemyShieldMod";
-            this.labelEnemyShieldMod.Size = new System.Drawing.Size(46, 16);
+            this.labelEnemyShieldMod.Size = new System.Drawing.Size(34, 13);
             this.labelEnemyShieldMod.TabIndex = 244;
             this.labelEnemyShieldMod.Text = "0";
             this.labelEnemyShieldMod.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5795,9 +5911,10 @@
             this.label73.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label73.AutoSize = true;
             this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label73.Location = new System.Drawing.Point(273, 62);
+            this.label73.Location = new System.Drawing.Point(204, 44);
+            this.label73.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(57, 16);
+            this.label73.Size = new System.Drawing.Size(47, 13);
             this.label73.TabIndex = 221;
             this.label73.Text = "Magic D";
             this.label73.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -5808,10 +5925,10 @@
             this.labelEnemyEffectiveMagicDefense.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelEnemyEffectiveMagicDefense.AutoSize = true;
             this.labelEnemyEffectiveMagicDefense.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEnemyEffectiveMagicDefense.Location = new System.Drawing.Point(359, 62);
+            this.labelEnemyEffectiveMagicDefense.Location = new System.Drawing.Point(269, 44);
             this.labelEnemyEffectiveMagicDefense.Margin = new System.Windows.Forms.Padding(0);
             this.labelEnemyEffectiveMagicDefense.Name = "labelEnemyEffectiveMagicDefense";
-            this.labelEnemyEffectiveMagicDefense.Size = new System.Drawing.Size(48, 16);
+            this.labelEnemyEffectiveMagicDefense.Size = new System.Drawing.Size(36, 13);
             this.labelEnemyEffectiveMagicDefense.TabIndex = 240;
             this.labelEnemyEffectiveMagicDefense.Text = "0";
             this.labelEnemyEffectiveMagicDefense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5822,9 +5939,10 @@
             this.label33.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(273, 34);
+            this.label33.Location = new System.Drawing.Point(204, 23);
+            this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(77, 16);
+            this.label33.Size = new System.Drawing.Size(62, 13);
             this.label33.TabIndex = 249;
             this.label33.Text = "Void Rating";
             this.toolTip1.SetToolTip(this.label33, "TotalVoidDotAmount / 8");
@@ -5834,9 +5952,10 @@
             this.labelEnemyEffectiveVoidRating.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelEnemyEffectiveVoidRating.AutoSize = true;
             this.labelEnemyEffectiveVoidRating.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEnemyEffectiveVoidRating.Location = new System.Drawing.Point(376, 34);
+            this.labelEnemyEffectiveVoidRating.Location = new System.Drawing.Point(280, 23);
+            this.labelEnemyEffectiveVoidRating.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelEnemyEffectiveVoidRating.Name = "labelEnemyEffectiveVoidRating";
-            this.labelEnemyEffectiveVoidRating.Size = new System.Drawing.Size(14, 16);
+            this.labelEnemyEffectiveVoidRating.Size = new System.Drawing.Size(13, 13);
             this.labelEnemyEffectiveVoidRating.TabIndex = 250;
             this.labelEnemyEffectiveVoidRating.Text = "0";
             this.toolTip1.SetToolTip(this.labelEnemyEffectiveVoidRating, "TotalVoidDotAmount / 8");
@@ -5846,9 +5965,10 @@
             this.label80.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label80.AutoSize = true;
             this.label80.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label80.Location = new System.Drawing.Point(3, 62);
+            this.label80.Location = new System.Drawing.Point(2, 44);
+            this.label80.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(58, 16);
+            this.label80.Size = new System.Drawing.Size(47, 13);
             this.label80.TabIndex = 219;
             this.label80.Text = "Melee D";
             this.label80.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -5859,10 +5979,10 @@
             this.labelEnemyEffectiveMeleeDefense.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelEnemyEffectiveMeleeDefense.AutoSize = true;
             this.labelEnemyEffectiveMeleeDefense.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEnemyEffectiveMeleeDefense.Location = new System.Drawing.Point(89, 62);
+            this.labelEnemyEffectiveMeleeDefense.Location = new System.Drawing.Point(67, 44);
             this.labelEnemyEffectiveMeleeDefense.Margin = new System.Windows.Forms.Padding(0);
             this.labelEnemyEffectiveMeleeDefense.Name = "labelEnemyEffectiveMeleeDefense";
-            this.labelEnemyEffectiveMeleeDefense.Size = new System.Drawing.Size(46, 16);
+            this.labelEnemyEffectiveMeleeDefense.Size = new System.Drawing.Size(34, 13);
             this.labelEnemyEffectiveMeleeDefense.TabIndex = 238;
             this.labelEnemyEffectiveMeleeDefense.Text = "0";
             this.labelEnemyEffectiveMeleeDefense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5873,9 +5993,10 @@
             this.label74.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label74.AutoSize = true;
             this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label74.Location = new System.Drawing.Point(138, 62);
+            this.label74.Location = new System.Drawing.Point(103, 44);
+            this.label74.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(62, 16);
+            this.label74.Size = new System.Drawing.Size(49, 13);
             this.label74.TabIndex = 220;
             this.label74.Text = "Missile D";
             this.label74.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -5886,10 +6007,10 @@
             this.labelEnemyEffectiveMissileDefense.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelEnemyEffectiveMissileDefense.AutoSize = true;
             this.labelEnemyEffectiveMissileDefense.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEnemyEffectiveMissileDefense.Location = new System.Drawing.Point(224, 62);
+            this.labelEnemyEffectiveMissileDefense.Location = new System.Drawing.Point(168, 44);
             this.labelEnemyEffectiveMissileDefense.Margin = new System.Windows.Forms.Padding(0);
             this.labelEnemyEffectiveMissileDefense.Name = "labelEnemyEffectiveMissileDefense";
-            this.labelEnemyEffectiveMissileDefense.Size = new System.Drawing.Size(46, 16);
+            this.labelEnemyEffectiveMissileDefense.Size = new System.Drawing.Size(34, 13);
             this.labelEnemyEffectiveMissileDefense.TabIndex = 239;
             this.labelEnemyEffectiveMissileDefense.Text = "0";
             this.labelEnemyEffectiveMissileDefense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5898,9 +6019,10 @@
             // label75
             // 
             this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(9, 31);
+            this.label75.Location = new System.Drawing.Point(7, 25);
+            this.label75.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(43, 16);
+            this.label75.Size = new System.Drawing.Size(34, 13);
             this.label75.TabIndex = 184;
             this.label75.Text = "Armor";
             this.label75.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -5909,10 +6031,10 @@
             // 
             this.panel5.Controls.Add(this.tableLayoutPanel45);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(5, 4);
-            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel5.Location = new System.Drawing.Point(4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(426, 54);
+            this.panel5.Size = new System.Drawing.Size(320, 43);
             this.panel5.TabIndex = 1;
             // 
             // tableLayoutPanel45
@@ -5925,20 +6047,22 @@
             this.tableLayoutPanel45.Controls.Add(this.textBoxEnemyName, 1, 1);
             this.tableLayoutPanel45.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel45.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel45.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel45.Name = "tableLayoutPanel45";
             this.tableLayoutPanel45.RowCount = 2;
             this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel45.Size = new System.Drawing.Size(426, 54);
+            this.tableLayoutPanel45.Size = new System.Drawing.Size(320, 43);
             this.tableLayoutPanel45.TabIndex = 0;
             // 
             // label4
             // 
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(145, 0);
+            this.label4.Location = new System.Drawing.Point(108, 0);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 21);
+            this.label4.Size = new System.Drawing.Size(102, 17);
             this.label4.TabIndex = 0;
             this.label4.Text = "Enemy";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5946,9 +6070,10 @@
             // textBoxEnemyName
             // 
             this.textBoxEnemyName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxEnemyName.Location = new System.Drawing.Point(145, 26);
+            this.textBoxEnemyName.Location = new System.Drawing.Point(108, 20);
+            this.textBoxEnemyName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxEnemyName.Name = "textBoxEnemyName";
-            this.textBoxEnemyName.Size = new System.Drawing.Size(136, 22);
+            this.textBoxEnemyName.Size = new System.Drawing.Size(102, 20);
             this.textBoxEnemyName.TabIndex = 5;
             this.textBoxEnemyName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -5961,13 +6086,13 @@
             this.tableLayoutPanel2.Controls.Add(this.panel6, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(441, 2);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(330, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(432, 589);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(325, 477);
             this.tableLayoutPanel2.TabIndex = 1;
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
@@ -5977,19 +6102,20 @@
             this.panel6.Controls.Add(this.tabControlWeaponType);
             this.panel6.Controls.Add(this.groupBox10);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(5, 65);
+            this.panel6.Location = new System.Drawing.Point(4, 53);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(422, 519);
+            this.panel6.Size = new System.Drawing.Size(317, 420);
             this.panel6.TabIndex = 108;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.tableLayoutPanel44);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(5, 4);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Location = new System.Drawing.Point(4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(422, 54);
+            this.panel3.Size = new System.Drawing.Size(317, 43);
             this.panel3.TabIndex = 1;
             // 
             // tableLayoutPanel44
@@ -6002,20 +6128,22 @@
             this.tableLayoutPanel44.Controls.Add(this.textBoxWeaponName, 1, 1);
             this.tableLayoutPanel44.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel44.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel44.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel44.Name = "tableLayoutPanel44";
             this.tableLayoutPanel44.RowCount = 2;
             this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel44.Size = new System.Drawing.Size(422, 54);
+            this.tableLayoutPanel44.Size = new System.Drawing.Size(317, 43);
             this.tableLayoutPanel44.TabIndex = 0;
             // 
             // label3
             // 
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(143, 0);
+            this.label3.Location = new System.Drawing.Point(107, 0);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 21);
+            this.label3.Size = new System.Drawing.Size(101, 17);
             this.label3.TabIndex = 0;
             this.label3.Text = "Weapon";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6023,9 +6151,10 @@
             // textBoxWeaponName
             // 
             this.textBoxWeaponName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxWeaponName.Location = new System.Drawing.Point(143, 26);
+            this.textBoxWeaponName.Location = new System.Drawing.Point(107, 20);
+            this.textBoxWeaponName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxWeaponName.Name = "textBoxWeaponName";
-            this.textBoxWeaponName.Size = new System.Drawing.Size(134, 22);
+            this.textBoxWeaponName.Size = new System.Drawing.Size(101, 20);
             this.textBoxWeaponName.TabIndex = 5;
             this.textBoxWeaponName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -6035,21 +6164,21 @@
             this.tabControl_MAIN.Controls.Add(this.tabPage5);
             this.tabControl_MAIN.Controls.Add(this.tabPage1);
             this.tabControl_MAIN.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl_MAIN.Location = new System.Drawing.Point(0, 30);
-            this.tabControl_MAIN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabControl_MAIN.Location = new System.Drawing.Point(0, 24);
+            this.tabControl_MAIN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabControl_MAIN.Name = "tabControl_MAIN";
             this.tabControl_MAIN.SelectedIndex = 0;
-            this.tabControl_MAIN.Size = new System.Drawing.Size(1348, 783);
+            this.tabControl_MAIN.Size = new System.Drawing.Size(1011, 637);
             this.tabControl_MAIN.TabIndex = 2;
             // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.tableLayoutPanel15);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage4.Size = new System.Drawing.Size(1340, 754);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Size = new System.Drawing.Size(1003, 611);
             this.tabPage4.TabIndex = 0;
             this.tabPage4.Text = "DPS Calculator";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -6061,14 +6190,15 @@
             this.tableLayoutPanel15.Controls.Add(this.tableLayoutPanel1, 0, 0);
             this.tableLayoutPanel15.Controls.Add(this.tableLayoutPanel16, 0, 1);
             this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel15.Location = new System.Drawing.Point(3, 2);
+            this.tableLayoutPanel15.Location = new System.Drawing.Point(2, 2);
+            this.tableLayoutPanel15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             this.tableLayoutPanel15.RowCount = 2;
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(1334, 747);
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(999, 607);
             this.tableLayoutPanel15.TabIndex = 6;
             // 
             // tableLayoutPanel16
@@ -6083,11 +6213,12 @@
             this.tableLayoutPanel16.Controls.Add(this.tableLayoutPanel30, 1, 0);
             this.tableLayoutPanel16.Controls.Add(this.tableLayoutPanel6, 0, 0);
             this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel16.Location = new System.Drawing.Point(3, 600);
+            this.tableLayoutPanel16.Location = new System.Drawing.Point(2, 487);
+            this.tableLayoutPanel16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel16.Name = "tableLayoutPanel16";
             this.tableLayoutPanel16.RowCount = 1;
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel16.Size = new System.Drawing.Size(1328, 144);
+            this.tableLayoutPanel16.Size = new System.Drawing.Size(996, 118);
             this.tableLayoutPanel16.TabIndex = 2;
             // 
             // tableLayoutPanel7
@@ -6107,13 +6238,14 @@
             this.tableLayoutPanel7.Controls.Add(this.label35, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.label36, 2, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(888, 4);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(665, 3);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 3;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(436, 136);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(328, 112);
             this.tableLayoutPanel7.TabIndex = 5;
             this.tableLayoutPanel7.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel7_Paint);
             // 
@@ -6122,10 +6254,9 @@
             this.labelQuickCompareDifferenceFront.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelQuickCompareDifferenceFront.AutoSize = true;
             this.labelQuickCompareDifferenceFront.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQuickCompareDifferenceFront.Location = new System.Drawing.Point(178, 94);
-            this.labelQuickCompareDifferenceFront.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelQuickCompareDifferenceFront.Location = new System.Drawing.Point(134, 78);
             this.labelQuickCompareDifferenceFront.Name = "labelQuickCompareDifferenceFront";
-            this.labelQuickCompareDifferenceFront.Size = new System.Drawing.Size(122, 25);
+            this.labelQuickCompareDifferenceFront.Size = new System.Drawing.Size(92, 20);
             this.labelQuickCompareDifferenceFront.TabIndex = 239;
             this.labelQuickCompareDifferenceFront.Text = "0";
             this.labelQuickCompareDifferenceFront.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6135,9 +6266,10 @@
             this.label113.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label113.BackColor = System.Drawing.Color.Transparent;
             this.label113.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold);
-            this.label113.Location = new System.Drawing.Point(3, 2);
+            this.label113.Location = new System.Drawing.Point(2, 2);
+            this.label113.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(121, 15);
+            this.label113.Size = new System.Drawing.Size(91, 12);
             this.label113.TabIndex = 243;
             this.label113.Text = "Quick Compare";
             this.label113.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -6147,10 +6279,9 @@
             this.labelQuickCompareFront.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelQuickCompareFront.AutoSize = true;
             this.labelQuickCompareFront.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQuickCompareFront.Location = new System.Drawing.Point(178, 36);
-            this.labelQuickCompareFront.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelQuickCompareFront.Location = new System.Drawing.Point(134, 30);
             this.labelQuickCompareFront.Name = "labelQuickCompareFront";
-            this.labelQuickCompareFront.Size = new System.Drawing.Size(122, 25);
+            this.labelQuickCompareFront.Size = new System.Drawing.Size(92, 20);
             this.labelQuickCompareFront.TabIndex = 238;
             this.labelQuickCompareFront.Text = "0";
             this.labelQuickCompareFront.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6160,10 +6291,9 @@
             this.labelQuickCompareDifferenceRear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelQuickCompareDifferenceRear.AutoSize = true;
             this.labelQuickCompareDifferenceRear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQuickCompareDifferenceRear.Location = new System.Drawing.Point(308, 94);
-            this.labelQuickCompareDifferenceRear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelQuickCompareDifferenceRear.Location = new System.Drawing.Point(232, 78);
             this.labelQuickCompareDifferenceRear.Name = "labelQuickCompareDifferenceRear";
-            this.labelQuickCompareDifferenceRear.Size = new System.Drawing.Size(124, 25);
+            this.labelQuickCompareDifferenceRear.Size = new System.Drawing.Size(93, 20);
             this.labelQuickCompareDifferenceRear.TabIndex = 270;
             this.labelQuickCompareDifferenceRear.Text = "0";
             this.labelQuickCompareDifferenceRear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6173,10 +6303,9 @@
             this.label34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(4, 97);
-            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label34.Location = new System.Drawing.Point(3, 79);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(166, 20);
+            this.label34.Size = new System.Drawing.Size(125, 17);
             this.label34.TabIndex = 245;
             this.label34.Text = "Comparison";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6186,10 +6315,9 @@
             this.labelQuickCompareRear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelQuickCompareRear.AutoSize = true;
             this.labelQuickCompareRear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQuickCompareRear.Location = new System.Drawing.Point(308, 36);
-            this.labelQuickCompareRear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelQuickCompareRear.Location = new System.Drawing.Point(232, 30);
             this.labelQuickCompareRear.Name = "labelQuickCompareRear";
-            this.labelQuickCompareRear.Size = new System.Drawing.Size(124, 25);
+            this.labelQuickCompareRear.Size = new System.Drawing.Size(93, 20);
             this.labelQuickCompareRear.TabIndex = 240;
             this.labelQuickCompareRear.Text = "0";
             this.labelQuickCompareRear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6197,9 +6325,10 @@
             // buttonQuickCompare1
             // 
             this.buttonQuickCompare1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonQuickCompare1.Location = new System.Drawing.Point(3, 23);
+            this.buttonQuickCompare1.Location = new System.Drawing.Point(2, 18);
+            this.buttonQuickCompare1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonQuickCompare1.Name = "buttonQuickCompare1";
-            this.buttonQuickCompare1.Size = new System.Drawing.Size(168, 52);
+            this.buttonQuickCompare1.Size = new System.Drawing.Size(127, 44);
             this.buttonQuickCompare1.TabIndex = 3;
             this.buttonQuickCompare1.Text = "Set Current DPS";
             this.buttonQuickCompare1.UseVisualStyleBackColor = true;
@@ -6210,9 +6339,10 @@
             this.label35.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(218, 2);
+            this.label35.Location = new System.Drawing.Point(162, 1);
+            this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(42, 16);
+            this.label35.Size = new System.Drawing.Size(36, 13);
             this.label35.TabIndex = 267;
             this.label35.Text = "Front";
             // 
@@ -6221,9 +6351,10 @@
             this.label36.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(342, 2);
+            this.label36.Location = new System.Drawing.Point(255, 1);
+            this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(55, 16);
+            this.label36.Size = new System.Drawing.Size(46, 13);
             this.label36.TabIndex = 268;
             this.label36.Text = "Behind";
             // 
@@ -6244,13 +6375,14 @@
             this.tableLayoutPanel30.Controls.Add(this.labelFinalDpsRear, 2, 2);
             this.tableLayoutPanel30.Controls.Add(this.labelFinalDpsFront, 1, 2);
             this.tableLayoutPanel30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel30.Location = new System.Drawing.Point(446, 4);
+            this.tableLayoutPanel30.Location = new System.Drawing.Point(334, 3);
+            this.tableLayoutPanel30.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel30.Name = "tableLayoutPanel30";
             this.tableLayoutPanel30.RowCount = 3;
-            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
             this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 67F));
-            this.tableLayoutPanel30.Size = new System.Drawing.Size(435, 136);
+            this.tableLayoutPanel30.Size = new System.Drawing.Size(326, 112);
             this.tableLayoutPanel30.TabIndex = 6;
             // 
             // label63
@@ -6260,10 +6392,10 @@
             this.label63.BackColor = System.Drawing.Color.Transparent;
             this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label63.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label63.Location = new System.Drawing.Point(0, 82);
+            this.label63.Location = new System.Drawing.Point(0, 67);
             this.label63.Margin = new System.Windows.Forms.Padding(0);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(130, 29);
+            this.label63.Size = new System.Drawing.Size(102, 24);
             this.label63.TabIndex = 273;
             this.label63.Text = "Final DPS";
             this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -6274,9 +6406,10 @@
             this.label29.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(3, 2);
+            this.label29.Location = new System.Drawing.Point(2, 1);
+            this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(104, 16);
+            this.label29.Size = new System.Drawing.Size(84, 13);
             this.label29.TabIndex = 265;
             this.label29.Text = "Final Damage";
             // 
@@ -6285,9 +6418,10 @@
             this.label30.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(250, 2);
+            this.label30.Location = new System.Drawing.Point(185, 1);
+            this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(42, 16);
+            this.label30.Size = new System.Drawing.Size(36, 13);
             this.label30.TabIndex = 266;
             this.label30.Text = "Front";
             // 
@@ -6296,9 +6430,10 @@
             this.label31.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(352, 2);
+            this.label31.Location = new System.Drawing.Point(262, 1);
+            this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(55, 16);
+            this.label31.Size = new System.Drawing.Size(46, 13);
             this.label31.TabIndex = 267;
             this.label31.Text = "Behind";
             // 
@@ -6306,9 +6441,10 @@
             // 
             this.label32.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(3, 31);
+            this.label32.Location = new System.Drawing.Point(2, 25);
+            this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(82, 16);
+            this.label32.Size = new System.Drawing.Size(67, 13);
             this.label32.TabIndex = 268;
             this.label32.Text = "Final Avg Hit";
             this.label32.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -6319,10 +6455,9 @@
             this.labelFinalAvgHitFront.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelFinalAvgHitFront.AutoSize = true;
             this.labelFinalAvgHitFront.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFinalAvgHitFront.Location = new System.Drawing.Point(221, 31);
-            this.labelFinalAvgHitFront.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelFinalAvgHitFront.Location = new System.Drawing.Point(166, 25);
             this.labelFinalAvgHitFront.Name = "labelFinalAvgHitFront";
-            this.labelFinalAvgHitFront.Size = new System.Drawing.Size(100, 16);
+            this.labelFinalAvgHitFront.Size = new System.Drawing.Size(75, 13);
             this.labelFinalAvgHitFront.TabIndex = 269;
             this.labelFinalAvgHitFront.Text = "0";
             this.labelFinalAvgHitFront.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6333,10 +6468,9 @@
             this.labelFinalAvgHitRear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelFinalAvgHitRear.AutoSize = true;
             this.labelFinalAvgHitRear.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFinalAvgHitRear.Location = new System.Drawing.Point(329, 31);
-            this.labelFinalAvgHitRear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelFinalAvgHitRear.Location = new System.Drawing.Point(247, 25);
             this.labelFinalAvgHitRear.Name = "labelFinalAvgHitRear";
-            this.labelFinalAvgHitRear.Size = new System.Drawing.Size(102, 16);
+            this.labelFinalAvgHitRear.Size = new System.Drawing.Size(76, 13);
             this.labelFinalAvgHitRear.TabIndex = 270;
             this.labelFinalAvgHitRear.Text = "0";
             this.labelFinalAvgHitRear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6348,10 +6482,10 @@
             this.labelFinalDpsRear.AutoSize = true;
             this.labelFinalDpsRear.BackColor = System.Drawing.Color.Transparent;
             this.labelFinalDpsRear.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFinalDpsRear.Location = new System.Drawing.Point(364, 81);
+            this.labelFinalDpsRear.Location = new System.Drawing.Point(272, 66);
             this.labelFinalDpsRear.Margin = new System.Windows.Forms.Padding(0);
             this.labelFinalDpsRear.Name = "labelFinalDpsRear";
-            this.labelFinalDpsRear.Size = new System.Drawing.Size(31, 32);
+            this.labelFinalDpsRear.Size = new System.Drawing.Size(25, 26);
             this.labelFinalDpsRear.TabIndex = 271;
             this.labelFinalDpsRear.Text = "0";
             this.labelFinalDpsRear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6363,10 +6497,10 @@
             this.labelFinalDpsFront.AutoSize = true;
             this.labelFinalDpsFront.BackColor = System.Drawing.Color.Transparent;
             this.labelFinalDpsFront.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFinalDpsFront.Location = new System.Drawing.Point(255, 81);
+            this.labelFinalDpsFront.Location = new System.Drawing.Point(191, 66);
             this.labelFinalDpsFront.Margin = new System.Windows.Forms.Padding(0);
             this.labelFinalDpsFront.Name = "labelFinalDpsFront";
-            this.labelFinalDpsFront.Size = new System.Drawing.Size(31, 32);
+            this.labelFinalDpsFront.Size = new System.Drawing.Size(25, 26);
             this.labelFinalDpsFront.TabIndex = 272;
             this.labelFinalDpsFront.Text = "0";
             this.labelFinalDpsFront.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6380,12 +6514,13 @@
             this.tableLayoutPanel6.Controls.Add(this.panel7, 0, 1);
             this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel32, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(4, 4);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 2;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(435, 136);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(326, 112);
             this.tableLayoutPanel6.TabIndex = 7;
             // 
             // panel7
@@ -6393,9 +6528,10 @@
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.tableLayoutPanel31);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(3, 111);
+            this.panel7.Location = new System.Drawing.Point(2, 91);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(429, 22);
+            this.panel7.Size = new System.Drawing.Size(322, 19);
             this.panel7.TabIndex = 0;
             // 
             // tableLayoutPanel31
@@ -6410,10 +6546,11 @@
             this.tableLayoutPanel31.Controls.Add(this.label117, 0, 0);
             this.tableLayoutPanel31.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel31.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel31.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel31.Name = "tableLayoutPanel31";
             this.tableLayoutPanel31.RowCount = 1;
             this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel31.Size = new System.Drawing.Size(427, 20);
+            this.tableLayoutPanel31.Size = new System.Drawing.Size(320, 17);
             this.tableLayoutPanel31.TabIndex = 0;
             // 
             // labelHitChance
@@ -6421,10 +6558,9 @@
             this.labelHitChance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelHitChance.AutoSize = true;
             this.labelHitChance.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHitChance.Location = new System.Drawing.Point(323, 2);
-            this.labelHitChance.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelHitChance.Location = new System.Drawing.Point(243, 2);
             this.labelHitChance.Name = "labelHitChance";
-            this.labelHitChance.Size = new System.Drawing.Size(100, 16);
+            this.labelHitChance.Size = new System.Drawing.Size(74, 13);
             this.labelHitChance.TabIndex = 265;
             this.labelHitChance.Text = "0";
             this.labelHitChance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6436,9 +6572,10 @@
             this.checkBoxUseHitChance.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBoxUseHitChance.Checked = true;
             this.checkBoxUseHitChance.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxUseHitChance.Location = new System.Drawing.Point(216, 3);
+            this.checkBoxUseHitChance.Location = new System.Drawing.Point(162, 2);
+            this.checkBoxUseHitChance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBoxUseHitChance.Name = "checkBoxUseHitChance";
-            this.checkBoxUseHitChance.Size = new System.Drawing.Size(100, 14);
+            this.checkBoxUseHitChance.Size = new System.Drawing.Size(76, 13);
             this.checkBoxUseHitChance.TabIndex = 264;
             this.checkBoxUseHitChance.UseVisualStyleBackColor = true;
             this.checkBoxUseHitChance.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -6448,9 +6585,10 @@
             this.label117.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label117.AutoSize = true;
             this.label117.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label117.Location = new System.Drawing.Point(3, 2);
+            this.label117.Location = new System.Drawing.Point(2, 2);
+            this.label117.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label117.Name = "label117";
-            this.label117.Size = new System.Drawing.Size(122, 16);
+            this.label117.Size = new System.Drawing.Size(103, 13);
             this.label117.TabIndex = 263;
             this.label117.Text = "Use Hit Chance?";
             this.label117.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -6477,15 +6615,16 @@
             this.tableLayoutPanel32.Controls.Add(this.labelNonCritFront, 1, 1);
             this.tableLayoutPanel32.Controls.Add(this.labelNonCritRear, 2, 1);
             this.tableLayoutPanel32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel32.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel32.Location = new System.Drawing.Point(2, 2);
+            this.tableLayoutPanel32.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel32.Name = "tableLayoutPanel32";
             this.tableLayoutPanel32.RowCount = 5;
-            this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel32.Size = new System.Drawing.Size(429, 102);
+            this.tableLayoutPanel32.Size = new System.Drawing.Size(322, 85);
             this.tableLayoutPanel32.TabIndex = 1;
             // 
             // labelFinalCritRear
@@ -6493,10 +6632,10 @@
             this.labelFinalCritRear.AutoSize = true;
             this.labelFinalCritRear.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelFinalCritRear.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFinalCritRear.Location = new System.Drawing.Point(323, 82);
+            this.labelFinalCritRear.Location = new System.Drawing.Point(243, 69);
             this.labelFinalCritRear.Margin = new System.Windows.Forms.Padding(2);
             this.labelFinalCritRear.Name = "labelFinalCritRear";
-            this.labelFinalCritRear.Size = new System.Drawing.Size(104, 18);
+            this.labelFinalCritRear.Size = new System.Drawing.Size(77, 14);
             this.labelFinalCritRear.TabIndex = 247;
             this.labelFinalCritRear.Text = "0";
             this.labelFinalCritRear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6506,10 +6645,10 @@
             this.labelFinalCritFront.AutoSize = true;
             this.labelFinalCritFront.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelFinalCritFront.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFinalCritFront.Location = new System.Drawing.Point(216, 82);
+            this.labelFinalCritFront.Location = new System.Drawing.Point(163, 69);
             this.labelFinalCritFront.Margin = new System.Windows.Forms.Padding(2);
             this.labelFinalCritFront.Name = "labelFinalCritFront";
-            this.labelFinalCritFront.Size = new System.Drawing.Size(103, 18);
+            this.labelFinalCritFront.Size = new System.Drawing.Size(76, 14);
             this.labelFinalCritFront.TabIndex = 245;
             this.labelFinalCritFront.Text = "0";
             this.labelFinalCritFront.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6518,9 +6657,10 @@
             // 
             this.label122.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label122.AutoSize = true;
-            this.label122.Location = new System.Drawing.Point(3, 83);
+            this.label122.Location = new System.Drawing.Point(2, 69);
+            this.label122.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label122.Name = "label122";
-            this.label122.Size = new System.Drawing.Size(152, 16);
+            this.label122.Size = new System.Drawing.Size(120, 13);
             this.label122.TabIndex = 244;
             this.label122.Text = "Crit Damage (on enemy)";
             this.label122.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -6531,9 +6671,10 @@
             this.label119.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label119.AutoSize = true;
             this.label119.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label119.Location = new System.Drawing.Point(3, 2);
+            this.label119.Location = new System.Drawing.Point(2, 1);
+            this.label119.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label119.Name = "label119";
-            this.label119.Size = new System.Drawing.Size(89, 16);
+            this.label119.Size = new System.Drawing.Size(73, 13);
             this.label119.TabIndex = 262;
             this.label119.Text = "Hit Damage";
             // 
@@ -6541,9 +6682,10 @@
             // 
             this.label118.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label118.AutoSize = true;
-            this.label118.Location = new System.Drawing.Point(3, 62);
+            this.label118.Location = new System.Drawing.Point(2, 52);
+            this.label118.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label118.Name = "label118";
-            this.label118.Size = new System.Drawing.Size(149, 16);
+            this.label118.Size = new System.Drawing.Size(118, 13);
             this.label118.TabIndex = 248;
             this.label118.Text = "Hit Damage (on enemy)";
             this.label118.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -6554,10 +6696,10 @@
             this.labelFinalNonCritRear.AutoSize = true;
             this.labelFinalNonCritRear.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelFinalNonCritRear.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFinalNonCritRear.Location = new System.Drawing.Point(323, 62);
+            this.labelFinalNonCritRear.Location = new System.Drawing.Point(243, 52);
             this.labelFinalNonCritRear.Margin = new System.Windows.Forms.Padding(2);
             this.labelFinalNonCritRear.Name = "labelFinalNonCritRear";
-            this.labelFinalNonCritRear.Size = new System.Drawing.Size(104, 16);
+            this.labelFinalNonCritRear.Size = new System.Drawing.Size(77, 13);
             this.labelFinalNonCritRear.TabIndex = 251;
             this.labelFinalNonCritRear.Text = "0";
             this.labelFinalNonCritRear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6568,10 +6710,10 @@
             this.labelFinalNonCritFront.AutoSize = true;
             this.labelFinalNonCritFront.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelFinalNonCritFront.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFinalNonCritFront.Location = new System.Drawing.Point(216, 62);
+            this.labelFinalNonCritFront.Location = new System.Drawing.Point(163, 52);
             this.labelFinalNonCritFront.Margin = new System.Windows.Forms.Padding(2);
             this.labelFinalNonCritFront.Name = "labelFinalNonCritFront";
-            this.labelFinalNonCritFront.Size = new System.Drawing.Size(103, 16);
+            this.labelFinalNonCritFront.Size = new System.Drawing.Size(76, 13);
             this.labelFinalNonCritFront.TabIndex = 249;
             this.labelFinalNonCritFront.Text = "0";
             this.labelFinalNonCritFront.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6581,9 +6723,10 @@
             this.label101.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label101.AutoSize = true;
             this.label101.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label101.Location = new System.Drawing.Point(246, 2);
+            this.label101.Location = new System.Drawing.Point(183, 1);
+            this.label101.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(42, 16);
+            this.label101.Size = new System.Drawing.Size(36, 13);
             this.label101.TabIndex = 261;
             this.label101.Text = "Front";
             // 
@@ -6591,9 +6734,10 @@
             // 
             this.label130.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label130.AutoSize = true;
-            this.label130.Location = new System.Drawing.Point(3, 42);
+            this.label130.Location = new System.Drawing.Point(2, 35);
+            this.label130.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label130.Name = "label130";
-            this.label130.Size = new System.Drawing.Size(82, 16);
+            this.label130.Size = new System.Drawing.Size(65, 13);
             this.label130.TabIndex = 252;
             this.label130.Text = "Crit Damage";
             this.label130.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -6604,9 +6748,10 @@
             this.label58.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label58.AutoSize = true;
             this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(347, 2);
+            this.label58.Location = new System.Drawing.Point(258, 1);
+            this.label58.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(55, 16);
+            this.label58.Size = new System.Drawing.Size(46, 13);
             this.label58.TabIndex = 260;
             this.label58.Text = "Behind";
             // 
@@ -6615,10 +6760,10 @@
             this.labelCritFront.AutoSize = true;
             this.labelCritFront.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelCritFront.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCritFront.Location = new System.Drawing.Point(216, 42);
+            this.labelCritFront.Location = new System.Drawing.Point(163, 35);
             this.labelCritFront.Margin = new System.Windows.Forms.Padding(2);
             this.labelCritFront.Name = "labelCritFront";
-            this.labelCritFront.Size = new System.Drawing.Size(103, 16);
+            this.labelCritFront.Size = new System.Drawing.Size(76, 13);
             this.labelCritFront.TabIndex = 253;
             this.labelCritFront.Text = "0";
             this.labelCritFront.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6627,9 +6772,10 @@
             // 
             this.label126.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label126.AutoSize = true;
-            this.label126.Location = new System.Drawing.Point(3, 22);
+            this.label126.Location = new System.Drawing.Point(2, 18);
+            this.label126.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label126.Name = "label126";
-            this.label126.Size = new System.Drawing.Size(79, 16);
+            this.label126.Size = new System.Drawing.Size(63, 13);
             this.label126.TabIndex = 256;
             this.label126.Text = "Hit Damage";
             this.label126.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -6640,10 +6786,10 @@
             this.labelCritRear.AutoSize = true;
             this.labelCritRear.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelCritRear.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCritRear.Location = new System.Drawing.Point(323, 42);
+            this.labelCritRear.Location = new System.Drawing.Point(243, 35);
             this.labelCritRear.Margin = new System.Windows.Forms.Padding(2);
             this.labelCritRear.Name = "labelCritRear";
-            this.labelCritRear.Size = new System.Drawing.Size(104, 16);
+            this.labelCritRear.Size = new System.Drawing.Size(77, 13);
             this.labelCritRear.TabIndex = 255;
             this.labelCritRear.Text = "0";
             this.labelCritRear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6653,10 +6799,10 @@
             this.labelNonCritFront.AutoSize = true;
             this.labelNonCritFront.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelNonCritFront.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNonCritFront.Location = new System.Drawing.Point(216, 22);
+            this.labelNonCritFront.Location = new System.Drawing.Point(163, 18);
             this.labelNonCritFront.Margin = new System.Windows.Forms.Padding(2);
             this.labelNonCritFront.Name = "labelNonCritFront";
-            this.labelNonCritFront.Size = new System.Drawing.Size(103, 16);
+            this.labelNonCritFront.Size = new System.Drawing.Size(76, 13);
             this.labelNonCritFront.TabIndex = 257;
             this.labelNonCritFront.Text = "0";
             this.labelNonCritFront.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6668,10 +6814,10 @@
             this.labelNonCritRear.AutoSize = true;
             this.labelNonCritRear.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelNonCritRear.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNonCritRear.Location = new System.Drawing.Point(323, 22);
+            this.labelNonCritRear.Location = new System.Drawing.Point(243, 18);
             this.labelNonCritRear.Margin = new System.Windows.Forms.Padding(2);
             this.labelNonCritRear.Name = "labelNonCritRear";
-            this.labelNonCritRear.Size = new System.Drawing.Size(104, 16);
+            this.labelNonCritRear.Size = new System.Drawing.Size(77, 13);
             this.labelNonCritRear.TabIndex = 259;
             this.labelNonCritRear.Text = "0";
             this.labelNonCritRear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6679,11 +6825,11 @@
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.panel10);
-            this.tabPage5.Location = new System.Drawing.Point(4, 25);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage5.Size = new System.Drawing.Size(1056, 596);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage5.Size = new System.Drawing.Size(1003, 612);
             this.tabPage5.TabIndex = 1;
             this.tabPage5.Text = "Compare";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -6692,9 +6838,10 @@
             // 
             this.panel10.Controls.Add(this.label57);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel10.Location = new System.Drawing.Point(3, 2);
+            this.panel10.Location = new System.Drawing.Point(2, 2);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1050, 592);
+            this.panel10.Size = new System.Drawing.Size(999, 608);
             this.panel10.TabIndex = 0;
             // 
             // label57
@@ -6702,17 +6849,19 @@
             this.label57.AutoSize = true;
             this.label57.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label57.Location = new System.Drawing.Point(0, 0);
+            this.label57.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(32, 16);
+            this.label57.Size = new System.Drawing.Size(28, 13);
             this.label57.TabIndex = 0;
             this.label57.Text = "WIP";
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.panel2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(1056, 596);
+            this.tabPage1.Size = new System.Drawing.Size(1003, 612);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "About";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -6722,8 +6871,9 @@
             this.panel2.Controls.Add(this.label37);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1056, 596);
+            this.panel2.Size = new System.Drawing.Size(1003, 612);
             this.panel2.TabIndex = 0;
             // 
             // label37
@@ -6731,8 +6881,9 @@
             this.label37.AutoSize = true;
             this.label37.Dock = System.Windows.Forms.DockStyle.Top;
             this.label37.Location = new System.Drawing.Point(0, 0);
+            this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(202, 48);
+            this.label37.Size = new System.Drawing.Size(161, 39);
             this.label37.TabIndex = 0;
             this.label37.Text = "WIP\r\n\r\nCreated by Rhaegal, of Levistras";
             // 
@@ -6743,7 +6894,8 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1348, 30);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1011, 24);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -6755,7 +6907,7 @@
             this.enemyToolStripMenuItem,
             this.menuItemQuit});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 26);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // characterToolStripMenuItem
@@ -6765,27 +6917,27 @@
             this.menuItemSaveWeapon,
             this.menuItemSaveEnemy});
             this.characterToolStripMenuItem.Name = "characterToolStripMenuItem";
-            this.characterToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.characterToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
             this.characterToolStripMenuItem.Text = "Save";
             // 
             // menuItemSaveCharacter
             // 
             this.menuItemSaveCharacter.Name = "menuItemSaveCharacter";
-            this.menuItemSaveCharacter.Size = new System.Drawing.Size(155, 26);
+            this.menuItemSaveCharacter.Size = new System.Drawing.Size(125, 22);
             this.menuItemSaveCharacter.Text = "Character";
             this.menuItemSaveCharacter.Click += new System.EventHandler(this.menuItemSaveCharacter_Click);
             // 
             // menuItemSaveWeapon
             // 
             this.menuItemSaveWeapon.Name = "menuItemSaveWeapon";
-            this.menuItemSaveWeapon.Size = new System.Drawing.Size(155, 26);
+            this.menuItemSaveWeapon.Size = new System.Drawing.Size(125, 22);
             this.menuItemSaveWeapon.Text = "Weapon";
             this.menuItemSaveWeapon.Click += new System.EventHandler(this.menuItemSaveWeapon_Click);
             // 
             // menuItemSaveEnemy
             // 
             this.menuItemSaveEnemy.Name = "menuItemSaveEnemy";
-            this.menuItemSaveEnemy.Size = new System.Drawing.Size(155, 26);
+            this.menuItemSaveEnemy.Size = new System.Drawing.Size(125, 22);
             this.menuItemSaveEnemy.Text = "Enemy";
             this.menuItemSaveEnemy.Click += new System.EventHandler(this.menuItemSaveEnemy_Click);
             // 
@@ -6796,27 +6948,27 @@
             this.menuItemLoadWeapon,
             this.menuItemLoadEnemy});
             this.weaponToolStripMenuItem.Name = "weaponToolStripMenuItem";
-            this.weaponToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.weaponToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
             this.weaponToolStripMenuItem.Text = "Load";
             // 
             // menuItemLoadCharacter
             // 
             this.menuItemLoadCharacter.Name = "menuItemLoadCharacter";
-            this.menuItemLoadCharacter.Size = new System.Drawing.Size(155, 26);
+            this.menuItemLoadCharacter.Size = new System.Drawing.Size(125, 22);
             this.menuItemLoadCharacter.Text = "Character";
             this.menuItemLoadCharacter.Click += new System.EventHandler(this.menuItemLoadCharacter_Click);
             // 
             // menuItemLoadWeapon
             // 
             this.menuItemLoadWeapon.Name = "menuItemLoadWeapon";
-            this.menuItemLoadWeapon.Size = new System.Drawing.Size(155, 26);
+            this.menuItemLoadWeapon.Size = new System.Drawing.Size(125, 22);
             this.menuItemLoadWeapon.Text = "Weapon";
             this.menuItemLoadWeapon.Click += new System.EventHandler(this.menuItemLoadWeapon_Click);
             // 
             // menuItemLoadEnemy
             // 
             this.menuItemLoadEnemy.Name = "menuItemLoadEnemy";
-            this.menuItemLoadEnemy.Size = new System.Drawing.Size(155, 26);
+            this.menuItemLoadEnemy.Size = new System.Drawing.Size(125, 22);
             this.menuItemLoadEnemy.Text = "Enemy";
             this.menuItemLoadEnemy.Click += new System.EventHandler(this.menuItemLoadEnemy_Click);
             // 
@@ -6827,49 +6979,49 @@
             this.menuItemResetWeapon,
             this.menuItemResetEnemy});
             this.enemyToolStripMenuItem.Name = "enemyToolStripMenuItem";
-            this.enemyToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.enemyToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
             this.enemyToolStripMenuItem.Text = "Reset";
             // 
             // menuItemResetCharacter
             // 
             this.menuItemResetCharacter.Name = "menuItemResetCharacter";
-            this.menuItemResetCharacter.Size = new System.Drawing.Size(155, 26);
+            this.menuItemResetCharacter.Size = new System.Drawing.Size(125, 22);
             this.menuItemResetCharacter.Text = "Character";
             this.menuItemResetCharacter.Click += new System.EventHandler(this.menuItemResetCharacter_Click);
             // 
             // menuItemResetWeapon
             // 
             this.menuItemResetWeapon.Name = "menuItemResetWeapon";
-            this.menuItemResetWeapon.Size = new System.Drawing.Size(155, 26);
+            this.menuItemResetWeapon.Size = new System.Drawing.Size(125, 22);
             this.menuItemResetWeapon.Text = "Weapon";
             this.menuItemResetWeapon.Click += new System.EventHandler(this.menuItemResetWeapon_Click);
             // 
             // menuItemResetEnemy
             // 
             this.menuItemResetEnemy.Name = "menuItemResetEnemy";
-            this.menuItemResetEnemy.Size = new System.Drawing.Size(155, 26);
+            this.menuItemResetEnemy.Size = new System.Drawing.Size(125, 22);
             this.menuItemResetEnemy.Text = "Enemy";
             this.menuItemResetEnemy.Click += new System.EventHandler(this.menuItemResetEnemy_Click);
             // 
             // menuItemQuit
             // 
             this.menuItemQuit.Name = "menuItemQuit";
-            this.menuItemQuit.Size = new System.Drawing.Size(128, 26);
+            this.menuItemQuit.Size = new System.Drawing.Size(102, 22);
             this.menuItemQuit.Text = "Quit";
             this.menuItemQuit.Click += new System.EventHandler(this.menuItemQuit_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(1348, 813);
+            this.ClientSize = new System.Drawing.Size(1011, 661);
             this.Controls.Add(this.tabControl_MAIN);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "AC DPS Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
