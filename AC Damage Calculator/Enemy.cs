@@ -12,9 +12,9 @@ namespace AC_Damage_Calculator
 
         // Base Defenses
         public int Armor { get; set; }
-        public float Resist { get; set; }
+        public decimal Resist { get; set; }
         public int ShieldArmor { get; set; }
-        public float ShieldResist { get; set; }
+        public decimal ShieldResist { get; set; }
         public int MeleeDefense { get; set; }
         public int MissileDefense { get; set; }
         public int MagicDefense { get; set; }

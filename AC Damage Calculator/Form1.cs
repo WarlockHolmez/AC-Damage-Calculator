@@ -63,7 +63,9 @@ namespace AC_Damage_Calculator
                 weaponSpeed = numericUpDownMissileWeaponSpeed.Value;
             }
 
-            var divisor = 1 - (numericUpDownBuffedQuickness.Value / 300) + (weaponSpeed / 150);
+            var quickness = numericUpDownBuffedQuickness.Value > 300 ? 300 : numericUpDownBuffedQuickness.Value;
+            var divisor = 1 - (quickness / 300) + (weaponSpeed / 150);
+
             float animSpeedMod;
 
             if(divisor <= 0)
@@ -203,9 +205,9 @@ namespace AC_Damage_Calculator
 
             if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Magic"])
             {
-                finalNonCritDamageFront = Math.Abs(avgDamage * FinalEnemyResitanceVulnMod());
-                finalNonCritMinDamageFront = Math.Abs(finalNonCritMinDamageFront * FinalEnemyResitanceVulnMod());
-                finalNonCritMaxDamageFront = Math.Abs(finalNonCritMaxDamageFront * FinalEnemyResitanceVulnMod());
+                finalNonCritDamageFront = Math.Abs(avgDamage * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
+                finalNonCritMinDamageFront = Math.Abs(finalNonCritMinDamageFront * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
+                finalNonCritMaxDamageFront = Math.Abs(finalNonCritMaxDamageFront * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
 
                 labelFinalNonCritFront.Text = Math.Round(finalNonCritMinDamageFront, 0).ToString() + " - " + Math.Round((float)finalNonCritMaxDamageFront, 0).ToString();
                 labelNonCritFront.Text = Math.Round((float)NonCritMinDamageFront(), 0).ToString() + " - " + Math.Round((float)NonCritMaxDamageFront(), 0).ToString();
@@ -214,9 +216,9 @@ namespace AC_Damage_Calculator
             else
             {
                 //finalNonCritDamageFront = Math.Abs(NonCritDamageFront() * FinalEnemyArmorMod());
-                finalNonCritDamageFront = Math.Abs(avgDamage * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod());
-                finalNonCritMinDamageFront = Math.Abs(finalNonCritMinDamageFront * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod());
-                finalNonCritMaxDamageFront = Math.Abs(finalNonCritMaxDamageFront * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod());
+                finalNonCritDamageFront = Math.Abs(avgDamage * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
+                finalNonCritMinDamageFront = Math.Abs(finalNonCritMinDamageFront * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
+                finalNonCritMaxDamageFront = Math.Abs(finalNonCritMaxDamageFront * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod()) * FinalDamageRatingVoidMod();
 
                 labelFinalNonCritFront.Text = Math.Round(finalNonCritMinDamageFront, 0).ToString() + " - " + Math.Round(finalNonCritMaxDamageFront, 0).ToString();// + "  (" + Math.Round(finalNonCritDamageFront, 0).ToString() + ")";
                 labelNonCritFront.Text = Math.Round((float)NonCritMinDamageFront(), 0).ToString() + " - " + Math.Round((float)NonCritMaxDamageFront(), 0).ToString();
@@ -236,18 +238,18 @@ namespace AC_Damage_Calculator
 
             if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Magic"])
             {
-                finalNonCritDamageRear = avgDamage * FinalEnemyResitanceVulnMod();
-                finalNonCritMinDamageRear = Math.Abs(finalNonCritMinDamageRear * FinalEnemyResitanceVulnMod());
-                finalNonCritMaxDamageRear = Math.Abs(finalNonCritMaxDamageRear * FinalEnemyResitanceVulnMod());
+                finalNonCritDamageRear = avgDamage * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod();
+                finalNonCritMinDamageRear = Math.Abs(finalNonCritMinDamageRear * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
+                finalNonCritMaxDamageRear = Math.Abs(finalNonCritMaxDamageRear * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
 
                 labelFinalNonCritRear.Text = Math.Round(finalNonCritMinDamageRear, 0).ToString() + " - " + Math.Round((float)finalNonCritMaxDamageRear, 0).ToString();
                 labelNonCritRear.Text = Math.Round((float)NonCritMinDamageRear(), 0).ToString() + " - " + Math.Round((float)NonCritMaxDamageRear(), 0).ToString();
             }
             else
             {
-                finalNonCritDamageRear = Math.Abs(avgDamage * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod());
-                finalNonCritMinDamageRear = Math.Abs(finalNonCritMinDamageRear * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod());
-                finalNonCritMaxDamageRear = Math.Abs(finalNonCritMaxDamageRear * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod());
+                finalNonCritDamageRear = Math.Abs(avgDamage * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
+                finalNonCritMinDamageRear = Math.Abs(finalNonCritMinDamageRear * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
+                finalNonCritMaxDamageRear = Math.Abs(finalNonCritMaxDamageRear * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
 
                 labelFinalNonCritRear.Text = Math.Round(finalNonCritMinDamageRear, 0).ToString() + " - " + Math.Round(finalNonCritMaxDamageRear, 0).ToString();// + "  (" + Math.Round(finalNonCritDamageFront, 0).ToString() + ")";
                 labelNonCritRear.Text = Math.Round((float)NonCritMinDamageRear(), 0).ToString() + " - " + Math.Round((float)NonCritMaxDamageRear(), 0).ToString();
@@ -273,15 +275,15 @@ namespace AC_Damage_Calculator
                 finalCritDamageFront = (AvgDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod())  * (1 + (float)BuffedElementalDamageBonus() / 100) *
                                        (float)numericUpDownMagicSlayer.Value * (FinalCritDamageRatingMod() + DeceptionMod() - 1) * FinalEnemyResitanceVulnMod();
 
-                var finalCritMinDamageFront = Math.Abs(critMinDamageFront * FinalEnemyResitanceVulnMod());
-                finalCritMaxDamageFront = Math.Abs(critMaxDamageFront * FinalEnemyResitanceVulnMod());
+                var finalCritMinDamageFront = Math.Abs(critMinDamageFront * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
+                finalCritMaxDamageFront = Math.Abs(critMaxDamageFront * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
 
                 labelFinalCritFront.Text = Math.Round(finalCritMinDamageFront, 0).ToString() + " - " + Math.Round(finalCritMaxDamageFront, 0).ToString();
                 labelCritFront.Text = Math.Round(critMinDamageFront, 0).ToString() + " - " + Math.Round(critMaxDamageFront, 0).ToString();
             }
             else
             {
-                finalCritDamageFront = Math.Abs(finalCritMaxDamageFront * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod());
+                finalCritDamageFront = Math.Abs(finalCritMaxDamageFront * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
 
                 labelFinalCritFront.Text = Math.Round(finalCritDamageFront, 0).ToString();
                 labelCritFront.Text = Math.Round((float)CritMaxDamageFront(), 0).ToString();
@@ -310,15 +312,15 @@ namespace AC_Damage_Calculator
                 finalCritDamageRear = (AvgDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod())  * (1 + (float)BuffedElementalDamageBonus() / 100) *
                                        (float)numericUpDownMagicSlayer.Value * (FinalCritDamageRatingMod() + SneakAttackMod() - 1) * FinalEnemyResitanceVulnMod();
 
-                var finalCritMinDamageRear = Math.Abs(critMinDamageRear * FinalEnemyResitanceVulnMod());
-                finalCritMaxDamageRear = Math.Abs(critMaxDamageRear * FinalEnemyResitanceVulnMod());
+                var finalCritMinDamageRear = Math.Abs(critMinDamageRear * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
+                finalCritMaxDamageRear = Math.Abs(critMaxDamageRear * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
 
                 labelFinalCritRear.Text = Math.Round(finalCritMinDamageRear, 0).ToString() + " - " + Math.Round(finalCritMaxDamageRear, 0).ToString();
                 labelCritRear.Text = Math.Round(critMinDamageRear, 0).ToString() + " - " + Math.Round(critMaxDamageRear, 0).ToString();
             }
             else
             {
-                finalCritDamageRear = Math.Abs(finalCritMaxDamageRear * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod());
+                finalCritDamageRear = Math.Abs(finalCritMaxDamageRear * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
 
                 labelFinalCritRear.Text = Math.Round(finalCritDamageRear, 0).ToString();
                 labelCritRear.Text = Math.Round((float)CritMaxDamageRear(), 0).ToString();
@@ -1531,13 +1533,18 @@ namespace AC_Damage_Calculator
             return (float)critMultiplier;
         }
 
+        private float FinalDamageRatingVoidMod()
+        {
+            return (1 / FinalDamageRatingMod()) * (FinalDamageRatingMod() + (VoidDotDamageRating() / 100));
+        }
+
         private int FinalDamageRating()
         {
             var rating = (int)numericUpDownDamageRating.Value;
 
             rating += checkBoxSurgeOfDestruction.Checked ? 20 : 0;
 
-            rating += (int)VoidDotDamageRating();
+            //rating += (int)VoidDotDamageRating();
 
             return rating;
         }
@@ -1609,7 +1616,7 @@ namespace AC_Damage_Calculator
                     mod = 1 + ((int)numericUpDownBuffedStrength.Value + (checkBoxRareStrength.Checked ? 250 : 0) - 55) * 0.011f;
             }
 
-            labelCharacterMeleeMod.Text = Math.Round(mod, 2).ToString();
+            labelCharacterMeleeMod.Text = Math.Round(mod, 1).ToString();
 
             return mod;
         }
@@ -1627,7 +1634,7 @@ namespace AC_Damage_Calculator
                 mod = 1 + ((int)numericUpDownBuffedCoordination.Value + (checkBoxRareCoord.Checked ? 250 : 0) - 55) * 0.008f;
             }
 
-            labelCharacterMissileMod.Text = Math.Round(mod, 2).ToString();
+            labelCharacterMissileMod.Text = Math.Round(mod, 1).ToString();
 
             return mod;
         }
@@ -1635,7 +1642,7 @@ namespace AC_Damage_Calculator
         private float MagicMod()
         {
             float mod = 1 + ((float)(EffectiveMagicSkill() - 350) / 1000) * SpellMinDamage();
-            labelCharacterSpellMod.Text = Math.Round(mod, 2).ToString();
+            labelCharacterSpellMod.Text = Math.Round(mod, 1).ToString();
 
             return mod;
         }
@@ -1719,6 +1726,65 @@ namespace AC_Damage_Calculator
         }
 
         #region Tool Interactions
+        private void OnAdjustBaseWeaponSkills(object sender, EventArgs e)
+        {
+            if(numericUpDownBaseMeleeSkill.Value > numericUpDownBuffedMeleeSkill.Value)
+            {
+                numericUpDownBuffedMeleeSkill.Value = numericUpDownBaseMeleeSkill.Value;
+            }
+
+            if (numericUpDownBaseMissileSkill.Value > numericUpDownBuffedMissileSkill.Value)
+            {
+                numericUpDownBuffedMissileSkill.Value = numericUpDownBaseMissileSkill.Value;
+            }
+
+            if (numericUpDownBaseMagicSkill.Value > numericUpDownBuffedMagicSkill.Value)
+            {
+                numericUpDownBuffedMagicSkill.Value = numericUpDownBaseMagicSkill.Value;
+            }
+
+            CalculateFinalDps(sender, e);
+        }
+
+        private void OnAdjustBuffedWeaponSkills(object sender, EventArgs e)
+        {
+            if (numericUpDownBaseMeleeSkill.Value > numericUpDownBuffedMeleeSkill.Value)
+            {
+                numericUpDownBaseMeleeSkill.Value = numericUpDownBuffedMeleeSkill.Value;
+            }
+
+            if (numericUpDownBaseMissileSkill.Value > numericUpDownBuffedMissileSkill.Value)
+            {
+                numericUpDownBaseMissileSkill.Value = numericUpDownBuffedMissileSkill.Value;
+            }
+
+            if (numericUpDownBaseMagicSkill.Value > numericUpDownBuffedMagicSkill.Value)
+            {
+                numericUpDownBaseMagicSkill.Value = numericUpDownBuffedMagicSkill.Value;
+            }
+
+            CalculateFinalDps(sender, e);
+        }
+
+        private void OnAdjustMinWeaponDamage(object sender, EventArgs e)
+        {
+            if(numericUpDownWeaponMinDamage.Value > numericUpDownWeaponMaxDamage.Value)
+            {
+                numericUpDownWeaponMaxDamage.Value = numericUpDownWeaponMinDamage.Value;
+
+                CalculateFinalDps(sender, e);
+            }
+        }
+
+        private void OnAdjustMaxWeaponDamage(object sender, EventArgs e)
+        {
+            if (numericUpDownWeaponMinDamage.Value > numericUpDownWeaponMaxDamage.Value)
+            {
+                numericUpDownWeaponMinDamage.Value = numericUpDownWeaponMaxDamage.Value;
+
+                CalculateFinalDps(sender, e);
+            }
+        }
 
         private void tabPage1_Click(object sender, EventArgs e)
         {
@@ -1789,7 +1855,6 @@ namespace AC_Damage_Calculator
         {
 
         }
-        #endregion
 
         private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
         {
@@ -1870,8 +1935,11 @@ namespace AC_Damage_Calculator
         {
 
         }
+        #endregion
 
-        private void buttonSaveCharacter_Click(object sender, EventArgs e)
+
+
+        private void menuItemSaveCharacter_Click(object sender, EventArgs e)
         {
             if(textBoxCharacterName.Text == "")
             {
@@ -1884,8 +1952,8 @@ namespace AC_Damage_Calculator
             // Displays a SaveFileDialog so the user can save the Image
             // assigned to Button2.
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.InitialDirectory = Directory.GetCurrentDirectory();
-            saveFileDialog1.RestoreDirectory = true;
+            saveFileDialog1.InitialDirectory = Directory.GetCurrentDirectory() + @"\Character";
+            saveFileDialog1.RestoreDirectory = false;
             saveFileDialog1.Filter = "JSON|*.json";
             saveFileDialog1.Title = "Save Character Template";
             saveFileDialog1.ShowDialog();
@@ -1935,59 +2003,68 @@ namespace AC_Damage_Calculator
         }
 
         
-private void buttonLoadCharacter_Click(object sender, EventArgs e)
-{
-
-    // Displays a OpenFileDialog so the user can save the Image
-    // assigned to Button2.
-    OpenFileDialog openFileDialog1 = new OpenFileDialog();
-    openFileDialog1.Filter = "JSON|*.json";
-    openFileDialog1.Title = "Open Character Template";
-    openFileDialog1.ShowDialog();
-
-    // If the file name is not an empty string open it for saving.
-    if (openFileDialog1.FileName != "")
+    private void menuItemLoadCharacter_Click(object sender, EventArgs e)
     {
-                // deserialize JSON directly from a file
-                using (StreamReader file = File.OpenText(openFileDialog1.FileName))
-                {
-                    JsonSerializer serializer = new JsonSerializer();
-                    Character character = (Character)serializer.Deserialize(file, typeof(Character));
 
-                    textBoxCharacterName.Text = character.Name;
-                    checkBoxFinesse.Checked = character.FinesseWeapon;
-                    checkBoxThrown.Checked = character.ThrownWeapon;
-                    numericUpDownBaseMeleeSkill.Value = character.MeleeBase;
-                    numericUpDownBuffedMeleeSkill.Value = character.MeleeBuffed;
-                    numericUpDownBaseMissileSkill.Value = character.MissileBase;
-                    numericUpDownBuffedMissileSkill.Value = character.MissileBuffed;
-                    numericUpDownBaseMagicSkill.Value = character.MagicBase;
-                    numericUpDownBuffedMagicSkill.Value = character.MagicBuffed;
-                    numericUpDownBuffedStrength.Value = character.Strength;
-                    numericUpDownBuffedCoordination.Value = character.Coordination;
-                    numericUpDownBuffedQuickness.Value = character.Quickness;
-                    numericUpDownBuffedRecklessness.Value = character.Recklessness;
-                    numericUpDownBuffedSneakAttack.Value = character.SneakAttack;
-                    numericUpDownBuffedDeception.Value = character.Deception;
-                    comboBoxRecklessness.Text = character.RecklessnessComboBox;
-                    comboBoxSneakAttack.Text = character.SneakAttackComboBox;
-                    comboBoxDeception.Text = character.DeceptionComboBox;
-                    checkBoxRareStrength.Checked = character.StrengthRare;
-                    checkBoxRareCoord.Checked = character.CoordinationRare;
-                    checkBoxRareQuick.Checked = character.QuicknessRare;
-                    checkBoxRareFocus.Checked = character.FocusRare;
-                    checkBoxRareSelf.Checked = character.SelfRare;
-                    checkBoxRareMelee.Checked = character.MeleeRare;
-                    checkBoxRareMissile.Checked = character.MissileRare;
-                    checkBoxRareMagic.Checked = character.MagicRare;
-                    checkBoxSurgeOfCloakedInSkill.Checked = character.CisSurge;
-                    checkBoxSurgeOfDestruction.Checked = character.DestSurge;
-                }
+        // Displays a OpenFileDialog so the user can save the Image
+        // assigned to Button2.
+        OpenFileDialog openFileDialog1 = new OpenFileDialog();
+        openFileDialog1.InitialDirectory = Directory.GetCurrentDirectory() + @"\Character";
+        openFileDialog1.Filter = "JSON|*.json";
+        openFileDialog1.Title = "Open Character Template";
+        openFileDialog1.ShowDialog();
+
+        // If the file name is not an empty string open it for saving.
+        if (openFileDialog1.FileName != "")
+        {
+            // deserialize JSON directly from a file
+            using (StreamReader file = File.OpenText(openFileDialog1.FileName))
+            {
+                JsonSerializer serializer = new JsonSerializer();
+                Character character = (Character)serializer.Deserialize(file, typeof(Character));
+
+                textBoxCharacterName.Text = character.Name;
+                checkBoxFinesse.Checked = character.FinesseWeapon;
+                checkBoxThrown.Checked = character.ThrownWeapon;
+                numericUpDownBaseMeleeSkill.Value = character.MeleeBase;
+                numericUpDownBuffedMeleeSkill.Value = character.MeleeBuffed;
+                numericUpDownBaseMissileSkill.Value = character.MissileBase;
+                numericUpDownBuffedMissileSkill.Value = character.MissileBuffed;
+                numericUpDownBaseMagicSkill.Value = character.MagicBase;
+                numericUpDownBuffedMagicSkill.Value = character.MagicBuffed;
+                numericUpDownBuffedStrength.Value = character.Strength;
+                numericUpDownBuffedCoordination.Value = character.Coordination;
+                numericUpDownBuffedQuickness.Value = character.Quickness;
+                numericUpDownBuffedRecklessness.Value = character.Recklessness;
+                numericUpDownBuffedSneakAttack.Value = character.SneakAttack;
+                numericUpDownBuffedDeception.Value = character.Deception;
+                comboBoxRecklessness.Text = character.RecklessnessComboBox;
+                comboBoxSneakAttack.Text = character.SneakAttackComboBox;
+                comboBoxDeception.Text = character.DeceptionComboBox;
+                checkBoxRareStrength.Checked = character.StrengthRare;
+                checkBoxRareCoord.Checked = character.CoordinationRare;
+                checkBoxRareQuick.Checked = character.QuicknessRare;
+                checkBoxRareFocus.Checked = character.FocusRare;
+                checkBoxRareSelf.Checked = character.SelfRare;
+                checkBoxRareMelee.Checked = character.MeleeRare;
+                checkBoxRareMissile.Checked = character.MissileRare;
+                checkBoxRareMagic.Checked = character.MagicRare;
+                checkBoxSurgeOfCloakedInSkill.Checked = character.CisSurge;
+                checkBoxSurgeOfDestruction.Checked = character.DestSurge;
             }
         }
+    }
 
-        private void buttonResetCharacter_Click(object sender, EventArgs e)
+        private void menuItemResetCharacter_Click(object sender, EventArgs e)
         {
+            var confirmResult = MessageBox.Show("Are you sure want to reset Character settings?",
+                                        "Confirm Character Reset",
+                                        MessageBoxButtons.YesNo);
+            if (confirmResult == DialogResult.No)
+            {
+                return;
+            }
+
             textBoxCharacterName.Text = "";
             checkBoxFinesse.Checked = false;
             checkBoxThrown.Checked = false;
@@ -2017,15 +2094,377 @@ private void buttonLoadCharacter_Click(object sender, EventArgs e)
             checkBoxSurgeOfCloakedInSkill.Checked = false;
             checkBoxSurgeOfDestruction.Checked = false;
         }
-
-        private void loadToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void menuItemSaveWeapon_Click(object sender, EventArgs e)
         {
+            if (textBoxWeaponName.Text == "")
+            {
+                MessageBox.Show("Please enter a name for your weapon before saving.", "Name Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxWeaponName.Select();
+                return;
+            }
 
+
+            // Displays a SaveFileDialog so the user can save the Image
+            // assigned to Button2.
+            SaveFileDialog saveFileDialog2 = new SaveFileDialog();
+            saveFileDialog2.InitialDirectory = Directory.GetCurrentDirectory() + @"\Weapon";
+            saveFileDialog2.RestoreDirectory = false;
+            saveFileDialog2.Filter = "JSON|*.json";
+            saveFileDialog2.Title = "Save Weapon Template";
+            saveFileDialog2.ShowDialog();
+
+            // If the file name is not an empty string open it for saving.
+            if (saveFileDialog2.FileName != "")
+            {
+                Weapon weapon = new Weapon
+                {
+                    Name = textBoxWeaponName.Text,
+                    MeleeAttackAnimation = comboBoxMeleeAnimation.Text,
+                    MeleeMinDamage = (float)numericUpDownWeaponMinDamage.Value,
+                    MeleeMaxDamage = (float)numericUpDownWeaponMaxDamage.Value,
+                    MeleeAttackMod = (float)numericUpDownWeaponAttackMod.Value,
+                    MeleeSpeed = (int)numericUpDownMeleeWeaponSpeed.Value,
+                    MissileAmmoType = comboBoxAmmoType.Text,
+                    MissileDamageMod = (int)numericUpDownMissileDamageMod.Value,
+                    MissileDamageBonus = (int)numericUpDownMissileDamageBonus.Value,
+                    MissileSpeed = (int)numericUpDownMissileWeaponSpeed.Value,
+                    MissileAttackAnimation = comboBoxMissileAnimation.Text,
+                    MagicAttackAnimation = comboBoxMagicAnimation.Text,
+                    MagicSpell = comboBoxMagicSpell.Text,
+                    MagicDamageBonus = (int)numericUpDownMagicElementalDamageBonus.Value,
+                    MeleeArmorRend = checkBoxMeleeArmorRend.Checked,
+                    MeleeArmorCleave = checkBoxMeleeArmorCleaving.Checked,
+                    MeleeResistanceRend = checkBoxMeleeResistanceRend.Checked,
+                    MeleeResistanceCleave = (float)numericUpDownMeleeResistanceCleaving.Value,
+                    MeleeCriticalStrike = checkBoxMeleeCriticalStrike.Checked,
+                    MeleeBitingStrike = numericUpDownMeleeBitingStrike.Value,
+                    MeleeCripplingBlow = checkBoxMeleeCripplingBlow.Checked,
+                    MeleeCrushingBlow = numericUpDownMeleeCrushingBlow.Value,
+                    MissileArmorRend = checkBoxMissileArmorRend.Checked,
+                    MissileArmorCleave = checkBoxMissileArmorCleaving.Checked,
+                    MissileResistanceRend = checkBoxMissileResistanceRend.Checked,
+                    MissileResistanceCleave = (float)numericUpDownMissileResistanceCleaving.Value,
+                    MissileCriticalStrike = checkBoxMissileCriticalStrike.Checked,
+                    MissileBitingStrike = numericUpDownMissileBitingStrike.Value,
+                    MissileCripplingBlow = checkBoxMissileCripplingBlow.Checked,
+                    MissileCrushingBlow = numericUpDownMissileCrushingBlow.Value,
+                    MagicResistanceRend = checkBoxMagicResistanceRend.Checked,
+                    MagicResistanceCleave = (float)numericUpDownMagicResistanceCleaving.Value,
+                    MagicCriticalStrike = checkBoxMagicCriticalStrike.Checked,
+                    MagicBitingStrike = numericUpDownMagicBitingStrike.Value,
+                    MagicCripplingBlow = checkBoxMagicCripplingBlow.Checked,
+                    MagicCrushingBlow = numericUpDownMagicCrushingBlow.Value,
+                    MeleeBloodDrinker = comboBoxMeleeBloodDrinker.Text,
+                    MeleeBloodThirst = comboBoxMeleeBloodThirst.Text,
+                    MeleeHeartSeeker = comboBoxMeleeHeartSeeker.Text,
+                    MeleeHeartThirst = comboBoxMeleeHeartThirst.Text,
+                    MeleeHighestSpell = comboBoxMeleeHighestSpell.Text,
+                    MeleeSlayer = numericUpDownMeleeSlayer.Value,
+                    MissileBloodDrinker = comboBoxMissileBloodDrinker.Text,
+                    MissileBloodThirst = comboBoxMissileBloodThirst.Text,
+                    MissileHighestSpell = comboBoxMissileHighestSpell.Text,
+                    MissileSlayer = numericUpDownMissileSlayer.Value,
+                    MagicSpiritDrinker = comboBoxMagicSpiritDrinker.Text,
+                    MagicSpiritThirst = comboBoxMagicSpiritThirst.Text,
+                    MagicSlayer = numericUpDownMagicSlayer.Value,
+                    MeleePowerBar = trackBarMeleePowerBar.Value,
+                    MissileAccuracyBar = trackBarMissileAccuracyBar.Value
+                };
+
+                // serialize JSON directly to a file
+                using (StreamWriter file = File.CreateText(saveFileDialog2.FileName))
+                {
+                    JsonSerializer serializer = new JsonSerializer();
+                    serializer.Serialize(file, weapon);
+                }
+            }
+        }
+        private void menuItemLoadWeapon_Click(object sender, EventArgs e)
+        {
+            // Displays a OpenFileDialog so the user can save the Image
+            // assigned to Button2.
+            OpenFileDialog openFileDialog2 = new OpenFileDialog();
+            openFileDialog2.InitialDirectory = Directory.GetCurrentDirectory() + @"\Weapon";
+            openFileDialog2.Filter = "JSON|*.json";
+            openFileDialog2.Title = "Open Character Template";
+            openFileDialog2.ShowDialog();
+
+            // If the file name is not an empty string open it for saving.
+            if (openFileDialog2.FileName != "")
+            {
+                // deserialize JSON directly from a file
+                using (StreamReader file = File.OpenText(openFileDialog2.FileName))
+                {
+                    JsonSerializer serializer = new JsonSerializer();
+                    Weapon weapon = (Weapon)serializer.Deserialize(file, typeof(Weapon));
+
+                    textBoxWeaponName.Text = weapon.Name;
+                    comboBoxMeleeAnimation.Text = weapon.MeleeAttackAnimation;
+                    numericUpDownWeaponMinDamage.Value = (decimal)weapon.MeleeMinDamage;
+                    numericUpDownWeaponMaxDamage.Value = (decimal)weapon.MeleeMaxDamage;
+                    numericUpDownWeaponAttackMod.Value = (decimal)weapon.MeleeAttackMod;
+                    numericUpDownMeleeWeaponSpeed.Value = weapon.MeleeSpeed;
+                    comboBoxMissileAnimation.Text = weapon.MissileAttackAnimation;
+                    comboBoxAmmoType.Text = weapon.MissileAmmoType;
+                    numericUpDownMissileDamageMod.Value = weapon.MissileDamageMod;
+                    numericUpDownMissileDamageBonus.Value = weapon.MissileDamageBonus;
+                    numericUpDownMissileWeaponSpeed.Value = weapon.MissileSpeed;
+                    comboBoxMagicAnimation.Text = weapon.MagicAttackAnimation;
+                    comboBoxMagicSpell.Text = weapon.MagicSpell;
+                    numericUpDownMagicElementalDamageBonus.Value = weapon.MagicDamageBonus;
+                    checkBoxMeleeArmorRend.Checked = weapon.MeleeArmorRend;
+                    checkBoxMeleeArmorCleaving.Checked = weapon.MeleeArmorCleave;
+                    checkBoxMeleeResistanceRend.Checked = weapon.MeleeResistanceRend;
+                    numericUpDownMeleeResistanceCleaving.Value = (decimal)weapon.MeleeResistanceCleave;
+                    checkBoxMeleeCriticalStrike.Checked = weapon.MeleeCriticalStrike;
+                    numericUpDownMeleeBitingStrike.Value = weapon.MeleeBitingStrike;
+                    checkBoxMeleeCripplingBlow.Checked = weapon.MeleeCripplingBlow;
+                    numericUpDownMeleeCrushingBlow.Value = weapon.MeleeCrushingBlow;
+                    checkBoxMissileArmorRend.Checked = weapon.MissileArmorRend;
+                    checkBoxMissileArmorCleaving.Checked = weapon.MissileArmorCleave;
+                    checkBoxMissileResistanceRend.Checked = weapon.MissileResistanceRend;
+                    numericUpDownMissileResistanceCleaving.Value = (decimal)weapon.MeleeResistanceCleave;
+                    checkBoxMissileCriticalStrike.Checked = weapon.MissileCriticalStrike;
+                    numericUpDownMissileBitingStrike.Value = weapon.MissileBitingStrike;
+                    checkBoxMissileCripplingBlow.Checked = weapon.MissileCripplingBlow;
+                    numericUpDownMissileCrushingBlow.Value = weapon.MissileCrushingBlow;
+                    checkBoxMagicResistanceRend.Checked = weapon.MagicResistanceRend;
+                    numericUpDownMagicResistanceCleaving.Value = (decimal)weapon.MagicResistanceCleave;
+                    checkBoxMagicCriticalStrike.Checked = weapon.MagicCriticalStrike;
+                    numericUpDownMagicBitingStrike.Value = weapon.MagicBitingStrike;
+                    checkBoxMagicCripplingBlow.Checked = weapon.MagicCripplingBlow;
+                    numericUpDownMagicCrushingBlow.Value = weapon.MagicCrushingBlow;
+                    comboBoxMeleeBloodDrinker.Text = weapon.MeleeBloodDrinker;
+                    comboBoxMeleeBloodThirst.Text = weapon.MeleeBloodThirst;
+                    comboBoxMeleeHeartSeeker.Text = weapon.MeleeHeartSeeker;
+                    comboBoxMeleeHeartThirst.Text = weapon.MeleeHeartThirst;
+                    comboBoxMeleeHighestSpell.Text = weapon.MeleeHighestSpell;
+                    numericUpDownMeleeSlayer.Value = weapon.MeleeSlayer;
+                    comboBoxMissileBloodDrinker.Text = weapon.MissileBloodDrinker;
+                    comboBoxMissileBloodThirst.Text = weapon.MissileBloodThirst;
+                    numericUpDownMissileSlayer.Value = weapon.MissileSlayer;
+                    comboBoxMagicSpiritDrinker.Text = weapon.MagicSpiritDrinker;
+                    comboBoxMagicSpiritThirst.Text = weapon.MagicSpiritThirst;
+                    numericUpDownMagicSlayer.Value = weapon.MagicSlayer;
+                    trackBarMeleePowerBar.Value = weapon.MeleePowerBar;
+                    trackBarMissileAccuracyBar.Value = weapon.MissileAccuracyBar;
+                }
+            }
         }
 
-        private void resetToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void menuItemResetWeapon_Click(object sender, EventArgs e)
         {
-            
+            var confirmResult = MessageBox.Show("Are you sure want to reset Weapon settings?",
+                                        "Confirm Weapon Reset",
+                                        MessageBoxButtons.YesNo);
+            if (confirmResult == DialogResult.No)
+            {
+                return;
+            }
+
+            textBoxWeaponName.Text = "";
+            comboBoxMeleeAnimation.Text = "Slash";
+            numericUpDownWeaponMinDamage.Value = 1;
+            numericUpDownWeaponMaxDamage.Value = 1;
+            numericUpDownWeaponAttackMod.Value = 0;
+            numericUpDownMeleeWeaponSpeed.Value = 0;
+            comboBoxMissileAnimation.Text = "Bow";
+            comboBoxAmmoType.Text = "32-40";
+            numericUpDownMissileDamageMod.Value = 0;
+            numericUpDownMissileDamageBonus.Value = 0;
+            numericUpDownMissileWeaponSpeed.Value = 0;
+            comboBoxMagicAnimation.Text = "Normal";
+            comboBoxMagicSpell.Text = "War 8";
+            numericUpDownMagicElementalDamageBonus.Value = 0;
+            checkBoxMeleeArmorRend.Checked = false;
+            checkBoxMeleeArmorCleaving.Checked = false;
+            checkBoxMeleeResistanceRend.Checked = false;
+            numericUpDownMeleeResistanceCleaving.Value = 1;
+            checkBoxMeleeCriticalStrike.Checked = false;
+            numericUpDownMeleeBitingStrike.Value = 0.1m;
+            checkBoxMeleeCripplingBlow.Checked = false;
+            numericUpDownMeleeCrushingBlow.Value = 1;
+            checkBoxMissileArmorRend.Checked = false;
+            checkBoxMissileArmorCleaving.Checked = false;
+            checkBoxMissileResistanceRend.Checked = false;
+            numericUpDownMissileResistanceCleaving.Value = 1;
+            checkBoxMissileCriticalStrike.Checked = false;
+            numericUpDownMissileBitingStrike.Value = 0.1m;
+            checkBoxMissileCripplingBlow.Checked = false;
+            numericUpDownMissileCrushingBlow.Value = 1;
+            checkBoxMagicResistanceRend.Checked = false;
+            numericUpDownMagicResistanceCleaving.Value = 1;
+            checkBoxMagicCriticalStrike.Checked = false;
+            numericUpDownMagicBitingStrike.Value = 0.05m;
+            checkBoxMagicCripplingBlow.Checked = false;
+            numericUpDownMagicCrushingBlow.Value = 1;
+            comboBoxMeleeBloodDrinker.Text = "None";
+            comboBoxMeleeBloodThirst.Text = "None";
+            comboBoxMeleeHeartSeeker.Text = "None";
+            comboBoxMeleeHeartThirst.Text = "None";
+            comboBoxMeleeHighestSpell.Text = "None";
+            numericUpDownMeleeSlayer.Value = 1;
+            comboBoxMissileBloodDrinker.Text = "None";
+            comboBoxMissileBloodThirst.Text = "None";
+            numericUpDownMissileSlayer.Value = 1;
+            comboBoxMagicSpiritDrinker.Text = "None";
+            comboBoxMagicSpiritThirst.Text = "None";
+            numericUpDownMagicSlayer.Value = 1;
+            trackBarMeleePowerBar.Value = 50;
+            trackBarMissileAccuracyBar.Value = 50;
+        }
+
+        private void menuItemSaveEnemy_Click(object sender, EventArgs e)
+        {
+            if (textBoxEnemyName.Text == "")
+            {
+                MessageBox.Show("Please enter a name for your enemy before saving.", "Name Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxEnemyName.Select();
+                return;
+            }
+
+
+            // Displays a SaveFileDialog so the user can save the Image
+            // assigned to Button2.
+            SaveFileDialog saveFileDialog3 = new SaveFileDialog();
+            saveFileDialog3.InitialDirectory = Directory.GetCurrentDirectory() + @"\Enemy";
+            saveFileDialog3.RestoreDirectory = false;
+            saveFileDialog3.Filter = "JSON|*.json";
+            saveFileDialog3.Title = "Save Enemy Template";
+            saveFileDialog3.ShowDialog();
+
+            // If the file name is not an empty string open it for saving.
+            if (saveFileDialog3.FileName != "")
+            {
+                Enemy enemy = new Enemy
+                {
+                    Name = textBoxEnemyName.Text,
+                    Armor = (int)numericUpDownEnemyArmor.Value,
+                    Resist = numericUpDownEnemyResistance.Value,
+                    ShieldArmor = (int)numericUpDownEnemyShieldAL.Value,
+                    ShieldResist = numericUpDownEnemyShieldResist.Value,
+                    MeleeDefense = (int)numericUpDownEnemyMeleeDefense.Value,
+                    MissileDefense = (int)numericUpDownEnemyMissileDefense.Value,
+                    MagicDefense = (int)numericUpDownEnemyMagicDefense.Value,
+                    Imperil = comboBoxEnemyImperil.Text,
+                    ResistanceVuln = comboBoxEnemyVuln.Text,
+                    Corruption = (int)numericUpDownCorruption.Value,
+                    Corrosion = (int)numericUpDownCorrosion.Value,
+                    Destructive = (int)numericUpDownDestructive.Value,
+                    Vulnerability = comboBoxEnemyVulnerability.Text,
+                    Defenselessness = comboBoxEnemyDefenselessness.Text,
+                    MagicYield = comboBoxEnemyMagicYield.Text,
+                    UnbalancedAssault = comboBoxEnemyUnbalancingAssault.Text,
+                    Clumsiness = comboBoxEnemyClumsiness.Text,
+                    Slowness = comboBoxEnemySlowness.Text,
+                    Bafflement = comboBoxEnemyBafflement.Text,
+                    Feeblemind = comboBoxEnemyFeeblemind.Text,
+                    Brittlemail = comboBoxEnemyBrittlemail.Text,
+                    ResistanceLure = comboBoxEnemyResistanceLure.Text
+                };
+
+                // serialize JSON directly to a file
+                using (StreamWriter file = File.CreateText(saveFileDialog3.FileName))
+                {
+                    JsonSerializer serializer = new JsonSerializer();
+                    serializer.Serialize(file, enemy);
+                }
+            }
+        }
+
+        private void menuItemLoadEnemy_Click(object sender, EventArgs e)
+        {
+            // Displays a OpenFileDialog so the user can save the Image
+            // assigned to Button2.
+            OpenFileDialog openFileDialog3 = new OpenFileDialog();
+            openFileDialog3.InitialDirectory = Directory.GetCurrentDirectory() + @"\Enemy";
+            openFileDialog3.Filter = "JSON|*.json";
+            openFileDialog3.Title = "Open Enemy Template";
+            openFileDialog3.ShowDialog();
+
+            // If the file name is not an empty string open it for saving.
+            if (openFileDialog3.FileName != "")
+            {
+                // deserialize JSON directly from a file
+                using (StreamReader file = File.OpenText(openFileDialog3.FileName))
+                {
+                    JsonSerializer serializer = new JsonSerializer();
+                    Enemy enemy = (Enemy)serializer.Deserialize(file, typeof(Enemy));
+
+                    textBoxEnemyName.Text = enemy.Name;
+                    numericUpDownEnemyArmor.Value = enemy.Armor;
+                    numericUpDownEnemyResistance.Value = enemy.Resist;
+                    numericUpDownEnemyShieldAL.Value = enemy.ShieldArmor;
+                    numericUpDownEnemyShieldResist.Value = enemy.ShieldResist;
+                    numericUpDownEnemyMeleeDefense.Value = enemy.MeleeDefense;
+                    numericUpDownEnemyMissileDefense.Value = enemy.MissileDefense;
+                    numericUpDownEnemyMagicDefense.Value = enemy.MagicDefense;
+                    comboBoxEnemyImperil.Text = enemy.Imperil;
+                    comboBoxEnemyVuln.Text = enemy.ResistanceVuln;
+                    numericUpDownCorruption.Value = enemy.Corruption;
+                    numericUpDownCorrosion.Value = enemy.Corrosion;
+                    numericUpDownDestructive.Value = enemy.Destructive;
+                    comboBoxEnemyVulnerability.Text = enemy.Vulnerability;
+                    comboBoxEnemyDefenselessness.Text = enemy.Defenselessness;
+                    comboBoxEnemyMagicYield.Text = enemy.MagicYield;
+                    comboBoxEnemyUnbalancingAssault.Text = enemy.UnbalancedAssault;
+                    comboBoxEnemyClumsiness.Text = enemy.Clumsiness;
+                    comboBoxEnemySlowness.Text = enemy.Slowness;
+                    comboBoxEnemyBafflement.Text = enemy.Bafflement;
+                    comboBoxEnemyFeeblemind.Text = enemy.Feeblemind;
+                    comboBoxEnemyBrittlemail.Text = enemy.Brittlemail;
+                    comboBoxEnemyResistanceLure.Text = enemy.ResistanceLure;
+                }
+            }
+        }
+
+     private void menuItemResetEnemy_Click(object sender, EventArgs e)
+        {
+            var confirmResult = MessageBox.Show("Are you sure want to reset Enemy settings?",
+                                        "Confirm Enemy Reset",
+                                        MessageBoxButtons.YesNo);
+            if (confirmResult == DialogResult.No)
+            {
+                return;
+            }
+
+            textBoxEnemyName.Text = "";
+            numericUpDownEnemyArmor.Value = 0;
+            numericUpDownEnemyResistance.Value = 0m;
+            numericUpDownEnemyShieldAL.Value = 0;
+            numericUpDownEnemyShieldResist.Value = 0m;
+            numericUpDownEnemyMeleeDefense.Value = 0;
+            numericUpDownEnemyMissileDefense.Value = 0;
+            numericUpDownEnemyMagicDefense.Value = 0;
+            comboBoxEnemyImperil.Text = "None";
+            comboBoxEnemyVuln.Text = "None";
+            numericUpDownCorruption.Value = 0;
+            numericUpDownCorrosion.Value = 0;
+            numericUpDownDestructive.Value = 0;
+            comboBoxEnemyVulnerability.Text = "None";
+            comboBoxEnemyDefenselessness.Text = "None";
+            comboBoxEnemyMagicYield.Text = "None";
+            comboBoxEnemyUnbalancingAssault.Text = "None";
+            comboBoxEnemyClumsiness.Text = "None";
+            comboBoxEnemySlowness.Text = "None";
+            comboBoxEnemyBafflement.Text = "None";
+            comboBoxEnemyFeeblemind.Text = "None";
+            comboBoxEnemyBrittlemail.Text = "None";
+            comboBoxEnemyResistanceLure.Text = "None";
+        }
+
+        private void menuItemQuit_Click(object sender, EventArgs e)
+        {
+            if (Application.MessageLoop)
+            {
+                // WinForms app
+                Application.Exit();
+            }
+            else
+            {
+                // Console app
+                Environment.Exit(1);
+            }
         }
     }
 }
