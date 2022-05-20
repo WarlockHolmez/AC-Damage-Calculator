@@ -580,6 +580,7 @@ namespace AC_Damage_Calculator
             var finalArmorMod = 1.0f;
             var enemyArmor = (float)numericUpDownEnemyArmor.Value;
             var finalArmor = 0.0f;
+            var armorMod = WeaponArmorMod();
 
             if (enemyArmor - ArmorDebuffValue(comboBoxEnemyImperil) <= 0)
             {
@@ -587,7 +588,7 @@ namespace AC_Damage_Calculator
             }
             else
             {
-                finalArmor = (enemyArmor - ArmorDebuffValue(comboBoxEnemyImperil)) * WeaponArmorMod();
+                finalArmor = (enemyArmor - ArmorDebuffValue(comboBoxEnemyImperil)) * armorMod;
             }
 
 
