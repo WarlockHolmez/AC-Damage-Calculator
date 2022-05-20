@@ -1365,7 +1365,7 @@ namespace AC_Damage_Calculator
             }
             else if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Missile"])
             {
-                armorRendMod = checkBoxMissileArmorRend.Checked ? Math.Max(0.4, 1 - (Math.Max(0, (float)numericUpDownBaseMissileSkill.Value - 160)) / 360) : 1;
+                armorRendMod = checkBoxMissileArmorRend.Checked ? Math.Max(0.4, 1 - (Math.Max(0, (float)numericUpDownBaseMissileSkill.Value - 144)) / 360) : 1;
                 armorCleavingMod = checkBoxMissileArmorCleaving.Checked ? ArmorCleavingMod(comboBoxMissileHighestSpell) : 1;
             }
 
@@ -1425,12 +1425,12 @@ namespace AC_Damage_Calculator
             }
             else if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Missile"])
             {
-                resistanceRendMod = checkBoxMissileResistanceRend.Checked ? Math.Min(2.5, (float)numericUpDownBaseMissileSkill.Value / 160) : 1;
+                resistanceRendMod = checkBoxMissileResistanceRend.Checked ? Math.Min(2.5, (float)numericUpDownBaseMissileSkill.Value / 144) : 1;
                 resistanceCleavingMod = (float)numericUpDownMissileResistanceCleaving.Value;
             }
             else if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Magic"])
             {
-                resistanceRendMod = checkBoxMagicResistanceRend.Checked ? Math.Min(2.5, (float)numericUpDownBaseMagicSkill.Value / 160) : 1;
+                resistanceRendMod = checkBoxMagicResistanceRend.Checked ? Math.Min(2.5, (float)numericUpDownBaseMagicSkill.Value / 144) : 1;
                 resistanceCleavingMod = (float)numericUpDownMagicResistanceCleaving.Value;
             }
 
@@ -1464,12 +1464,12 @@ namespace AC_Damage_Calculator
             }
             else if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Missile"])
             {
-                criticalStrikeCritChance = checkBoxMissileCriticalStrike.Checked ? Math.Min(0.5, Math.Max(((float)numericUpDownBaseMissileSkill.Value - 100) / 600, 0.1)) : 0.1;
+                criticalStrikeCritChance = checkBoxMissileCriticalStrike.Checked ? Math.Min(0.5, Math.Max(((float)numericUpDownBaseMissileSkill.Value - 60) / 600, 0.1)) : 0.1;
                 bitingStrikeCritChance = (float)numericUpDownMissileBitingStrike.Value;
             }
             else if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Magic"])
             {
-                criticalStrikeCritChance = checkBoxMagicCriticalStrike.Checked ? Math.Min(0.5, Math.Max(((float)numericUpDownBaseMagicSkill.Value - 100) / 600, 0.05)) : 0.05;
+                criticalStrikeCritChance = checkBoxMagicCriticalStrike.Checked ? Math.Min(0.5, Math.Max(((float)numericUpDownBaseMagicSkill.Value - 60) / 600, 0.05)) : 0.05;
                 bitingStrikeCritChance = (float)numericUpDownMagicBitingStrike.Value;
             }
 
@@ -1506,7 +1506,7 @@ namespace AC_Damage_Calculator
             }
             else if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Missile"])
             {
-                cripplingBlowMultiplier = checkBoxMissileCripplingBlow.Checked ? Math.Min(6, ((float)numericUpDownBaseMissileSkill.Value - 40) / 60) : 1;
+                cripplingBlowMultiplier = checkBoxMissileCripplingBlow.Checked ? Math.Min(6, ((float)numericUpDownBaseMissileSkill.Value) / 60) : 1;
                 crushingBlowMultiplier = (float)numericUpDownMissileCrushingBlow.Value;
             }
             else if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Magic"])

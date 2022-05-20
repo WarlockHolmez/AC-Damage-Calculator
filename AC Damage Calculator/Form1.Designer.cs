@@ -6034,11 +6034,11 @@
             this.tabControl_MAIN.Controls.Add(this.tabPage4);
             this.tabControl_MAIN.Controls.Add(this.tabPage5);
             this.tabControl_MAIN.Controls.Add(this.tabPage1);
-            this.tabControl_MAIN.Location = new System.Drawing.Point(0, 28);
+            this.tabControl_MAIN.Location = new System.Drawing.Point(0, 23);
             this.tabControl_MAIN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl_MAIN.Name = "tabControl_MAIN";
             this.tabControl_MAIN.SelectedIndex = 0;
-            this.tabControl_MAIN.Size = new System.Drawing.Size(1330, 781);
+            this.tabControl_MAIN.Size = new System.Drawing.Size(1064, 625);
             this.tabControl_MAIN.TabIndex = 2;
             // 
             // tabPage4
@@ -6048,7 +6048,7 @@
             this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage4.Size = new System.Drawing.Size(1322, 752);
+            this.tabPage4.Size = new System.Drawing.Size(1320, 745);
             this.tabPage4.TabIndex = 0;
             this.tabPage4.Text = "DPS Calculator";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -6067,7 +6067,7 @@
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(1316, 747);
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(1314, 747);
             this.tableLayoutPanel15.TabIndex = 6;
             // 
             // tableLayoutPanel16
@@ -6742,7 +6742,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1348, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1348, 30);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
