@@ -6034,11 +6034,12 @@
             this.tabControl_MAIN.Controls.Add(this.tabPage4);
             this.tabControl_MAIN.Controls.Add(this.tabPage5);
             this.tabControl_MAIN.Controls.Add(this.tabPage1);
-            this.tabControl_MAIN.Location = new System.Drawing.Point(0, 23);
+            this.tabControl_MAIN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl_MAIN.Location = new System.Drawing.Point(0, 30);
             this.tabControl_MAIN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl_MAIN.Name = "tabControl_MAIN";
             this.tabControl_MAIN.SelectedIndex = 0;
-            this.tabControl_MAIN.Size = new System.Drawing.Size(1064, 625);
+            this.tabControl_MAIN.Size = new System.Drawing.Size(1348, 783);
             this.tabControl_MAIN.TabIndex = 2;
             // 
             // tabPage4
@@ -6048,7 +6049,7 @@
             this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage4.Size = new System.Drawing.Size(1320, 745);
+            this.tabPage4.Size = new System.Drawing.Size(1340, 754);
             this.tabPage4.TabIndex = 0;
             this.tabPage4.Text = "DPS Calculator";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -6067,7 +6068,7 @@
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(1314, 747);
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(1334, 747);
             this.tableLayoutPanel15.TabIndex = 6;
             // 
             // tableLayoutPanel16
@@ -6086,7 +6087,7 @@
             this.tableLayoutPanel16.Name = "tableLayoutPanel16";
             this.tableLayoutPanel16.RowCount = 1;
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel16.Size = new System.Drawing.Size(1316, 144);
+            this.tableLayoutPanel16.Size = new System.Drawing.Size(1328, 144);
             this.tableLayoutPanel16.TabIndex = 2;
             // 
             // tableLayoutPanel7
@@ -6106,13 +6107,13 @@
             this.tableLayoutPanel7.Controls.Add(this.label35, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.label36, 2, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(880, 4);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(888, 4);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 3;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(432, 136);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(436, 136);
             this.tableLayoutPanel7.TabIndex = 5;
             this.tableLayoutPanel7.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel7_Paint);
             // 
@@ -6121,10 +6122,10 @@
             this.labelQuickCompareDifferenceFront.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelQuickCompareDifferenceFront.AutoSize = true;
             this.labelQuickCompareDifferenceFront.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQuickCompareDifferenceFront.Location = new System.Drawing.Point(176, 94);
+            this.labelQuickCompareDifferenceFront.Location = new System.Drawing.Point(178, 94);
             this.labelQuickCompareDifferenceFront.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelQuickCompareDifferenceFront.Name = "labelQuickCompareDifferenceFront";
-            this.labelQuickCompareDifferenceFront.Size = new System.Drawing.Size(121, 25);
+            this.labelQuickCompareDifferenceFront.Size = new System.Drawing.Size(122, 25);
             this.labelQuickCompareDifferenceFront.TabIndex = 239;
             this.labelQuickCompareDifferenceFront.Text = "0";
             this.labelQuickCompareDifferenceFront.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6146,10 +6147,10 @@
             this.labelQuickCompareFront.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelQuickCompareFront.AutoSize = true;
             this.labelQuickCompareFront.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQuickCompareFront.Location = new System.Drawing.Point(176, 36);
+            this.labelQuickCompareFront.Location = new System.Drawing.Point(178, 36);
             this.labelQuickCompareFront.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelQuickCompareFront.Name = "labelQuickCompareFront";
-            this.labelQuickCompareFront.Size = new System.Drawing.Size(121, 25);
+            this.labelQuickCompareFront.Size = new System.Drawing.Size(122, 25);
             this.labelQuickCompareFront.TabIndex = 238;
             this.labelQuickCompareFront.Text = "0";
             this.labelQuickCompareFront.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6159,10 +6160,10 @@
             this.labelQuickCompareDifferenceRear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelQuickCompareDifferenceRear.AutoSize = true;
             this.labelQuickCompareDifferenceRear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQuickCompareDifferenceRear.Location = new System.Drawing.Point(305, 94);
+            this.labelQuickCompareDifferenceRear.Location = new System.Drawing.Point(308, 94);
             this.labelQuickCompareDifferenceRear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelQuickCompareDifferenceRear.Name = "labelQuickCompareDifferenceRear";
-            this.labelQuickCompareDifferenceRear.Size = new System.Drawing.Size(123, 25);
+            this.labelQuickCompareDifferenceRear.Size = new System.Drawing.Size(124, 25);
             this.labelQuickCompareDifferenceRear.TabIndex = 270;
             this.labelQuickCompareDifferenceRear.Text = "0";
             this.labelQuickCompareDifferenceRear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6175,7 +6176,7 @@
             this.label34.Location = new System.Drawing.Point(4, 97);
             this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(164, 20);
+            this.label34.Size = new System.Drawing.Size(166, 20);
             this.label34.TabIndex = 245;
             this.label34.Text = "Comparison";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6185,10 +6186,10 @@
             this.labelQuickCompareRear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelQuickCompareRear.AutoSize = true;
             this.labelQuickCompareRear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQuickCompareRear.Location = new System.Drawing.Point(305, 36);
+            this.labelQuickCompareRear.Location = new System.Drawing.Point(308, 36);
             this.labelQuickCompareRear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelQuickCompareRear.Name = "labelQuickCompareRear";
-            this.labelQuickCompareRear.Size = new System.Drawing.Size(123, 25);
+            this.labelQuickCompareRear.Size = new System.Drawing.Size(124, 25);
             this.labelQuickCompareRear.TabIndex = 240;
             this.labelQuickCompareRear.Text = "0";
             this.labelQuickCompareRear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6198,7 +6199,7 @@
             this.buttonQuickCompare1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonQuickCompare1.Location = new System.Drawing.Point(3, 23);
             this.buttonQuickCompare1.Name = "buttonQuickCompare1";
-            this.buttonQuickCompare1.Size = new System.Drawing.Size(166, 52);
+            this.buttonQuickCompare1.Size = new System.Drawing.Size(168, 52);
             this.buttonQuickCompare1.TabIndex = 3;
             this.buttonQuickCompare1.Text = "Set Current DPS";
             this.buttonQuickCompare1.UseVisualStyleBackColor = true;
@@ -6209,7 +6210,7 @@
             this.label35.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(215, 2);
+            this.label35.Location = new System.Drawing.Point(218, 2);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(42, 16);
             this.label35.TabIndex = 267;
@@ -6220,7 +6221,7 @@
             this.label36.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(339, 2);
+            this.label36.Location = new System.Drawing.Point(342, 2);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(55, 16);
             this.label36.TabIndex = 268;
@@ -6243,13 +6244,13 @@
             this.tableLayoutPanel30.Controls.Add(this.labelFinalDpsRear, 2, 2);
             this.tableLayoutPanel30.Controls.Add(this.labelFinalDpsFront, 1, 2);
             this.tableLayoutPanel30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel30.Location = new System.Drawing.Point(442, 4);
+            this.tableLayoutPanel30.Location = new System.Drawing.Point(446, 4);
             this.tableLayoutPanel30.Name = "tableLayoutPanel30";
             this.tableLayoutPanel30.RowCount = 3;
             this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
             this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 67F));
-            this.tableLayoutPanel30.Size = new System.Drawing.Size(431, 136);
+            this.tableLayoutPanel30.Size = new System.Drawing.Size(435, 136);
             this.tableLayoutPanel30.TabIndex = 6;
             // 
             // label63
@@ -6284,7 +6285,7 @@
             this.label30.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(247, 2);
+            this.label30.Location = new System.Drawing.Point(250, 2);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(42, 16);
             this.label30.TabIndex = 266;
@@ -6295,7 +6296,7 @@
             this.label31.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(349, 2);
+            this.label31.Location = new System.Drawing.Point(352, 2);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(55, 16);
             this.label31.TabIndex = 267;
@@ -6318,10 +6319,10 @@
             this.labelFinalAvgHitFront.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelFinalAvgHitFront.AutoSize = true;
             this.labelFinalAvgHitFront.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFinalAvgHitFront.Location = new System.Drawing.Point(219, 31);
+            this.labelFinalAvgHitFront.Location = new System.Drawing.Point(221, 31);
             this.labelFinalAvgHitFront.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelFinalAvgHitFront.Name = "labelFinalAvgHitFront";
-            this.labelFinalAvgHitFront.Size = new System.Drawing.Size(99, 16);
+            this.labelFinalAvgHitFront.Size = new System.Drawing.Size(100, 16);
             this.labelFinalAvgHitFront.TabIndex = 269;
             this.labelFinalAvgHitFront.Text = "0";
             this.labelFinalAvgHitFront.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6332,10 +6333,10 @@
             this.labelFinalAvgHitRear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelFinalAvgHitRear.AutoSize = true;
             this.labelFinalAvgHitRear.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFinalAvgHitRear.Location = new System.Drawing.Point(326, 31);
+            this.labelFinalAvgHitRear.Location = new System.Drawing.Point(329, 31);
             this.labelFinalAvgHitRear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelFinalAvgHitRear.Name = "labelFinalAvgHitRear";
-            this.labelFinalAvgHitRear.Size = new System.Drawing.Size(101, 16);
+            this.labelFinalAvgHitRear.Size = new System.Drawing.Size(102, 16);
             this.labelFinalAvgHitRear.TabIndex = 270;
             this.labelFinalAvgHitRear.Text = "0";
             this.labelFinalAvgHitRear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6347,7 +6348,7 @@
             this.labelFinalDpsRear.AutoSize = true;
             this.labelFinalDpsRear.BackColor = System.Drawing.Color.Transparent;
             this.labelFinalDpsRear.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFinalDpsRear.Location = new System.Drawing.Point(361, 81);
+            this.labelFinalDpsRear.Location = new System.Drawing.Point(364, 81);
             this.labelFinalDpsRear.Margin = new System.Windows.Forms.Padding(0);
             this.labelFinalDpsRear.Name = "labelFinalDpsRear";
             this.labelFinalDpsRear.Size = new System.Drawing.Size(31, 32);
@@ -6362,7 +6363,7 @@
             this.labelFinalDpsFront.AutoSize = true;
             this.labelFinalDpsFront.BackColor = System.Drawing.Color.Transparent;
             this.labelFinalDpsFront.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFinalDpsFront.Location = new System.Drawing.Point(253, 81);
+            this.labelFinalDpsFront.Location = new System.Drawing.Point(255, 81);
             this.labelFinalDpsFront.Margin = new System.Windows.Forms.Padding(0);
             this.labelFinalDpsFront.Name = "labelFinalDpsFront";
             this.labelFinalDpsFront.Size = new System.Drawing.Size(31, 32);
@@ -6384,7 +6385,7 @@
             this.tableLayoutPanel6.RowCount = 2;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(431, 136);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(435, 136);
             this.tableLayoutPanel6.TabIndex = 7;
             // 
             // panel7
@@ -6394,7 +6395,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(3, 111);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(425, 22);
+            this.panel7.Size = new System.Drawing.Size(429, 22);
             this.panel7.TabIndex = 0;
             // 
             // tableLayoutPanel31
@@ -6412,7 +6413,7 @@
             this.tableLayoutPanel31.Name = "tableLayoutPanel31";
             this.tableLayoutPanel31.RowCount = 1;
             this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel31.Size = new System.Drawing.Size(423, 20);
+            this.tableLayoutPanel31.Size = new System.Drawing.Size(427, 20);
             this.tableLayoutPanel31.TabIndex = 0;
             // 
             // labelHitChance
@@ -6420,10 +6421,10 @@
             this.labelHitChance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelHitChance.AutoSize = true;
             this.labelHitChance.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHitChance.Location = new System.Drawing.Point(320, 2);
+            this.labelHitChance.Location = new System.Drawing.Point(323, 2);
             this.labelHitChance.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelHitChance.Name = "labelHitChance";
-            this.labelHitChance.Size = new System.Drawing.Size(99, 16);
+            this.labelHitChance.Size = new System.Drawing.Size(100, 16);
             this.labelHitChance.TabIndex = 265;
             this.labelHitChance.Text = "0";
             this.labelHitChance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6435,9 +6436,9 @@
             this.checkBoxUseHitChance.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBoxUseHitChance.Checked = true;
             this.checkBoxUseHitChance.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxUseHitChance.Location = new System.Drawing.Point(214, 3);
+            this.checkBoxUseHitChance.Location = new System.Drawing.Point(216, 3);
             this.checkBoxUseHitChance.Name = "checkBoxUseHitChance";
-            this.checkBoxUseHitChance.Size = new System.Drawing.Size(99, 14);
+            this.checkBoxUseHitChance.Size = new System.Drawing.Size(100, 14);
             this.checkBoxUseHitChance.TabIndex = 264;
             this.checkBoxUseHitChance.UseVisualStyleBackColor = true;
             this.checkBoxUseHitChance.CheckedChanged += new System.EventHandler(this.CalculateFinalDps);
@@ -6484,7 +6485,7 @@
             this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel32.Size = new System.Drawing.Size(425, 102);
+            this.tableLayoutPanel32.Size = new System.Drawing.Size(429, 102);
             this.tableLayoutPanel32.TabIndex = 1;
             // 
             // labelFinalCritRear
@@ -6492,10 +6493,10 @@
             this.labelFinalCritRear.AutoSize = true;
             this.labelFinalCritRear.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelFinalCritRear.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFinalCritRear.Location = new System.Drawing.Point(320, 82);
+            this.labelFinalCritRear.Location = new System.Drawing.Point(323, 82);
             this.labelFinalCritRear.Margin = new System.Windows.Forms.Padding(2);
             this.labelFinalCritRear.Name = "labelFinalCritRear";
-            this.labelFinalCritRear.Size = new System.Drawing.Size(103, 18);
+            this.labelFinalCritRear.Size = new System.Drawing.Size(104, 18);
             this.labelFinalCritRear.TabIndex = 247;
             this.labelFinalCritRear.Text = "0";
             this.labelFinalCritRear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6505,10 +6506,10 @@
             this.labelFinalCritFront.AutoSize = true;
             this.labelFinalCritFront.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelFinalCritFront.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFinalCritFront.Location = new System.Drawing.Point(214, 82);
+            this.labelFinalCritFront.Location = new System.Drawing.Point(216, 82);
             this.labelFinalCritFront.Margin = new System.Windows.Forms.Padding(2);
             this.labelFinalCritFront.Name = "labelFinalCritFront";
-            this.labelFinalCritFront.Size = new System.Drawing.Size(102, 18);
+            this.labelFinalCritFront.Size = new System.Drawing.Size(103, 18);
             this.labelFinalCritFront.TabIndex = 245;
             this.labelFinalCritFront.Text = "0";
             this.labelFinalCritFront.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6553,10 +6554,10 @@
             this.labelFinalNonCritRear.AutoSize = true;
             this.labelFinalNonCritRear.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelFinalNonCritRear.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFinalNonCritRear.Location = new System.Drawing.Point(320, 62);
+            this.labelFinalNonCritRear.Location = new System.Drawing.Point(323, 62);
             this.labelFinalNonCritRear.Margin = new System.Windows.Forms.Padding(2);
             this.labelFinalNonCritRear.Name = "labelFinalNonCritRear";
-            this.labelFinalNonCritRear.Size = new System.Drawing.Size(103, 16);
+            this.labelFinalNonCritRear.Size = new System.Drawing.Size(104, 16);
             this.labelFinalNonCritRear.TabIndex = 251;
             this.labelFinalNonCritRear.Text = "0";
             this.labelFinalNonCritRear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6567,10 +6568,10 @@
             this.labelFinalNonCritFront.AutoSize = true;
             this.labelFinalNonCritFront.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelFinalNonCritFront.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFinalNonCritFront.Location = new System.Drawing.Point(214, 62);
+            this.labelFinalNonCritFront.Location = new System.Drawing.Point(216, 62);
             this.labelFinalNonCritFront.Margin = new System.Windows.Forms.Padding(2);
             this.labelFinalNonCritFront.Name = "labelFinalNonCritFront";
-            this.labelFinalNonCritFront.Size = new System.Drawing.Size(102, 16);
+            this.labelFinalNonCritFront.Size = new System.Drawing.Size(103, 16);
             this.labelFinalNonCritFront.TabIndex = 249;
             this.labelFinalNonCritFront.Text = "0";
             this.labelFinalNonCritFront.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6580,7 +6581,7 @@
             this.label101.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label101.AutoSize = true;
             this.label101.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label101.Location = new System.Drawing.Point(244, 2);
+            this.label101.Location = new System.Drawing.Point(246, 2);
             this.label101.Name = "label101";
             this.label101.Size = new System.Drawing.Size(42, 16);
             this.label101.TabIndex = 261;
@@ -6603,7 +6604,7 @@
             this.label58.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label58.AutoSize = true;
             this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(344, 2);
+            this.label58.Location = new System.Drawing.Point(347, 2);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(55, 16);
             this.label58.TabIndex = 260;
@@ -6614,10 +6615,10 @@
             this.labelCritFront.AutoSize = true;
             this.labelCritFront.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelCritFront.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCritFront.Location = new System.Drawing.Point(214, 42);
+            this.labelCritFront.Location = new System.Drawing.Point(216, 42);
             this.labelCritFront.Margin = new System.Windows.Forms.Padding(2);
             this.labelCritFront.Name = "labelCritFront";
-            this.labelCritFront.Size = new System.Drawing.Size(102, 16);
+            this.labelCritFront.Size = new System.Drawing.Size(103, 16);
             this.labelCritFront.TabIndex = 253;
             this.labelCritFront.Text = "0";
             this.labelCritFront.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6639,10 +6640,10 @@
             this.labelCritRear.AutoSize = true;
             this.labelCritRear.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelCritRear.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCritRear.Location = new System.Drawing.Point(320, 42);
+            this.labelCritRear.Location = new System.Drawing.Point(323, 42);
             this.labelCritRear.Margin = new System.Windows.Forms.Padding(2);
             this.labelCritRear.Name = "labelCritRear";
-            this.labelCritRear.Size = new System.Drawing.Size(103, 16);
+            this.labelCritRear.Size = new System.Drawing.Size(104, 16);
             this.labelCritRear.TabIndex = 255;
             this.labelCritRear.Text = "0";
             this.labelCritRear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6652,10 +6653,10 @@
             this.labelNonCritFront.AutoSize = true;
             this.labelNonCritFront.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelNonCritFront.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNonCritFront.Location = new System.Drawing.Point(214, 22);
+            this.labelNonCritFront.Location = new System.Drawing.Point(216, 22);
             this.labelNonCritFront.Margin = new System.Windows.Forms.Padding(2);
             this.labelNonCritFront.Name = "labelNonCritFront";
-            this.labelNonCritFront.Size = new System.Drawing.Size(102, 16);
+            this.labelNonCritFront.Size = new System.Drawing.Size(103, 16);
             this.labelNonCritFront.TabIndex = 257;
             this.labelNonCritFront.Text = "0";
             this.labelNonCritFront.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6667,10 +6668,10 @@
             this.labelNonCritRear.AutoSize = true;
             this.labelNonCritRear.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelNonCritRear.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNonCritRear.Location = new System.Drawing.Point(320, 22);
+            this.labelNonCritRear.Location = new System.Drawing.Point(323, 22);
             this.labelNonCritRear.Margin = new System.Windows.Forms.Padding(2);
             this.labelNonCritRear.Name = "labelNonCritRear";
-            this.labelNonCritRear.Size = new System.Drawing.Size(103, 16);
+            this.labelNonCritRear.Size = new System.Drawing.Size(104, 16);
             this.labelNonCritRear.TabIndex = 259;
             this.labelNonCritRear.Text = "0";
             this.labelNonCritRear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -6682,7 +6683,7 @@
             this.tabPage5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage5.Size = new System.Drawing.Size(1322, 752);
+            this.tabPage5.Size = new System.Drawing.Size(1056, 596);
             this.tabPage5.TabIndex = 1;
             this.tabPage5.Text = "Compare";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -6693,7 +6694,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(3, 2);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1316, 748);
+            this.panel10.Size = new System.Drawing.Size(1050, 592);
             this.panel10.TabIndex = 0;
             // 
             // label57
@@ -6711,7 +6712,7 @@
             this.tabPage1.Controls.Add(this.panel2);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(1322, 752);
+            this.tabPage1.Size = new System.Drawing.Size(1056, 596);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "About";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -6722,7 +6723,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1322, 752);
+            this.panel2.Size = new System.Drawing.Size(1056, 596);
             this.panel2.TabIndex = 0;
             // 
             // label37
@@ -6754,7 +6755,7 @@
             this.enemyToolStripMenuItem,
             this.menuItemQuit});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 26);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // characterToolStripMenuItem
