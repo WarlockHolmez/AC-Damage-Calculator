@@ -444,8 +444,8 @@ namespace AC_Damage_Calculator
 
         #endregion
 
-        #region Skill Calculations
-        // ---------- SKILL CALCULATIONS ----------
+        #region Character Calculations
+        // ---------- Character CALCULATIONS ----------
 
         private int FinalMeleeAttackSkill()
         {
@@ -538,136 +538,6 @@ namespace AC_Damage_Calculator
             labelCharacterEffectiveMagicSkill.Text = effectiveMagicSkill.ToString();
 
             return effectiveMagicSkill;
-        }
-        #endregion
-
-        #region Enemy Defense Calculations
-
-        private float FinalEnemyArmorMod()
-        {
-            var finalArmorMod = 1.0f;
-            var enemyArmor = (float)numericUpDownEnemyArmor.Value;
-            var finalArmor = 0.0f;
-            var armorMod = WeaponArmorMod();
-
-            if (enemyArmor - ArmorDebuffValue(comboBoxEnemyImperil) <= 0)
-            {
-                finalArmor = enemyArmor - ArmorDebuffValue(comboBoxEnemyImperil);
-            }
-            else
-            {
-                finalArmor = (enemyArmor - ArmorDebuffValue(comboBoxEnemyImperil)) * armorMod;
-            }
-
-
-            if (finalArmor > 0)
-            {
-                finalArmorMod = (200 / 3 / (finalArmor + 200 / 3));
-            }
-            else if (finalArmor < 0)
-            {
-                finalArmorMod = 1 - finalArmor / (200 / 3);
-            }
-            else
-                finalArmorMod = 1;
-
-            labelEnemyEffectiveArmor.Text = finalArmor.ToString();
-            labelEnemyArmorMod.Text = Math.Round(finalArmorMod, 2).ToString();
-
-            return finalArmorMod;
-        }
-
-        private float FinalEnemyShieldMod()
-        {
-            var shieldArmor = 0.0f;
-            var shieldResist = 1.0f;
-
-            // Get shield armor level
-            if ((float)numericUpDownEnemyShieldAL.Value != 0)
-            {
-                shieldArmor = ((float)numericUpDownEnemyShieldAL.Value - ShieldArmorDebuffValue(comboBoxEnemyBrittlemail));
-            }
-
-            //Get shield resistance level
-            if ((float)numericUpDownEnemyShieldResist.Value != 0)
-            {
-                shieldResist = ((float)numericUpDownEnemyShieldResist.Value - ShieldResistDebuffValue(comboBoxEnemyResistanceLure));
-            }
-
-            var finalShieldLevel = shieldArmor * shieldResist;
-            var finalShieldMod = 1.0f;
-
-            if (finalShieldLevel > 0)
-            {
-                finalShieldMod = (200 / 3 / (finalShieldLevel + 200 / 3));
-            }
-            else if (finalShieldLevel < 0)
-            {
-                finalShieldMod = 1 - finalShieldLevel / (200 / 3);
-            }
-
-            labelEnemyEffectiveShield.Text = finalShieldLevel.ToString();
-            labelEnemyShieldMod.Text = Math.Round(finalShieldMod, 2).ToString();
-
-            return finalShieldMod;
-        }
-
-        private float FinalEnemyResitanceVulnMod()
-        {
-            var finalResistanceVulnMod = Math.Max((float)numericUpDownEnemyResistance.Value * ResistanceVulnDebuffValue(comboBoxEnemyVuln),
-                                              (float)numericUpDownEnemyResistance.Value * WeaponResistanceMod());
-
-            labelEnemyEffectiveResistance.Text = Math.Round(finalResistanceVulnMod, 2).ToString();
-
-            return finalResistanceVulnMod;
-        }
-
-        private int FinalEnemyMeleeDefense()
-        {
-            var debuffAmount = CreatureDebuffValue(comboBoxEnemyVulnerability) + (CreatureDebuffValue(comboBoxEnemyClumsiness) + CreatureDebuffValue(comboBoxEnemySlowness) / 3);
-
-            if (comboBoxEnemyUnbalancingAssault.Text == "-10")
-                debuffAmount += 10;
-            else if (comboBoxEnemyUnbalancingAssault.Text == "-20")
-                debuffAmount += 20;
-
-            var finalDefense = (int)numericUpDownEnemyMeleeDefense.Value - debuffAmount;
-
-            labelEnemyEffectiveMeleeDefense.Text = finalDefense.ToString();
-
-            return finalDefense;
-        }
-
-        private int FinalEnemyMissileDefense()
-        {
-            var debuffAmount = CreatureDebuffValue(comboBoxEnemyDefenselessness) + (CreatureDebuffValue(comboBoxEnemyClumsiness) + CreatureDebuffValue(comboBoxEnemySlowness) / 5);
-
-            if (comboBoxEnemyUnbalancingAssault.Text == "-10")
-                debuffAmount += 10;
-            else if (comboBoxEnemyUnbalancingAssault.Text == "-20")
-                debuffAmount += 20;
-
-            var finalDefense = (int)numericUpDownEnemyMissileDefense.Value - debuffAmount;
-
-            labelEnemyEffectiveMissileDefense.Text = finalDefense.ToString();
-
-            return finalDefense;
-        }
-
-        private int FinalEnemyMagicDefense()
-        {
-            var debuffAmount = CreatureDebuffValue(comboBoxEnemyMagicYield) + (CreatureDebuffValue(comboBoxEnemyBafflement) + CreatureDebuffValue(comboBoxEnemyFeeblemind) / 7);
-
-            if (comboBoxEnemyUnbalancingAssault.Text == "-10")
-                debuffAmount += 10;
-            else if (comboBoxEnemyUnbalancingAssault.Text == "-20")
-                debuffAmount += 20;
-
-            var finalDefense = (int)numericUpDownEnemyMagicDefense.Value - debuffAmount;
-
-            labelEnemyEffectiveMagicDefense.Text = finalDefense.ToString();
-
-            return finalDefense;
         }
 
         private float SneakAttackMod()
@@ -765,7 +635,7 @@ namespace AC_Damage_Calculator
                 amount = 0.15f * scale;
             }
 
-            labelCharacterDeceptionMod.Text = Math.Round(amount*100, 0).ToString() + "%";
+            labelCharacterDeceptionMod.Text = Math.Round(amount * 100, 0).ToString() + "%";
 
             return amount;
         }
@@ -777,128 +647,79 @@ namespace AC_Damage_Calculator
             return amount;
         }
 
-        // Debuff Values
-
-        private int ArmorDebuffValue(ComboBox comboBox)
+        private float AttributeMod()
         {
-            var value = 0;
+            var meleeMod = MeleeMod();
+            var missileMod = MissileMod();
+            var magicMod = MagicMod();
 
-            if (comboBox.Text == "7")
-                value = 225;
-            else if (comboBox.Text == "6")
-                value = 200;
-            else if (comboBox.Text == "5")
-                value = 150;
-            else if (comboBox.Text == "4")
-                value = 100;
-            else if (comboBox.Text == "3")
-                value = 75;
-            else if (comboBox.Text == "2")
-                value = 50;
-            else if (comboBox.Text == "1")
-                value = 20;
+            float activeMod;
+            if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Melee"])
+            {
+                activeMod = meleeMod;
+            }
+            else if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Missile"])
+            {
+                activeMod = missileMod;
+            }
+            else
+            {
+                activeMod = magicMod;
+            }
 
-            return value;
+            return activeMod;
         }
 
-        private int ShieldArmorDebuffValue(ComboBox comboBox)
+        private float MeleeMod()
         {
-            var value = 0;
+            var mod = 1.0f;
 
-            if (comboBox.Text == "7")
-                value = 225;
-            else if (comboBox.Text == "6")
-                value = 200;
-            else if (comboBox.Text == "5")
-                value = 150;
-            else if (comboBox.Text == "4")
-                value = 100;
-            else if (comboBox.Text == "3")
-                value = 75;
-            else if (comboBox.Text == "2")
-                value = 50;
-            else if (comboBox.Text == "1")
-                value = 20;
+            if (checkBoxFinesse.Checked)
+            {
+                mod = 1 + ((int)numericUpDownBuffedCoordination.Value + (checkBoxRareCoord.Checked ? 250 : 0) - 55) * 0.011f;
+            }
+            else
+            {
+                mod = 1 + ((int)numericUpDownBuffedStrength.Value + (checkBoxRareStrength.Checked ? 250 : 0) - 55) * 0.011f;
+            }
 
-            return value;
+            labelCharacterMeleeMod.Text = Math.Round(mod, 1).ToString();
+
+            return mod;
         }
 
-        private float ShieldResistDebuffValue(ComboBox comboBox)
+        private float MissileMod()
         {
-            var value = 0.0f;
+            var mod = 1.0f;
 
-            if (comboBox.Text == "8")
-                value = 2f;
-            else if (comboBox.Text == "7")
-                value = 1.7f;
-            else if (comboBox.Text == "6")
-                value = 1.5f;
-            else if (comboBox.Text == "5")
-                value = 1f;
-            else if (comboBox.Text == "4")
-                value = 0.75f;
-            else if (comboBox.Text == "3")
-                value = 0.5f;
-            else if (comboBox.Text == "2")
-                value = 0.25f;
-            else if (comboBox.Text == "1")
-                value = 0.1f;
+            if (checkBoxThrown.Checked)
+            {
+                mod = 1 + ((int)numericUpDownBuffedStrength.Value + (checkBoxRareStrength.Checked ? 250 : 0) - 55) * 0.008f;
+            }
+            else
+            {
+                mod = 1 + ((int)numericUpDownBuffedCoordination.Value + (checkBoxRareCoord.Checked ? 250 : 0) - 55) * 0.008f;
+            }
 
-            return value;
+            labelCharacterMissileMod.Text = Math.Round(mod, 1).ToString();
+
+            return mod;
         }
 
-        private float ResistanceVulnDebuffValue(ComboBox comboBox)
+        private float MagicMod()
         {
-            var value = 0.0f;
+            float mod = 1 + ((float)(EffectiveMagicSkill() - 350) / 1000) * SpellMinDamage();
+            labelCharacterSpellMod.Text = Math.Round(mod, 1).ToString();
 
-            if (comboBox.Text == "8")
-                value = 3.1f;
-            else if (comboBox.Text == "7")
-                value = 2.85f;
-            else if (comboBox.Text == "6")
-                value = 2.5f;
-            else if (comboBox.Text == "5")
-                value = 2f;
-            else if (comboBox.Text == "4")
-                value = 1.75f;
-            else if (comboBox.Text == "3")
-                value = 1.5f;
-            else if (comboBox.Text == "2")
-                value = 1.25f;
-            else if (comboBox.Text == "1")
-                value = 1.1f;
-
-            return value;
-        }
-
-        private int CreatureDebuffValue(ComboBox comboBox)
-        {
-            var value = 0;
-
-            if (comboBox.Text == "8")
-                value = 40;
-            else if (comboBox.Text == "7")
-                value = 35;
-            else if (comboBox.Text == "6")
-                value = 30;
-            else if (comboBox.Text == "5")
-                value = 25;
-            else if (comboBox.Text == "4")
-                value = 20;
-            else if (comboBox.Text == "3")
-                value = 15;
-            else if (comboBox.Text == "2")
-                value = 10;
-            else if (comboBox.Text == "1")
-                value = 5;
-
-            return value;
+            return mod;
         }
 
         #endregion
 
         #region Weapon Calculations
-        
+
+        // ---------- WEAPON CALCULATIONS ----------
+
         private float PowerBarMod()
         {
             var mod = 1 + ((float)trackBarMeleePowerBar.Value - 50) / 100;
@@ -938,9 +759,9 @@ namespace AC_Damage_Calculator
             }
 
             // Calculate average damage, including spell buffs
-            float buffedMaxDamage; 
+            float buffedMaxDamage;
             float buffedMinDamage;
-            float avgDamage; 
+            float avgDamage;
 
             if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Melee"])
             {
@@ -988,7 +809,7 @@ namespace AC_Damage_Calculator
 
             minDamage = (int)numericUpDownWeaponMinDamage.Value;
             maxDamage = (int)numericUpDownWeaponMaxDamage.Value;
-           
+
             var buffedMaxDamage = maxDamage + BloodDrinkerAmount() + BloodThirstAmount();
             var buffedMinDamage = buffedMaxDamage * (minDamage / maxDamage);
 
@@ -1119,8 +940,8 @@ namespace AC_Damage_Calculator
                 }
             }
 
-            var variance = damage / AmmoMaxDamageBase();   
-            var buffedMaxDamage = AmmoMaxDamageBuffed();                
+            var variance = damage / AmmoMaxDamageBase();
+            var buffedMaxDamage = AmmoMaxDamageBuffed();
 
             var buffedMinDamage = buffedMaxDamage * variance;
 
@@ -1289,7 +1110,7 @@ namespace AC_Damage_Calculator
                 else if (comboBoxMissileBloodThirst.Text == "Legendary")
                     bloodThirst = 10;
             }
-                return bloodThirst;
+            return bloodThirst;
         }
 
         private int SpiritDrinkerAmount()
@@ -1361,7 +1182,7 @@ namespace AC_Damage_Calculator
             {
                 labelEffectiveArmorMod.Text = "--";
             }
-            
+
             return (float)armorMod;
         }
 
@@ -1558,75 +1379,260 @@ namespace AC_Damage_Calculator
             return rating;
         }
 
-        private float AttributeMod()
-        {
-            var meleeMod = MeleeMod();
-            var missileMod = MissileMod();
-            var magicMod = MagicMod();
-
-            float activeMod;
-            if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Melee"])
-            {
-                activeMod = meleeMod;
-            }
-            else if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Missile"])
-            {
-                activeMod = missileMod;
-            }
-            else
-            {
-                activeMod = magicMod;
-            }
-
-            return activeMod;
-        }
-
-        private float MeleeMod()
-        {
-            var mod = 1.0f;
-
-            if (checkBoxFinesse.Checked)
-            {
-                    mod = 1 + ((int)numericUpDownBuffedCoordination.Value + (checkBoxRareCoord.Checked ? 250 : 0) - 55) * 0.011f;
-            }
-            else
-            {
-                    mod = 1 + ((int)numericUpDownBuffedStrength.Value + (checkBoxRareStrength.Checked ? 250 : 0) - 55) * 0.011f;
-            }
-
-            labelCharacterMeleeMod.Text = Math.Round(mod, 1).ToString();
-
-            return mod;
-        }
-
-        private float MissileMod()
-        {
-            var mod = 1.0f;
-
-            if (checkBoxThrown.Checked)
-            {
-                mod = 1 + ((int)numericUpDownBuffedStrength.Value + (checkBoxRareStrength.Checked ? 250 : 0) - 55) * 0.008f;
-            }
-            else
-            {
-                mod = 1 + ((int)numericUpDownBuffedCoordination.Value + (checkBoxRareCoord.Checked ? 250 : 0) - 55) * 0.008f;
-            }
-
-            labelCharacterMissileMod.Text = Math.Round(mod, 1).ToString();
-
-            return mod;
-        }
-
-        private float MagicMod()
-        {
-            float mod = 1 + ((float)(EffectiveMagicSkill() - 350) / 1000) * SpellMinDamage();
-            labelCharacterSpellMod.Text = Math.Round(mod, 1).ToString();
-
-            return mod;
-        }
-
 
         #endregion
+
+        #region Enemy Calculations
+        // ---------- ENEMY CALCULATIONS ----------
+
+        private float FinalEnemyArmorMod()
+        {
+            var finalArmorMod = 1.0f;
+            var enemyArmor = (float)numericUpDownEnemyArmor.Value;
+            var finalArmor = 0.0f;
+            var armorMod = WeaponArmorMod();
+
+            if (enemyArmor - ArmorDebuffValue(comboBoxEnemyImperil) <= 0)
+            {
+                finalArmor = enemyArmor - ArmorDebuffValue(comboBoxEnemyImperil);
+            }
+            else
+            {
+                finalArmor = (enemyArmor - ArmorDebuffValue(comboBoxEnemyImperil)) * armorMod;
+            }
+
+
+            if (finalArmor > 0)
+            {
+                finalArmorMod = (200 / 3 / (finalArmor + 200 / 3));
+            }
+            else if (finalArmor < 0)
+            {
+                finalArmorMod = 1 - finalArmor / (200 / 3);
+            }
+            else
+                finalArmorMod = 1;
+
+            labelEnemyEffectiveArmor.Text = finalArmor.ToString();
+            labelEnemyArmorMod.Text = Math.Round(finalArmorMod, 2).ToString();
+
+            return finalArmorMod;
+        }
+
+        private float FinalEnemyShieldMod()
+        {
+            var shieldArmor = 0.0f;
+            var shieldResist = 1.0f;
+
+            // Get shield armor level
+            if ((float)numericUpDownEnemyShieldAL.Value != 0)
+            {
+                shieldArmor = ((float)numericUpDownEnemyShieldAL.Value - ShieldArmorDebuffValue(comboBoxEnemyBrittlemail));
+            }
+
+            //Get shield resistance level
+            if ((float)numericUpDownEnemyShieldResist.Value != 0)
+            {
+                shieldResist = ((float)numericUpDownEnemyShieldResist.Value - ShieldResistDebuffValue(comboBoxEnemyResistanceLure));
+            }
+
+            var finalShieldLevel = shieldArmor * shieldResist;
+            var finalShieldMod = 1.0f;
+
+            if (finalShieldLevel > 0)
+            {
+                finalShieldMod = (200 / 3 / (finalShieldLevel + 200 / 3));
+            }
+            else if (finalShieldLevel < 0)
+            {
+                finalShieldMod = 1 - finalShieldLevel / (200 / 3);
+            }
+
+            labelEnemyEffectiveShield.Text = finalShieldLevel.ToString();
+            labelEnemyShieldMod.Text = Math.Round(finalShieldMod, 2).ToString();
+
+            return finalShieldMod;
+        }
+
+        private float FinalEnemyResitanceVulnMod()
+        {
+            var finalResistanceVulnMod = Math.Max((float)numericUpDownEnemyResistance.Value * ResistanceVulnDebuffValue(comboBoxEnemyVuln),
+                                              (float)numericUpDownEnemyResistance.Value * WeaponResistanceMod());
+
+            labelEnemyEffectiveResistance.Text = Math.Round(finalResistanceVulnMod, 2).ToString();
+
+            return finalResistanceVulnMod;
+        }
+
+        private int FinalEnemyMeleeDefense()
+        {
+            var debuffAmount = CreatureDebuffValue(comboBoxEnemyVulnerability) + (CreatureDebuffValue(comboBoxEnemyClumsiness) + CreatureDebuffValue(comboBoxEnemySlowness) / 3);
+
+            if (comboBoxEnemyUnbalancingAssault.Text == "-10")
+                debuffAmount += 10;
+            else if (comboBoxEnemyUnbalancingAssault.Text == "-20")
+                debuffAmount += 20;
+
+            var finalDefense = (int)numericUpDownEnemyMeleeDefense.Value - debuffAmount;
+
+            labelEnemyEffectiveMeleeDefense.Text = finalDefense.ToString();
+
+            return finalDefense;
+        }
+
+        private int FinalEnemyMissileDefense()
+        {
+            var debuffAmount = CreatureDebuffValue(comboBoxEnemyDefenselessness) + (CreatureDebuffValue(comboBoxEnemyClumsiness) + CreatureDebuffValue(comboBoxEnemySlowness) / 5);
+
+            if (comboBoxEnemyUnbalancingAssault.Text == "-10")
+                debuffAmount += 10;
+            else if (comboBoxEnemyUnbalancingAssault.Text == "-20")
+                debuffAmount += 20;
+
+            var finalDefense = (int)numericUpDownEnemyMissileDefense.Value - debuffAmount;
+
+            labelEnemyEffectiveMissileDefense.Text = finalDefense.ToString();
+
+            return finalDefense;
+        }
+
+        private int FinalEnemyMagicDefense()
+        {
+            var debuffAmount = CreatureDebuffValue(comboBoxEnemyMagicYield) + (CreatureDebuffValue(comboBoxEnemyBafflement) + CreatureDebuffValue(comboBoxEnemyFeeblemind) / 7);
+
+            if (comboBoxEnemyUnbalancingAssault.Text == "-10")
+                debuffAmount += 10;
+            else if (comboBoxEnemyUnbalancingAssault.Text == "-20")
+                debuffAmount += 20;
+
+            var finalDefense = (int)numericUpDownEnemyMagicDefense.Value - debuffAmount;
+
+            labelEnemyEffectiveMagicDefense.Text = finalDefense.ToString();
+
+            return finalDefense;
+        }
+
+        // Debuff Values
+
+        private int ArmorDebuffValue(ComboBox comboBox)
+        {
+            var value = 0;
+
+            if (comboBox.Text == "7")
+                value = 225;
+            else if (comboBox.Text == "6")
+                value = 200;
+            else if (comboBox.Text == "5")
+                value = 150;
+            else if (comboBox.Text == "4")
+                value = 100;
+            else if (comboBox.Text == "3")
+                value = 75;
+            else if (comboBox.Text == "2")
+                value = 50;
+            else if (comboBox.Text == "1")
+                value = 20;
+
+            return value;
+        }
+
+        private int ShieldArmorDebuffValue(ComboBox comboBox)
+        {
+            var value = 0;
+
+            if (comboBox.Text == "7")
+                value = 225;
+            else if (comboBox.Text == "6")
+                value = 200;
+            else if (comboBox.Text == "5")
+                value = 150;
+            else if (comboBox.Text == "4")
+                value = 100;
+            else if (comboBox.Text == "3")
+                value = 75;
+            else if (comboBox.Text == "2")
+                value = 50;
+            else if (comboBox.Text == "1")
+                value = 20;
+
+            return value;
+        }
+
+        private float ShieldResistDebuffValue(ComboBox comboBox)
+        {
+            var value = 0.0f;
+
+            if (comboBox.Text == "8")
+                value = 2f;
+            else if (comboBox.Text == "7")
+                value = 1.7f;
+            else if (comboBox.Text == "6")
+                value = 1.5f;
+            else if (comboBox.Text == "5")
+                value = 1f;
+            else if (comboBox.Text == "4")
+                value = 0.75f;
+            else if (comboBox.Text == "3")
+                value = 0.5f;
+            else if (comboBox.Text == "2")
+                value = 0.25f;
+            else if (comboBox.Text == "1")
+                value = 0.1f;
+
+            return value;
+        }
+
+        private float ResistanceVulnDebuffValue(ComboBox comboBox)
+        {
+            var value = 0.0f;
+
+            if (comboBox.Text == "8")
+                value = 3.1f;
+            else if (comboBox.Text == "7")
+                value = 2.85f;
+            else if (comboBox.Text == "6")
+                value = 2.5f;
+            else if (comboBox.Text == "5")
+                value = 2f;
+            else if (comboBox.Text == "4")
+                value = 1.75f;
+            else if (comboBox.Text == "3")
+                value = 1.5f;
+            else if (comboBox.Text == "2")
+                value = 1.25f;
+            else if (comboBox.Text == "1")
+                value = 1.1f;
+
+            return value;
+        }
+
+        private int CreatureDebuffValue(ComboBox comboBox)
+        {
+            var value = 0;
+
+            if (comboBox.Text == "8")
+                value = 40;
+            else if (comboBox.Text == "7")
+                value = 35;
+            else if (comboBox.Text == "6")
+                value = 30;
+            else if (comboBox.Text == "5")
+                value = 25;
+            else if (comboBox.Text == "4")
+                value = 20;
+            else if (comboBox.Text == "3")
+                value = 15;
+            else if (comboBox.Text == "2")
+                value = 10;
+            else if (comboBox.Text == "1")
+                value = 5;
+
+            return value;
+        }
+
+        #endregion
+        
+        #region Tool Interactions
 
         private void BtnSetCompare(object sender, EventArgs e)
         {
@@ -1678,7 +1684,7 @@ namespace AC_Damage_Calculator
 
         private void SetAmmoType(object sender, EventArgs e)
         {
-            if(comboBoxMissileAnimation.Text == "Bow")
+            if (comboBoxMissileAnimation.Text == "Bow")
             {
                 comboBoxAmmoType.Items.Clear();
                 comboBoxAmmoType.Items.Add("32-40");
@@ -1703,7 +1709,6 @@ namespace AC_Damage_Calculator
             CalculateFinalDps(sender, e);
         }
 
-        #region Tool Interactions
         private void OnAdjustBaseWeaponSkills(object sender, EventArgs e)
         {
             if(numericUpDownBaseMeleeSkill.Value > numericUpDownBuffedMeleeSkill.Value)
@@ -1913,8 +1918,7 @@ namespace AC_Damage_Calculator
         }
         #endregion
 
-
-
+        #region Save/Load
         private void menuItemSaveCharacter_Click(object sender, EventArgs e)
         {
             if(textBoxCharacterName.Text == "")
@@ -2443,4 +2447,6 @@ namespace AC_Damage_Calculator
             }
         }
     }
+
+    #endregion
 }
