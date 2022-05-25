@@ -181,12 +181,6 @@ namespace AC_Damage_Calculator
 
             var finalAvgHit = finalAvgSneakAttack * DeceptionChance() + finalAvgNonSneakAttack * (1 - DeceptionChance());
 
-            labelNonCritFront.Text = Math.Round(NonCritMinDamage(), 0).ToString() + " - " + Math.Round(NonCritMaxDamage(), 0).ToString();
-            labelCritFront.Text = Math.Round(CritMaxDamage(), 0).ToString();
-
-            labelFinalNonCritFront.Text = Math.Round(OnEnemyNonCritDamage(), 0).ToString() + " - " + Math.Round(NonCritMaxDamage(), 0).ToString();
-            labelFinalCritFront.Text = Math.Round(OnEnemyCritDamage(), 0).ToString();
-
             labelFinalAvgHitFront.Text = Math.Round(finalAvgHit, 0).ToString();
 
             return (int)finalAvgHit;
@@ -198,12 +192,6 @@ namespace AC_Damage_Calculator
         {
             var finalAvgHit = OnEnemySneakAttackNonCritDamage() * (1 - FinalCritChance()) + OnEnemySneakAttackCritDamage() * FinalCritChance();
 
-            labelNonCritRear.Text = Math.Round(SneakAttackNonCritMinDamage(), 0).ToString() + " - " + Math.Round(SneakAttackNonCritMaxDamage(), 0).ToString();
-            labelCritRear.Text = Math.Round(SneakAttackCritMaxDamage(), 0).ToString();
-
-            labelFinalNonCritRear.Text = Math.Round(OnEnemySneakAttackNonCritDamage(), 0).ToString() + " - " + Math.Round(OnEnemySneakAttackNonCritDamage(), 0).ToString();
-            labelFinalCritRear.Text = Math.Round(OnEnemySneakAttackCritDamage(), 0).ToString();
-
             labelFinalAvgHitRear.Text = Math.Round(finalAvgHit, 0).ToString();
 
             return finalAvgHit;
@@ -214,44 +202,58 @@ namespace AC_Damage_Calculator
         private float OnEnemyNonCritDamage()
         {
             float finalAvg;
-
             float finalMin = NonCritMinDamage();
             float finalMax = NonCritMaxDamage();
             var avgDamage = (finalMax + finalMin) / 2;
 
             if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Magic"])
             {
-                finalAvg = Math.Abs(avgDamage * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
+                finalAvg = avgDamage * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod();
+                finalMin *= FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod();
+                finalMax *= FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod();
             }
             else
             {
-                finalAvg = Math.Abs(avgDamage * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
+                finalAvg = avgDamage * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod();
+                finalMin *= FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod();
+                finalMax *= FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod();
             }
+
+            labelNonCritFront.Text = Math.Round(NonCritMinDamage(), 0).ToString() + " - " + Math.Round(NonCritMaxDamage(), 0).ToString();
+            labelFinalNonCritFront.Text = Math.Round(finalMin, 0).ToString() + " - " + Math.Round(finalMax, 0).ToString();
 
             return finalAvg;
         }
 
         private float OnEnemyCritDamage()
         {
-            float finalCrit;
-            float finalCritMaxDamageFront = CritMaxDamage();
+            float finalAvg;
 
             if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Magic"])
             {
-                float critMinDamageFront = (SpellMinDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod()) * (1 + (float)BuffedElementalDamageBonus() / 100) *
+                var min = (SpellMinDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod()) * (1 + (float)BuffedElementalDamageBonus() / 100) *
                                        (float)numericUpDownMagicSlayer.Value * (FinalCritDamageRatingMod());
-                var critMaxDamageFront = (SpellMaxDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod()) * (1 + (float)BuffedElementalDamageBonus() / 100) *
+                var max = (SpellMaxDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod()) * (1 + (float)BuffedElementalDamageBonus() / 100) *
                                        (float)numericUpDownMagicSlayer.Value * (FinalCritDamageRatingMod());
 
-                finalCrit = (AvgDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod()) * (1 + (float)BuffedElementalDamageBonus() / 100) *
-                                       (float)numericUpDownMagicSlayer.Value * (FinalCritDamageRatingMod()) * FinalEnemyResitanceVulnMod();
+                var finalMin = min * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod();
+                var finalMax = max * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod();
+
+                finalAvg = (AvgDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod()) * (1 + (float)BuffedElementalDamageBonus() / 100) *
+                                       (float)numericUpDownMagicSlayer.Value * (FinalCritDamageRatingMod()) * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod();
+
+                labelCritFront.Text = Math.Round(min, 0).ToString() + " - " + Math.Round(max, 0).ToString();
+                labelFinalCritFront.Text = Math.Round(finalMin, 0).ToString() + " - " + Math.Round(finalMax, 0).ToString();
             }
             else
             {
-                finalCrit = Math.Abs(finalCritMaxDamageFront * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
+                finalAvg = CritMaxDamage() * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod();
+
+                labelCritFront.Text = Math.Round(CritMaxDamage(), 0).ToString();
+                labelFinalCritFront.Text = Math.Round(finalAvg, 0).ToString();
             }
 
-            return finalCrit;
+            return finalAvg;
         }
 
         private float OnEnemySneakAttackNonCritDamage()
@@ -264,37 +266,53 @@ namespace AC_Damage_Calculator
             if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Magic"])
             {
                 finalAvg = avgDamage * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod();
+                finalMin *= FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod();
+                finalMax *= FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod();
             }
             else
             {
                 finalAvg = Math.Abs(avgDamage * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
+                finalMin *= FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod();
+                finalMax *= FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod();
             }
 
-            return (int)finalAvg;
+            labelNonCritRear.Text = Math.Round(SneakAttackNonCritMinDamage(), 0).ToString() + " - " + Math.Round(SneakAttackNonCritMaxDamage(), 0).ToString();
+            labelFinalNonCritRear.Text = Math.Round(finalMin, 0).ToString() + " - " + Math.Round(finalMax, 0).ToString();
+
+            return finalAvg;
         }
 
         private float OnEnemySneakAttackCritDamage()
         {
-            float finalCrit;
+            float finalAvg;
 
             float finalCritMaxDamageRear = SneakAttackCritMaxDamage();
 
             if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Magic"])
             {
-                float critMinDamageRear = (SpellMinDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod()) * (1 + (float)BuffedElementalDamageBonus() / 100) *
+                float min = (SpellMinDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod()) * (1 + (float)BuffedElementalDamageBonus() / 100) *
                                        (float)numericUpDownMagicSlayer.Value * (FinalCritDamageRatingMod() + SneakAttackMod() - 1);
-                var critMaxDamageRear = (SpellMaxDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod()) * (1 + (float)BuffedElementalDamageBonus() / 100) *
+                var max = (SpellMaxDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod()) * (1 + (float)BuffedElementalDamageBonus() / 100) *
                                        (float)numericUpDownMagicSlayer.Value * (FinalCritDamageRatingMod() + SneakAttackMod() - 1);
 
-                finalCrit = (AvgDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod()) * (1 + (float)BuffedElementalDamageBonus() / 100) *
-                                       (float)numericUpDownMagicSlayer.Value * (FinalCritDamageRatingMod() + SneakAttackMod() - 1) * FinalEnemyResitanceVulnMod();
+                var finalMin = min * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod();
+                var finalMax = max * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod();
+
+                finalAvg = (AvgDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod()) * (1 + (float)BuffedElementalDamageBonus() / 100) *
+                                       (float)numericUpDownMagicSlayer.Value * (FinalCritDamageRatingMod() + SneakAttackMod() - 1) * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod();
+
+                labelCritRear.Text = Math.Round(min, 0).ToString() + " - " + Math.Round(max, 0).ToString();
+                labelFinalCritRear.Text = Math.Round(finalMin, 0).ToString() + " - " + Math.Round(finalMax, 0).ToString();
             }
             else
             {
-                finalCrit = Math.Abs(finalCritMaxDamageRear * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
+                finalAvg = Math.Abs(finalCritMaxDamageRear * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod() * FinalDamageRatingVoidMod());
+
+                labelCritRear.Text = Math.Round(SneakAttackCritMaxDamage(), 0).ToString();
+                labelFinalCritRear.Text = Math.Round(finalAvg, 0).ToString();
             }
 
-            return (int)finalCrit;
+            return finalAvg;
         }
 
         // -------------------- BEFORE ENEMY  --------------------
@@ -717,6 +735,15 @@ namespace AC_Damage_Calculator
             else if (comboBoxRecklessness.Text == "Spec")
             {
                 amount = 20 * scale;
+            }
+
+            if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Melee"])
+            {
+                amount = trackBarMeleePowerBar.Value >= 10 && trackBarMeleePowerBar.Value <= 90 ? amount : 0;
+            }
+            else if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Missile"])
+            {
+                amount = trackBarMissileAccuracyBar.Value >= 10 && trackBarMissileAccuracyBar.Value <= 90 ? amount : 0;
             }
 
             labelCharacterRecklessnessMod.Text = Math.Round(amount, 1).ToString();
@@ -1722,9 +1749,8 @@ namespace AC_Damage_Calculator
             if(numericUpDownWeaponMinDamage.Value > numericUpDownWeaponMaxDamage.Value)
             {
                 numericUpDownWeaponMaxDamage.Value = numericUpDownWeaponMinDamage.Value;
-
-                CalculateFinalDps(sender, e);
             }
+            CalculateFinalDps(sender, e);
         }
 
         private void OnAdjustMaxWeaponDamage(object sender, EventArgs e)
@@ -1732,9 +1758,8 @@ namespace AC_Damage_Calculator
             if (numericUpDownWeaponMinDamage.Value > numericUpDownWeaponMaxDamage.Value)
             {
                 numericUpDownWeaponMinDamage.Value = numericUpDownWeaponMaxDamage.Value;
-
-                CalculateFinalDps(sender, e);
             }
+            CalculateFinalDps(sender, e);
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
