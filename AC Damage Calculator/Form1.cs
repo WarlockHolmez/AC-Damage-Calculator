@@ -176,7 +176,16 @@ namespace AC_Damage_Calculator
         // Also updates the Final Avg Damage (front) label
         private int FinalAvgHitDamageFront()
         {
-            var finalAvgHit = (FinalCritDamageFront() * FinalCritChance()) + (FinalNonCritDamageFront() * (1 - FinalCritChance()));
+            var finalAvgSneakAttack = OnEnemySneakAttackNonCritDamage() * (1 - FinalCritChance()) + OnEnemySneakAttackCritDamage() * FinalCritChance();
+            var finalAvgNonSneakAttack = OnEnemyNonCritDamage() * (1 - FinalCritChance()) + OnEnemyCritDamage() * FinalCritChance();
+
+            var finalAvgHit = finalAvgSneakAttack * DeceptionChance() + finalAvgNonSneakAttack * (1 - DeceptionChance());
+
+            labelNonCritFront.Text = Math.Round(NonCritMinDamage(), 0).ToString() + " - " + Math.Round(NonCritMaxDamage(), 0).ToString();
+            labelCritFront.Text = Math.Round(CritMaxDamage(), 0).ToString();
+
+            labelFinalNonCritFront.Text = Math.Round(OnEnemyNonCritDamage(), 0).ToString() + " - " + Math.Round(NonCritMaxDamage(), 0).ToString();
+            labelFinalCritFront.Text = Math.Round(OnEnemyCritDamage(), 0).ToString();
 
             labelFinalAvgHitFront.Text = Math.Round(finalAvgHit, 0).ToString();
 
@@ -185,275 +194,216 @@ namespace AC_Damage_Calculator
 
         // Returns the final average damage (rear) per attack, with any Sneak Attack bonuses
         // Also updates the Final Avg Damage (rear) label
-        private int FinalAvgHitDamageRear()
+        private float FinalAvgHitDamageRear()
         {
-            var finalAvgHit = (FinalCritDamageRear() * FinalCritChance()) + (FinalNonCritDamageRear() * (1 - FinalCritChance()));
+            var finalAvgHit = OnEnemySneakAttackNonCritDamage() * (1 - FinalCritChance()) + OnEnemySneakAttackCritDamage() * FinalCritChance();
+
+            labelNonCritRear.Text = Math.Round(SneakAttackNonCritMinDamage(), 0).ToString() + " - " + Math.Round(SneakAttackNonCritMaxDamage(), 0).ToString();
+            labelCritRear.Text = Math.Round(SneakAttackCritMaxDamage(), 0).ToString();
+
+            labelFinalNonCritRear.Text = Math.Round(OnEnemySneakAttackNonCritDamage(), 0).ToString() + " - " + Math.Round(OnEnemySneakAttackNonCritDamage(), 0).ToString();
+            labelFinalCritRear.Text = Math.Round(OnEnemySneakAttackCritDamage(), 0).ToString();
 
             labelFinalAvgHitRear.Text = Math.Round(finalAvgHit, 0).ToString();
 
-            return (int)finalAvgHit;
+            return finalAvgHit;
         }
 
-        // Returns final non-crit damage (front) per attack
-        // Also updates the Final non-Crit Damage (front) label
-        private int FinalNonCritDamageFront()
+        // -------------------- ON ENEMY  --------------------
+
+        private float OnEnemyNonCritDamage()
         {
-            var finalNonCritDamageFront = 0.0f;
-            float finalNonCritMinDamageFront = NonCritMinDamageFront();
-            float finalNonCritMaxDamageFront = NonCritMaxDamageFront();
-            var avgDamage = (finalNonCritMaxDamageFront + finalNonCritMinDamageFront) / 2;
+            float finalAvg;
+
+            float finalMin = NonCritMinDamage();
+            float finalMax = NonCritMaxDamage();
+            var avgDamage = (finalMax + finalMin) / 2;
 
             if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Magic"])
             {
-                finalNonCritDamageFront = Math.Abs(avgDamage * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
-                finalNonCritMinDamageFront = Math.Abs(finalNonCritMinDamageFront * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
-                finalNonCritMaxDamageFront = Math.Abs(finalNonCritMaxDamageFront * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
-
-                labelFinalNonCritFront.Text = Math.Round(finalNonCritMinDamageFront, 0).ToString() + " - " + Math.Round((float)finalNonCritMaxDamageFront, 0).ToString();
-                labelNonCritFront.Text = Math.Round((float)NonCritMinDamageFront(), 0).ToString() + " - " + Math.Round((float)NonCritMaxDamageFront(), 0).ToString();
-
+                finalAvg = Math.Abs(avgDamage * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
             }
             else
             {
-                //finalNonCritDamageFront = Math.Abs(NonCritDamageFront() * FinalEnemyArmorMod());
-                finalNonCritDamageFront = Math.Abs(avgDamage * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
-                finalNonCritMinDamageFront = Math.Abs(finalNonCritMinDamageFront * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
-                finalNonCritMaxDamageFront = Math.Abs(finalNonCritMaxDamageFront * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod()) * FinalDamageRatingVoidMod();
-
-                labelFinalNonCritFront.Text = Math.Round(finalNonCritMinDamageFront, 0).ToString() + " - " + Math.Round(finalNonCritMaxDamageFront, 0).ToString();// + "  (" + Math.Round(finalNonCritDamageFront, 0).ToString() + ")";
-                labelNonCritFront.Text = Math.Round((float)NonCritMinDamageFront(), 0).ToString() + " - " + Math.Round((float)NonCritMaxDamageFront(), 0).ToString();
+                finalAvg = Math.Abs(avgDamage * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
             }
 
-            return (int)finalNonCritDamageFront;
+            return finalAvg;
         }
 
-        // Returns final non-crit damage (rear) per attack
-        // Also updates the Final non-Crit Damage (rear) label
-        private int FinalNonCritDamageRear()
+        private float OnEnemyCritDamage()
         {
-            var finalNonCritDamageRear = 0.0f;
-            float finalNonCritMinDamageRear = NonCritMinDamageRear();
-            float finalNonCritMaxDamageRear = NonCritMaxDamageRear();
-            var avgDamage = (finalNonCritMinDamageRear + finalNonCritMaxDamageRear) / 2;
-
-            if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Magic"])
-            {
-                finalNonCritDamageRear = avgDamage * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod();
-                finalNonCritMinDamageRear = Math.Abs(finalNonCritMinDamageRear * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
-                finalNonCritMaxDamageRear = Math.Abs(finalNonCritMaxDamageRear * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
-
-                labelFinalNonCritRear.Text = Math.Round(finalNonCritMinDamageRear, 0).ToString() + " - " + Math.Round((float)finalNonCritMaxDamageRear, 0).ToString();
-                labelNonCritRear.Text = Math.Round((float)NonCritMinDamageRear(), 0).ToString() + " - " + Math.Round((float)NonCritMaxDamageRear(), 0).ToString();
-            }
-            else
-            {
-                finalNonCritDamageRear = Math.Abs(avgDamage * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
-                finalNonCritMinDamageRear = Math.Abs(finalNonCritMinDamageRear * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
-                finalNonCritMaxDamageRear = Math.Abs(finalNonCritMaxDamageRear * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
-
-                labelFinalNonCritRear.Text = Math.Round(finalNonCritMinDamageRear, 0).ToString() + " - " + Math.Round(finalNonCritMaxDamageRear, 0).ToString();// + "  (" + Math.Round(finalNonCritDamageFront, 0).ToString() + ")";
-                labelNonCritRear.Text = Math.Round((float)NonCritMinDamageRear(), 0).ToString() + " - " + Math.Round((float)NonCritMaxDamageRear(), 0).ToString();
-            }
-            
-            return (int)finalNonCritDamageRear;
-        }
-
-        // Returns final crit damage (front) per attack
-        // Also updates the Final Crit Damage (front) label
-        private int FinalCritDamageFront()
-        {
-            var finalCritDamageFront = 0.0f;
-            float finalCritMaxDamageFront = CritMaxDamageFront();
+            float finalCrit;
+            float finalCritMaxDamageFront = CritMaxDamage();
 
             if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Magic"])
             {
                 float critMinDamageFront = (SpellMinDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod()) * (1 + (float)BuffedElementalDamageBonus() / 100) *
-                                       (float)numericUpDownMagicSlayer.Value * (FinalCritDamageRatingMod() + DeceptionMod() - 1);
-                var critMaxDamageFront = (SpellMaxDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod())  * (1 + (float)BuffedElementalDamageBonus() / 100) *
-                                       (float)numericUpDownMagicSlayer.Value * (FinalCritDamageRatingMod() + DeceptionMod() - 1);
+                                       (float)numericUpDownMagicSlayer.Value * (FinalCritDamageRatingMod());
+                var critMaxDamageFront = (SpellMaxDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod()) * (1 + (float)BuffedElementalDamageBonus() / 100) *
+                                       (float)numericUpDownMagicSlayer.Value * (FinalCritDamageRatingMod());
 
-                finalCritDamageFront = (AvgDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod())  * (1 + (float)BuffedElementalDamageBonus() / 100) *
-                                       (float)numericUpDownMagicSlayer.Value * (FinalCritDamageRatingMod() + DeceptionMod() - 1) * FinalEnemyResitanceVulnMod();
-
-                var finalCritMinDamageFront = Math.Abs(critMinDamageFront * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
-                finalCritMaxDamageFront = Math.Abs(critMaxDamageFront * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
-
-                labelFinalCritFront.Text = Math.Round(finalCritMinDamageFront, 0).ToString() + " - " + Math.Round(finalCritMaxDamageFront, 0).ToString();
-                labelCritFront.Text = Math.Round(critMinDamageFront, 0).ToString() + " - " + Math.Round(critMaxDamageFront, 0).ToString();
+                finalCrit = (AvgDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod()) * (1 + (float)BuffedElementalDamageBonus() / 100) *
+                                       (float)numericUpDownMagicSlayer.Value * (FinalCritDamageRatingMod()) * FinalEnemyResitanceVulnMod();
             }
             else
             {
-                finalCritDamageFront = Math.Abs(finalCritMaxDamageFront * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
-
-                labelFinalCritFront.Text = Math.Round(finalCritDamageFront, 0).ToString();
-                labelCritFront.Text = Math.Round((float)CritMaxDamageFront(), 0).ToString();
+                finalCrit = Math.Abs(finalCritMaxDamageFront * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
             }
 
-            
-
-            return (int)finalCritDamageFront;
+            return finalCrit;
         }
 
-        // Returns final crit damage (rear) per attack
-        // Also updates the Final Crit Damage (rear) label
-        private int FinalCritDamageRear()
+        private float OnEnemySneakAttackNonCritDamage()
         {
-            var finalCritDamageRear = 0.0f;
-
-            float finalCritMaxDamageRear = CritMaxDamageRear();
+            float finalAvg;
+            float finalMin = SneakAttackNonCritMinDamage();
+            float finalMax = SneakAttackNonCritMaxDamage();
+            var avgDamage = (finalMin + finalMax) / 2;
 
             if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Magic"])
             {
-                float critMinDamageRear = (SpellMinDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod())  * (1 + (float)BuffedElementalDamageBonus() / 100) *
+                finalAvg = avgDamage * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod();
+            }
+            else
+            {
+                finalAvg = Math.Abs(avgDamage * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
+            }
+
+            return (int)finalAvg;
+        }
+
+        private float OnEnemySneakAttackCritDamage()
+        {
+            float finalCrit;
+
+            float finalCritMaxDamageRear = SneakAttackCritMaxDamage();
+
+            if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Magic"])
+            {
+                float critMinDamageRear = (SpellMinDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod()) * (1 + (float)BuffedElementalDamageBonus() / 100) *
                                        (float)numericUpDownMagicSlayer.Value * (FinalCritDamageRatingMod() + SneakAttackMod() - 1);
-                var critMaxDamageRear = (SpellMaxDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod())  * (1 + (float)BuffedElementalDamageBonus() / 100) *
+                var critMaxDamageRear = (SpellMaxDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod()) * (1 + (float)BuffedElementalDamageBonus() / 100) *
                                        (float)numericUpDownMagicSlayer.Value * (FinalCritDamageRatingMod() + SneakAttackMod() - 1);
 
-                finalCritDamageRear = (AvgDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod())  * (1 + (float)BuffedElementalDamageBonus() / 100) *
+                finalCrit = (AvgDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod()) * (1 + (float)BuffedElementalDamageBonus() / 100) *
                                        (float)numericUpDownMagicSlayer.Value * (FinalCritDamageRatingMod() + SneakAttackMod() - 1) * FinalEnemyResitanceVulnMod();
-
-                var finalCritMinDamageRear = Math.Abs(critMinDamageRear * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
-                finalCritMaxDamageRear = Math.Abs(critMaxDamageRear * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
-
-                labelFinalCritRear.Text = Math.Round(finalCritMinDamageRear, 0).ToString() + " - " + Math.Round(finalCritMaxDamageRear, 0).ToString();
-                labelCritRear.Text = Math.Round(critMinDamageRear, 0).ToString() + " - " + Math.Round(critMaxDamageRear, 0).ToString();
             }
             else
             {
-                finalCritDamageRear = Math.Abs(finalCritMaxDamageRear * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
-
-                labelFinalCritRear.Text = Math.Round(finalCritDamageRear, 0).ToString();
-                labelCritRear.Text = Math.Round((float)CritMaxDamageRear(), 0).ToString();
+                finalCrit = Math.Abs(finalCritMaxDamageRear * FinalEnemyArmorMod() * FinalEnemyShieldMod() * FinalEnemyResitanceVulnMod() * FinalDamageRatingVoidMod());
             }
 
-            return (int)finalCritDamageRear;
+            return (int)finalCrit;
         }
 
-        // -------------------- BEFORE ARMOR --------------------
+        // -------------------- BEFORE ENEMY  --------------------
 
-        // NON-CRIT HIT FRONT
-        private int NonCritMaxDamageFront()
+        // NON-CRIT HIT
+        private float NonCritMaxDamage()
         {
-            var nonCritDamageFront = 0.0f;
+            float damage;
 
             if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Melee"])
             {
-                var recklessnessMod = (int)trackBarMeleePowerBar.Value >= 10 && (int)trackBarMeleePowerBar.Value <= 90 ? RecklessnessMod() : 1;
-
-                nonCritDamageFront = MaxDamage() * PowerBarMod() * (float)numericUpDownMeleeSlayer.Value * (FinalDamageRatingMod() + DeceptionMod() + recklessnessMod - 2) * AttributeMod();
+                damage = MaxDamage() * PowerBarMod() * (float)numericUpDownMeleeSlayer.Value * (FinalDamageRatingMod() + RecklessnessMod() - 1) * AttributeMod();
             }
             else if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Missile"])
             {
-                var recklessnessMod = (int)trackBarMissileAccuracyBar.Value >= 10 && (int)trackBarMissileAccuracyBar.Value <= 90 ? RecklessnessMod() : 1;
-
-                nonCritDamageFront = AmmoMaxDamageBuffed() * (float)numericUpDownMissileSlayer.Value * (FinalDamageRatingMod() + DeceptionMod() + recklessnessMod - 2) * AttributeMod();
+                damage = AmmoMaxDamageBuffed() * (float)numericUpDownMissileSlayer.Value * (FinalDamageRatingMod() + RecklessnessMod() - 1) * AttributeMod();
             }
             else
             {
-                nonCritDamageFront = (SpellMaxDamage() + AttributeMod()) * (float)numericUpDownMagicSlayer.Value * (1 + (float)BuffedElementalDamageBonus() / 100) * (FinalDamageRatingMod() + DeceptionMod() - 1);
+                damage = (SpellMaxDamage() + AttributeMod()) * (float)numericUpDownMagicSlayer.Value * (1 + (float)BuffedElementalDamageBonus() / 100) * FinalDamageRatingMod();
             }
 
-            return (int)nonCritDamageFront;
+            return damage;
         }
-
-        private int NonCritMinDamageFront()
+        private float NonCritMinDamage()
         {
-            var nonCritDamageFront = 0.0f;
+            float damage;
 
             if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Melee"])
             {
-                var recklessnessMod = (int)trackBarMeleePowerBar.Value >= 10 && (int)trackBarMeleePowerBar.Value <= 90 ? RecklessnessMod() : 1;
-
-                nonCritDamageFront = MinDamage() * PowerBarMod() * (float)numericUpDownMeleeSlayer.Value * (FinalDamageRatingMod() + DeceptionMod() + recklessnessMod - 2) * AttributeMod();
+                damage = MinDamage() * PowerBarMod() * (float)numericUpDownMeleeSlayer.Value * (FinalDamageRatingMod() + RecklessnessMod() - 1) * AttributeMod();
             }
             else if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Missile"])
             {
-                var recklessnessMod = (int)trackBarMissileAccuracyBar.Value >= 10 && (int)trackBarMissileAccuracyBar.Value <= 90 ? RecklessnessMod() : 1;
-
-                nonCritDamageFront = AmmoMinDamage() * (float)numericUpDownMissileSlayer.Value * (FinalDamageRatingMod() + DeceptionMod() + recklessnessMod - 2) * AttributeMod() * WeaponResistanceMod();
+                damage = AmmoMinDamage() * (float)numericUpDownMissileSlayer.Value * (FinalDamageRatingMod() + RecklessnessMod() - 1) * AttributeMod() * WeaponResistanceMod();
             }
             else
             {
-                nonCritDamageFront = (SpellMinDamage() + AttributeMod()) * (float)numericUpDownMagicSlayer.Value * (1 + (float)BuffedElementalDamageBonus() / 100) * (FinalDamageRatingMod() + DeceptionMod() - 1);
+                damage = (SpellMinDamage() + AttributeMod()) * (float)numericUpDownMagicSlayer.Value * (1 + (float)BuffedElementalDamageBonus() / 100) * FinalDamageRatingMod();
             }
 
-            return (int)nonCritDamageFront;
+            return damage;
         }
 
-        // NON-CRIT HIT REAR
-        private int NonCritMaxDamageRear()
+        // SNEAK ATTACK NON-CRIT HIT 
+        private float SneakAttackNonCritMaxDamage()
         {
-            var nonCritDamageRear = 0.0f;
+            float damage;
 
             if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Melee"])
             {
-                var recklessnessMod = (int)trackBarMeleePowerBar.Value >= 10 && (int)trackBarMeleePowerBar.Value <= 90 ? RecklessnessMod() : 1;
-
-                nonCritDamageRear = MaxDamage() * PowerBarMod() * (float)numericUpDownMeleeSlayer.Value * (FinalDamageRatingMod() + SneakAttackMod() + recklessnessMod - 2) * AttributeMod();
+                damage = MaxDamage() * PowerBarMod() * (float)numericUpDownMeleeSlayer.Value * (FinalDamageRatingMod() + SneakAttackMod() + RecklessnessMod() - 2) * AttributeMod();
             }
             else if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Missile"])
             {
-                var recklessnessMod = (int)trackBarMissileAccuracyBar.Value >= 10 && (int)trackBarMissileAccuracyBar.Value <= 90 ? RecklessnessMod() : 1;
-
-                nonCritDamageRear = AmmoMaxDamageBuffed() * (float)numericUpDownMissileSlayer.Value * (FinalDamageRatingMod() + SneakAttackMod() + recklessnessMod - 2) * AttributeMod();
+                damage = AmmoMaxDamageBuffed() * (float)numericUpDownMissileSlayer.Value * (FinalDamageRatingMod() + SneakAttackMod() + RecklessnessMod() - 2) * AttributeMod();
             }
             else
             {
-                nonCritDamageRear = (SpellMaxDamage() + AttributeMod()) * (float)numericUpDownMagicSlayer.Value * (1 + (float)BuffedElementalDamageBonus() / 100) * (FinalDamageRatingMod() + SneakAttackMod() - 1);
-                //Console.WriteLine(nonCritDamageRear);
+                damage = (SpellMaxDamage() + AttributeMod()) * (float)numericUpDownMagicSlayer.Value * (1 + (float)BuffedElementalDamageBonus() / 100) * (FinalDamageRatingMod() + SneakAttackMod() - 1);
             }
 
-            return (int)nonCritDamageRear;
+            return damage;
         }
 
-        private int NonCritMinDamageRear()
+        private float SneakAttackNonCritMinDamage()
         {
             var nonCritDamageRear = 0.0f;
 
             if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Melee"])
             {
-                var recklessnessMod = (int)trackBarMeleePowerBar.Value >= 10 && (int)trackBarMeleePowerBar.Value <= 90 ? RecklessnessMod() : 1;
-
-                nonCritDamageRear = MinDamage() * PowerBarMod() * (float)numericUpDownMeleeSlayer.Value * (FinalDamageRatingMod() + SneakAttackMod() + recklessnessMod - 2) * AttributeMod();
+                nonCritDamageRear = MinDamage() * PowerBarMod() * (float)numericUpDownMeleeSlayer.Value * (FinalDamageRatingMod() + SneakAttackMod() + RecklessnessMod() - 2) * AttributeMod();
             }
             else if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Missile"])
             {
-                var recklessnessMod = (int)trackBarMissileAccuracyBar.Value >= 10 && (int)trackBarMissileAccuracyBar.Value <= 90 ? RecklessnessMod() : 1;
-
-                nonCritDamageRear = AmmoMinDamage() * (float)numericUpDownMissileSlayer.Value * (FinalDamageRatingMod() + SneakAttackMod() + recklessnessMod - 2) * AttributeMod();
+                nonCritDamageRear = AmmoMinDamage() * (float)numericUpDownMissileSlayer.Value * (FinalDamageRatingMod() + SneakAttackMod() + RecklessnessMod() - 2) * AttributeMod();
             }
             else
             {
                 nonCritDamageRear = (SpellMinDamage() + AttributeMod()) * (float)numericUpDownMagicSlayer.Value * (1 + (float)BuffedElementalDamageBonus() / 100) * (FinalDamageRatingMod() + SneakAttackMod() - 1);
             }
 
-            return (int)nonCritDamageRear;
+            return nonCritDamageRear;
         }
 
         // CRIT HIT FRONT
-        private int CritMaxDamageFront()
+        private float CritMaxDamage()
         {
             var critDamageFront = 0.0f;
 
             if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Melee"])
             {
-                critDamageFront = MaxDamage() * PowerBarMod() * (float)numericUpDownMeleeSlayer.Value * (FinalCritDamageRatingMod() + DeceptionMod() - 1) * AttributeMod() * (FinalCritMultiplier() + 1);
+                critDamageFront = MaxDamage() * PowerBarMod() * (float)numericUpDownMeleeSlayer.Value * (FinalCritDamageRatingMod() * AttributeMod() * (FinalCritMultiplier() + 1));
             }
             else if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Missile"])
             {
-                critDamageFront = AmmoMaxDamageBuffed() * (float)numericUpDownMissileSlayer.Value * (FinalDamageRatingMod() + DeceptionMod() - 1) * AttributeMod() * (FinalCritMultiplier() + 1);
+                critDamageFront = AmmoMaxDamageBuffed() * (float)numericUpDownMissileSlayer.Value * FinalDamageRatingMod() * AttributeMod() * (FinalCritMultiplier() + 1);
             }
             else
             {
                 critDamageFront = (AvgDamage() + (SpellMaxDamage() * 0.5f * FinalCritMultiplier()) + AttributeMod()) * (1 + (float)BuffedElementalDamageBonus() / 100) *
-                                       (float)numericUpDownMagicSlayer.Value * (FinalCritDamageRatingMod() + DeceptionMod() - 1);
+                                       (float)numericUpDownMagicSlayer.Value * FinalCritDamageRatingMod();
             }
 
-            return (int)critDamageFront;
+            return critDamageFront;
         }
 
-        // CRIT HIT REAR
-        private int CritMaxDamageRear()
+        // SNEAK ATTACK CRIT HIT REAR
+        private float SneakAttackCritMaxDamage()
         {
             var critDamageRear = 0.0f;
             
@@ -471,7 +421,7 @@ namespace AC_Damage_Calculator
                                        (float)numericUpDownMagicSlayer.Value * (FinalCritDamageRatingMod() + SneakAttackMod() - 1);
             }
 
-            return (int)critDamageRear;
+            return critDamageRear;
         }
 
         #endregion
