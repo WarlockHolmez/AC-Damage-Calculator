@@ -2899,6 +2899,7 @@
             this.labelEffectiveAttackMod.Size = new System.Drawing.Size(13, 13);
             this.labelEffectiveAttackMod.TabIndex = 246;
             this.labelEffectiveAttackMod.Text = "0";
+            this.labelEffectiveAttackMod.Click += new System.EventHandler(this.labelEffectiveAttackMod_Click);
             // 
             // label124
             // 

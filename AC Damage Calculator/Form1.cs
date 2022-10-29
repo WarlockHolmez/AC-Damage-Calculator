@@ -460,6 +460,8 @@ namespace AC_Damage_Calculator
         {
             var effectiveMeleeMod = (float)numericUpDownWeaponAttackMod.Value / 100 + HeartSeekerAmount() + HeartThirstAmount() + 1;
 
+            labelEffectiveAttackMod.Text = Math.Round(effectiveMeleeMod, 2).ToString();
+
             return effectiveMeleeMod;
         }
 
@@ -991,21 +993,21 @@ namespace AC_Damage_Calculator
         {
             var amount = 0.0f;
 
-            if (comboBoxMeleeHeartSeeker.Text == "Level 8")
+            if (comboBoxMeleeHeartSeeker.Text == "8")
                 amount = 20.0f;
-            else if (comboBoxMeleeHeartSeeker.Text == "Level 7")
+            else if (comboBoxMeleeHeartSeeker.Text == "7")
                 amount = 17.0f;
-            else if (comboBoxMeleeHeartSeeker.Text == "Level 6")
+            else if (comboBoxMeleeHeartSeeker.Text == "6")
                 amount = 15f;
-            else if (comboBoxMeleeHeartSeeker.Text == "Level 5")
+            else if (comboBoxMeleeHeartSeeker.Text == "5")
                 amount = 12.5f;
-            else if (comboBoxMeleeHeartSeeker.Text == "Level 4")
+            else if (comboBoxMeleeHeartSeeker.Text == "4")
                 amount = 10.0f;
-            else if (comboBoxMeleeHeartSeeker.Text == "Level 3")
+            else if (comboBoxMeleeHeartSeeker.Text == "3")
                 amount = 7.5f;
-            else if (comboBoxMeleeHeartSeeker.Text == "Level 2")
+            else if (comboBoxMeleeHeartSeeker.Text == "2")
                 amount = 5.0f;
-            else if (comboBoxMeleeHeartSeeker.Text == "Level 1")
+            else if (comboBoxMeleeHeartSeeker.Text == "1")
                 amount = 2.5f;
 
             return amount / 100;
@@ -2445,6 +2447,11 @@ namespace AC_Damage_Calculator
                 // Console app
                 Environment.Exit(1);
             }
+        }
+
+        private void labelEffectiveAttackMod_Click(object sender, EventArgs e)
+        {
+
         }
     }
 
