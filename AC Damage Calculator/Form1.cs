@@ -347,6 +347,10 @@ namespace AC_Damage_Calculator
             }
             else if (tabControlWeaponType.SelectedTab == tabControlWeaponType.TabPages["Missile"])
             {
+                var recklessnessMod = (int)trackBarMissileAccuracyBar.Value >= 10 && (int)trackBarMissileAccuracyBar.Value <= 90 ? RecklessnessMod() : 1;
+
+                nonCritDamageFront = AmmoMinDamage() * (float)numericUpDownMissileSlayer.Value * (FinalDamageRatingMod() + DeceptionMod() + recklessnessMod - 2) * AttributeMod();
+
                 damage = AmmoMinDamage() * (float)numericUpDownMissileSlayer.Value * (FinalDamageRatingMod() + RecklessnessMod() - 1) * AttributeMod() * WeaponResistanceMod();
             }
             else
