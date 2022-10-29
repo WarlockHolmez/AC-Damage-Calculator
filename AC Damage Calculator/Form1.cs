@@ -370,7 +370,7 @@ namespace AC_Damage_Calculator
             {
                 var recklessnessMod = (int)trackBarMissileAccuracyBar.Value >= 10 && (int)trackBarMissileAccuracyBar.Value <= 90 ? RecklessnessMod() : 1;
 
-                nonCritDamageFront = AmmoMinDamage() * (float)numericUpDownMissileSlayer.Value * (FinalDamageRatingMod() + DeceptionMod() + recklessnessMod - 2) * AttributeMod() * WeaponResistanceMod();
+                nonCritDamageFront = AmmoMinDamage() * (float)numericUpDownMissileSlayer.Value * (FinalDamageRatingMod() + DeceptionMod() + recklessnessMod - 2) * AttributeMod();
             }
             else
             {
