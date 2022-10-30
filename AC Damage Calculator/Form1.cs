@@ -48,9 +48,9 @@ namespace AC_Damage_Calculator
             var atlatl = 3.089f;
 
             // Cast Anim casts per second
-            var castNormal = 0.3f;
-            var castWand1 = 0.48f;
-            var castWand2 = 1.0f;
+            var castNormal = 0.285f;
+            var castWand1 = 0.459f;
+            var castWand2 = 0.625f;
 
             // Calculate attacks per second, based on quickness and weapon speed
             decimal weaponSpeed = 0;
@@ -125,11 +125,11 @@ namespace AC_Damage_Calculator
                 {
                     finalAttackSpeed = castNormal;
                 }
-                else if (comboBoxMagicAnimation.SelectedItem.ToString() == "Normal")
+                else if (comboBoxMagicAnimation.SelectedItem.ToString() == "Wand (overhead)")
                 {
                     finalAttackSpeed = castWand1;
                 }
-                else
+                else if (comboBoxMagicAnimation.SelectedItem.ToString() == "Wand (side)")
                 {
                     finalAttackSpeed = castWand2;
                 }

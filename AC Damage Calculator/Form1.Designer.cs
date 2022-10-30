@@ -2394,7 +2394,7 @@
             this.comboBoxMagicAnimation.Items.AddRange(new object[] {
             "Normal",
             "Wand (overhead)",
-            "Wand (tilt)"});
+            "Wand (side)"});
             this.comboBoxMagicAnimation.Location = new System.Drawing.Point(83, 2);
             this.comboBoxMagicAnimation.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxMagicAnimation.Name = "comboBoxMagicAnimation";
