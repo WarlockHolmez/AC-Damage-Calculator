@@ -572,7 +572,7 @@
             this.tabControlWeaponType.Controls.Add(this.Missile);
             this.tabControlWeaponType.Controls.Add(this.Magic);
             this.tabControlWeaponType.Location = new System.Drawing.Point(0, 0);
-            this.tabControlWeaponType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControlWeaponType.Margin = new System.Windows.Forms.Padding(2);
             this.tabControlWeaponType.Name = "tabControlWeaponType";
             this.tabControlWeaponType.SelectedIndex = 0;
             this.tabControlWeaponType.Size = new System.Drawing.Size(314, 297);
@@ -586,7 +586,7 @@
             this.Melee.Location = new System.Drawing.Point(4, 22);
             this.Melee.Margin = new System.Windows.Forms.Padding(0);
             this.Melee.Name = "Melee";
-            this.Melee.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Melee.Padding = new System.Windows.Forms.Padding(2);
             this.Melee.Size = new System.Drawing.Size(306, 271);
             this.Melee.TabIndex = 0;
             this.Melee.Text = "Melee";
@@ -602,7 +602,7 @@
             this.tableLayoutPanel17.Controls.Add(this.panelMelee2, 0, 1);
             this.tableLayoutPanel17.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel17.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel17.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel17.Name = "tableLayoutPanel17";
             this.tableLayoutPanel17.RowCount = 3;
             this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 120F));
@@ -647,7 +647,7 @@
             this.trackBarMeleePowerBar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.trackBarMeleePowerBar.LargeChange = 20;
             this.trackBarMeleePowerBar.Location = new System.Drawing.Point(3, 15);
-            this.trackBarMeleePowerBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.trackBarMeleePowerBar.Margin = new System.Windows.Forms.Padding(2);
             this.trackBarMeleePowerBar.Maximum = 100;
             this.trackBarMeleePowerBar.Name = "trackBarMeleePowerBar";
             this.trackBarMeleePowerBar.Size = new System.Drawing.Size(290, 41);
@@ -664,7 +664,7 @@
             this.panelMelee1.Controls.Add(this.groupBox14);
             this.panelMelee1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMelee1.Location = new System.Drawing.Point(2, 2);
-            this.panelMelee1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelMelee1.Margin = new System.Windows.Forms.Padding(2);
             this.panelMelee1.Name = "panelMelee1";
             this.panelMelee1.Size = new System.Drawing.Size(298, 116);
             this.panelMelee1.TabIndex = 227;
@@ -675,9 +675,9 @@
             this.groupBox17.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox17.Location = new System.Drawing.Point(149, 0);
-            this.groupBox17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox17.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox17.Name = "groupBox17";
-            this.groupBox17.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox17.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox17.Size = new System.Drawing.Size(149, 116);
             this.groupBox17.TabIndex = 1;
             this.groupBox17.TabStop = false;
@@ -708,7 +708,7 @@
             this.tableLayoutPanel20.Controls.Add(this.checkBoxMeleeResistanceRend, 1, 1);
             this.tableLayoutPanel20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel20.Location = new System.Drawing.Point(2, 14);
-            this.tableLayoutPanel20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel20.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel20.Name = "tableLayoutPanel20";
             this.tableLayoutPanel20.RowCount = 4;
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -735,7 +735,7 @@
             // 
             this.checkBoxMeleeArmorRend.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxMeleeArmorRend.AutoSize = true;
-            this.checkBoxMeleeArmorRend.Location = new System.Drawing.Point(39, 5);
+            this.checkBoxMeleeArmorRend.Location = new System.Drawing.Point(36, 5);
             this.checkBoxMeleeArmorRend.Name = "checkBoxMeleeArmorRend";
             this.checkBoxMeleeArmorRend.Size = new System.Drawing.Size(15, 14);
             this.checkBoxMeleeArmorRend.TabIndex = 79;
@@ -755,8 +755,8 @@
             0,
             0,
             131072});
-            this.numericUpDownMeleeCrushingBlow.Location = new System.Drawing.Point(96, 77);
-            this.numericUpDownMeleeCrushingBlow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownMeleeCrushingBlow.Location = new System.Drawing.Point(89, 77);
+            this.numericUpDownMeleeCrushingBlow.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownMeleeCrushingBlow.Maximum = new decimal(new int[] {
             99,
             0,
@@ -768,7 +768,7 @@
             0,
             0});
             this.numericUpDownMeleeCrushingBlow.Name = "numericUpDownMeleeCrushingBlow";
-            this.numericUpDownMeleeCrushingBlow.Size = new System.Drawing.Size(47, 18);
+            this.numericUpDownMeleeCrushingBlow.Size = new System.Drawing.Size(54, 18);
             this.numericUpDownMeleeCrushingBlow.TabIndex = 226;
             this.toolTip1.SetToolTip(this.numericUpDownMeleeCrushingBlow, "Crushing Blow. Multiplies ciritcal damage by the set value.\r\nNo max value.\r\n");
             this.numericUpDownMeleeCrushingBlow.Value = new decimal(new int[] {
@@ -784,7 +784,7 @@
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(67, 6);
+            this.label12.Location = new System.Drawing.Point(60, 6);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(21, 13);
@@ -797,7 +797,7 @@
             this.label22.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(67, 81);
+            this.label22.Location = new System.Drawing.Point(60, 81);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(23, 13);
@@ -809,7 +809,7 @@
             // 
             this.checkBoxMeleeArmorCleaving.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxMeleeArmorCleaving.AutoSize = true;
-            this.checkBoxMeleeArmorCleaving.Location = new System.Drawing.Point(112, 5);
+            this.checkBoxMeleeArmorCleaving.Location = new System.Drawing.Point(108, 5);
             this.checkBoxMeleeArmorCleaving.Name = "checkBoxMeleeArmorCleaving";
             this.checkBoxMeleeArmorCleaving.Size = new System.Drawing.Size(15, 14);
             this.checkBoxMeleeArmorCleaving.TabIndex = 77;
@@ -822,7 +822,7 @@
             // 
             this.checkBoxMeleeCripplingBlow.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxMeleeCripplingBlow.AutoSize = true;
-            this.checkBoxMeleeCripplingBlow.Location = new System.Drawing.Point(39, 80);
+            this.checkBoxMeleeCripplingBlow.Location = new System.Drawing.Point(36, 80);
             this.checkBoxMeleeCripplingBlow.Name = "checkBoxMeleeCripplingBlow";
             this.checkBoxMeleeCripplingBlow.Size = new System.Drawing.Size(15, 14);
             this.checkBoxMeleeCripplingBlow.TabIndex = 89;
@@ -842,8 +842,8 @@
             0,
             0,
             131072});
-            this.numericUpDownMeleeResistanceCleaving.Location = new System.Drawing.Point(96, 27);
-            this.numericUpDownMeleeResistanceCleaving.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownMeleeResistanceCleaving.Location = new System.Drawing.Point(89, 27);
+            this.numericUpDownMeleeResistanceCleaving.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownMeleeResistanceCleaving.Maximum = new decimal(new int[] {
             99,
             0,
@@ -855,7 +855,7 @@
             0,
             0});
             this.numericUpDownMeleeResistanceCleaving.Name = "numericUpDownMeleeResistanceCleaving";
-            this.numericUpDownMeleeResistanceCleaving.Size = new System.Drawing.Size(47, 18);
+            this.numericUpDownMeleeResistanceCleaving.Size = new System.Drawing.Size(54, 18);
             this.numericUpDownMeleeResistanceCleaving.TabIndex = 224;
             this.toolTip1.SetToolTip(this.numericUpDownMeleeResistanceCleaving, resources.GetString("numericUpDownMeleeResistanceCleaving.ToolTip"));
             this.numericUpDownMeleeResistanceCleaving.Value = new decimal(new int[] {
@@ -890,8 +890,8 @@
             0,
             0,
             131072});
-            this.numericUpDownMeleeBitingStrike.Location = new System.Drawing.Point(96, 52);
-            this.numericUpDownMeleeBitingStrike.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownMeleeBitingStrike.Location = new System.Drawing.Point(89, 52);
+            this.numericUpDownMeleeBitingStrike.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownMeleeBitingStrike.Maximum = new decimal(new int[] {
             1,
             0,
@@ -903,7 +903,7 @@
             0,
             65536});
             this.numericUpDownMeleeBitingStrike.Name = "numericUpDownMeleeBitingStrike";
-            this.numericUpDownMeleeBitingStrike.Size = new System.Drawing.Size(47, 18);
+            this.numericUpDownMeleeBitingStrike.Size = new System.Drawing.Size(54, 18);
             this.numericUpDownMeleeBitingStrike.TabIndex = 225;
             this.toolTip1.SetToolTip(this.numericUpDownMeleeBitingStrike, "Biting Strike. Determines critical strike chance with\r\nthis weapon. Values below " +
         "0.1 have no effect.");
@@ -920,7 +920,7 @@
             this.label20.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(67, 56);
+            this.label20.Location = new System.Drawing.Point(60, 56);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(21, 13);
@@ -945,7 +945,7 @@
             // 
             this.checkBoxMeleeCriticalStrike.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxMeleeCriticalStrike.AutoSize = true;
-            this.checkBoxMeleeCriticalStrike.Location = new System.Drawing.Point(39, 55);
+            this.checkBoxMeleeCriticalStrike.Location = new System.Drawing.Point(36, 55);
             this.checkBoxMeleeCriticalStrike.Name = "checkBoxMeleeCriticalStrike";
             this.checkBoxMeleeCriticalStrike.Size = new System.Drawing.Size(15, 14);
             this.checkBoxMeleeCriticalStrike.TabIndex = 85;
@@ -958,7 +958,7 @@
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(67, 31);
+            this.label18.Location = new System.Drawing.Point(60, 31);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(22, 13);
@@ -983,7 +983,7 @@
             // 
             this.checkBoxMeleeResistanceRend.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxMeleeResistanceRend.AutoSize = true;
-            this.checkBoxMeleeResistanceRend.Location = new System.Drawing.Point(39, 30);
+            this.checkBoxMeleeResistanceRend.Location = new System.Drawing.Point(36, 30);
             this.checkBoxMeleeResistanceRend.Name = "checkBoxMeleeResistanceRend";
             this.checkBoxMeleeResistanceRend.Size = new System.Drawing.Size(15, 14);
             this.checkBoxMeleeResistanceRend.TabIndex = 81;
@@ -997,9 +997,9 @@
             this.groupBox14.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox14.Location = new System.Drawing.Point(0, 0);
-            this.groupBox14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox14.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox14.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox14.Size = new System.Drawing.Size(149, 116);
             this.groupBox14.TabIndex = 0;
             this.groupBox14.TabStop = false;
@@ -1022,7 +1022,7 @@
             this.tableLayoutPanel19.Controls.Add(this.numericUpDownMeleeWeaponSpeed, 1, 4);
             this.tableLayoutPanel19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel19.Location = new System.Drawing.Point(2, 14);
-            this.tableLayoutPanel19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel19.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel19.Name = "tableLayoutPanel19";
             this.tableLayoutPanel19.RowCount = 5;
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -1104,7 +1104,7 @@
             this.numericUpDownWeaponAttackMod.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numericUpDownWeaponAttackMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDownWeaponAttackMod.Location = new System.Drawing.Point(89, 62);
-            this.numericUpDownWeaponAttackMod.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownWeaponAttackMod.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownWeaponAttackMod.Maximum = new decimal(new int[] {
             99,
             0,
@@ -1129,7 +1129,7 @@
             "Multi-Stab",
             "Two-hand"});
             this.comboBoxMeleeAnimation.Location = new System.Drawing.Point(89, 2);
-            this.comboBoxMeleeAnimation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxMeleeAnimation.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxMeleeAnimation.Name = "comboBoxMeleeAnimation";
             this.comboBoxMeleeAnimation.Size = new System.Drawing.Size(54, 21);
             this.comboBoxMeleeAnimation.TabIndex = 1;
@@ -1142,7 +1142,7 @@
             this.numericUpDownWeaponMaxDamage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numericUpDownWeaponMaxDamage.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDownWeaponMaxDamage.Location = new System.Drawing.Point(89, 42);
-            this.numericUpDownWeaponMaxDamage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownWeaponMaxDamage.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownWeaponMaxDamage.Maximum = new decimal(new int[] {
             999,
             0,
@@ -1171,7 +1171,7 @@
             this.numericUpDownWeaponMinDamage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numericUpDownWeaponMinDamage.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDownWeaponMinDamage.Location = new System.Drawing.Point(89, 22);
-            this.numericUpDownWeaponMinDamage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownWeaponMinDamage.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownWeaponMinDamage.Maximum = new decimal(new int[] {
             999,
             0,
@@ -1198,7 +1198,7 @@
             this.numericUpDownMeleeWeaponSpeed.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numericUpDownMeleeWeaponSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDownMeleeWeaponSpeed.Location = new System.Drawing.Point(89, 82);
-            this.numericUpDownMeleeWeaponSpeed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownMeleeWeaponSpeed.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownMeleeWeaponSpeed.Maximum = new decimal(new int[] {
             150,
             0,
@@ -1215,7 +1215,7 @@
             this.panelMelee2.Controls.Add(this.groupBox18);
             this.panelMelee2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMelee2.Location = new System.Drawing.Point(2, 122);
-            this.panelMelee2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelMelee2.Margin = new System.Windows.Forms.Padding(2);
             this.panelMelee2.Name = "panelMelee2";
             this.panelMelee2.Size = new System.Drawing.Size(298, 81);
             this.panelMelee2.TabIndex = 228;
@@ -1226,9 +1226,9 @@
             this.groupBox18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox18.Location = new System.Drawing.Point(0, 0);
-            this.groupBox18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox18.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox18.Name = "groupBox18";
-            this.groupBox18.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox18.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox18.Size = new System.Drawing.Size(298, 81);
             this.groupBox18.TabIndex = 0;
             this.groupBox18.TabStop = false;
@@ -1255,7 +1255,7 @@
             this.tableLayoutPanel18.Controls.Add(this.label23, 2, 2);
             this.tableLayoutPanel18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel18.Location = new System.Drawing.Point(2, 14);
-            this.tableLayoutPanel18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel18.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel18.Name = "tableLayoutPanel18";
             this.tableLayoutPanel18.RowCount = 3;
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -1289,7 +1289,7 @@
             "Epic",
             "Legendary"});
             this.comboBoxMeleeHeartThirst.Location = new System.Drawing.Point(236, 23);
-            this.comboBoxMeleeHeartThirst.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxMeleeHeartThirst.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxMeleeHeartThirst.Name = "comboBoxMeleeHeartThirst";
             this.comboBoxMeleeHeartThirst.Size = new System.Drawing.Size(56, 21);
             this.comboBoxMeleeHeartThirst.TabIndex = 230;
@@ -1326,7 +1326,7 @@
             "7",
             "8"});
             this.comboBoxMeleeBloodDrinker.Location = new System.Drawing.Point(90, 2);
-            this.comboBoxMeleeBloodDrinker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxMeleeBloodDrinker.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxMeleeBloodDrinker.Name = "comboBoxMeleeBloodDrinker";
             this.comboBoxMeleeBloodDrinker.Size = new System.Drawing.Size(54, 21);
             this.comboBoxMeleeBloodDrinker.TabIndex = 70;
@@ -1359,7 +1359,7 @@
             "Epic",
             "Legendary"});
             this.comboBoxMeleeBloodThirst.Location = new System.Drawing.Point(236, 2);
-            this.comboBoxMeleeBloodThirst.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxMeleeBloodThirst.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxMeleeBloodThirst.Name = "comboBoxMeleeBloodThirst";
             this.comboBoxMeleeBloodThirst.Size = new System.Drawing.Size(56, 21);
             this.comboBoxMeleeBloodThirst.TabIndex = 228;
@@ -1396,7 +1396,7 @@
             "7",
             "8"});
             this.comboBoxMeleeHeartSeeker.Location = new System.Drawing.Point(90, 23);
-            this.comboBoxMeleeHeartSeeker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxMeleeHeartSeeker.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxMeleeHeartSeeker.Name = "comboBoxMeleeHeartSeeker";
             this.comboBoxMeleeHeartSeeker.Size = new System.Drawing.Size(54, 21);
             this.comboBoxMeleeHeartSeeker.TabIndex = 72;
@@ -1428,7 +1428,7 @@
             0,
             131072});
             this.numericUpDownMeleeSlayer.Location = new System.Drawing.Point(236, 44);
-            this.numericUpDownMeleeSlayer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownMeleeSlayer.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownMeleeSlayer.Maximum = new decimal(new int[] {
             999,
             0,
@@ -1466,7 +1466,7 @@
             "Level 2",
             "Level 1"});
             this.comboBoxMeleeHighestSpell.Location = new System.Drawing.Point(90, 44);
-            this.comboBoxMeleeHighestSpell.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxMeleeHighestSpell.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxMeleeHighestSpell.Name = "comboBoxMeleeHighestSpell";
             this.comboBoxMeleeHighestSpell.Size = new System.Drawing.Size(54, 21);
             this.comboBoxMeleeHighestSpell.TabIndex = 74;
@@ -1492,9 +1492,9 @@
             // 
             this.Missile.Controls.Add(this.tableLayoutPanel34);
             this.Missile.Location = new System.Drawing.Point(4, 22);
-            this.Missile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Missile.Margin = new System.Windows.Forms.Padding(2);
             this.Missile.Name = "Missile";
-            this.Missile.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Missile.Padding = new System.Windows.Forms.Padding(2);
             this.Missile.Size = new System.Drawing.Size(306, 271);
             this.Missile.TabIndex = 1;
             this.Missile.Text = "Missile";
@@ -1509,7 +1509,7 @@
             this.tableLayoutPanel34.Controls.Add(this.panel9, 0, 1);
             this.tableLayoutPanel34.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel34.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel34.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel34.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel34.Name = "tableLayoutPanel34";
             this.tableLayoutPanel34.RowCount = 3;
             this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 114F));
@@ -1553,7 +1553,7 @@
             this.trackBarMissileAccuracyBar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.trackBarMissileAccuracyBar.LargeChange = 20;
             this.trackBarMissileAccuracyBar.Location = new System.Drawing.Point(3, 15);
-            this.trackBarMissileAccuracyBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.trackBarMissileAccuracyBar.Margin = new System.Windows.Forms.Padding(2);
             this.trackBarMissileAccuracyBar.Maximum = 100;
             this.trackBarMissileAccuracyBar.Name = "trackBarMissileAccuracyBar";
             this.trackBarMissileAccuracyBar.Size = new System.Drawing.Size(290, 41);
@@ -1569,7 +1569,7 @@
             this.panel8.Controls.Add(this.groupBox20);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(2, 2);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(298, 110);
             this.panel8.TabIndex = 227;
@@ -1580,9 +1580,9 @@
             this.groupBox19.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox19.Location = new System.Drawing.Point(149, 0);
-            this.groupBox19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox19.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox19.Name = "groupBox19";
-            this.groupBox19.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox19.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox19.Size = new System.Drawing.Size(149, 110);
             this.groupBox19.TabIndex = 1;
             this.groupBox19.TabStop = false;
@@ -1613,7 +1613,7 @@
             this.tableLayoutPanel35.Controls.Add(this.checkBoxMissileResistanceRend, 1, 1);
             this.tableLayoutPanel35.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel35.Location = new System.Drawing.Point(2, 14);
-            this.tableLayoutPanel35.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel35.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel35.Name = "tableLayoutPanel35";
             this.tableLayoutPanel35.RowCount = 4;
             this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -1661,7 +1661,7 @@
             0,
             131072});
             this.numericUpDownMissileCrushingBlow.Location = new System.Drawing.Point(103, 72);
-            this.numericUpDownMissileCrushingBlow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownMissileCrushingBlow.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownMissileCrushingBlow.Maximum = new decimal(new int[] {
             99,
             0,
@@ -1747,7 +1747,7 @@
             0,
             131072});
             this.numericUpDownMissileResistanceCleaving.Location = new System.Drawing.Point(103, 25);
-            this.numericUpDownMissileResistanceCleaving.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownMissileResistanceCleaving.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownMissileResistanceCleaving.Maximum = new decimal(new int[] {
             99,
             0,
@@ -1794,7 +1794,7 @@
             0,
             131072});
             this.numericUpDownMissileBitingStrike.Location = new System.Drawing.Point(103, 48);
-            this.numericUpDownMissileBitingStrike.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownMissileBitingStrike.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownMissileBitingStrike.Maximum = new decimal(new int[] {
             1,
             0,
@@ -1899,9 +1899,9 @@
             this.groupBox20.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox20.Location = new System.Drawing.Point(0, 0);
-            this.groupBox20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox20.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox20.Name = "groupBox20";
-            this.groupBox20.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox20.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox20.Size = new System.Drawing.Size(149, 110);
             this.groupBox20.TabIndex = 0;
             this.groupBox20.TabStop = false;
@@ -1924,7 +1924,7 @@
             this.tableLayoutPanel36.Controls.Add(this.comboBoxAmmoType, 1, 1);
             this.tableLayoutPanel36.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel36.Location = new System.Drawing.Point(2, 14);
-            this.tableLayoutPanel36.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel36.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel36.Name = "tableLayoutPanel36";
             this.tableLayoutPanel36.RowCount = 5;
             this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -1970,7 +1970,7 @@
             "Xbow",
             "Atlatl"});
             this.comboBoxMissileAnimation.Location = new System.Drawing.Point(86, 2);
-            this.comboBoxMissileAnimation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxMissileAnimation.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxMissileAnimation.Name = "comboBoxMissileAnimation";
             this.comboBoxMissileAnimation.Size = new System.Drawing.Size(57, 21);
             this.comboBoxMissileAnimation.TabIndex = 1;
@@ -1983,7 +1983,7 @@
             this.numericUpDownMissileDamageMod.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numericUpDownMissileDamageMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDownMissileDamageMod.Location = new System.Drawing.Point(86, 40);
-            this.numericUpDownMissileDamageMod.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownMissileDamageMod.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownMissileDamageMod.Maximum = new decimal(new int[] {
             999,
             0,
@@ -2012,7 +2012,7 @@
             this.numericUpDownMissileWeaponSpeed.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numericUpDownMissileWeaponSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDownMissileWeaponSpeed.Location = new System.Drawing.Point(86, 78);
-            this.numericUpDownMissileWeaponSpeed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownMissileWeaponSpeed.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownMissileWeaponSpeed.Maximum = new decimal(new int[] {
             150,
             0,
@@ -2055,7 +2055,7 @@
             this.numericUpDownMissileDamageBonus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numericUpDownMissileDamageBonus.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDownMissileDamageBonus.Location = new System.Drawing.Point(86, 59);
-            this.numericUpDownMissileDamageBonus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownMissileDamageBonus.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownMissileDamageBonus.Maximum = new decimal(new int[] {
             999,
             0,
@@ -2074,7 +2074,7 @@
             "32-40",
             "28-40"});
             this.comboBoxAmmoType.Location = new System.Drawing.Point(86, 21);
-            this.comboBoxAmmoType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxAmmoType.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxAmmoType.Name = "comboBoxAmmoType";
             this.comboBoxAmmoType.Size = new System.Drawing.Size(57, 21);
             this.comboBoxAmmoType.TabIndex = 225;
@@ -2086,7 +2086,7 @@
             this.panel9.Controls.Add(this.groupBox21);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(2, 116);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(298, 87);
             this.panel9.TabIndex = 228;
@@ -2097,9 +2097,9 @@
             this.groupBox21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox21.Location = new System.Drawing.Point(0, 0);
-            this.groupBox21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox21.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox21.Name = "groupBox21";
-            this.groupBox21.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox21.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox21.Size = new System.Drawing.Size(298, 87);
             this.groupBox21.TabIndex = 0;
             this.groupBox21.TabStop = false;
@@ -2122,7 +2122,7 @@
             this.tableLayoutPanel37.Controls.Add(this.numericUpDownMissileSlayer, 3, 1);
             this.tableLayoutPanel37.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel37.Location = new System.Drawing.Point(2, 14);
-            this.tableLayoutPanel37.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel37.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel37.Name = "tableLayoutPanel37";
             this.tableLayoutPanel37.RowCount = 2;
             this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -2159,7 +2159,7 @@
             "7",
             "8"});
             this.comboBoxMissileBloodDrinker.Location = new System.Drawing.Point(90, 7);
-            this.comboBoxMissileBloodDrinker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxMissileBloodDrinker.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxMissileBloodDrinker.Name = "comboBoxMissileBloodDrinker";
             this.comboBoxMissileBloodDrinker.Size = new System.Drawing.Size(54, 21);
             this.comboBoxMissileBloodDrinker.TabIndex = 70;
@@ -2178,7 +2178,7 @@
             "Epic",
             "Legendary"});
             this.comboBoxMissileBloodThirst.Location = new System.Drawing.Point(236, 7);
-            this.comboBoxMissileBloodThirst.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxMissileBloodThirst.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxMissileBloodThirst.Name = "comboBoxMissileBloodThirst";
             this.comboBoxMissileBloodThirst.Size = new System.Drawing.Size(56, 21);
             this.comboBoxMissileBloodThirst.TabIndex = 228;
@@ -2227,7 +2227,7 @@
             "Level 2",
             "Level 1"});
             this.comboBoxMissileHighestSpell.Location = new System.Drawing.Point(90, 42);
-            this.comboBoxMissileHighestSpell.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxMissileHighestSpell.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxMissileHighestSpell.Name = "comboBoxMissileHighestSpell";
             this.comboBoxMissileHighestSpell.Size = new System.Drawing.Size(54, 21);
             this.comboBoxMissileHighestSpell.TabIndex = 74;
@@ -2259,7 +2259,7 @@
             0,
             131072});
             this.numericUpDownMissileSlayer.Location = new System.Drawing.Point(236, 44);
-            this.numericUpDownMissileSlayer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownMissileSlayer.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownMissileSlayer.Maximum = new decimal(new int[] {
             999,
             0,
@@ -2284,9 +2284,9 @@
             // 
             this.Magic.Controls.Add(this.tableLayoutPanel38);
             this.Magic.Location = new System.Drawing.Point(4, 22);
-            this.Magic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Magic.Margin = new System.Windows.Forms.Padding(2);
             this.Magic.Name = "Magic";
-            this.Magic.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Magic.Padding = new System.Windows.Forms.Padding(2);
             this.Magic.Size = new System.Drawing.Size(306, 271);
             this.Magic.TabIndex = 2;
             this.Magic.Text = "Magic";
@@ -2300,7 +2300,7 @@
             this.tableLayoutPanel38.Controls.Add(this.groupBox24, 0, 1);
             this.tableLayoutPanel38.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel38.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel38.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel38.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel38.Name = "tableLayoutPanel38";
             this.tableLayoutPanel38.RowCount = 2;
             this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
@@ -2317,7 +2317,7 @@
             this.tableLayoutPanel39.Controls.Add(this.groupBox23, 1, 0);
             this.tableLayoutPanel39.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel39.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel39.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel39.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel39.Name = "tableLayoutPanel39";
             this.tableLayoutPanel39.RowCount = 1;
             this.tableLayoutPanel39.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -2329,9 +2329,9 @@
             this.groupBox22.Controls.Add(this.tableLayoutPanel40);
             this.groupBox22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox22.Location = new System.Drawing.Point(2, 2);
-            this.groupBox22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox22.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox22.Name = "groupBox22";
-            this.groupBox22.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox22.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox22.Size = new System.Drawing.Size(145, 101);
             this.groupBox22.TabIndex = 2;
             this.groupBox22.TabStop = false;
@@ -2350,7 +2350,7 @@
             this.tableLayoutPanel40.Controls.Add(this.label25, 0, 2);
             this.tableLayoutPanel40.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel40.Location = new System.Drawing.Point(2, 15);
-            this.tableLayoutPanel40.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel40.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel40.Name = "tableLayoutPanel40";
             this.tableLayoutPanel40.RowCount = 3;
             this.tableLayoutPanel40.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -2376,7 +2376,7 @@
             // 
             this.numericUpDownMagicElementalDamageBonus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numericUpDownMagicElementalDamageBonus.Location = new System.Drawing.Point(83, 58);
-            this.numericUpDownMagicElementalDamageBonus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownMagicElementalDamageBonus.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownMagicElementalDamageBonus.Maximum = new decimal(new int[] {
             999,
             0,
@@ -2394,9 +2394,9 @@
             this.comboBoxMagicAnimation.Items.AddRange(new object[] {
             "Normal",
             "Wand (overhead)",
-            "Wand (tilt)"});
+            "Wand (side)"});
             this.comboBoxMagicAnimation.Location = new System.Drawing.Point(83, 2);
-            this.comboBoxMagicAnimation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxMagicAnimation.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxMagicAnimation.Name = "comboBoxMagicAnimation";
             this.comboBoxMagicAnimation.Size = new System.Drawing.Size(56, 21);
             this.comboBoxMagicAnimation.TabIndex = 155;
@@ -2424,7 +2424,7 @@
             "War 8",
             "Void 8"});
             this.comboBoxMagicSpell.Location = new System.Drawing.Point(83, 30);
-            this.comboBoxMagicSpell.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxMagicSpell.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxMagicSpell.Name = "comboBoxMagicSpell";
             this.comboBoxMagicSpell.Size = new System.Drawing.Size(56, 21);
             this.comboBoxMagicSpell.TabIndex = 181;
@@ -2448,9 +2448,9 @@
             this.groupBox23.Controls.Add(this.tableLayoutPanel41);
             this.groupBox23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox23.Location = new System.Drawing.Point(151, 2);
-            this.groupBox23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox23.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox23.Name = "groupBox23";
-            this.groupBox23.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox23.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox23.Size = new System.Drawing.Size(145, 101);
             this.groupBox23.TabIndex = 3;
             this.groupBox23.TabStop = false;
@@ -2477,7 +2477,7 @@
             this.tableLayoutPanel41.Controls.Add(this.label69, 2, 1);
             this.tableLayoutPanel41.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel41.Location = new System.Drawing.Point(2, 15);
-            this.tableLayoutPanel41.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel41.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel41.Name = "tableLayoutPanel41";
             this.tableLayoutPanel41.RowCount = 3;
             this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -2520,7 +2520,7 @@
             0,
             131072});
             this.numericUpDownMagicCrushingBlow.Location = new System.Drawing.Point(100, 60);
-            this.numericUpDownMagicCrushingBlow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownMagicCrushingBlow.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownMagicCrushingBlow.Maximum = new decimal(new int[] {
             99,
             0,
@@ -2564,7 +2564,7 @@
             0,
             131072});
             this.numericUpDownMagicBitingStrike.Location = new System.Drawing.Point(100, 32);
-            this.numericUpDownMagicBitingStrike.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownMagicBitingStrike.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownMagicBitingStrike.Maximum = new decimal(new int[] {
             1,
             0,
@@ -2609,7 +2609,7 @@
             0,
             131072});
             this.numericUpDownMagicResistanceCleaving.Location = new System.Drawing.Point(100, 4);
-            this.numericUpDownMagicResistanceCleaving.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownMagicResistanceCleaving.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownMagicResistanceCleaving.Maximum = new decimal(new int[] {
             99,
             0,
@@ -2697,9 +2697,9 @@
             this.groupBox24.Controls.Add(this.tableLayoutPanel42);
             this.groupBox24.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox24.Location = new System.Drawing.Point(2, 111);
-            this.groupBox24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox24.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox24.Name = "groupBox24";
-            this.groupBox24.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox24.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox24.Size = new System.Drawing.Size(298, 69);
             this.groupBox24.TabIndex = 1;
             this.groupBox24.TabStop = false;
@@ -2720,7 +2720,7 @@
             this.tableLayoutPanel42.Controls.Add(this.numericUpDownMagicSlayer, 3, 0);
             this.tableLayoutPanel42.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel42.Location = new System.Drawing.Point(2, 15);
-            this.tableLayoutPanel42.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel42.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel42.Name = "tableLayoutPanel42";
             this.tableLayoutPanel42.RowCount = 2;
             this.tableLayoutPanel42.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -2755,7 +2755,7 @@
             "7",
             "8"});
             this.comboBoxMagicSpiritDrinker.Location = new System.Drawing.Point(90, 2);
-            this.comboBoxMagicSpiritDrinker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxMagicSpiritDrinker.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxMagicSpiritDrinker.Name = "comboBoxMagicSpiritDrinker";
             this.comboBoxMagicSpiritDrinker.Size = new System.Drawing.Size(54, 21);
             this.comboBoxMagicSpiritDrinker.TabIndex = 158;
@@ -2785,7 +2785,7 @@
             "Epic",
             "Legendary"});
             this.comboBoxMagicSpiritThirst.Location = new System.Drawing.Point(90, 28);
-            this.comboBoxMagicSpiritThirst.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxMagicSpiritThirst.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxMagicSpiritThirst.Name = "comboBoxMagicSpiritThirst";
             this.comboBoxMagicSpiritThirst.Size = new System.Drawing.Size(54, 21);
             this.comboBoxMagicSpiritThirst.TabIndex = 160;
@@ -2813,7 +2813,7 @@
             0,
             131072});
             this.numericUpDownMagicSlayer.Location = new System.Drawing.Point(236, 2);
-            this.numericUpDownMagicSlayer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownMagicSlayer.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownMagicSlayer.Maximum = new decimal(new int[] {
             999,
             0,
@@ -2878,7 +2878,7 @@
             this.tableLayoutPanel9.Controls.Add(this.label87, 2, 1);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel9.Location = new System.Drawing.Point(3, 19);
-            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 5;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -3169,7 +3169,7 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
@@ -3187,7 +3187,7 @@
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel43, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -3201,7 +3201,7 @@
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Controls.Add(this.tableLayoutPanel21);
             this.panel1.Location = new System.Drawing.Point(4, 53);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(320, 420);
             this.panel1.TabIndex = 0;
@@ -3218,7 +3218,7 @@
             this.tableLayoutPanel21.Controls.Add(this.tableLayoutPanel22, 0, 0);
             this.tableLayoutPanel21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel21.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel21.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel21.Name = "tableLayoutPanel21";
             this.tableLayoutPanel21.RowCount = 4;
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -3237,7 +3237,7 @@
             this.tableLayoutPanel23.Controls.Add(this.groupBox6, 1, 0);
             this.tableLayoutPanel23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel23.Location = new System.Drawing.Point(2, 107);
-            this.tableLayoutPanel23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel23.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel23.Name = "tableLayoutPanel23";
             this.tableLayoutPanel23.RowCount = 1;
             this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -3274,7 +3274,7 @@
             this.tableLayoutPanel26.Controls.Add(this.comboBoxSneakAttack, 2, 1);
             this.tableLayoutPanel26.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel26.Location = new System.Drawing.Point(3, 15);
-            this.tableLayoutPanel26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel26.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel26.Name = "tableLayoutPanel26";
             this.tableLayoutPanel26.RowCount = 3;
             this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -3308,7 +3308,7 @@
             0,
             0});
             this.numericUpDownBuffedDeception.Location = new System.Drawing.Point(82, 54);
-            this.numericUpDownBuffedDeception.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownBuffedDeception.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownBuffedDeception.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -3343,7 +3343,7 @@
             0,
             0});
             this.numericUpDownBuffedRecklessness.Location = new System.Drawing.Point(82, 3);
-            this.numericUpDownBuffedRecklessness.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownBuffedRecklessness.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownBuffedRecklessness.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -3390,7 +3390,7 @@
             "Train",
             "Spec"});
             this.comboBoxDeception.Location = new System.Drawing.Point(139, 53);
-            this.comboBoxDeception.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxDeception.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxDeception.Name = "comboBoxDeception";
             this.comboBoxDeception.Size = new System.Drawing.Size(48, 21);
             this.comboBoxDeception.TabIndex = 15;
@@ -3425,7 +3425,7 @@
             0,
             0});
             this.numericUpDownBuffedSneakAttack.Location = new System.Drawing.Point(82, 28);
-            this.numericUpDownBuffedSneakAttack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownBuffedSneakAttack.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownBuffedSneakAttack.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -3458,7 +3458,7 @@
             "Train",
             "Spec"});
             this.comboBoxRecklessness.Location = new System.Drawing.Point(139, 2);
-            this.comboBoxRecklessness.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxRecklessness.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxRecklessness.Name = "comboBoxRecklessness";
             this.comboBoxRecklessness.Size = new System.Drawing.Size(48, 21);
             this.comboBoxRecklessness.TabIndex = 11;
@@ -3478,7 +3478,7 @@
             "Train",
             "Spec"});
             this.comboBoxSneakAttack.Location = new System.Drawing.Point(139, 27);
-            this.comboBoxSneakAttack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxSneakAttack.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxSneakAttack.Name = "comboBoxSneakAttack";
             this.comboBoxSneakAttack.Size = new System.Drawing.Size(48, 21);
             this.comboBoxSneakAttack.TabIndex = 13;
@@ -3513,7 +3513,7 @@
             this.tableLayoutPanel27.Controls.Add(this.numericUpDownDamageRating, 1, 0);
             this.tableLayoutPanel27.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel27.Location = new System.Drawing.Point(3, 15);
-            this.tableLayoutPanel27.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel27.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel27.Name = "tableLayoutPanel27";
             this.tableLayoutPanel27.RowCount = 3;
             this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -3528,7 +3528,7 @@
             this.numericUpDownCritChanceRating.AutoSize = true;
             this.numericUpDownCritChanceRating.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDownCritChanceRating.Location = new System.Drawing.Point(61, 54);
-            this.numericUpDownCritChanceRating.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownCritChanceRating.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownCritChanceRating.Maximum = new decimal(new int[] {
             999,
             0,
@@ -3561,7 +3561,7 @@
             this.numericUpDownCritDamageRating.AutoSize = true;
             this.numericUpDownCritDamageRating.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDownCritDamageRating.Location = new System.Drawing.Point(61, 28);
-            this.numericUpDownCritDamageRating.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownCritDamageRating.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownCritDamageRating.Maximum = new decimal(new int[] {
             999,
             0,
@@ -3608,7 +3608,7 @@
             this.numericUpDownDamageRating.AutoSize = true;
             this.numericUpDownDamageRating.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDownDamageRating.Location = new System.Drawing.Point(61, 3);
-            this.numericUpDownDamageRating.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownDamageRating.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownDamageRating.Maximum = new decimal(new int[] {
             999,
             0,
@@ -3654,7 +3654,7 @@
             this.tableLayoutPanel28.Controls.Add(this.checkBoxRareMelee, 0, 1);
             this.tableLayoutPanel28.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel28.Location = new System.Drawing.Point(3, 15);
-            this.tableLayoutPanel28.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel28.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel28.Name = "tableLayoutPanel28";
             this.tableLayoutPanel28.RowCount = 2;
             this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -3844,7 +3844,7 @@
             this.tableLayoutPanel10.Controls.Add(this.labelCharacterMissileMod, 3, 1);
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 19);
-            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 3;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -4078,7 +4078,7 @@
             this.tableLayoutPanel22.Controls.Add(this.groupBox4, 0, 0);
             this.tableLayoutPanel22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel22.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel22.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel22.Name = "tableLayoutPanel22";
             this.tableLayoutPanel22.RowCount = 1;
             this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -4091,9 +4091,9 @@
             this.groupBox15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox15.Location = new System.Drawing.Point(207, 2);
-            this.groupBox15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox15.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox15.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox15.Size = new System.Drawing.Size(107, 97);
             this.groupBox15.TabIndex = 219;
             this.groupBox15.TabStop = false;
@@ -4112,7 +4112,7 @@
             this.tableLayoutPanel25.Controls.Add(this.numericUpDownBuffedCoordination, 1, 1);
             this.tableLayoutPanel25.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel25.Location = new System.Drawing.Point(2, 14);
-            this.tableLayoutPanel25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel25.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel25.Name = "tableLayoutPanel25";
             this.tableLayoutPanel25.RowCount = 3;
             this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -4145,7 +4145,7 @@
             0,
             0});
             this.numericUpDownBuffedQuickness.Location = new System.Drawing.Point(63, 58);
-            this.numericUpDownBuffedQuickness.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownBuffedQuickness.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownBuffedQuickness.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -4193,7 +4193,7 @@
             0,
             0});
             this.numericUpDownBuffedStrength.Location = new System.Drawing.Point(63, 4);
-            this.numericUpDownBuffedStrength.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownBuffedStrength.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownBuffedStrength.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -4228,7 +4228,7 @@
             0,
             0});
             this.numericUpDownBuffedCoordination.Location = new System.Drawing.Point(63, 31);
-            this.numericUpDownBuffedCoordination.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownBuffedCoordination.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownBuffedCoordination.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -4285,7 +4285,7 @@
             this.tableLayoutPanel24.Controls.Add(this.checkBoxThrown, 1, 1);
             this.tableLayoutPanel24.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel24.Location = new System.Drawing.Point(3, 15);
-            this.tableLayoutPanel24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel24.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel24.Name = "tableLayoutPanel24";
             this.tableLayoutPanel24.RowCount = 3;
             this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -4348,7 +4348,7 @@
             0,
             0});
             this.numericUpDownBuffedMeleeSkill.Location = new System.Drawing.Point(153, 4);
-            this.numericUpDownBuffedMeleeSkill.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownBuffedMeleeSkill.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownBuffedMeleeSkill.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -4381,7 +4381,7 @@
             0,
             0});
             this.numericUpDownBuffedMissileSkill.Location = new System.Drawing.Point(153, 31);
-            this.numericUpDownBuffedMissileSkill.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownBuffedMissileSkill.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownBuffedMissileSkill.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -4414,7 +4414,7 @@
             0,
             0});
             this.numericUpDownBuffedMagicSkill.Location = new System.Drawing.Point(153, 58);
-            this.numericUpDownBuffedMagicSkill.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownBuffedMagicSkill.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownBuffedMagicSkill.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -4448,7 +4448,7 @@
             0,
             0});
             this.numericUpDownBaseMeleeSkill.Location = new System.Drawing.Point(109, 4);
-            this.numericUpDownBaseMeleeSkill.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownBaseMeleeSkill.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownBaseMeleeSkill.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -4481,7 +4481,7 @@
             0,
             0});
             this.numericUpDownBaseMissileSkill.Location = new System.Drawing.Point(109, 31);
-            this.numericUpDownBaseMissileSkill.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownBaseMissileSkill.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownBaseMissileSkill.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -4514,7 +4514,7 @@
             0,
             0});
             this.numericUpDownBaseMagicSkill.Location = new System.Drawing.Point(109, 58);
-            this.numericUpDownBaseMagicSkill.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownBaseMagicSkill.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownBaseMagicSkill.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -4542,7 +4542,7 @@
             this.checkBoxFinesse.AutoSize = true;
             this.checkBoxFinesse.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxFinesse.Location = new System.Drawing.Point(67, 5);
-            this.checkBoxFinesse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxFinesse.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxFinesse.Name = "checkBoxFinesse";
             this.checkBoxFinesse.Size = new System.Drawing.Size(38, 17);
             this.checkBoxFinesse.TabIndex = 228;
@@ -4557,7 +4557,7 @@
             this.checkBoxThrown.AutoSize = true;
             this.checkBoxThrown.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxThrown.Location = new System.Drawing.Point(67, 32);
-            this.checkBoxThrown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxThrown.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxThrown.Name = "checkBoxThrown";
             this.checkBoxThrown.Size = new System.Drawing.Size(38, 17);
             this.checkBoxThrown.TabIndex = 229;
@@ -4576,7 +4576,7 @@
             this.tableLayoutPanel43.Controls.Add(this.textBoxCharacterName, 1, 1);
             this.tableLayoutPanel43.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel43.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel43.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel43.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel43.Name = "tableLayoutPanel43";
             this.tableLayoutPanel43.RowCount = 2;
             this.tableLayoutPanel43.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
@@ -4601,7 +4601,7 @@
             // 
             this.textBoxCharacterName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxCharacterName.Location = new System.Drawing.Point(108, 20);
-            this.textBoxCharacterName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCharacterName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCharacterName.Name = "textBoxCharacterName";
             this.textBoxCharacterName.Size = new System.Drawing.Size(102, 20);
             this.textBoxCharacterName.TabIndex = 4;
@@ -4617,7 +4617,7 @@
             this.tableLayoutPanel4.Controls.Add(this.panel5, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(659, 2);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -4640,7 +4640,7 @@
             this.panel4.Controls.Add(this.label75);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(4, 53);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(320, 420);
             this.panel4.TabIndex = 2;
@@ -4674,7 +4674,7 @@
             this.tableLayoutPanel14.Controls.Add(this.numericUpDownCorruption, 1, 0);
             this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel14.Location = new System.Drawing.Point(3, 15);
-            this.tableLayoutPanel14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel14.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel14.Name = "tableLayoutPanel14";
             this.tableLayoutPanel14.RowCount = 1;
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -4688,7 +4688,7 @@
             this.numericUpDownDestructive.AutoSize = true;
             this.numericUpDownDestructive.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDownDestructive.Location = new System.Drawing.Point(259, 2);
-            this.numericUpDownDestructive.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownDestructive.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownDestructive.Maximum = new decimal(new int[] {
             999,
             0,
@@ -4743,7 +4743,7 @@
             this.numericUpDownCorrosion.AutoSize = true;
             this.numericUpDownCorrosion.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDownCorrosion.Location = new System.Drawing.Point(159, 2);
-            this.numericUpDownCorrosion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownCorrosion.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownCorrosion.Maximum = new decimal(new int[] {
             999,
             0,
@@ -4762,7 +4762,7 @@
             this.numericUpDownCorruption.AutoSize = true;
             this.numericUpDownCorruption.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDownCorruption.Location = new System.Drawing.Point(59, 2);
-            this.numericUpDownCorruption.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownCorruption.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownCorruption.Maximum = new decimal(new int[] {
             999,
             0,
@@ -4794,7 +4794,7 @@
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel33, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 15);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 66.66666F));
@@ -4819,7 +4819,7 @@
             this.tableLayoutPanel29.Controls.Add(this.numericUpDownEnemyMagicDefense, 5, 0);
             this.tableLayoutPanel29.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel29.Location = new System.Drawing.Point(2, 51);
-            this.tableLayoutPanel29.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel29.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel29.Name = "tableLayoutPanel29";
             this.tableLayoutPanel29.RowCount = 1;
             this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -4851,7 +4851,7 @@
             0,
             0});
             this.numericUpDownEnemyMeleeDefense.Location = new System.Drawing.Point(56, 2);
-            this.numericUpDownEnemyMeleeDefense.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownEnemyMeleeDefense.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownEnemyMeleeDefense.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -4889,7 +4889,7 @@
             0,
             0});
             this.numericUpDownEnemyMissileDefense.Location = new System.Drawing.Point(155, 2);
-            this.numericUpDownEnemyMissileDefense.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownEnemyMissileDefense.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownEnemyMissileDefense.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -4927,7 +4927,7 @@
             0,
             0});
             this.numericUpDownEnemyMagicDefense.Location = new System.Drawing.Point(254, 2);
-            this.numericUpDownEnemyMagicDefense.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownEnemyMagicDefense.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownEnemyMagicDefense.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -4957,7 +4957,7 @@
             this.tableLayoutPanel33.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel33.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel33.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel33.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel33.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel33.Name = "tableLayoutPanel33";
             this.tableLayoutPanel33.RowCount = 2;
             this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -4977,7 +4977,7 @@
             0,
             65536});
             this.numericUpDownEnemyShieldResist.Location = new System.Drawing.Point(239, 24);
-            this.numericUpDownEnemyShieldResist.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownEnemyShieldResist.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownEnemyShieldResist.Maximum = new decimal(new int[] {
             2,
             0,
@@ -5026,7 +5026,7 @@
             0,
             0});
             this.numericUpDownEnemyShieldAL.Location = new System.Drawing.Point(91, 24);
-            this.numericUpDownEnemyShieldAL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownEnemyShieldAL.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownEnemyShieldAL.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -5077,7 +5077,7 @@
             0,
             0});
             this.numericUpDownEnemyArmor.Location = new System.Drawing.Point(91, 2);
-            this.numericUpDownEnemyArmor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownEnemyArmor.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownEnemyArmor.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -5102,7 +5102,7 @@
             0,
             131072});
             this.numericUpDownEnemyResistance.Location = new System.Drawing.Point(239, 2);
-            this.numericUpDownEnemyResistance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownEnemyResistance.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownEnemyResistance.Maximum = new decimal(new int[] {
             999,
             0,
@@ -5158,7 +5158,7 @@
             this.tableLayoutPanel13.Controls.Add(this.label144, 0, 0);
             this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel13.Location = new System.Drawing.Point(3, 15);
-            this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
             this.tableLayoutPanel13.RowCount = 1;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -5181,7 +5181,7 @@
             "7",
             "8"});
             this.comboBoxEnemyResistanceLure.Location = new System.Drawing.Point(259, 2);
-            this.comboBoxEnemyResistanceLure.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxEnemyResistanceLure.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxEnemyResistanceLure.Name = "comboBoxEnemyResistanceLure";
             this.comboBoxEnemyResistanceLure.Size = new System.Drawing.Size(42, 21);
             this.comboBoxEnemyResistanceLure.TabIndex = 185;
@@ -5218,7 +5218,7 @@
             "7",
             "8"});
             this.comboBoxEnemyBrittlemail.Location = new System.Drawing.Point(108, 2);
-            this.comboBoxEnemyBrittlemail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxEnemyBrittlemail.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxEnemyBrittlemail.Name = "comboBoxEnemyBrittlemail";
             this.comboBoxEnemyBrittlemail.Size = new System.Drawing.Size(41, 21);
             this.comboBoxEnemyBrittlemail.TabIndex = 183;
@@ -5295,7 +5295,7 @@
             this.tableLayoutPanel12.Controls.Add(this.label141, 0, 0);
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel12.Location = new System.Drawing.Point(3, 15);
-            this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 1;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -5318,7 +5318,7 @@
             "6",
             "7"});
             this.comboBoxEnemyImperil.Location = new System.Drawing.Point(108, 2);
-            this.comboBoxEnemyImperil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxEnemyImperil.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxEnemyImperil.Name = "comboBoxEnemyImperil";
             this.comboBoxEnemyImperil.Size = new System.Drawing.Size(41, 21);
             this.comboBoxEnemyImperil.TabIndex = 183;
@@ -5355,7 +5355,7 @@
             "7",
             "8"});
             this.comboBoxEnemyVuln.Location = new System.Drawing.Point(259, 2);
-            this.comboBoxEnemyVuln.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxEnemyVuln.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxEnemyVuln.Name = "comboBoxEnemyVuln";
             this.comboBoxEnemyVuln.Size = new System.Drawing.Size(42, 21);
             this.comboBoxEnemyVuln.TabIndex = 185;
@@ -5412,7 +5412,7 @@
             this.tableLayoutPanel11.Controls.Add(this.comboBoxEnemyFeeblemind, 3, 3);
             this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 15);
-            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 4;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -5474,7 +5474,7 @@
             "7",
             "8"});
             this.comboBoxEnemyVulnerability.Location = new System.Drawing.Point(108, 2);
-            this.comboBoxEnemyVulnerability.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxEnemyVulnerability.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxEnemyVulnerability.Name = "comboBoxEnemyVulnerability";
             this.comboBoxEnemyVulnerability.Size = new System.Drawing.Size(41, 21);
             this.comboBoxEnemyVulnerability.TabIndex = 190;
@@ -5499,7 +5499,7 @@
             "7",
             "8"});
             this.comboBoxEnemyDefenselessness.Location = new System.Drawing.Point(108, 25);
-            this.comboBoxEnemyDefenselessness.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxEnemyDefenselessness.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxEnemyDefenselessness.Name = "comboBoxEnemyDefenselessness";
             this.comboBoxEnemyDefenselessness.Size = new System.Drawing.Size(41, 21);
             this.comboBoxEnemyDefenselessness.TabIndex = 196;
@@ -5524,7 +5524,7 @@
             "7",
             "8"});
             this.comboBoxEnemyMagicYield.Location = new System.Drawing.Point(108, 48);
-            this.comboBoxEnemyMagicYield.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxEnemyMagicYield.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxEnemyMagicYield.Name = "comboBoxEnemyMagicYield";
             this.comboBoxEnemyMagicYield.Size = new System.Drawing.Size(41, 21);
             this.comboBoxEnemyMagicYield.TabIndex = 202;
@@ -5543,7 +5543,7 @@
             "-10",
             "-20"});
             this.comboBoxEnemyUnbalancingAssault.Location = new System.Drawing.Point(108, 71);
-            this.comboBoxEnemyUnbalancingAssault.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxEnemyUnbalancingAssault.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxEnemyUnbalancingAssault.Name = "comboBoxEnemyUnbalancingAssault";
             this.comboBoxEnemyUnbalancingAssault.Size = new System.Drawing.Size(41, 21);
             this.comboBoxEnemyUnbalancingAssault.TabIndex = 208;
@@ -5592,7 +5592,7 @@
             "7",
             "8"});
             this.comboBoxEnemyClumsiness.Location = new System.Drawing.Point(259, 2);
-            this.comboBoxEnemyClumsiness.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxEnemyClumsiness.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxEnemyClumsiness.Name = "comboBoxEnemyClumsiness";
             this.comboBoxEnemyClumsiness.Size = new System.Drawing.Size(42, 21);
             this.comboBoxEnemyClumsiness.TabIndex = 199;
@@ -5629,7 +5629,7 @@
             "7",
             "8"});
             this.comboBoxEnemySlowness.Location = new System.Drawing.Point(259, 25);
-            this.comboBoxEnemySlowness.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxEnemySlowness.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxEnemySlowness.Name = "comboBoxEnemySlowness";
             this.comboBoxEnemySlowness.Size = new System.Drawing.Size(42, 21);
             this.comboBoxEnemySlowness.TabIndex = 205;
@@ -5666,7 +5666,7 @@
             "7",
             "8"});
             this.comboBoxEnemyBafflement.Location = new System.Drawing.Point(259, 48);
-            this.comboBoxEnemyBafflement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxEnemyBafflement.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxEnemyBafflement.Name = "comboBoxEnemyBafflement";
             this.comboBoxEnemyBafflement.Size = new System.Drawing.Size(42, 21);
             this.comboBoxEnemyBafflement.TabIndex = 211;
@@ -5703,7 +5703,7 @@
             "7",
             "8"});
             this.comboBoxEnemyFeeblemind.Location = new System.Drawing.Point(259, 71);
-            this.comboBoxEnemyFeeblemind.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxEnemyFeeblemind.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxEnemyFeeblemind.Name = "comboBoxEnemyFeeblemind";
             this.comboBoxEnemyFeeblemind.Size = new System.Drawing.Size(42, 21);
             this.comboBoxEnemyFeeblemind.TabIndex = 214;
@@ -5753,7 +5753,7 @@
             this.tableLayoutPanel8.Controls.Add(this.labelEnemyEffectiveMissileDefense, 3, 2);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 19);
-            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 3;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -6032,7 +6032,7 @@
             this.panel5.Controls.Add(this.tableLayoutPanel45);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel5.Location = new System.Drawing.Point(4, 4);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(320, 43);
             this.panel5.TabIndex = 1;
@@ -6047,7 +6047,7 @@
             this.tableLayoutPanel45.Controls.Add(this.textBoxEnemyName, 1, 1);
             this.tableLayoutPanel45.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel45.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel45.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel45.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel45.Name = "tableLayoutPanel45";
             this.tableLayoutPanel45.RowCount = 2;
             this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
@@ -6071,7 +6071,7 @@
             // 
             this.textBoxEnemyName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxEnemyName.Location = new System.Drawing.Point(108, 20);
-            this.textBoxEnemyName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxEnemyName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxEnemyName.Name = "textBoxEnemyName";
             this.textBoxEnemyName.Size = new System.Drawing.Size(102, 20);
             this.textBoxEnemyName.TabIndex = 5;
@@ -6087,7 +6087,7 @@
             this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(330, 2);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -6103,7 +6103,7 @@
             this.panel6.Controls.Add(this.groupBox10);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(4, 53);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(317, 420);
             this.panel6.TabIndex = 108;
@@ -6113,7 +6113,7 @@
             this.panel3.Controls.Add(this.tableLayoutPanel44);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(4, 4);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(317, 43);
             this.panel3.TabIndex = 1;
@@ -6128,7 +6128,7 @@
             this.tableLayoutPanel44.Controls.Add(this.textBoxWeaponName, 1, 1);
             this.tableLayoutPanel44.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel44.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel44.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel44.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel44.Name = "tableLayoutPanel44";
             this.tableLayoutPanel44.RowCount = 2;
             this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
@@ -6152,7 +6152,7 @@
             // 
             this.textBoxWeaponName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxWeaponName.Location = new System.Drawing.Point(107, 20);
-            this.textBoxWeaponName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxWeaponName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxWeaponName.Name = "textBoxWeaponName";
             this.textBoxWeaponName.Size = new System.Drawing.Size(101, 20);
             this.textBoxWeaponName.TabIndex = 5;
@@ -6165,7 +6165,7 @@
             this.tabControl_MAIN.Controls.Add(this.tabPage1);
             this.tabControl_MAIN.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl_MAIN.Location = new System.Drawing.Point(0, 24);
-            this.tabControl_MAIN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl_MAIN.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl_MAIN.Name = "tabControl_MAIN";
             this.tabControl_MAIN.SelectedIndex = 0;
             this.tabControl_MAIN.Size = new System.Drawing.Size(1011, 637);
@@ -6175,9 +6175,9 @@
             // 
             this.tabPage4.Controls.Add(this.tableLayoutPanel15);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage4.Size = new System.Drawing.Size(1003, 611);
             this.tabPage4.TabIndex = 0;
             this.tabPage4.Text = "DPS Calculator";
@@ -6191,7 +6191,7 @@
             this.tableLayoutPanel15.Controls.Add(this.tableLayoutPanel16, 0, 1);
             this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel15.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel15.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             this.tableLayoutPanel15.RowCount = 2;
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
@@ -6214,7 +6214,7 @@
             this.tableLayoutPanel16.Controls.Add(this.tableLayoutPanel6, 0, 0);
             this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel16.Location = new System.Drawing.Point(2, 487);
-            this.tableLayoutPanel16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel16.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel16.Name = "tableLayoutPanel16";
             this.tableLayoutPanel16.RowCount = 1;
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -6239,7 +6239,7 @@
             this.tableLayoutPanel7.Controls.Add(this.label36, 2, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(665, 3);
-            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 3;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
@@ -6326,7 +6326,7 @@
             // 
             this.buttonQuickCompare1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonQuickCompare1.Location = new System.Drawing.Point(2, 18);
-            this.buttonQuickCompare1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonQuickCompare1.Margin = new System.Windows.Forms.Padding(2);
             this.buttonQuickCompare1.Name = "buttonQuickCompare1";
             this.buttonQuickCompare1.Size = new System.Drawing.Size(127, 44);
             this.buttonQuickCompare1.TabIndex = 3;
@@ -6376,7 +6376,7 @@
             this.tableLayoutPanel30.Controls.Add(this.labelFinalDpsFront, 1, 2);
             this.tableLayoutPanel30.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel30.Location = new System.Drawing.Point(334, 3);
-            this.tableLayoutPanel30.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel30.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel30.Name = "tableLayoutPanel30";
             this.tableLayoutPanel30.RowCount = 3;
             this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
@@ -6515,7 +6515,7 @@
             this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel32, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 2;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
@@ -6529,7 +6529,7 @@
             this.panel7.Controls.Add(this.tableLayoutPanel31);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(2, 91);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(322, 19);
             this.panel7.TabIndex = 0;
@@ -6546,7 +6546,7 @@
             this.tableLayoutPanel31.Controls.Add(this.label117, 0, 0);
             this.tableLayoutPanel31.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel31.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel31.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel31.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel31.Name = "tableLayoutPanel31";
             this.tableLayoutPanel31.RowCount = 1;
             this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -6573,7 +6573,7 @@
             this.checkBoxUseHitChance.Checked = true;
             this.checkBoxUseHitChance.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxUseHitChance.Location = new System.Drawing.Point(162, 2);
-            this.checkBoxUseHitChance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxUseHitChance.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxUseHitChance.Name = "checkBoxUseHitChance";
             this.checkBoxUseHitChance.Size = new System.Drawing.Size(76, 13);
             this.checkBoxUseHitChance.TabIndex = 264;
@@ -6616,7 +6616,7 @@
             this.tableLayoutPanel32.Controls.Add(this.labelNonCritRear, 2, 1);
             this.tableLayoutPanel32.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel32.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel32.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel32.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel32.Name = "tableLayoutPanel32";
             this.tableLayoutPanel32.RowCount = 5;
             this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
@@ -6826,10 +6826,10 @@
             // 
             this.tabPage5.Controls.Add(this.panel10);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage5.Size = new System.Drawing.Size(1003, 612);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage5.Size = new System.Drawing.Size(1003, 611);
             this.tabPage5.TabIndex = 1;
             this.tabPage5.Text = "Compare";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -6839,9 +6839,9 @@
             this.panel10.Controls.Add(this.label57);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(2, 2);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(999, 608);
+            this.panel10.Size = new System.Drawing.Size(999, 607);
             this.panel10.TabIndex = 0;
             // 
             // label57
@@ -6859,9 +6859,9 @@
             // 
             this.tabPage1.Controls.Add(this.panel2);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(1003, 612);
+            this.tabPage1.Size = new System.Drawing.Size(1003, 611);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "About";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -6871,9 +6871,9 @@
             this.panel2.Controls.Add(this.label37);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1003, 612);
+            this.panel2.Size = new System.Drawing.Size(1003, 611);
             this.panel2.TabIndex = 0;
             // 
             // label37
@@ -7021,7 +7021,7 @@
             this.Controls.Add(this.tabControl_MAIN);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "AC DPS Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
